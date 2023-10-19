@@ -42,9 +42,13 @@ typedef struct tMapa{
  * \param caminho caminho do arquivo com as configurações do mapa
  */
 tMapa* CriaMapa(const char* caminhoConfig){
-    tMapa * mapa;
-    mapa->grid = (tMapa *)malloc(mapa->nLinhas * sizeof(tMapa*));
+    tMapa * mapa = (tMapa *)malloc(sizeof(tMapa));
     
+    mapa->tunel = NULL;
+
+    
+
+
     /*tMapa InicializaJogo(FILE *entrada, char *dir) {
 	FILE *inicializa;
 	tMapa mapa;
@@ -52,7 +56,7 @@ tMapa* CriaMapa(const char* caminhoConfig){
 	char simb[40][100], nome_dir[1000];
 	
 	// Armazena nas variaveis adequadas as informacoes do arquivo de entrada
-	fscanf(entrada, "%d %d %d", &mapa.linhas, &mapa.colunas, &mapa.limite_mov);
+	fscanf(entrada, "%d", &mapa.limite_mov);
 	fscanf(entrada, "\n");
 	sprintf(nome_dir, "%s/saida/inicializacao.txt", dir);
 	inicializa = fopen(nome_dir, "w");
