@@ -43,65 +43,60 @@ typedef struct tMapa{
  */
 tMapa* CriaMapa(const char* caminhoConfig){
     tMapa * mapa = (tMapa *)malloc(sizeof(tMapa));
+
+    FILE *arq_entrada, *map;
+    char nome_diretorio[1000], nome_mapa[1000];
+
+    // Se diretório nao for informado, finaliza o programa
+    if (caminhoConfig <= 1) {
+        printf("ERRO: O diretorio de arquivos de configuracao nao foi informado\n");
+        exit(0);
+    }
+    sprintf(nome_diretorio, "%s", caminhoConfig);
+    arq_entrada = fopen(nome_diretorio, "r");
+
+    sprintf(nome_mapa, "%s/mapa.txt", nome_diretorio);
+    map = fopen(nome_mapa, "r");
     
+    // Verifica se eh possivel encontrar o arquivo 'mapa.txt' e
+    // caso nao encontre, finaliza o programa
+    if (!map) {
+        printf("O arquivo mapa.txt do diretorio %s nao existe!\n", nome_diretorio);
+        exit(0);
+    }
+    fscanf(map, "%d\n", &mapa->nMaximoMovimentos);
+
+    mapa->nLinhas = 0;
+    mapa->nColunas = 0;
+    mapa->nFrutasAtual = 0;
     mapa->tunel = NULL;
 
+    char simb = '0';
+    int flagQuebraDeLinha = 0;
+    while(!feof(map)){
+        while(flagQuebraDeLinha != 1 && mapa->nLinhas == 0){
+            fscanf(map,"%c", &simb);
+            mapa->nColunas++;
+            if(simb == '\n'){
+                flagQuebraDeLinha = 1;
+            }
+        }
+        mapa->nLinhas++;
+    }
     
-
-
-    /*tMapa InicializaJogo(FILE *entrada, char *dir) {
-	FILE *inicializa;
-	tMapa mapa;
-	int i, j, comida = 0, l_inicial, c_inicial;
-	char simb[40][100], nome_dir[1000];
+    mapa->grid = (char **) malloc (mapa->nLinhas * sizeof(char*));
+    for(int i = 0; i < mapa->nLinhas; i++){
+        mapa->grid[i] = (char *) malloc (mapa->nColunas * sizeof(char));
+    }
 	
-	// Armazena nas variaveis adequadas as informacoes do arquivo de entrada
-	fscanf(entrada, "%d", &mapa.limite_mov);
-	fscanf(entrada, "\n");
-	sprintf(nome_dir, "%s/saida/inicializacao.txt", dir);
-	inicializa = fopen(nome_dir, "w");
-
-	mapa.game_over = 0;
-	mapa.comida = 0;
-	mapa.qtd_parede = 0;
-	mapa.tunel = 0;
-	
-	// Lê o arquivo de entrada e preenche arquivo de inicializacao
-	for (i = 0; i < mapa.linhas; i++) {
-		for (j = 0; j < mapa.colunas; j++) {
-
-			fscanf(entrada, "%c", &simb[i][j]);
-			fprintf(inicializa, "%c", simb[i][j]);
-			mapa.matriz[i][j] = simb[i][j];
-			// Preenche toda a matriz trilha com -1
-			mapa.trilha[i][j] = -1;
-			
-			// Inicializa tipo Jogador e tipo Fantasma
-			if (simb[i][j] == '>') {
-				l_inicial = i;
-				c_inicial = j;
-				mapa.trilha[i][j] = 0;
-				mapa.pacman = InicializaJogador(i, j, mapa.pacman);
-			} else if (simb[i][j] == 'B') {
-				mapa.fant_B = InicializaFantasma(i, j, simb[i][j], mapa.fant_B);
-			} else if (simb[i][j] == 'P') {
-				mapa.fant_P = InicializaFantasma(i, j, simb[i][j], mapa.fant_P);
-			} else if (simb[i][j] == 'I') {
-				mapa.fant_I = InicializaFantasma(i, j, simb[i][j], mapa.fant_I);
-			} else if (simb[i][j] == 'C') {
-				mapa.fant_C = InicializaFantasma(i, j, simb[i][j], mapa.fant_C);
-			} else if (simb[i][j] == '*') {
-				mapa.comida++; // Conta qtd total de comida
-			}
-		}
-		fscanf(entrada, "\n");
-		fprintf(inicializa, "\n");
-	}
-	fprintf(inicializa, "Pac-Man comecara o jogo na linha %d e coluna %d\n",
-			l_inicial + 1, c_inicial + 1);
-	fclose(inicializa);
-	return mapa;
-}*/
+    int i, j;
+    for(i = 0; i < mapa->nLinhas; i++){
+        for(i = 0; j < mapa->nColunas; j++){
+            fscanf(map,"%c", &mapa->grid[i][j]);
+        }
+    }
+    fclose(arq_entrada);
+    fclose(map);
 }
 
 /**
