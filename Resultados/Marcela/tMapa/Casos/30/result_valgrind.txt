@@ -1,0 +1,45 @@
+==38182== Memcheck, a memory error detector
+==38182== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==38182== Using Valgrind-3.18.1 and LibVEX; rerun with -h for copyright info
+==38182== Command: Resultados/Marcela/tMapa/prog Resultados/Marcela/tMapa/Casos/30
+==38182== Parent PID: 38181
+==38182== 
+==38182== Conditional jump or move depends on uninitialised value(s)
+==38182==    at 0x10BAB6: ObtemPosicaoItemMapa (in /home/marcela_paixao/trab/Resultados/Marcela/tMapa/prog)
+==38182==    by 0x10A79A: CriaJogo (in /home/marcela_paixao/trab/Resultados/Marcela/tMapa/prog)
+==38182==    by 0x10B89F: main (in /home/marcela_paixao/trab/Resultados/Marcela/tMapa/prog)
+==38182== 
+==38182== Invalid read of size 8
+==38182==    at 0x10C073: CriaTrilhaPacman (in /home/marcela_paixao/trab/Resultados/Marcela/tMapa/prog)
+==38182==    by 0x10A7FF: CriaJogo (in /home/marcela_paixao/trab/Resultados/Marcela/tMapa/prog)
+==38182==    by 0x10B89F: main (in /home/marcela_paixao/trab/Resultados/Marcela/tMapa/prog)
+==38182==  Address 0x50 is not stack'd, malloc'd or (recently) free'd
+==38182== 
+==38182== 
+==38182== Process terminating with default action of signal 11 (SIGSEGV)
+==38182==  Access not within mapped region at address 0x50
+==38182==    at 0x10C073: CriaTrilhaPacman (in /home/marcela_paixao/trab/Resultados/Marcela/tMapa/prog)
+==38182==    by 0x10A7FF: CriaJogo (in /home/marcela_paixao/trab/Resultados/Marcela/tMapa/prog)
+==38182==    by 0x10B89F: main (in /home/marcela_paixao/trab/Resultados/Marcela/tMapa/prog)
+==38182==  If you believe this happened as a result of a stack
+==38182==  overflow in your program's main thread (unlikely but
+==38182==  possible), you can try to increase the size of the
+==38182==  main thread stack using the --main-stacksize= flag.
+==38182==  The main thread stack size used in this run was 8388608.
+==38182== 
+==38182== HEAP SUMMARY:
+==38182==     in use at exit: 4,292 bytes in 6 blocks
+==38182==   total heap usage: 8 allocs, 2 frees, 5,236 bytes allocated
+==38182== 
+==38182== LEAK SUMMARY:
+==38182==    definitely lost: 0 bytes in 0 blocks
+==38182==    indirectly lost: 0 bytes in 0 blocks
+==38182==      possibly lost: 0 bytes in 0 blocks
+==38182==    still reachable: 4,292 bytes in 6 blocks
+==38182==         suppressed: 0 bytes in 0 blocks
+==38182== Reachable blocks (those to which a pointer was found) are not shown.
+==38182== To see them, rerun with: --leak-check=full --show-leak-kinds=all
+==38182== 
+==38182== Use --track-origins=yes to see where uninitialised values come from
+==38182== For lists of detected and suppressed errors, rerun with: -s
+==38182== ERROR SUMMARY: 2 errors from 2 contexts (suppressed: 0 from 0)

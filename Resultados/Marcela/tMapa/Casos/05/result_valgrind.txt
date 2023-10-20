@@ -1,0 +1,45 @@
+==31732== Memcheck, a memory error detector
+==31732== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==31732== Using Valgrind-3.18.1 and LibVEX; rerun with -h for copyright info
+==31732== Command: Resultados/Marcela/tMapa/prog Resultados/Marcela/tMapa/Casos/05
+==31732== Parent PID: 31731
+==31732== 
+==31732== Conditional jump or move depends on uninitialised value(s)
+==31732==    at 0x10BAB6: ObtemPosicaoItemMapa (in /home/marcela_paixao/trab/Resultados/Marcela/tMapa/prog)
+==31732==    by 0x10A79A: CriaJogo (in /home/marcela_paixao/trab/Resultados/Marcela/tMapa/prog)
+==31732==    by 0x10B89F: main (in /home/marcela_paixao/trab/Resultados/Marcela/tMapa/prog)
+==31732== 
+==31732== Invalid read of size 8
+==31732==    at 0x10C073: CriaTrilhaPacman (in /home/marcela_paixao/trab/Resultados/Marcela/tMapa/prog)
+==31732==    by 0x10A7FF: CriaJogo (in /home/marcela_paixao/trab/Resultados/Marcela/tMapa/prog)
+==31732==    by 0x10B89F: main (in /home/marcela_paixao/trab/Resultados/Marcela/tMapa/prog)
+==31732==  Address 0x50 is not stack'd, malloc'd or (recently) free'd
+==31732== 
+==31732== 
+==31732== Process terminating with default action of signal 11 (SIGSEGV)
+==31732==  Access not within mapped region at address 0x50
+==31732==    at 0x10C073: CriaTrilhaPacman (in /home/marcela_paixao/trab/Resultados/Marcela/tMapa/prog)
+==31732==    by 0x10A7FF: CriaJogo (in /home/marcela_paixao/trab/Resultados/Marcela/tMapa/prog)
+==31732==    by 0x10B89F: main (in /home/marcela_paixao/trab/Resultados/Marcela/tMapa/prog)
+==31732==  If you believe this happened as a result of a stack
+==31732==  overflow in your program's main thread (unlikely but
+==31732==  possible), you can try to increase the size of the
+==31732==  main thread stack using the --main-stacksize= flag.
+==31732==  The main thread stack size used in this run was 8388608.
+==31732== 
+==31732== HEAP SUMMARY:
+==31732==     in use at exit: 4,292 bytes in 6 blocks
+==31732==   total heap usage: 8 allocs, 2 frees, 5,236 bytes allocated
+==31732== 
+==31732== LEAK SUMMARY:
+==31732==    definitely lost: 0 bytes in 0 blocks
+==31732==    indirectly lost: 0 bytes in 0 blocks
+==31732==      possibly lost: 0 bytes in 0 blocks
+==31732==    still reachable: 4,292 bytes in 6 blocks
+==31732==         suppressed: 0 bytes in 0 blocks
+==31732== Reachable blocks (those to which a pointer was found) are not shown.
+==31732== To see them, rerun with: --leak-check=full --show-leak-kinds=all
+==31732== 
+==31732== Use --track-origins=yes to see where uninitialised values come from
+==31732== For lists of detected and suppressed errors, rerun with: -s
+==31732== ERROR SUMMARY: 2 errors from 2 contexts (suppressed: 0 from 0)

@@ -1,39 +1,10 @@
 #include "tMapa.h"
+#include <string.h>
 
 #define COMIDA '*'
 #define PAREDE '#'
 //#define TUNEL '@'
 
-typedef struct tMapa{
-    /* Número de linhas e de colunas do mapa
-       que deverão ser preenchidos com as informações 
-       no arquivo de configurações 
-       do mapa, passado na função CriaMapa */
-    int nLinhas, nColunas;
-
-    /* Número atual de frutas no mapa 
-       que deverá ser preenchido com a informação no arquivo 
-       de configurações do mapa, passado na função CriaMapa.
-       Deverá ser atualizada a medida que o jogo prossegue */
-    int nFrutasAtual;
-
-    /* Número máximo permitido de movimentos do pacman no mapa
-       que deverá ser preenchido com a informação no arquivo 
-       de configurações do mapa, passado na função CriaMapa */
-    int nMaximoMovimentos;
-
-    /* O grid (matriz) de informações do mapa
-       que deverá ser alocado dinamicamente e preenchido
-       com as informações do arquivo de configurações 
-       do mapa, passado na função CriaMapa */
-    char** grid;
-
-    /* O tunel do mapa contendo 2 acessos 
-       que deverão ser preenchidos com as informações 
-       no arquivo de configurações 
-       do mapa, passado na função CriaMapa*/
-    tTunel* tunel;
-} tMapa;
 
 /**
  * Dado o arquivo de configurações, cria o mapa dinamicamente e 
@@ -48,7 +19,7 @@ tMapa* CriaMapa(const char* caminhoConfig){
     char nome_diretorio[1000], nome_mapa[1000];
 
     // Se diretório nao for informado, finaliza o programa
-    if (caminhoConfig <= 1) {
+    if (strlen(caminhoConfig) <= 1) {
         printf("ERRO: O diretorio de arquivos de configuracao nao foi informado\n");
         exit(0);
     }
@@ -64,7 +35,8 @@ tMapa* CriaMapa(const char* caminhoConfig){
         printf("O arquivo mapa.txt do diretorio %s nao existe!\n", nome_diretorio);
         exit(0);
     }
-    fscanf(map, "%d\n", &mapa->nMaximoMovimentos);
+    printf("oi");
+    /*fscanf(map, "%d\n", &mapa->nMaximoMovimentos);
 
     mapa->nLinhas = 0;
     mapa->nColunas = 0;
@@ -75,6 +47,7 @@ tMapa* CriaMapa(const char* caminhoConfig){
     int flagQuebraDeLinha = 0;
     while(!feof(map)){
         while(flagQuebraDeLinha != 1 && mapa->nLinhas == 0){
+            fscanf(map,"%*c");
             fscanf(map,"%c", &simb);
             mapa->nColunas++;
             if(simb == '\n'){
@@ -83,7 +56,7 @@ tMapa* CriaMapa(const char* caminhoConfig){
         }
         mapa->nLinhas++;
     }
-    
+    printf("%d %d\n", mapa->nLinhas, mapa->nColunas);
     mapa->grid = (char **) malloc (mapa->nLinhas * sizeof(char*));
     for(int i = 0; i < mapa->nLinhas; i++){
         mapa->grid[i] = (char *) malloc (mapa->nColunas * sizeof(char));
@@ -94,9 +67,10 @@ tMapa* CriaMapa(const char* caminhoConfig){
         for(i = 0; j < mapa->nColunas; j++){
             fscanf(map,"%c", &mapa->grid[i][j]);
         }
-    }
+    }*/
     fclose(arq_entrada);
     fclose(map);
+    return mapa;
 }
 
 /**
@@ -223,7 +197,7 @@ bool EncontrouParedeMapa(tMapa* mapa, tPosicao* posicao){
  * \param posicao posicao do item
  * \param item posicao item que vai atualizar o mapa
  */
-void AtualizaItemMapa(tMapa* mapa, tPosicao* posicao, char item){
+bool AtualizaItemMapa(tMapa* mapa, tPosicao* posicao, char item){
     if(mapa == NULL || mapa->grid == NULL || !EhValidaPosicao(mapa, posicao)){
         return false;
     }

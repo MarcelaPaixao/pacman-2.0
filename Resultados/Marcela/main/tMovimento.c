@@ -1,7 +1,8 @@
 #include "tMovimento.h"
 
 /**
- * Cria o movimento dinamicamente
+ * Dado o número do movimento, o comando e a ação, cria aloca 
+ * a estrutura tMovimento e retorna o ponteiro pra ela.
  * \param numeroDoMovimento número do movimento
  * \param comando comando que foi dado para o movimento
  * \param acao a ação gerada pelo movimento
