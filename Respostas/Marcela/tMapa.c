@@ -1,10 +1,8 @@
 #include "tMapa.h"
-#include <string.h>
 
 #define COMIDA '*'
 #define PAREDE '#'
 //#define TUNEL '@'
-
 
 /**
  * Dado o arquivo de configurações, cria o mapa dinamicamente e 
@@ -12,65 +10,68 @@
  * Caso o arquivo de configurações não exista, retorna NULL.
  * \param caminho caminho do arquivo com as configurações do mapa
  */
-tMapa* CriaMapa(const char* caminhoConfig){
-    tMapa * mapa = (tMapa *)malloc(sizeof(tMapa));
-
-    FILE *arq_entrada, *map;
+tMapa* CriaMapa(const char* caminhoConfig) {
+    FILE *arq_entrada, *arq_mapa;
     char nome_diretorio[1000], nome_mapa[1000];
 
-    // Se diretório nao for informado, finaliza o programa
-    if (strlen(caminhoConfig) <= 1) {
+    if (caminhoConfig == NULL) {
         printf("ERRO: O diretorio de arquivos de configuracao nao foi informado\n");
-        exit(0);
+        return NULL;
     }
-    sprintf(nome_diretorio, "%s", caminhoConfig);
+
+    strcpy(nome_diretorio, caminhoConfig);
     arq_entrada = fopen(nome_diretorio, "r");
 
+    if (arq_entrada == NULL) {
+        printf("ERRO: O arquivo de configuracao nao pode ser aberto\n");
+        return NULL;
+    }
+
     sprintf(nome_mapa, "%s/mapa.txt", nome_diretorio);
-    map = fopen(nome_mapa, "r");
-    
-    // Verifica se eh possivel encontrar o arquivo 'mapa.txt' e
-    // caso nao encontre, finaliza o programa
-    if (!map) {
+    arq_mapa = fopen(nome_mapa, "r");
+
+    if (arq_mapa == NULL) {
         printf("O arquivo mapa.txt do diretorio %s nao existe!\n", nome_diretorio);
+        fclose(arq_entrada);
         exit(0);
     }
-    printf("oi");
-    /*fscanf(map, "%d\n", &mapa->nMaximoMovimentos);
-
-    mapa->nLinhas = 0;
+    
+    tMapa * mapa = (tMapa *) malloc(sizeof(tMapa));
+    if (mapa == NULL) {
+        printf("ERRO: Falha na alocacao de memoria para mapa\n");
+        exit(0);
+    }
     mapa->nColunas = 0;
+    mapa->nLinhas = 0;
     mapa->nFrutasAtual = 0;
-    mapa->tunel = NULL;
+    mapa->grid = NULL;
+    mapa->grid[0] = NULL;
+    fscanf(arq_mapa, "%d\n", &mapa->nMaximoMovimentos);
+    
+    mapa->grid = (char **)malloc(sizeof(char *)); 
+    char simb;
+    while(1){
+        fscanf(arq_mapa, "%c", &simb);
+        if(simb == '\n'){
+            break;
+        }
+        mapa->nColunas++;
+        mapa->grid[0] = realloc(mapa->grid[0], mapa->nColunas);
+        mapa->grid[0][mapa->nColunas - 1] = simb; 
+    }
+    fscanf(arq_mapa, "%*c");
+    while(fscanf(arq_mapa, "%c", &simb) == 1){
+        for(int i=0; i < mapa->nColunas; i++){
+            mapa->grid = realloc(mapa->grid, mapa->nLinhas);
+        }
+        
+    }
 
-    char simb = '0';
-    int flagQuebraDeLinha = 0;
-    while(!feof(map)){
-        while(flagQuebraDeLinha != 1 && mapa->nLinhas == 0){
-            fscanf(map,"%*c");
-            fscanf(map,"%c", &simb);
-            mapa->nColunas++;
-            if(simb == '\n'){
-                flagQuebraDeLinha = 1;
-            }
-        }
-        mapa->nLinhas++;
-    }
-    printf("%d %d\n", mapa->nLinhas, mapa->nColunas);
-    mapa->grid = (char **) malloc (mapa->nLinhas * sizeof(char*));
-    for(int i = 0; i < mapa->nLinhas; i++){
-        mapa->grid[i] = (char *) malloc (mapa->nColunas * sizeof(char));
-    }
-	
-    int i, j;
-    for(i = 0; i < mapa->nLinhas; i++){
-        for(i = 0; j < mapa->nColunas; j++){
-            fscanf(map,"%c", &mapa->grid[i][j]);
-        }
-    }*/
+
     fclose(arq_entrada);
-    fclose(map);
+    fclose(arq_mapa);
     return mapa;
+    
 }
 
 /**
@@ -122,7 +123,7 @@ char ObtemItemMapa(tMapa* mapa, tPosicao* posicao){
     if(mapa == NULL || mapa->grid == NULL || !EhValidaPosicao(mapa, posicao)){
         return '\0';
     }
-    return mapa->grid[posicao->linha][posicao->coluna];
+    return mapa->grid[ObtemLinhaPosicao(posicao)][ObtemColunaPosicao(posicao)];
 }
 
 /**
@@ -170,7 +171,7 @@ bool EncontrouComidaMapa(tMapa* mapa, tPosicao* posicao){
     if(mapa == NULL || mapa->grid == NULL || !EhValidaPosicao(mapa, posicao)){
         return false;
     }
-    return(mapa->grid[posicao->linha][posicao->coluna] == COMIDA);
+    return(mapa->grid[ObtemLinhaPosicao(posicao)][ObtemColunaPosicao(posicao)] == COMIDA);
 }
 
 /**
@@ -185,7 +186,7 @@ bool EncontrouParedeMapa(tMapa* mapa, tPosicao* posicao){
     if(mapa == NULL || mapa->grid == NULL || !EhValidaPosicao(mapa, posicao)){
         return false;
     }
-    return(mapa->grid[posicao->linha][posicao->coluna] == PAREDE);
+    return(mapa->grid[ObtemLinhaPosicao(posicao)][ObtemColunaPosicao(posicao)] == PAREDE);
 }
 
 /**
@@ -201,7 +202,7 @@ bool AtualizaItemMapa(tMapa* mapa, tPosicao* posicao, char item){
     if(mapa == NULL || mapa->grid == NULL || !EhValidaPosicao(mapa, posicao)){
         return false;
     }
-    mapa->grid[posicao->linha][posicao->coluna] = item;
+    mapa->grid[ObtemLinhaPosicao(posicao)][ObtemColunaPosicao(posicao)] = item;
     return true;
 }
 
@@ -245,7 +246,7 @@ void DesalocaMapa(tMapa* mapa){
     for(int i=0; i < mapa->nLinhas; i++){
         free(mapa->grid[i]);
     }
-    DesalocaTunel(mapa->tunel); 
     free(mapa->grid);
+    DesalocaTunel(mapa->tunel); 
     free(mapa);
 }
