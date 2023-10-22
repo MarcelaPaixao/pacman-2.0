@@ -25,8 +25,6 @@ Movimento 94 (w) pegou comida
 Movimento 95 (a) pegou comida
 Movimento 98 (a) pegou comida
 Movimento 100 (s) pegou comida
-Movimento 103 (a) pegou comida
-Movimento 111 (s) pegou comida
 Movimento 132 (d) pegou comida
 Movimento 137 (d) pegou comida
 Movimento 139 (s) pegou comida

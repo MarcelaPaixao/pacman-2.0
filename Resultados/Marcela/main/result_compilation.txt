@@ -1,8 +1,224 @@
 tMapa.c: In function ‘CriaMapa’:
-tMapa.c:80:1: warning: control reaches end of non-void function [-Wreturn-type]
-   80 | }
-      | ^
-tMapa.c: In function ‘ObtemPosicaoItemMapa’:
-tMapa.c:100:1: warning: control reaches end of non-void function [-Wreturn-type]
-  100 | }
-      | ^
+tMapa.c:29:27: warning: ‘/mapa.txt’ directive writing 9 bytes into a region of size between 1 and 1000 [-Wformat-overflow=]
+   29 |     sprintf(nome_mapa, "%s/mapa.txt", nome_diretorio);
+      |                           ^~~~~~~~~
+tMapa.c:29:5: note: ‘sprintf’ output between 10 and 1009 bytes into a destination of size 1000
+   29 |     sprintf(nome_mapa, "%s/mapa.txt", nome_diretorio);
+      |     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+tPacman.c:3:16: error: redefinition of ‘struct tPacman’
+    3 | typedef struct tPacman{
+      |                ^~~~~~~
+In file included from tPacman.c:1:
+tPacman.h:8:16: note: originally defined here
+    8 | typedef struct tPacman{
+      |                ^~~~~~~
+tPacman.c:38:3: error: conflicting types for ‘tPacman’; have ‘struct tPacman’
+   38 | } tPacman;
+      |   ^~~~~~~
+In file included from tPacman.c:1:
+tPacman.h:43:3: note: previous declaration of ‘tPacman’ with type ‘tPacman’
+   43 | } tPacman;
+      |   ^~~~~~~
+tPacman.c:47:10: error: conflicting types for ‘CriaPacman’; have ‘tPacman *(tPosicao *)’
+   47 | tPacman* CriaPacman(tPosicao* posicao){
+      |          ^~~~~~~~~~
+In file included from tPacman.c:1:
+tPacman.h:52:10: note: previous declaration of ‘CriaPacman’ with type ‘tPacman *(tPosicao *)’
+   52 | tPacman* CriaPacman(tPosicao* posicao);
+      |          ^~~~~~~~~~
+tPacman.c:61:10: error: conflicting types for ‘ClonaPacman’; have ‘tPacman *(tPacman *)’
+   61 | tPacman* ClonaPacman(tPacman* pacman);
+      |          ^~~~~~~~~~~
+In file included from tPacman.c:1:
+tPacman.h:59:10: note: previous declaration of ‘ClonaPacman’ with type ‘tPacman *(tPacman *)’
+   59 | tPacman* ClonaPacman(tPacman* pacman);
+      |          ^~~~~~~~~~~
+tPacman.c:71:14: error: conflicting types for ‘ClonaHistoricoDeMovimentosSignificativosPacman’; have ‘tMovimento **(tPacman *)’
+   71 | tMovimento** ClonaHistoricoDeMovimentosSignificativosPacman(tPacman* pacman);
+      |              ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+In file included from tPacman.c:1:
+tPacman.h:69:14: note: previous declaration of ‘ClonaHistoricoDeMovimentosSignificativosPacman’ with type ‘tMovimento **(tPacman *)’
+   69 | tMovimento** ClonaHistoricoDeMovimentosSignificativosPacman(tPacman* pacman);
+      |              ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+tPacman.c:78:11: error: conflicting types for ‘ObtemPosicaoPacman’; have ‘tPosicao *(tPacman *)’
+   78 | tPosicao* ObtemPosicaoPacman(tPacman* pacman);
+      |           ^~~~~~~~~~~~~~~~~~
+In file included from tPacman.c:1:
+tPacman.h:76:11: note: previous declaration of ‘ObtemPosicaoPacman’ with type ‘tPosicao *(tPacman *)’
+   76 | tPosicao* ObtemPosicaoPacman(tPacman* pacman);
+      |           ^~~~~~~~~~~~~~~~~~
+tPacman.c:85:5: error: conflicting types for ‘EstaVivoPacman’; have ‘int(tPacman *)’
+   85 | int EstaVivoPacman(tPacman* pacman);
+      |     ^~~~~~~~~~~~~~
+In file included from tPacman.c:1:
+tPacman.h:83:5: note: previous declaration of ‘EstaVivoPacman’ with type ‘int(tPacman *)’
+   83 | int EstaVivoPacman(tPacman* pacman);
+      |     ^~~~~~~~~~~~~~
+tPacman.c:98:6: error: conflicting types for ‘MovePacman’; have ‘void(tPacman *, tMapa *, COMANDO)’
+   98 | void MovePacman(tPacman* pacman, tMapa* mapa, COMANDO comando);
+      |      ^~~~~~~~~~
+In file included from tPacman.c:1:
+tPacman.h:96:6: note: previous declaration of ‘MovePacman’ with type ‘void(tPacman *, tMapa *, COMANDO)’
+   96 | void MovePacman(tPacman* pacman, tMapa* mapa, COMANDO comando);
+      |      ^~~~~~~~~~
+tPacman.c:109:6: error: conflicting types for ‘CriaTrilhaPacman’; have ‘void(tPacman *, int,  int)’
+  109 | void CriaTrilhaPacman(tPacman* pacman, int nLinhas, int nColunas);
+      |      ^~~~~~~~~~~~~~~~
+In file included from tPacman.c:1:
+tPacman.h:107:6: note: previous declaration of ‘CriaTrilhaPacman’ with type ‘void(tPacman *, int,  int)’
+  107 | void CriaTrilhaPacman(tPacman* pacman, int nLinhas, int nColunas);
+      |      ^~~~~~~~~~~~~~~~
+tPacman.c:118:6: error: conflicting types for ‘AtualizaTrilhaPacman’; have ‘void(tPacman *)’
+  118 | void AtualizaTrilhaPacman(tPacman* pacman);
+      |      ^~~~~~~~~~~~~~~~~~~~
+In file included from tPacman.c:1:
+tPacman.h:116:6: note: previous declaration of ‘AtualizaTrilhaPacman’ with type ‘void(tPacman *)’
+  116 | void AtualizaTrilhaPacman(tPacman* pacman);
+      |      ^~~~~~~~~~~~~~~~~~~~
+tPacman.c:125:6: error: conflicting types for ‘SalvaTrilhaPacman’; have ‘void(tPacman *)’
+  125 | void SalvaTrilhaPacman(tPacman* pacman);
+      |      ^~~~~~~~~~~~~~~~~
+In file included from tPacman.c:1:
+tPacman.h:123:6: note: previous declaration of ‘SalvaTrilhaPacman’ with type ‘void(tPacman *)’
+  123 | void SalvaTrilhaPacman(tPacman* pacman);
+      |      ^~~~~~~~~~~~~~~~~
+tPacman.c:137:6: error: conflicting types for ‘InsereNovoMovimentoSignificativoPacman’; have ‘void(tPacman *, COMANDO,  const char *)’
+  137 | void InsereNovoMovimentoSignificativoPacman(tPacman* pacman, COMANDO comando, const char* acao);
+      |      ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+In file included from tPacman.c:1:
+tPacman.h:135:6: note: previous declaration of ‘InsereNovoMovimentoSignificativoPacman’ with type ‘void(tPacman *, COMANDO,  const char *)’
+  135 | void InsereNovoMovimentoSignificativoPacman(tPacman* pacman, COMANDO comando, const char* acao);
+      |      ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+tPacman.c:144:6: error: conflicting types for ‘MataPacman’; have ‘void(tPacman *)’
+  144 | void MataPacman(tPacman* pacman);
+      |      ^~~~~~~~~~
+In file included from tPacman.c:1:
+tPacman.h:142:6: note: previous declaration of ‘MataPacman’ with type ‘void(tPacman *)’
+  142 | void MataPacman(tPacman* pacman);
+      |      ^~~~~~~~~~
+tPacman.c:152:6: error: conflicting types for ‘DesalocaPacman’; have ‘void(tPacman *)’
+  152 | void DesalocaPacman(tPacman* pacman);
+      |      ^~~~~~~~~~~~~~
+In file included from tPacman.c:1:
+tPacman.h:150:6: note: previous declaration of ‘DesalocaPacman’ with type ‘void(tPacman *)’
+  150 | void DesalocaPacman(tPacman* pacman);
+      |      ^~~~~~~~~~~~~~
+tPacman.c:159:5: error: conflicting types for ‘ObtemNumeroAtualMovimentosPacman’; have ‘int(tPacman *)’
+  159 | int ObtemNumeroAtualMovimentosPacman(tPacman* pacman);
+      |     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+In file included from tPacman.c:1:
+tPacman.h:157:5: note: previous declaration of ‘ObtemNumeroAtualMovimentosPacman’ with type ‘int(tPacman *)’
+  157 | int ObtemNumeroAtualMovimentosPacman(tPacman* pacman);
+      |     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+tPacman.c:166:5: error: conflicting types for ‘ObtemNumeroMovimentosSemPontuarPacman’; have ‘int(tPacman *)’
+  166 | int ObtemNumeroMovimentosSemPontuarPacman(tPacman* pacman);
+      |     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+In file included from tPacman.c:1:
+tPacman.h:164:5: note: previous declaration of ‘ObtemNumeroMovimentosSemPontuarPacman’ with type ‘int(tPacman *)’
+  164 | int ObtemNumeroMovimentosSemPontuarPacman(tPacman* pacman);
+      |     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+tPacman.c:173:5: error: conflicting types for ‘ObtemNumeroColisoesParedePacman’; have ‘int(tPacman *)’
+  173 | int ObtemNumeroColisoesParedePacman(tPacman* pacman);
+      |     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+In file included from tPacman.c:1:
+tPacman.h:171:5: note: previous declaration of ‘ObtemNumeroColisoesParedePacman’ with type ‘int(tPacman *)’
+  171 | int ObtemNumeroColisoesParedePacman(tPacman* pacman);
+      |     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+tPacman.c:180:5: error: conflicting types for ‘ObtemNumeroMovimentosBaixoPacman’; have ‘int(tPacman *)’
+  180 | int ObtemNumeroMovimentosBaixoPacman(tPacman* pacman);
+      |     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+In file included from tPacman.c:1:
+tPacman.h:178:5: note: previous declaration of ‘ObtemNumeroMovimentosBaixoPacman’ with type ‘int(tPacman *)’
+  178 | int ObtemNumeroMovimentosBaixoPacman(tPacman* pacman);
+      |     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+tPacman.c:187:5: error: conflicting types for ‘ObtemNumeroFrutasComidasBaixoPacman’; have ‘int(tPacman *)’
+  187 | int ObtemNumeroFrutasComidasBaixoPacman(tPacman* pacman);
+      |     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+In file included from tPacman.c:1:
+tPacman.h:185:5: note: previous declaration of ‘ObtemNumeroFrutasComidasBaixoPacman’ with type ‘int(tPacman *)’
+  185 | int ObtemNumeroFrutasComidasBaixoPacman(tPacman* pacman);
+      |     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+tPacman.c:194:5: error: conflicting types for ‘ObtemNumeroColisoesParedeBaixoPacman’; have ‘int(tPacman *)’
+  194 | int ObtemNumeroColisoesParedeBaixoPacman(tPacman* pacman);
+      |     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+In file included from tPacman.c:1:
+tPacman.h:192:5: note: previous declaration of ‘ObtemNumeroColisoesParedeBaixoPacman’ with type ‘int(tPacman *)’
+  192 | int ObtemNumeroColisoesParedeBaixoPacman(tPacman* pacman);
+      |     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+tPacman.c:201:5: error: conflicting types for ‘ObtemNumeroMovimentosCimaPacman’; have ‘int(tPacman *)’
+  201 | int ObtemNumeroMovimentosCimaPacman(tPacman* pacman);
+      |     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+In file included from tPacman.c:1:
+tPacman.h:199:5: note: previous declaration of ‘ObtemNumeroMovimentosCimaPacman’ with type ‘int(tPacman *)’
+  199 | int ObtemNumeroMovimentosCimaPacman(tPacman* pacman);
+      |     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+tPacman.c:208:5: error: conflicting types for ‘ObtemNumeroFrutasComidasCimaPacman’; have ‘int(tPacman *)’
+  208 | int ObtemNumeroFrutasComidasCimaPacman(tPacman* pacman);
+      |     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+In file included from tPacman.c:1:
+tPacman.h:206:5: note: previous declaration of ‘ObtemNumeroFrutasComidasCimaPacman’ with type ‘int(tPacman *)’
+  206 | int ObtemNumeroFrutasComidasCimaPacman(tPacman* pacman);
+      |     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+tPacman.c:215:5: error: conflicting types for ‘ObtemNumeroColisoesParedeCimaPacman’; have ‘int(tPacman *)’
+  215 | int ObtemNumeroColisoesParedeCimaPacman(tPacman* pacman);
+      |     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+In file included from tPacman.c:1:
+tPacman.h:213:5: note: previous declaration of ‘ObtemNumeroColisoesParedeCimaPacman’ with type ‘int(tPacman *)’
+  213 | int ObtemNumeroColisoesParedeCimaPacman(tPacman* pacman);
+      |     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+tPacman.c:222:5: error: conflicting types for ‘ObtemNumeroMovimentosEsquerdaPacman’; have ‘int(tPacman *)’
+  222 | int ObtemNumeroMovimentosEsquerdaPacman(tPacman* pacman);
+      |     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+In file included from tPacman.c:1:
+tPacman.h:220:5: note: previous declaration of ‘ObtemNumeroMovimentosEsquerdaPacman’ with type ‘int(tPacman *)’
+  220 | int ObtemNumeroMovimentosEsquerdaPacman(tPacman* pacman);
+      |     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+tPacman.c:229:5: error: conflicting types for ‘ObtemNumeroFrutasComidasEsquerdaPacman’; have ‘int(tPacman *)’
+  229 | int ObtemNumeroFrutasComidasEsquerdaPacman(tPacman* pacman);
+      |     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+In file included from tPacman.c:1:
+tPacman.h:227:5: note: previous declaration of ‘ObtemNumeroFrutasComidasEsquerdaPacman’ with type ‘int(tPacman *)’
+  227 | int ObtemNumeroFrutasComidasEsquerdaPacman(tPacman* pacman);
+      |     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+tPacman.c:236:5: error: conflicting types for ‘ObtemNumeroColisoesParedeEsquerdaPacman’; have ‘int(tPacman *)’
+  236 | int ObtemNumeroColisoesParedeEsquerdaPacman(tPacman* pacman);
+      |     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+In file included from tPacman.c:1:
+tPacman.h:234:5: note: previous declaration of ‘ObtemNumeroColisoesParedeEsquerdaPacman’ with type ‘int(tPacman *)’
+  234 | int ObtemNumeroColisoesParedeEsquerdaPacman(tPacman* pacman);
+      |     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+tPacman.c:243:5: error: conflicting types for ‘ObtemNumeroMovimentosDireitaPacman’; have ‘int(tPacman *)’
+  243 | int ObtemNumeroMovimentosDireitaPacman(tPacman* pacman);
+      |     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+In file included from tPacman.c:1:
+tPacman.h:241:5: note: previous declaration of ‘ObtemNumeroMovimentosDireitaPacman’ with type ‘int(tPacman *)’
+  241 | int ObtemNumeroMovimentosDireitaPacman(tPacman* pacman);
+      |     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+tPacman.c:250:5: error: conflicting types for ‘ObtemNumeroFrutasComidasDireitaPacman’; have ‘int(tPacman *)’
+  250 | int ObtemNumeroFrutasComidasDireitaPacman(tPacman* pacman);
+      |     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+In file included from tPacman.c:1:
+tPacman.h:248:5: note: previous declaration of ‘ObtemNumeroFrutasComidasDireitaPacman’ with type ‘int(tPacman *)’
+  248 | int ObtemNumeroFrutasComidasDireitaPacman(tPacman* pacman);
+      |     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+tPacman.c:257:5: error: conflicting types for ‘ObtemNumeroColisoesParedeDireitaPacman’; have ‘int(tPacman *)’
+  257 | int ObtemNumeroColisoesParedeDireitaPacman(tPacman* pacman);
+      |     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+In file included from tPacman.c:1:
+tPacman.h:255:5: note: previous declaration of ‘ObtemNumeroColisoesParedeDireitaPacman’ with type ‘int(tPacman *)’
+  255 | int ObtemNumeroColisoesParedeDireitaPacman(tPacman* pacman);
+      |     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+tPacman.c:264:5: error: conflicting types for ‘ObtemNumeroMovimentosSignificativosPacman’; have ‘int(tPacman *)’
+  264 | int ObtemNumeroMovimentosSignificativosPacman(tPacman* pacman);
+      |     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+In file included from tPacman.c:1:
+tPacman.h:262:5: note: previous declaration of ‘ObtemNumeroMovimentosSignificativosPacman’ with type ‘int(tPacman *)’
+  262 | int ObtemNumeroMovimentosSignificativosPacman(tPacman* pacman);
+      |     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+tPacman.c:271:5: error: conflicting types for ‘ObtemPontuacaoAtualPacman’; have ‘int(tPacman *)’
+  271 | int ObtemPontuacaoAtualPacman(tPacman* pacman);
+      |     ^~~~~~~~~~~~~~~~~~~~~~~~~
+In file included from tPacman.c:1:
+tPacman.h:269:5: note: previous declaration of ‘ObtemPontuacaoAtualPacman’ with type ‘int(tPacman *)’
+  269 | int ObtemPontuacaoAtualPacman(tPacman* pacman);
+      |     ^~~~~~~~~~~~~~~~~~~~~~~~~

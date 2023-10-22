@@ -2,7 +2,6 @@
 
 #define COMIDA '*'
 #define PAREDE '#'
-//#define TUNEL '@'
 
 /**
  * Dado o arquivo de configurações, cria o mapa dinamicamente e 
@@ -44,8 +43,8 @@ tMapa* CriaMapa(const char* caminhoConfig) {
     mapa->nColunas = 0;
     mapa->nLinhas = 0;
     mapa->nFrutasAtual = 0;
-    mapa->grid = NULL;
-    mapa->grid[0] = NULL;
+    //mapa->grid = NULL;
+    //mapa->grid[0] = NULL;
     fscanf(arq_mapa, "%d\n", &mapa->nMaximoMovimentos);
     
     mapa->grid = (char **)malloc(sizeof(char *)); 
@@ -58,16 +57,33 @@ tMapa* CriaMapa(const char* caminhoConfig) {
         mapa->nColunas++;
         mapa->grid[0] = realloc(mapa->grid[0], mapa->nColunas);
         mapa->grid[0][mapa->nColunas - 1] = simb; 
-    }
-    fscanf(arq_mapa, "%*c");
-    while(fscanf(arq_mapa, "%c", &simb) == 1){
-        for(int i=0; i < mapa->nColunas; i++){
-            mapa->grid = realloc(mapa->grid, mapa->nLinhas);
+        if(simb == COMIDA){
+            mapa->nFrutasAtual++;
         }
-        
     }
+    
+    fscanf(arq_mapa, "%*c");
+    
+    while(fscanf(arq_mapa, "%c", &simb) == 1){
+        mapa->nLinhas++;
+        mapa->grid = realloc(mapa->grid, (mapa->nLinhas+1) * sizeof(char *)); 
+        mapa->grid[mapa->nLinhas] = (char *) malloc (mapa->nColunas * sizeof(char));
+        
+        if(simb == COMIDA){
+            mapa->nFrutasAtual++;
+        }
 
-
+        for(int i=1; i < mapa->nColunas; i++){
+            fscanf(arq_mapa, "%c", &simb);
+            mapa->grid[mapa->nLinhas][i] = simb;  
+            if(simb == COMIDA){
+                mapa->nFrutasAtual++;
+            }
+        } 
+        fscanf(arq_mapa, "%*c");
+    }
+    mapa->nLinhas++;
+    
     fclose(arq_entrada);
     fclose(arq_mapa);
     return mapa;
@@ -148,7 +164,6 @@ int ObtemNumeroColunasMapa(tMapa* mapa){
  */
 int ObtemQuantidadeFrutasIniciaisMapa(tMapa* mapa){
     return mapa->nFrutasAtual;
-    //ABRIR O ARQUIVO DNV P VERIFICAR A QTD INICIAL?
 }
 
 /**
@@ -243,10 +258,12 @@ void EntraTunelMapa(tMapa* mapa, tPosicao* posicao){
  * \param mapa mapa
  */
 void DesalocaMapa(tMapa* mapa){
-    for(int i=0; i < mapa->nLinhas; i++){
-        free(mapa->grid[i]);
+    if(mapa != NULL){
+        for(int i=0; i < mapa->nLinhas; i++){
+            free(mapa->grid[i]);
+        }
+        free(mapa->grid);
+        DesalocaTunel(mapa->tunel); 
+        free(mapa);
     }
-    free(mapa->grid);
-    DesalocaTunel(mapa->tunel); 
-    free(mapa);
 }

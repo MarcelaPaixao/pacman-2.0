@@ -11,7 +11,6 @@ Movimento 44 (a) pegou comida
 Movimento 45 (a) pegou comida
 Movimento 50 (a) pegou comida
 Movimento 55 (s) pegou comida
-Movimento 58 (s) pegou comida
 Movimento 61 (d) pegou comida
 Movimento 62 (d) pegou comida
 Movimento 63 (d) pegou comida
@@ -20,14 +19,10 @@ Movimento 66 (d) pegou comida
 Movimento 71 (w) colidiu com a parede
 Movimento 73 (w) pegou comida
 Movimento 79 (s) pegou comida
-Movimento 84 (a) pegou comida
-Movimento 88 (s) pegou comida
 Movimento 94 (w) pegou comida
-Movimento 96 (a) colidiu com a parede
-Movimento 98 (s) pegou comida
-Movimento 103 (s) pegou comida
-Movimento 104 (s) colidiu com a parede
-Movimento 106 (d) pegou comida
-Movimento 111 (s) pegou comida
-Movimento 117 (a) pegou comida
-Movimento 119 (d) fim de jogo por encostar em um fantasma
+Movimento 106 (d) colidiu com a parede
+Movimento 107 (d) colidiu com a parede
+Movimento 114 (w) colidiu com a parede
+Movimento 115 (w) colidiu com a parede
+Movimento 116 (w) colidiu com a parede
+Movimento 119 (d) pegou comida

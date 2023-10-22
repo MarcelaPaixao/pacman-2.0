@@ -1,39 +1,51 @@
-==61629== Memcheck, a memory error detector
-==61629== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
-==61629== Using Valgrind-3.18.1 and LibVEX; rerun with -h for copyright info
-==61629== Command: Resultados/Marcela/tMapa/prog Resultados/Marcela/tMapa/Casos/02
-==61629== Parent PID: 61628
-==61629== 
-==61629== Invalid write of size 8
-==61629==    at 0x10BF08: CriaTrilhaPacman (in /home/marcela_paixao/trab/Resultados/Marcela/tMapa/prog)
-==61629==    by 0x10A7BF: CriaJogo (in /home/marcela_paixao/trab/Resultados/Marcela/tMapa/prog)
-==61629==    by 0x10B85F: main (in /home/marcela_paixao/trab/Resultados/Marcela/tMapa/prog)
-==61629==  Address 0x0 is not stack'd, malloc'd or (recently) free'd
-==61629== 
-==61629== 
-==61629== Process terminating with default action of signal 11 (SIGSEGV)
-==61629==  Access not within mapped region at address 0x0
-==61629==    at 0x10BF08: CriaTrilhaPacman (in /home/marcela_paixao/trab/Resultados/Marcela/tMapa/prog)
-==61629==    by 0x10A7BF: CriaJogo (in /home/marcela_paixao/trab/Resultados/Marcela/tMapa/prog)
-==61629==    by 0x10B85F: main (in /home/marcela_paixao/trab/Resultados/Marcela/tMapa/prog)
-==61629==  If you believe this happened as a result of a stack
-==61629==  overflow in your program's main thread (unlikely but
-==61629==  possible), you can try to increase the size of the
-==61629==  main thread stack using the --main-stacksize= flag.
-==61629==  The main thread stack size used in this run was 8388608.
-==61629== 
-==61629== HEAP SUMMARY:
-==61629==     in use at exit: 252 bytes in 5 blocks
-==61629==   total heap usage: 5 allocs, 0 frees, 252 bytes allocated
-==61629== 
-==61629== LEAK SUMMARY:
-==61629==    definitely lost: 0 bytes in 0 blocks
-==61629==    indirectly lost: 0 bytes in 0 blocks
-==61629==      possibly lost: 0 bytes in 0 blocks
-==61629==    still reachable: 252 bytes in 5 blocks
-==61629==         suppressed: 0 bytes in 0 blocks
-==61629== Reachable blocks (those to which a pointer was found) are not shown.
-==61629== To see them, rerun with: --leak-check=full --show-leak-kinds=all
-==61629== 
-==61629== For lists of detected and suppressed errors, rerun with: -s
-==61629== ERROR SUMMARY: 1 errors from 1 contexts (suppressed: 0 from 0)
+==110133== Memcheck, a memory error detector
+==110133== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==110133== Using Valgrind-3.18.1 and LibVEX; rerun with -h for copyright info
+==110133== Command: Resultados/Marcela/tMapa/prog Resultados/Marcela/tMapa/Casos/02
+==110133== Parent PID: 110132
+==110133== 
+==110133== Conditional jump or move depends on uninitialised value(s)
+==110133==    at 0x484DC80: realloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==110133==    by 0x10BB27: CriaMapa (in /home/marcela_paixao/trab/Resultados/Marcela/tMapa/prog)
+==110133==    by 0x10A767: CriaJogo (in /home/marcela_paixao/trab/Resultados/Marcela/tMapa/prog)
+==110133==    by 0x10B8BF: main (in /home/marcela_paixao/trab/Resultados/Marcela/tMapa/prog)
+==110133== 
+==110133== Conditional jump or move depends on uninitialised value(s)
+==110133==    at 0x10BDDB: ObtemPosicaoItemMapa (in /home/marcela_paixao/trab/Resultados/Marcela/tMapa/prog)
+==110133==    by 0x10A7BA: CriaJogo (in /home/marcela_paixao/trab/Resultados/Marcela/tMapa/prog)
+==110133==    by 0x10B8BF: main (in /home/marcela_paixao/trab/Resultados/Marcela/tMapa/prog)
+==110133== 
+==110133== Invalid read of size 8
+==110133==    at 0x10C418: CriaTrilhaPacman (in /home/marcela_paixao/trab/Resultados/Marcela/tMapa/prog)
+==110133==    by 0x10A81F: CriaJogo (in /home/marcela_paixao/trab/Resultados/Marcela/tMapa/prog)
+==110133==    by 0x10B8BF: main (in /home/marcela_paixao/trab/Resultados/Marcela/tMapa/prog)
+==110133==  Address 0x50 is not stack'd, malloc'd or (recently) free'd
+==110133== 
+==110133== 
+==110133== Process terminating with default action of signal 11 (SIGSEGV)
+==110133==  Access not within mapped region at address 0x50
+==110133==    at 0x10C418: CriaTrilhaPacman (in /home/marcela_paixao/trab/Resultados/Marcela/tMapa/prog)
+==110133==    by 0x10A81F: CriaJogo (in /home/marcela_paixao/trab/Resultados/Marcela/tMapa/prog)
+==110133==    by 0x10B8BF: main (in /home/marcela_paixao/trab/Resultados/Marcela/tMapa/prog)
+==110133==  If you believe this happened as a result of a stack
+==110133==  overflow in your program's main thread (unlikely but
+==110133==  possible), you can try to increase the size of the
+==110133==  main thread stack using the --main-stacksize= flag.
+==110133==  The main thread stack size used in this run was 8388608.
+==110133== 
+==110133== HEAP SUMMARY:
+==110133==     in use at exit: 349 bytes in 15 blocks
+==110133==   total heap usage: 34 allocs, 19 frees, 5,713 bytes allocated
+==110133== 
+==110133== LEAK SUMMARY:
+==110133==    definitely lost: 0 bytes in 0 blocks
+==110133==    indirectly lost: 0 bytes in 0 blocks
+==110133==      possibly lost: 0 bytes in 0 blocks
+==110133==    still reachable: 349 bytes in 15 blocks
+==110133==         suppressed: 0 bytes in 0 blocks
+==110133== Reachable blocks (those to which a pointer was found) are not shown.
+==110133== To see them, rerun with: --leak-check=full --show-leak-kinds=all
+==110133== 
+==110133== Use --track-origins=yes to see where uninitialised values come from
+==110133== For lists of detected and suppressed errors, rerun with: -s
+==110133== ERROR SUMMARY: 10 errors from 3 contexts (suppressed: 0 from 0)

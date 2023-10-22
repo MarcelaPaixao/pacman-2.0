@@ -45,4 +45,3 @@ Movimento 242 (w) colidiu com a parede
 Movimento 243 (w) colidiu com a parede
 Movimento 248 (w) colidiu com a parede
 Movimento 251 (s) colidiu com a parede
-Movimento 254 (a) colidiu com a parede

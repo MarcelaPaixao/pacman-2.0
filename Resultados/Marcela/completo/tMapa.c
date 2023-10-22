@@ -2,7 +2,6 @@
 
 #define COMIDA '*'
 #define PAREDE '#'
-//#define TUNEL '@'
 
 /**
  * Dado o arquivo de configurações, cria o mapa dinamicamente e 
@@ -11,7 +10,7 @@
  * \param caminho caminho do arquivo com as configurações do mapa
  */
 tMapa* CriaMapa(const char* caminhoConfig) {
-   /* FILE *arq_entrada, *arq_mapa;
+    FILE *arq_entrada, *arq_mapa;
     char nome_diretorio[1000], nome_mapa[1000];
 
     if (caminhoConfig == NULL) {
@@ -43,40 +42,52 @@ tMapa* CriaMapa(const char* caminhoConfig) {
     }
     mapa->nColunas = 0;
     mapa->nLinhas = 0;
-    mapa->grid = NULL;
+    mapa->nFrutasAtual = 0;
+    //mapa->grid = NULL;
+    //mapa->grid[0] = NULL;
     fscanf(arq_mapa, "%d\n", &mapa->nMaximoMovimentos);
     
-    char simb = '0';
-    while(!feof(arq_mapa)){
-        while(simb != '\n'){
-            fscanf(arq_mapa, "%c", &simb);
-            mapa->nColunas++;
+    mapa->grid = (char **)malloc(sizeof(char *)); 
+    char simb;
+    while(1){
+        fscanf(arq_mapa, "%c", &simb);
+        if(simb == '\n'){
+            break;
         }
-        fscanf(arq_mapa, "%*c");
+        mapa->nColunas++;
+        mapa->grid[0] = realloc(mapa->grid[0], mapa->nColunas);
+        mapa->grid[0][mapa->nColunas - 1] = simb; 
+        if(simb == COMIDA){
+            mapa->nFrutasAtual++;
+        }
+    }
+    
+    fscanf(arq_mapa, "%*c");
+    
+    while(fscanf(arq_mapa, "%c", &simb) == 1){
         mapa->nLinhas++;
-    }
-
-    mapa->grid = (char **)malloc(mapa->nLinhas * sizeof(char *));
-    for (int i = 0; i < mapa->nLinhas; i++) {
-        mapa->grid[i] = (char *)malloc(mapa->nColunas * sizeof(char));
-    }
-
-    for (int i = 0; i < mapa->nLinhas; i++) {
-        for (int j = 0; j < mapa->nColunas; j++) {
-            simb = fscanf(arq_mapa, "%c", &simb);
-            if(simb != '\n'){
-                mapa->grid[i][j] = simb;
-            }
-            else if(simb == '\n'){
-                fscanf(arq_mapa, "%*c");
-            }
+        mapa->grid = realloc(mapa->grid, (mapa->nLinhas+1) * sizeof(char *)); 
+        mapa->grid[mapa->nLinhas] = (char *) malloc (mapa->nColunas * sizeof(char));
+        
+        if(simb == COMIDA){
+            mapa->nFrutasAtual++;
         }
-    }
 
+        for(int i=1; i < mapa->nColunas; i++){
+            fscanf(arq_mapa, "%c", &simb);
+            mapa->grid[mapa->nLinhas][i] = simb;  
+            if(simb == COMIDA){
+                mapa->nFrutasAtual++;
+            }
+        } 
+        fscanf(arq_mapa, "%*c");
+    }
+    mapa->nLinhas++;
+    
     fclose(arq_entrada);
     fclose(arq_mapa);
     return mapa;
-    */
+    
 }
 
 /**
@@ -88,7 +99,7 @@ tMapa* CriaMapa(const char* caminhoConfig) {
  * \param item item a ser procurado no mapa
  */
 tPosicao* ObtemPosicaoItemMapa(tMapa* mapa, char item){
-    /*for(int i=0; i < mapa->nLinhas; i++){
+    for(int i=0; i < mapa->nLinhas; i++){
         for(int j=0; j < mapa->nColunas; j++){
             if(mapa->grid[i][j] == item){
                 tPosicao *posicao = CriaPosicao(i, j);
@@ -96,7 +107,7 @@ tPosicao* ObtemPosicaoItemMapa(tMapa* mapa, char item){
             }
         }
     }
-    return NULL;*/
+    return NULL;
 }
 
 /**
@@ -153,7 +164,6 @@ int ObtemNumeroColunasMapa(tMapa* mapa){
  */
 int ObtemQuantidadeFrutasIniciaisMapa(tMapa* mapa){
     return mapa->nFrutasAtual;
-    //ABRIR O ARQUIVO DNV P VERIFICAR A QTD INICIAL?
 }
 
 /**
@@ -248,10 +258,12 @@ void EntraTunelMapa(tMapa* mapa, tPosicao* posicao){
  * \param mapa mapa
  */
 void DesalocaMapa(tMapa* mapa){
-    for(int i=0; i < mapa->nLinhas; i++){
-        free(mapa->grid[i]);
+    if(mapa != NULL){
+        for(int i=0; i < mapa->nLinhas; i++){
+            free(mapa->grid[i]);
+        }
+        free(mapa->grid);
+        DesalocaTunel(mapa->tunel); 
+        free(mapa);
     }
-    free(mapa->grid);
-    DesalocaTunel(mapa->tunel); 
-    free(mapa);
 }

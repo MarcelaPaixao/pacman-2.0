@@ -10,8 +10,6 @@ Movimento 17 (s) colidiu com a parede
 Movimento 19 (a) pegou comida
 Movimento 33 (d) pegou comida
 Movimento 39 (s) pegou comida
-Movimento 44 (a) pegou comida
-Movimento 46 (w) pegou comida
 Movimento 54 (d) pegou comida
 Movimento 55 (s) pegou comida
 Movimento 57 (w) pegou comida

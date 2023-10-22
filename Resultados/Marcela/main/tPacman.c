@@ -1,8 +1,4 @@
-
-
-#include "tPosicao.h"
-#include "tMovimento.h"
-#include "tMapa.h"
+#include "tPacman.h"
 
 typedef struct tPacman{
     /* Posição atual do pacman (linha,coluna) */
@@ -48,7 +44,14 @@ typedef struct tPacman{
  * Caso não dê erros, retorna o ponteiro para o tPacman alocado.
  * \param posicao Ponteiro para tPosicao
  */
-tPacman* CriaPacman(tPosicao* posicao);
+tPacman* CriaPacman(tPosicao* posicao){
+    tPacman * pacman = (tPacman *) malloc (sizeof(tPacman));
+    if(pacman == NULL || posicao == NULL){
+        return NULL;
+    }
+    AtualizaPosicao(pacman->posicaoAtual, posicao);
+    return pacman;
+}
 
 /**
  * Clona o pacman dinamicamente, construtor de cópia.
@@ -266,6 +269,3 @@ int ObtemNumeroMovimentosSignificativosPacman(tPacman* pacman);
  * \param pacman pacman
  */
 int ObtemPontuacaoAtualPacman(tPacman* pacman);
-
-
-

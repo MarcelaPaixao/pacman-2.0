@@ -5,8 +5,6 @@ Movimento 24 (a) pegou comida
 Movimento 30 (a) pegou comida
 Movimento 32 (s) pegou comida
 Movimento 34 (a) pegou comida
-Movimento 39 (a) pegou comida
-Movimento 42 (w) pegou comida
 Movimento 53 (s) colidiu com a parede
 Movimento 54 (s) colidiu com a parede
 Movimento 64 (d) pegou comida

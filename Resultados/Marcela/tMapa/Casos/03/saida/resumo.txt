@@ -29,8 +29,6 @@ Movimento 79 (w) pegou comida
 Movimento 82 (a) pegou comida
 Movimento 87 (a) pegou comida
 Movimento 89 (a) pegou comida
-Movimento 90 (a) pegou comida
-Movimento 93 (s) pegou comida
 Movimento 95 (s) pegou comida
 Movimento 99 (s) pegou comida
 Movimento 100 (d) pegou comida
@@ -40,8 +38,6 @@ Movimento 108 (d) pegou comida
 Movimento 111 (d) pegou comida
 Movimento 116 (a) pegou comida
 Movimento 125 (s) pegou comida
-Movimento 134 (a) pegou comida
-Movimento 135 (s) pegou comida
 Movimento 142 (d) pegou comida
 Movimento 147 (d) pegou comida
 Movimento 150 (w) colidiu com a parede
@@ -70,7 +66,6 @@ Movimento 222 (w) pegou comida
 Movimento 223 (a) pegou comida
 Movimento 226 (s) colidiu com a parede
 Movimento 228 (s) pegou comida
-Movimento 234 (a) pegou comida
 Movimento 241 (d) pegou comida
 Movimento 243 (w) pegou comida
 Movimento 250 (d) pegou comida
@@ -204,4 +199,3 @@ Movimento 671 (s) pegou comida
 Movimento 707 (w) colidiu com a parede
 Movimento 708 (w) colidiu com a parede
 Movimento 717 (s) colidiu com a parede
-Movimento 722 (s) pegou comida

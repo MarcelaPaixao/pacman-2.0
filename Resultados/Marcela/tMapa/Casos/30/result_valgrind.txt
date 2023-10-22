@@ -1,0 +1,94 @@
+==125968== Memcheck, a memory error detector
+==125968== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==125968== Using Valgrind-3.18.1 and LibVEX; rerun with -h for copyright info
+==125968== Command: Resultados/Marcela/tMapa/prog Resultados/Marcela/tMapa/Casos/30
+==125968== Parent PID: 125967
+==125968== 
+==125968== Conditional jump or move depends on uninitialised value(s)
+==125968==    at 0x484DC80: realloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==125968==    by 0x10BB27: CriaMapa (in /home/marcela_paixao/trab/Resultados/Marcela/tMapa/prog)
+==125968==    by 0x10A767: CriaJogo (in /home/marcela_paixao/trab/Resultados/Marcela/tMapa/prog)
+==125968==    by 0x10B8BF: main (in /home/marcela_paixao/trab/Resultados/Marcela/tMapa/prog)
+==125968== 
+==125968== Conditional jump or move depends on uninitialised value(s)
+==125968==    at 0x10BDDB: ObtemPosicaoItemMapa (in /home/marcela_paixao/trab/Resultados/Marcela/tMapa/prog)
+==125968==    by 0x10A7BA: CriaJogo (in /home/marcela_paixao/trab/Resultados/Marcela/tMapa/prog)
+==125968==    by 0x10B8BF: main (in /home/marcela_paixao/trab/Resultados/Marcela/tMapa/prog)
+==125968== 
+==125968== Conditional jump or move depends on uninitialised value(s)
+==125968==    at 0x10BDDB: ObtemPosicaoItemMapa (in /home/marcela_paixao/trab/Resultados/Marcela/tMapa/prog)
+==125968==    by 0x10A84B: CriaJogo (in /home/marcela_paixao/trab/Resultados/Marcela/tMapa/prog)
+==125968==    by 0x10B8BF: main (in /home/marcela_paixao/trab/Resultados/Marcela/tMapa/prog)
+==125968== 
+==125968== Conditional jump or move depends on uninitialised value(s)
+==125968==    at 0x10BDDB: ObtemPosicaoItemMapa (in /home/marcela_paixao/trab/Resultados/Marcela/tMapa/prog)
+==125968==    by 0x10A864: CriaJogo (in /home/marcela_paixao/trab/Resultados/Marcela/tMapa/prog)
+==125968==    by 0x10B8BF: main (in /home/marcela_paixao/trab/Resultados/Marcela/tMapa/prog)
+==125968== 
+==125968== Conditional jump or move depends on uninitialised value(s)
+==125968==    at 0x10BDDB: ObtemPosicaoItemMapa (in /home/marcela_paixao/trab/Resultados/Marcela/tMapa/prog)
+==125968==    by 0x10A87D: CriaJogo (in /home/marcela_paixao/trab/Resultados/Marcela/tMapa/prog)
+==125968==    by 0x10B8BF: main (in /home/marcela_paixao/trab/Resultados/Marcela/tMapa/prog)
+==125968== 
+==125968== Conditional jump or move depends on uninitialised value(s)
+==125968==    at 0x10BDDB: ObtemPosicaoItemMapa (in /home/marcela_paixao/trab/Resultados/Marcela/tMapa/prog)
+==125968==    by 0x10A896: CriaJogo (in /home/marcela_paixao/trab/Resultados/Marcela/tMapa/prog)
+==125968==    by 0x10B8BF: main (in /home/marcela_paixao/trab/Resultados/Marcela/tMapa/prog)
+==125968== 
+==125968== Conditional jump or move depends on uninitialised value(s)
+==125968==    at 0x10ABBA: PrintaGridMapa (in /home/marcela_paixao/trab/Resultados/Marcela/tMapa/prog)
+==125968==    by 0x10AF86: SalvarInicializacao (in /home/marcela_paixao/trab/Resultados/Marcela/tMapa/prog)
+==125968==    by 0x10B387: ExecutaJogo (in /home/marcela_paixao/trab/Resultados/Marcela/tMapa/prog)
+==125968==    by 0x10B8CF: main (in /home/marcela_paixao/trab/Resultados/Marcela/tMapa/prog)
+==125968== 
+==125968== Conditional jump or move depends on uninitialised value(s)
+==125968==    at 0x484ED19: strlen (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==125968==    by 0x48E0EE7: puts (ioputs.c:35)
+==125968==    by 0x10AD55: PrintaGridMapa (in /home/marcela_paixao/trab/Resultados/Marcela/tMapa/prog)
+==125968==    by 0x10AF86: SalvarInicializacao (in /home/marcela_paixao/trab/Resultados/Marcela/tMapa/prog)
+==125968==    by 0x10B387: ExecutaJogo (in /home/marcela_paixao/trab/Resultados/Marcela/tMapa/prog)
+==125968==    by 0x10B8CF: main (in /home/marcela_paixao/trab/Resultados/Marcela/tMapa/prog)
+==125968== 
+==125968== Conditional jump or move depends on uninitialised value(s)
+==125968==    at 0x484ED19: strlen (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==125968==    by 0x48D6DB0: __vfprintf_internal (vfprintf-internal.c:1517)
+==125968==    by 0x48C0749: fprintf (fprintf.c:32)
+==125968==    by 0x10AD7A: PrintaGridMapa (in /home/marcela_paixao/trab/Resultados/Marcela/tMapa/prog)
+==125968==    by 0x10AF86: SalvarInicializacao (in /home/marcela_paixao/trab/Resultados/Marcela/tMapa/prog)
+==125968==    by 0x10B387: ExecutaJogo (in /home/marcela_paixao/trab/Resultados/Marcela/tMapa/prog)
+==125968==    by 0x10B8CF: main (in /home/marcela_paixao/trab/Resultados/Marcela/tMapa/prog)
+==125968== 
+==125968== Conditional jump or move depends on uninitialised value(s)
+==125968==    at 0x10C127: PossuiTunelMapa (in /home/marcela_paixao/trab/Resultados/Marcela/tMapa/prog)
+==125968==    by 0x10C982: MovePacman (in /home/marcela_paixao/trab/Resultados/Marcela/tMapa/prog)
+==125968==    by 0x10B490: ExecutaJogo (in /home/marcela_paixao/trab/Resultados/Marcela/tMapa/prog)
+==125968==    by 0x10B8CF: main (in /home/marcela_paixao/trab/Resultados/Marcela/tMapa/prog)
+==125968== 
+==125968== Conditional jump or move depends on uninitialised value(s)
+==125968==    at 0x10ABBA: PrintaGridMapa (in /home/marcela_paixao/trab/Resultados/Marcela/tMapa/prog)
+==125968==    by 0x10B61C: ExecutaJogo (in /home/marcela_paixao/trab/Resultados/Marcela/tMapa/prog)
+==125968==    by 0x10B8CF: main (in /home/marcela_paixao/trab/Resultados/Marcela/tMapa/prog)
+==125968== 
+==125968== Conditional jump or move depends on uninitialised value(s)
+==125968==    at 0x484ED19: strlen (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==125968==    by 0x48E0EE7: puts (ioputs.c:35)
+==125968==    by 0x10AD55: PrintaGridMapa (in /home/marcela_paixao/trab/Resultados/Marcela/tMapa/prog)
+==125968==    by 0x10B61C: ExecutaJogo (in /home/marcela_paixao/trab/Resultados/Marcela/tMapa/prog)
+==125968==    by 0x10B8CF: main (in /home/marcela_paixao/trab/Resultados/Marcela/tMapa/prog)
+==125968== 
+==125968== Conditional jump or move depends on uninitialised value(s)
+==125968==    at 0x10D0DF: DesalocaTunel (in /home/marcela_paixao/trab/Resultados/Marcela/tMapa/prog)
+==125968==    by 0x10C1FF: DesalocaMapa (in /home/marcela_paixao/trab/Resultados/Marcela/tMapa/prog)
+==125968==    by 0x10B839: DesalocaJogo (in /home/marcela_paixao/trab/Resultados/Marcela/tMapa/prog)
+==125968==    by 0x10B8DB: main (in /home/marcela_paixao/trab/Resultados/Marcela/tMapa/prog)
+==125968== 
+==125968== 
+==125968== HEAP SUMMARY:
+==125968==     in use at exit: 0 bytes in 0 blocks
+==125968==   total heap usage: 109,352 allocs, 109,352 frees, 976,084 bytes allocated
+==125968== 
+==125968== All heap blocks were freed -- no leaks are possible
+==125968== 
+==125968== Use --track-origins=yes to see where uninitialised values come from
+==125968== For lists of detected and suppressed errors, rerun with: -s
+==125968== ERROR SUMMARY: 12218 errors from 13 contexts (suppressed: 0 from 0)

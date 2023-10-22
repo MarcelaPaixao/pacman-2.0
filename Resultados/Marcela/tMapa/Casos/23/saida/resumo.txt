@@ -9,7 +9,6 @@ Movimento 20 (w) pegou comida
 Movimento 21 (d) pegou comida
 Movimento 23 (a) pegou comida
 Movimento 29 (w) pegou comida
-Movimento 30 (a) pegou comida
 Movimento 36 (d) pegou comida
 Movimento 40 (d) pegou comida
 Movimento 49 (d) pegou comida
