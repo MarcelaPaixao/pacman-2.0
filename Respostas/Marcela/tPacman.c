@@ -144,7 +144,13 @@ void AtualizaTrilhaPacman(tPacman* pacman){
  * 
  * \param pacman pacman
  */
-void SalvaTrilhaPacman(tPacman* pacman);
+void SalvaTrilhaPacman(tPacman* pacman){
+    FILE *arq_trilha;
+    char nome_trilha[1000];
+    sprintf(nome_trilha, "trilha.txt");
+    arq_trilha = fopen(nome_trilha, "w");
+    fclose(arq_trilha); // é aqui msm?
+}
 
 /**
  * Insere na lista de movimentos um novo movimento significativo.
@@ -162,7 +168,7 @@ void InsereNovoMovimentoSignificativoPacman(tPacman* pacman, COMANDO comando, co
     tMovimento * mov = CriaMovimento(ObtemNumeroAtualMovimentosPacman(pacman), comando, acao);
     pacman->historicoDeMovimentosSignificativos[pacman->nMovimentosSignificativos] = mov;
 
-}//é pra mandar qual mov? o nMovSignif ou nMovAtualPac???
+}
 
 /**
  * Seta pacman para morto.
@@ -209,7 +215,7 @@ int ObtemNumeroMovimentosSemPontuarPacman(tPacman* pacman){
     int movSemPontos=0, movPontos=0;
     movPontos = pacman->nFrutasComidasBaixo + pacman->nFrutasComidasCima;
     movPontos += pacman->nFrutasComidasDireita + pacman->nFrutasComidasEsquerda; 
-    // funcao só vai ser usada no final, ent a qtd de mov já vai ser a total
+    // funcao só deve ser usada no final, ent a qtd de mov já vai ser a total
     movSemPontos = ObtemNumeroAtualMovimentosPacman(pacman) - movPontos;
     return movSemPontos;
 }
