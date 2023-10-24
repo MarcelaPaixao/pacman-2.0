@@ -52,7 +52,9 @@ tPacman* CriaPacman(tPosicao* posicao){
     if(pacman == NULL || posicao == NULL){
         return NULL;
     }
-    AtualizaPosicao(pacman->posicaoAtual, posicao);
+    acman->posicaoAtual = posicao;
+    
+    //inicializr todo mundo
     return pacman;
 }
 

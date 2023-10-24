@@ -1,5 +1,8 @@
 #include "tPacman.h"
 
+#define VIVO 1
+#define MORTO 0
+
 typedef struct tPacman{
     /* Posição atual do pacman (linha,coluna) */
     tPosicao* posicaoAtual;
@@ -49,7 +52,9 @@ tPacman* CriaPacman(tPosicao* posicao){
     if(pacman == NULL || posicao == NULL){
         return NULL;
     }
-    AtualizaPosicao(pacman->posicaoAtual, posicao);
+    acman->posicaoAtual = posicao;
+    
+    //inicializr todo mundo
     return pacman;
 }
 
@@ -58,7 +63,10 @@ tPacman* CriaPacman(tPosicao* posicao){
  * Aloca outro pacman com as informaçoes do original (passado como parâmetro).
  * \param pacman pacman
  */
-tPacman* ClonaPacman(tPacman* pacman);
+tPacman* ClonaPacman(tPacman* pacman){
+    tPacman * clonePacman = CriaPacman(pacman->posicaoAtual);
+    clonePacman = pacman; //pode fazer isso ou tem q passar um por um???
+}
 
 /**
  * Clona a lista historico de movimentos significativos do pacman.
@@ -75,14 +83,18 @@ tMovimento** ClonaHistoricoDeMovimentosSignificativosPacman(tPacman* pacman);
  * 
  * \param pacman pacman
  */
-tPosicao* ObtemPosicaoPacman(tPacman* pacman);
+tPosicao* ObtemPosicaoPacman(tPacman* pacman){
+    return pacman->posicaoAtual;
+}
 
 /**
  * Retorna se o pacman está vivo ou morto.
  * 
  * \param pacman pacman
  */
-int EstaVivoPacman(tPacman* pacman);
+int EstaVivoPacman(tPacman* pacman){
+    return pacman->estaVivo;
+}
 
 /**
  * Função que irá mover o pacman no mapa, atualizando sua posição.
@@ -106,7 +118,14 @@ void MovePacman(tPacman* pacman, tMapa* mapa, COMANDO comando);
  * \param nLinhas número de linhas da trilha
  * \param nColunas número de colunas da trilha
  */
-void CriaTrilhaPacman(tPacman* pacman, int nLinhas, int nColunas);
+void CriaTrilhaPacman(tPacman* pacman, int nLinhas, int nColunas){
+    pacman->trilha = (int **)malloc(nLinhas * sizeof(int *));
+    if(pacman->trilha == NULL){
+        for (int i = 0; i < nLinhas; i++) {
+            pacman->trilha[i] = (int *)malloc(nColunas * sizeof(int));
+        }
+    }
+}//tá certo isso??
 
 /**
  * Atualiza na trilha a posição por onde passou o pacman.
@@ -115,14 +134,25 @@ void CriaTrilhaPacman(tPacman* pacman, int nLinhas, int nColunas);
  * para o valor int correspondente ao número do movimento atual do pacman.
  * \param pacman pacman
  */
-void AtualizaTrilhaPacman(tPacman* pacman);
+void AtualizaTrilhaPacman(tPacman* pacman){
+    int lin=0, col=0;
+    lin = ObtemLinhaPosicao(pacman->posicaoAtual);
+    col = ObtemColunaPosicao(pacman->posicaoAtual);
+    pacman->trilha[lin][col] = ObtemNumeroAtualMovimentosPacman(pacman);
+}
 
 /**
  * Salva a trilha em um arquivo na raíz junto com o binário.
  * 
  * \param pacman pacman
  */
-void SalvaTrilhaPacman(tPacman* pacman);
+void SalvaTrilhaPacman(tPacman* pacman){
+    FILE *arq_trilha;
+    char nome_trilha[1000];
+    sprintf(nome_trilha, "trilha.txt");
+    arq_trilha = fopen(nome_trilha, "w");
+    fclose(arq_trilha); // é aqui msm?
+}
 
 /**
  * Insere na lista de movimentos um novo movimento significativo.
@@ -134,14 +164,22 @@ void SalvaTrilhaPacman(tPacman* pacman);
  * \param comando o comando do movimento
  * \param acao a ação do movimento
  */
-void InsereNovoMovimentoSignificativoPacman(tPacman* pacman, COMANDO comando, const char* acao);
+void InsereNovoMovimentoSignificativoPacman(tPacman* pacman, COMANDO comando, const char* acao){
+    pacman->historicoDeMovimentosSignificativos = realloc(pacman->historicoDeMovimentosSignificativos, 
+                                                          pacman->nMovimentosSignificativos+1);
+    tMovimento * mov = CriaMovimento(ObtemNumeroAtualMovimentosPacman(pacman), comando, acao);
+    pacman->historicoDeMovimentosSignificativos[pacman->nMovimentosSignificativos] = mov;
+
+}
 
 /**
  * Seta pacman para morto.
  * 
  * \param pacman pacman
  */
-void MataPacman(tPacman* pacman);
+void MataPacman(tPacman* pacman){
+    pacman->estaVivo = MORTO;
+}
 
 /**
  * Caso o pacman seja diferente de NULL, libera o espaço 
@@ -149,123 +187,178 @@ void MataPacman(tPacman* pacman);
  * 
  * \param pacman pacman
  */
-void DesalocaPacman(tPacman* pacman);
+void DesalocaPacman(tPacman* pacman){
+    if(pacman != NULL){
+       free(pacman->trilha);
+       DesalocaMovimento(pacman->historicoDeMovimentosSignificativos);
+       DesalocaPosicao(pacman->posicaoAtual);
+       free(pacman); 
+    }
+}
 
 /**
  * Retorna o número atual de movimentos do pacman
  * 
  * \param pacman pacman
  */
-int ObtemNumeroAtualMovimentosPacman(tPacman* pacman);
+int ObtemNumeroAtualMovimentosPacman(tPacman* pacman){
+    int totalMov=0;
+    totalMov = pacman->nMovimentosBaixo + pacman->nMovimentosCima;
+    totalMov += pacman->nMovimentosDireita + pacman->nMovimentosEsquerda;
+    return totalMov;
+}
 
 /**
  * Retorna o número de movimentos sem pontuar do pacman
  * 
  * \param pacman pacman
  */
-int ObtemNumeroMovimentosSemPontuarPacman(tPacman* pacman);
+int ObtemNumeroMovimentosSemPontuarPacman(tPacman* pacman){
+    int movSemPontos=0, movPontos=0;
+    movPontos = pacman->nFrutasComidasBaixo + pacman->nFrutasComidasCima;
+    movPontos += pacman->nFrutasComidasDireita + pacman->nFrutasComidasEsquerda; 
+    // funcao só deve ser usada no final, ent a qtd de mov já vai ser a total
+    movSemPontos = ObtemNumeroAtualMovimentosPacman(pacman) - movPontos;
+    return movSemPontos;
+}
 
 /**
  * Retorna o número de colisões com a parede do pacman
  * 
  * \param pacman pacman
  */
-int ObtemNumeroColisoesParedePacman(tPacman* pacman);
+int ObtemNumeroColisoesParedePacman(tPacman* pacman){
+    int totalMov=0;
+    totalMov = pacman->nColisoesParedeBaixo + pacman->nColisoesParedeCima;
+    totalMov += pacman->nColisoesParedeDireita + pacman->nColisoesParedeEsquerda;
+    return totalMov;
+}
 
 /**
  * Retorna o número de movimentos para baixo do pacman
  * 
  * \param pacman pacman
  */
-int ObtemNumeroMovimentosBaixoPacman(tPacman* pacman);
+int ObtemNumeroMovimentosBaixoPacman(tPacman* pacman){
+    return pacman->nMovimentosBaixo;
+}
 
 /**
  * Retorna o número de frutas comidas para baixo pelo pacman
  * 
  * \param pacman pacman
  */
-int ObtemNumeroFrutasComidasBaixoPacman(tPacman* pacman);
+int ObtemNumeroFrutasComidasBaixoPacman(tPacman* pacman){
+    return pacman->nFrutasComidasBaixo;
+}
 
 /**
  * Retorna o número de colisões com a parede para baixo
  * 
  * \param pacman pacman
  */
-int ObtemNumeroColisoesParedeBaixoPacman(tPacman* pacman);
+int ObtemNumeroColisoesParedeBaixoPacman(tPacman* pacman){
+    return pacman->nColisoesParedeBaixo;
+}
 
 /**
  * Retorna o número de movimentos para baixo do pacman
  * 
  * \param pacman pacman
  */
-int ObtemNumeroMovimentosCimaPacman(tPacman* pacman);
+int ObtemNumeroMovimentosCimaPacman(tPacman* pacman){
+    return pacman->nMovimentosCima;
+}
 
 /**
  * Retorna o número de frutas comidas para cima pelo pacman
  * 
  * \param pacman pacman
  */
-int ObtemNumeroFrutasComidasCimaPacman(tPacman* pacman);
+int ObtemNumeroFrutasComidasCimaPacman(tPacman* pacman){
+    return pacman->nFrutasComidasCima;
+}
 
 /**
  * Retorna o número de colisões com a parede para cima
  * 
  * \param pacman pacman
  */
-int ObtemNumeroColisoesParedeCimaPacman(tPacman* pacman);
+int ObtemNumeroColisoesParedeCimaPacman(tPacman* pacman){
+    return pacman->nColisoesParedeCima;
+}
 
 /**
  * Retorna o número de movimentos para a esquerda do pacman
  * 
  * \param pacman pacman
  */
-int ObtemNumeroMovimentosEsquerdaPacman(tPacman* pacman);
+int ObtemNumeroMovimentosEsquerdaPacman(tPacman* pacman){
+    return pacman->nMovimentosEsquerda;
+}
 
 /**
  * Retorna o número de frutas comidas para a esquerda pelo pacman
  * 
  * \param pacman pacman
  */
-int ObtemNumeroFrutasComidasEsquerdaPacman(tPacman* pacman);
+int ObtemNumeroFrutasComidasEsquerdaPacman(tPacman* pacman){
+    return pacman->nFrutasComidasEsquerda;
+}
 
 /**
  * Retorna o número de colisões com a parede para esquerda
  * 
  * \param pacman pacman
  */
-int ObtemNumeroColisoesParedeEsquerdaPacman(tPacman* pacman);
+int ObtemNumeroColisoesParedeEsquerdaPacman(tPacman* pacman){
+    return pacman->nColisoesParedeEsquerda;
+}
 
 /**
  * Retorna o número de movimentos para a direita do pacman
  * 
  * \param pacman pacman
  */
-int ObtemNumeroMovimentosDireitaPacman(tPacman* pacman);
+int ObtemNumeroMovimentosDireitaPacman(tPacman* pacman){
+    return pacman->nMovimentosDireita;
+}
 
 /**
  * Retorna o número de frutas comidas para a direita pelo pacman
  * 
  * \param pacman pacman
  */
-int ObtemNumeroFrutasComidasDireitaPacman(tPacman* pacman);
+int ObtemNumeroFrutasComidasDireitaPacman(tPacman* pacman){
+    return pacman->nFrutasComidasDireita;
+}
 
 /**
  * Retorna o número de colisões com a parede para direita
  * 
  * \param pacman pacman
  */
-int ObtemNumeroColisoesParedeDireitaPacman(tPacman* pacman);
+int ObtemNumeroColisoesParedeDireitaPacman(tPacman* pacman){
+     return pacman->nColisoesParedeDireita;
+}
 
 /**
  * Retorna o número de movimentos significativos do pacman
  * 
  * \param pacman pacman
  */
-int ObtemNumeroMovimentosSignificativosPacman(tPacman* pacman);
+int ObtemNumeroMovimentosSignificativosPacman(tPacman* pacman){
+    return pacman->nMovimentosSignificativos;
+}
 
 /**
  * Retorna a pontuação atual do pacman
  * 
  * \param pacman pacman
  */
-int ObtemPontuacaoAtualPacman(tPacman* pacman);
+int ObtemPontuacaoAtualPacman(tPacman* pacman){
+    int pontos=0;
+    pontos = pacman->nFrutasComidasBaixo + pacman->nFrutasComidasCima;
+    pontos += pacman->nFrutasComidasEsquerda + pacman->nFrutasComidasDireita;
+    return pontos;
+}

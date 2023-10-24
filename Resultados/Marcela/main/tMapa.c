@@ -2,6 +2,7 @@
 
 #define COMIDA '*'
 #define PAREDE '#'
+#define TUNEL '@'
 
 /**
  * Dado o arquivo de configurações, cria o mapa dinamicamente e 
@@ -10,81 +11,75 @@
  * \param caminho caminho do arquivo com as configurações do mapa
  */
 tMapa* CriaMapa(const char* caminhoConfig) {
-    FILE *arq_entrada, *arq_mapa;
-    char nome_diretorio[1000], nome_mapa[1000];
+    FILE *arq_mapa;
+    char nome_mapa[1000];
 
     if (caminhoConfig == NULL) {
         printf("ERRO: O diretorio de arquivos de configuracao nao foi informado\n");
         return NULL;
     }
 
-    strcpy(nome_diretorio, caminhoConfig);
-    arq_entrada = fopen(nome_diretorio, "r");
-
-    if (arq_entrada == NULL) {
-        printf("ERRO: O arquivo de configuracao nao pode ser aberto\n");
-        return NULL;
-    }
-
-    sprintf(nome_mapa, "%s/mapa.txt", nome_diretorio);
+    sprintf(nome_mapa, "%s/mapa.txt", caminhoConfig);
     arq_mapa = fopen(nome_mapa, "r");
 
     if (arq_mapa == NULL) {
-        printf("O arquivo mapa.txt do diretorio %s nao existe!\n", nome_diretorio);
-        fclose(arq_entrada);
-        exit(0);
+        printf("O arquivo mapa.txt do diretorio %s nao existe!\n", caminhoConfig);
+        return NULL;
     }
     
     tMapa * mapa = (tMapa *) malloc(sizeof(tMapa));
-    if (mapa == NULL) {
-        printf("ERRO: Falha na alocacao de memoria para mapa\n");
-        exit(0);
-    }
-    mapa->nColunas = 0;
-    mapa->nLinhas = 0;
-    mapa->nFrutasAtual = 0;
-    //mapa->grid = NULL;
-    //mapa->grid[0] = NULL;
+
+    int linha=1, coluna=0, fruta=0;
+    //int l_tunel1=0, l_tunel2=0, c_tunel1=0, c_tunel2=0; 
+
     fscanf(arq_mapa, "%d\n", &mapa->nMaximoMovimentos);
     
-    mapa->grid = (char **)malloc(sizeof(char *)); 
+    mapa->grid = malloc(sizeof(char *)); 
+    mapa->grid[0] = NULL;
     char simb;
     while(1){
         fscanf(arq_mapa, "%c", &simb);
         if(simb == '\n'){
             break;
         }
-        mapa->nColunas++;
-        mapa->grid[0] = realloc(mapa->grid[0], mapa->nColunas);
-        mapa->grid[0][mapa->nColunas - 1] = simb; 
+        coluna++;
+        mapa->grid[0] = realloc(mapa->grid[0], coluna * sizeof(char));
+        mapa->grid[0][coluna - 1] = simb; 
         if(simb == COMIDA){
-            mapa->nFrutasAtual++;
+            fruta++;
         }
     }
     
     fscanf(arq_mapa, "%*c");
     
     while(fscanf(arq_mapa, "%c", &simb) == 1){
-        mapa->nLinhas++;
-        mapa->grid = realloc(mapa->grid, (mapa->nLinhas+1) * sizeof(char *)); 
-        mapa->grid[mapa->nLinhas] = (char *) malloc (mapa->nColunas * sizeof(char));
-        
-        if(simb == COMIDA){
-            mapa->nFrutasAtual++;
-        }
-
-        for(int i=1; i < mapa->nColunas; i++){
-            fscanf(arq_mapa, "%c", &simb);
-            mapa->grid[mapa->nLinhas][i] = simb;  
+        linha++;
+        if(simb != '\n'){   
+            mapa->grid = realloc(mapa->grid, linha * sizeof(char *)); 
+            mapa->grid[linha-1] = malloc (coluna * sizeof(char));
+            mapa->grid[linha-1][0] = simb;
             if(simb == COMIDA){
-                mapa->nFrutasAtual++;
+                fruta++;
             }
-        } 
-        fscanf(arq_mapa, "%*c");
+            for(int i=1; i < coluna; i++){
+                fscanf(arq_mapa, "%c", &simb);
+                if(simb != '\n'){
+                    mapa->grid[linha-1][i] = simb;  
+                    if(simb == COMIDA){
+                        fruta++;
+                    }
+                    // else if(simb == TUNEL){
+                }
+            } 
+            fscanf(arq_mapa, "%*c");
+        }
     }
-    mapa->nLinhas++;
+    fscanf(arq_mapa, "%*c");
+    mapa->tunel = NULL;
+    mapa->nLinhas = linha;
+    mapa->nColunas = coluna;
+    mapa->nFrutasAtual = fruta;
     
-    fclose(arq_entrada);
     fclose(arq_mapa);
     return mapa;
     

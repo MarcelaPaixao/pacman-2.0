@@ -1,7 +1,0 @@
-tMapa.c: In function ‘CriaMapa’:
-tMapa.c:29:27: warning: ‘/mapa.txt’ directive writing 9 bytes into a region of size between 1 and 1000 [-Wformat-overflow=]
-   29 |     sprintf(nome_mapa, "%s/mapa.txt", nome_diretorio);
-      |                           ^~~~~~~~~
-tMapa.c:29:5: note: ‘sprintf’ output between 10 and 1009 bytes into a destination of size 1000
-   29 |     sprintf(nome_mapa, "%s/mapa.txt", nome_diretorio);
-      |     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
