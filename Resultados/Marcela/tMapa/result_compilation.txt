@@ -1,0 +1,4 @@
+tMapa.c: In function ‘CriaMapa’:
+tMapa.c:72:28: warning: suggest parentheses around assignment used as truth value [-Wparentheses]
+   72 |                         if(tunel = 0){
+      |                            ^~~~~

@@ -1,0 +1,21 @@
+#########################
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Pac-Man comecara o jogo na linha 9 e coluna 10

@@ -29,8 +29,8 @@ tMapa* CriaMapa(const char* caminhoConfig) {
     
     tMapa * mapa = (tMapa *) malloc(sizeof(tMapa));
 
-    int linha=1, coluna=0, fruta=0;
-    //int l_tunel1=0, l_tunel2=0, c_tunel1=0, c_tunel2=0; 
+    int linha=1, coluna=0, fruta=0, tunel=0;
+    int l_tunel1=0, l_tunel2=0, c_tunel1=0, c_tunel2=0; 
 
     fscanf(arq_mapa, "%d\n", &mapa->nMaximoMovimentos);
     
@@ -54,7 +54,7 @@ tMapa* CriaMapa(const char* caminhoConfig) {
     
     while(fscanf(arq_mapa, "%c", &simb) == 1){
         linha++;
-        if(simb != '\n'){   
+        //if(simb != '\n'){   
             mapa->grid = realloc(mapa->grid, linha * sizeof(char *)); 
             mapa->grid[linha-1] = malloc (coluna * sizeof(char));
             mapa->grid[linha-1][0] = simb;
@@ -68,14 +68,25 @@ tMapa* CriaMapa(const char* caminhoConfig) {
                     if(simb == COMIDA){
                         fruta++;
                     }
-                    // else if(simb == TUNEL){
+                    else if(simb == TUNEL){
+                        if(tunel = 0){
+                            l_tunel1 = linha;
+                            c_tunel1 = i;
+                            tunel = 1;
+                        }
+                        else {
+                            l_tunel2 = linha;
+                            c_tunel2 = i;
+                        }
+                    }
                 }
             } 
             fscanf(arq_mapa, "%*c");
-        }
+        //}
     }
     fscanf(arq_mapa, "%*c");
     mapa->tunel = NULL;
+    mapa->tunel = CriaTunel(l_tunel1 , c_tunel1, l_tunel2, c_tunel2);
     mapa->nLinhas = linha;
     mapa->nColunas = coluna;
     mapa->nFrutasAtual = fruta;
