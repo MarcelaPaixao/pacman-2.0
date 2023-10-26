@@ -1,15 +1,15 @@
-==32438== Memcheck, a memory error detector
-==32438== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
-==32438== Using Valgrind-3.18.1 and LibVEX; rerun with -h for copyright info
-==32438== Command: Resultados/Marcela/tTunel/prog Resultados/Marcela/tTunel/Casos/29
-==32438== Parent PID: 32437
-==32438== 
-==32438== 
-==32438== HEAP SUMMARY:
-==32438==     in use at exit: 0 bytes in 0 blocks
-==32438==   total heap usage: 79,390 allocs, 79,390 frees, 707,352 bytes allocated
-==32438== 
-==32438== All heap blocks were freed -- no leaks are possible
-==32438== 
-==32438== For lists of detected and suppressed errors, rerun with: -s
-==32438== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+==384273== Memcheck, a memory error detector
+==384273== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==384273== Using Valgrind-3.18.1 and LibVEX; rerun with -h for copyright info
+==384273== Command: Resultados/Marcela/tTunel/prog Resultados/Marcela/tTunel/Casos/29
+==384273== Parent PID: 384272
+==384273== 
+==384273== 
+==384273== HEAP SUMMARY:
+==384273==     in use at exit: 0 bytes in 0 blocks
+==384273==   total heap usage: 79,390 allocs, 79,390 frees, 707,352 bytes allocated
+==384273== 
+==384273== All heap blocks were freed -- no leaks are possible
+==384273== 
+==384273== For lists of detected and suppressed errors, rerun with: -s
+==384273== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
