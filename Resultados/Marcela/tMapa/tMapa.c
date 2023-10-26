@@ -89,7 +89,6 @@ tMapa* CriaMapa(const char* caminhoConfig) {
     
     fclose(arq_mapa);
     return mapa;
-    
 }
 
 /**

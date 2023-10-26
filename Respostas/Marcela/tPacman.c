@@ -3,43 +3,6 @@
 #define VIVO 1
 #define MORTO 0
 
-typedef struct tPacman{
-    /* Posição atual do pacman (linha,coluna) */
-    tPosicao* posicaoAtual;
-
-    /* Estado de vida do pacman: vivo ou morto */
-    int estaVivo;
-
-    /* Estatísticas para quando o pacman se move para baixo */
-    int nMovimentosBaixo;
-    int nFrutasComidasBaixo;
-    int nColisoesParedeBaixo;
-
-    /* Estatísticas para quando o pacman se move para cima */
-    int nMovimentosCima;
-    int nFrutasComidasCima;
-    int nColisoesParedeCima;
-
-    /* Estatísticas para quando o pacman se move para a esquerda */
-    int nMovimentosEsquerda;
-    int nFrutasComidasEsquerda;
-    int nColisoesParedeEsquerda;
-
-    /* Estatísticas para quando o pacman se move para a direita */
-    int nMovimentosDireita;
-    int nFrutasComidasDireita;
-    int nColisoesParedeDireita;
-
-    /* Histórico de movimentos significativos do pacman */
-    int nMovimentosSignificativos;
-    tMovimento** historicoDeMovimentosSignificativos;
-
-    /* Trilha gerada pelos passos do pacman. */
-    int nLinhasTrilha;
-    int nColunasTrilha;
-    int** trilha;
-} tPacman;
-
 /**
  * Cria o pacman dinamicamente. Caso dê erro na alocação da estrutura tPacman, 
  * retorna NULL. 
@@ -84,22 +47,7 @@ tPacman* CriaPacman(tPosicao* posicao){
 tPacman* ClonaPacman(tPacman* pacman){
     tPacman * clone = CriaPacman(pacman->posicaoAtual);
     
-    clone->estaVivo = pacman->estaVivo;
-    clone->nMovimentosBaixo = pacman->nMovimentosBaixo;
-    clone->nFrutasComidasBaixo = pacman->nFrutasComidasBaixo;
-    clone->nColisoesParedeBaixo = pacman->nColisoesParedeBaixo;
-    clone->nMovimentosCima = pacman->nMovimentosCima;
-    clone->nFrutasComidasCima = pacman->nFrutasComidasCima;
-    clone->nColisoesParedeCima = pacman->nColisoesParedeCima;
-    clone->nMovimentosEsquerda = pacman->nMovimentosEsquerda;
-    clone->nFrutasComidasEsquerda = pacman->nFrutasComidasEsquerda;
-    clone->nColisoesParedeEsquerda = pacman->nColisoesParedeEsquerda;
-    clone->nMovimentosDireita = pacman->nMovimentosDireita;
-    clone->nFrutasComidasDireita = pacman->nFrutasComidasDireita;
-    clone->nColisoesParedeDireita = pacman->nColisoesParedeDireita;
-    clone->nMovimentosSignificativos = pacman->nMovimentosSignificativos;
-    clone->nLinhasTrilha = pacman->nLinhasTrilha;
-    clone->nColunasTrilha = pacman->nColunasTrilha;
+    //clonnar coisas
 
     clone->trilha = (int **) malloc(clone->nLinhasTrilha * sizeof(int*));
     for(int i=0; i < clone->nLinhasTrilha; i++){

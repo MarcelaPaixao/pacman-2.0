@@ -1,0 +1,15 @@
+==41182== Memcheck, a memory error detector
+==41182== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==41182== Using Valgrind-3.18.1 and LibVEX; rerun with -h for copyright info
+==41182== Command: Resultados/Marcela/completo/prog Resultados/Marcela/completo/Casos/20
+==41182== Parent PID: 41181
+==41182== 
+==41182== 
+==41182== HEAP SUMMARY:
+==41182==     in use at exit: 0 bytes in 0 blocks
+==41182==   total heap usage: 0 allocs, 0 frees, 0 bytes allocated
+==41182== 
+==41182== All heap blocks were freed -- no leaks are possible
+==41182== 
+==41182== For lists of detected and suppressed errors, rerun with: -s
+==41182== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)

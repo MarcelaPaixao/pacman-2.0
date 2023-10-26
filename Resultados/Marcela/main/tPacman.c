@@ -52,9 +52,27 @@ tPacman* CriaPacman(tPosicao* posicao){
     if(pacman == NULL || posicao == NULL){
         return NULL;
     }
-    acman->posicaoAtual = posicao;
+    pacman->posicaoAtual = posicao;
+    pacman->historicoDeMovimentosSignificativos = (tMovimento **) malloc(sizeof(tMovimento*));
+    pacman->trilha = (int **) malloc(sizeof(int*));
     
-    //inicializr todo mundo
+    pacman->estaVivo = VIVO;
+    pacman->nMovimentosBaixo = 0;
+    pacman->nFrutasComidasBaixo = 0;
+    pacman->nColisoesParedeBaixo = 0;
+    pacman->nMovimentosCima = 0;
+    pacman->nFrutasComidasCima = 0;
+    pacman->nColisoesParedeCima = 0;
+    pacman->nMovimentosEsquerda = 0;
+    pacman->nFrutasComidasEsquerda = 0;
+    pacman->nColisoesParedeEsquerda = 0;
+    pacman->nMovimentosDireita = 0;
+    pacman->nFrutasComidasDireita = 0;
+    pacman->nColisoesParedeDireita = 0;
+    pacman->nMovimentosSignificativos = 0;
+    pacman->nLinhasTrilha = 0;
+    pacman->nColunasTrilha = 0;
+    
     return pacman;
 }
 
@@ -64,8 +82,41 @@ tPacman* CriaPacman(tPosicao* posicao){
  * \param pacman pacman
  */
 tPacman* ClonaPacman(tPacman* pacman){
-    tPacman * clonePacman = CriaPacman(pacman->posicaoAtual);
-    clonePacman = pacman; //pode fazer isso ou tem q passar um por um???
+    tPacman * clone = CriaPacman(pacman->posicaoAtual);
+    
+    clone->estaVivo = pacman->estaVivo;
+    clone->nMovimentosBaixo = pacman->nMovimentosBaixo;
+    clone->nFrutasComidasBaixo = pacman->nFrutasComidasBaixo;
+    clone->nColisoesParedeBaixo = pacman->nColisoesParedeBaixo;
+    clone->nMovimentosCima = pacman->nMovimentosCima;
+    clone->nFrutasComidasCima = pacman->nFrutasComidasCima;
+    clone->nColisoesParedeCima = pacman->nColisoesParedeCima;
+    clone->nMovimentosEsquerda = pacman->nMovimentosEsquerda;
+    clone->nFrutasComidasEsquerda = pacman->nFrutasComidasEsquerda;
+    clone->nColisoesParedeEsquerda = pacman->nColisoesParedeEsquerda;
+    clone->nMovimentosDireita = pacman->nMovimentosDireita;
+    clone->nFrutasComidasDireita = pacman->nFrutasComidasDireita;
+    clone->nColisoesParedeDireita = pacman->nColisoesParedeDireita;
+    clone->nMovimentosSignificativos = pacman->nMovimentosSignificativos;
+    clone->nLinhasTrilha = pacman->nLinhasTrilha;
+    clone->nColunasTrilha = pacman->nColunasTrilha;
+
+    clone->trilha = (int **) malloc(clone->nLinhasTrilha * sizeof(int*));
+    for(int i=0; i < clone->nLinhasTrilha; i++){
+        clone->trilha[i] = (int *) malloc(clone->nColunasTrilha * sizeof(int));
+        for(int j=0; j < clone->nColunasTrilha; j++){
+            clone->trilha[i][j] = pacman->trilha[i][j];
+        }
+    }
+
+    pacman->historicoDeMovimentosSignificativos = (tMovimento **) malloc(clone->nMovimentosSignificativos * 
+                                                                         sizeof(tMovimento*));
+    for(int i=0; i < clone->nMovimentosSignificativos; i++){
+        clone->historicoDeMovimentosSignificativos[i] = (tMovimento *)malloc(sizeof(tMovimento));
+        //e ai? usar a funcao de baixo??
+    }
+
+    return clone;
 }
 
 /**
