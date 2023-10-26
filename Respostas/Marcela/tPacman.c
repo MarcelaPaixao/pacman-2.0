@@ -3,6 +3,12 @@
 #define VIVO 1
 #define MORTO 0
 
+#define ESQUERDA 0
+#define CIMA 1
+#define BAIXO 2
+#define DIREITA 3
+
+
 /**
  * Cria o pacman dinamicamente. Caso dê erro na alocação da estrutura tPacman, 
  * retorna NULL. 
@@ -90,7 +96,20 @@ int EstaVivoPacman(tPacman* pacman){
  * \param mapa o mapa que contem o pacman
  * \param comando o comando para onde irá o pacman
  */
-void MovePacman(tPacman* pacman, tMapa* mapa, COMANDO comando);
+void MovePacman(tPacman* pacman, tMapa* mapa, COMANDO comando){
+    //tPosicao * clonePosicao = ClonaPosicao(pacman->posicaoAtual);
+    tPosicao * novaPosicao;
+    int lin = ObtemLinhaPosicao(pacman->posicaoAtual);
+    int col = ObtemColunaPosicao(pacman->posicaoAtual);
+    if(comando == ESQUERDA){
+        novaPosicao = CriaPosicao(lin, col-1);
+        if(EncontrouParedeMapa(mapa, novaPosicao) == true){
+            pacman->nColisoesParedeEsquerda++;
+            pacman->nMovimentosSignificativos++;
+            InsereNovoMovimentoSignificativoPacman(pacman, comando, "colidiu com a parede");
+        }
+    }
+}
 
 /**
  * Aloca a trilha dinamicamente.
