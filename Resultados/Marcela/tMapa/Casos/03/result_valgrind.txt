@@ -1,76 +1,15 @@
-==312368== Memcheck, a memory error detector
-==312368== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
-==312368== Using Valgrind-3.18.1 and LibVEX; rerun with -h for copyright info
-==312368== Command: Resultados/Marcela/tMapa/prog Resultados/Marcela/tMapa/Casos/03
-==312368== Parent PID: 312367
-==312368== 
-==312368== Conditional jump or move depends on uninitialised value(s)
-==312368==    at 0x10BDF7: ObtemPosicaoItemMapa (in /home/mcpaixao/trab/Resultados/Marcela/tMapa/prog)
-==312368==    by 0x10A79A: CriaJogo (in /home/mcpaixao/trab/Resultados/Marcela/tMapa/prog)
-==312368==    by 0x10B89F: main (in /home/mcpaixao/trab/Resultados/Marcela/tMapa/prog)
-==312368== 
-==312368== Conditional jump or move depends on uninitialised value(s)
-==312368==    at 0x10BDF7: ObtemPosicaoItemMapa (in /home/mcpaixao/trab/Resultados/Marcela/tMapa/prog)
-==312368==    by 0x10A82B: CriaJogo (in /home/mcpaixao/trab/Resultados/Marcela/tMapa/prog)
-==312368==    by 0x10B89F: main (in /home/mcpaixao/trab/Resultados/Marcela/tMapa/prog)
-==312368== 
-==312368== Conditional jump or move depends on uninitialised value(s)
-==312368==    at 0x10BDF7: ObtemPosicaoItemMapa (in /home/mcpaixao/trab/Resultados/Marcela/tMapa/prog)
-==312368==    by 0x10A844: CriaJogo (in /home/mcpaixao/trab/Resultados/Marcela/tMapa/prog)
-==312368==    by 0x10B89F: main (in /home/mcpaixao/trab/Resultados/Marcela/tMapa/prog)
-==312368== 
-==312368== Conditional jump or move depends on uninitialised value(s)
-==312368==    at 0x10BDF7: ObtemPosicaoItemMapa (in /home/mcpaixao/trab/Resultados/Marcela/tMapa/prog)
-==312368==    by 0x10A85D: CriaJogo (in /home/mcpaixao/trab/Resultados/Marcela/tMapa/prog)
-==312368==    by 0x10B89F: main (in /home/mcpaixao/trab/Resultados/Marcela/tMapa/prog)
-==312368== 
-==312368== Conditional jump or move depends on uninitialised value(s)
-==312368==    at 0x10BDF7: ObtemPosicaoItemMapa (in /home/mcpaixao/trab/Resultados/Marcela/tMapa/prog)
-==312368==    by 0x10A876: CriaJogo (in /home/mcpaixao/trab/Resultados/Marcela/tMapa/prog)
-==312368==    by 0x10B89F: main (in /home/mcpaixao/trab/Resultados/Marcela/tMapa/prog)
-==312368== 
-==312368== Conditional jump or move depends on uninitialised value(s)
-==312368==    at 0x10AB9A: PrintaGridMapa (in /home/mcpaixao/trab/Resultados/Marcela/tMapa/prog)
-==312368==    by 0x10AF66: SalvarInicializacao (in /home/mcpaixao/trab/Resultados/Marcela/tMapa/prog)
-==312368==    by 0x10B367: ExecutaJogo (in /home/mcpaixao/trab/Resultados/Marcela/tMapa/prog)
-==312368==    by 0x10B8AF: main (in /home/mcpaixao/trab/Resultados/Marcela/tMapa/prog)
-==312368== 
-==312368== Conditional jump or move depends on uninitialised value(s)
-==312368==    at 0x484ED28: strlen (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
-==312368==    by 0x48FAE67: puts (ioputs.c:35)
-==312368==    by 0x10AD35: PrintaGridMapa (in /home/mcpaixao/trab/Resultados/Marcela/tMapa/prog)
-==312368==    by 0x10AF66: SalvarInicializacao (in /home/mcpaixao/trab/Resultados/Marcela/tMapa/prog)
-==312368==    by 0x10B367: ExecutaJogo (in /home/mcpaixao/trab/Resultados/Marcela/tMapa/prog)
-==312368==    by 0x10B8AF: main (in /home/mcpaixao/trab/Resultados/Marcela/tMapa/prog)
-==312368== 
-==312368== Conditional jump or move depends on uninitialised value(s)
-==312368==    at 0x484ED28: strlen (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
-==312368==    by 0x48F0D30: __vfprintf_internal (vfprintf-internal.c:1517)
-==312368==    by 0x48DA6C9: fprintf (fprintf.c:32)
-==312368==    by 0x10AD5A: PrintaGridMapa (in /home/mcpaixao/trab/Resultados/Marcela/tMapa/prog)
-==312368==    by 0x10AF66: SalvarInicializacao (in /home/mcpaixao/trab/Resultados/Marcela/tMapa/prog)
-==312368==    by 0x10B367: ExecutaJogo (in /home/mcpaixao/trab/Resultados/Marcela/tMapa/prog)
-==312368==    by 0x10B8AF: main (in /home/mcpaixao/trab/Resultados/Marcela/tMapa/prog)
-==312368== 
-==312368== Conditional jump or move depends on uninitialised value(s)
-==312368==    at 0x10AB9A: PrintaGridMapa (in /home/mcpaixao/trab/Resultados/Marcela/tMapa/prog)
-==312368==    by 0x10B5FC: ExecutaJogo (in /home/mcpaixao/trab/Resultados/Marcela/tMapa/prog)
-==312368==    by 0x10B8AF: main (in /home/mcpaixao/trab/Resultados/Marcela/tMapa/prog)
-==312368== 
-==312368== Conditional jump or move depends on uninitialised value(s)
-==312368==    at 0x484ED28: strlen (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
-==312368==    by 0x48FAE67: puts (ioputs.c:35)
-==312368==    by 0x10AD35: PrintaGridMapa (in /home/mcpaixao/trab/Resultados/Marcela/tMapa/prog)
-==312368==    by 0x10B5FC: ExecutaJogo (in /home/mcpaixao/trab/Resultados/Marcela/tMapa/prog)
-==312368==    by 0x10B8AF: main (in /home/mcpaixao/trab/Resultados/Marcela/tMapa/prog)
-==312368== 
-==312368== 
-==312368== HEAP SUMMARY:
-==312368==     in use at exit: 0 bytes in 0 blocks
-==312368==   total heap usage: 1,317,535 allocs, 1,317,535 frees, 10,886,110 bytes allocated
-==312368== 
-==312368== All heap blocks were freed -- no leaks are possible
-==312368== 
-==312368== Use --track-origins=yes to see where uninitialised values come from
-==312368== For lists of detected and suppressed errors, rerun with: -s
-==312368== ERROR SUMMARY: 62969 errors from 10 contexts (suppressed: 0 from 0)
+==96549== Memcheck, a memory error detector
+==96549== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==96549== Using Valgrind-3.18.1 and LibVEX; rerun with -h for copyright info
+==96549== Command: Resultados/Marcela/tMapa/prog Resultados/Marcela/tMapa/Casos/03
+==96549== Parent PID: 96548
+==96549== 
+==96549== 
+==96549== HEAP SUMMARY:
+==96549==     in use at exit: 0 bytes in 0 blocks
+==96549==   total heap usage: 1,317,535 allocs, 1,317,535 frees, 10,886,110 bytes allocated
+==96549== 
+==96549== All heap blocks were freed -- no leaks are possible
+==96549== 
+==96549== For lists of detected and suppressed errors, rerun with: -s
+==96549== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)

@@ -5,3 +5,4 @@ Movimento 11 (w) pegou comida
 Movimento 12 (d) pegou comida
 Movimento 15 (w) pegou comida
 Movimento 18 (a) pegou comida
+Movimento 20 (w) fim de jogo por encostar em um fantasma

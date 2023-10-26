@@ -24,9 +24,9 @@ CHECKANDO OS ARQUIVOS DO ALUNO:
  - Arquivo esperado 'Respostas/Marcela/tTunel.c' encontrado!
  - Arquivo esperado 'Respostas/Marcela/tTunel.h' encontrado!
  - Arquivo esperado 'Respostas/Marcela/tPosicao.c' encontrado!
- - Arquivo esperado 'Respostas/Marcela/tPosicao.h' não encontrado!
- - Arquivo esperado 'Respostas/Marcela/main.c' não encontrado!
- - Arquivos esperados enviados: Faltando!
+ - Arquivo esperado 'Respostas/Marcela/tPosicao.h' encontrado!
+ - Arquivo esperado 'Respostas/Marcela/main.c' encontrado!
+ - Arquivos esperados enviados: Ok!
 
 COPIANDO OS ARQUIVOS PARA A PASTA DE RESULTADO DO ALUNO:
  - Pasta tPacman:
@@ -377,274 +377,274 @@ EXECUTANDO O VALGRIND EM CADA CASO:
  - O aluno não gerou o arquivo de saída Resultados/Marcela/tPacman/Casos/30/saida/trilha.txt, considerando resultado incorreto!
  - Pasta tMapa / Caso 01:
  - Arquivo de output gerado: Resultados/Marcela/tMapa/Casos/01/result_valgrind.txt.
- - Valgrind: Incorreto! allocs: 34,556, frees: 34,556, errors: 6128 | Desconto do valgrind 30.00%
+ - Valgrind: Ok! allocs: 34,556, frees: 34,556, errors: 0 | Desconto do valgrind: 0.0%
  - Resultado para o estatisticas.txt: Ok! Peso: 1.5
- - Resultado para o inicializacao.txt: Incorreto!
+ - Resultado para o inicializacao.txt: Ok! Peso: 1.0
  - Resultado para o ranking.txt: Ok! Peso: 1.5
  - Resultado para o resumo.txt: Ok! Peso: 1.5
- - Resultado para o saida.txt: Incorreto!
- - Resultado para o trilha.txt: Incorreto!
+ - Resultado para o saida.txt: Ok! Peso: 3.0
+ - Resultado para o trilha.txt: Ok! Peso: 1.5
  - Pasta tMapa / Caso 02:
  - Arquivo de output gerado: Resultados/Marcela/tMapa/Casos/02/result_valgrind.txt.
- - Valgrind: Incorreto! allocs: 1,765, frees: 1,765, errors: 460 | Desconto do valgrind 30.00%
+ - Valgrind: Ok! allocs: 1,765, frees: 1,765, errors: 0 | Desconto do valgrind: 0.0%
  - Resultado para o estatisticas.txt: Ok! Peso: 1.5
- - Resultado para o inicializacao.txt: Incorreto!
+ - Resultado para o inicializacao.txt: Ok! Peso: 1.0
  - Resultado para o ranking.txt: Ok! Peso: 1.5
  - Resultado para o resumo.txt: Ok! Peso: 1.5
- - Resultado para o saida.txt: Incorreto!
- - Resultado para o trilha.txt: Incorreto!
+ - Resultado para o saida.txt: Ok! Peso: 3.0
+ - Resultado para o trilha.txt: Ok! Peso: 1.5
  - Pasta tMapa / Caso 03:
  - Arquivo de output gerado: Resultados/Marcela/tMapa/Casos/03/result_valgrind.txt.
- - Valgrind: Incorreto! allocs: 1,317,535, frees: 1,317,535, errors: 62969 | Desconto do valgrind 30.00%
+ - Valgrind: Ok! allocs: 1,317,535, frees: 1,317,535, errors: 0 | Desconto do valgrind: 0.0%
  - Resultado para o estatisticas.txt: Ok! Peso: 1.5
- - Resultado para o inicializacao.txt: Incorreto!
+ - Resultado para o inicializacao.txt: Ok! Peso: 1.0
  - Resultado para o ranking.txt: Ok! Peso: 1.5
  - Resultado para o resumo.txt: Ok! Peso: 1.5
- - Resultado para o saida.txt: Incorreto!
- - Resultado para o trilha.txt: Incorreto!
+ - Resultado para o saida.txt: Ok! Peso: 3.0
+ - Resultado para o trilha.txt: Ok! Peso: 1.5
  - Pasta tMapa / Caso 04:
  - Arquivo de output gerado: Resultados/Marcela/tMapa/Casos/04/result_valgrind.txt.
- - Valgrind: Incorreto! allocs: 348,023, frees: 347,845, errors: 23569 | Desconto do valgrind 30.00%
- - O aluno não gerou o arquivo de saída Resultados/Marcela/tMapa/Casos/04/saida/estatisticas.txt, considerando resultado incorreto!
- - Resultado para o inicializacao.txt: Incorreto!
- - O aluno não gerou o arquivo de saída Resultados/Marcela/tMapa/Casos/04/saida/ranking.txt, considerando resultado incorreto!
- - O aluno não gerou o arquivo de saída Resultados/Marcela/tMapa/Casos/04/saida/resumo.txt, considerando resultado incorreto!
- - Resultado para o saida.txt: Incorreto!
- - O aluno não gerou o arquivo de saída Resultados/Marcela/tMapa/Casos/04/saida/trilha.txt, considerando resultado incorreto!
+ - Valgrind: Ok! allocs: 397,234, frees: 397,234, errors: 0 | Desconto do valgrind: 0.0%
+ - Resultado para o estatisticas.txt: Ok! Peso: 1.5
+ - Resultado para o inicializacao.txt: Ok! Peso: 1.0
+ - Resultado para o ranking.txt: Ok! Peso: 1.5
+ - Resultado para o resumo.txt: Ok! Peso: 1.5
+ - Resultado para o saida.txt: Ok! Peso: 3.0
+ - Resultado para o trilha.txt: Ok! Peso: 1.5
  - Pasta tMapa / Caso 05:
  - Arquivo de output gerado: Resultados/Marcela/tMapa/Casos/05/result_valgrind.txt.
- - Valgrind: Incorreto! allocs: 1,430,054, frees: 1,430,054, errors: 117067 | Desconto do valgrind 30.00%
+ - Valgrind: Ok! allocs: 1,430,054, frees: 1,430,054, errors: 0 | Desconto do valgrind: 0.0%
  - Resultado para o estatisticas.txt: Ok! Peso: 1.5
- - Resultado para o inicializacao.txt: Incorreto!
+ - Resultado para o inicializacao.txt: Ok! Peso: 1.0
  - Resultado para o ranking.txt: Ok! Peso: 1.5
  - Resultado para o resumo.txt: Ok! Peso: 1.5
- - Resultado para o saida.txt: Incorreto!
- - Resultado para o trilha.txt: Incorreto!
+ - Resultado para o saida.txt: Ok! Peso: 3.0
+ - Resultado para o trilha.txt: Ok! Peso: 1.5
  - Pasta tMapa / Caso 06:
  - Arquivo de output gerado: Resultados/Marcela/tMapa/Casos/06/result_valgrind.txt.
- - Valgrind: Incorreto! allocs: 192,670, frees: 192,670, errors: 21253 | Desconto do valgrind 30.00%
+ - Valgrind: Ok! allocs: 192,670, frees: 192,670, errors: 0 | Desconto do valgrind: 0.0%
  - Resultado para o estatisticas.txt: Ok! Peso: 1.5
- - Resultado para o inicializacao.txt: Incorreto!
+ - Resultado para o inicializacao.txt: Ok! Peso: 1.0
  - Resultado para o ranking.txt: Ok! Peso: 1.5
  - Resultado para o resumo.txt: Ok! Peso: 1.5
- - Resultado para o saida.txt: Incorreto!
- - Resultado para o trilha.txt: Incorreto!
+ - Resultado para o saida.txt: Ok! Peso: 3.0
+ - Resultado para o trilha.txt: Ok! Peso: 1.5
  - Pasta tMapa / Caso 07:
  - Arquivo de output gerado: Resultados/Marcela/tMapa/Casos/07/result_valgrind.txt.
- - Valgrind: Incorreto! allocs: 1,588, frees: 1,542, errors: 413 | Desconto do valgrind 30.00%
- - O aluno não gerou o arquivo de saída Resultados/Marcela/tMapa/Casos/07/saida/estatisticas.txt, considerando resultado incorreto!
- - Resultado para o inicializacao.txt: Incorreto!
- - O aluno não gerou o arquivo de saída Resultados/Marcela/tMapa/Casos/07/saida/ranking.txt, considerando resultado incorreto!
- - O aluno não gerou o arquivo de saída Resultados/Marcela/tMapa/Casos/07/saida/resumo.txt, considerando resultado incorreto!
- - Resultado para o saida.txt: Incorreto!
- - O aluno não gerou o arquivo de saída Resultados/Marcela/tMapa/Casos/07/saida/trilha.txt, considerando resultado incorreto!
+ - Valgrind: Ok! allocs: 8,937, frees: 8,937, errors: 0 | Desconto do valgrind: 0.0%
+ - Resultado para o estatisticas.txt: Ok! Peso: 1.5
+ - Resultado para o inicializacao.txt: Ok! Peso: 1.0
+ - Resultado para o ranking.txt: Ok! Peso: 1.5
+ - Resultado para o resumo.txt: Ok! Peso: 1.5
+ - Resultado para o saida.txt: Ok! Peso: 3.0
+ - Resultado para o trilha.txt: Ok! Peso: 1.5
  - Pasta tMapa / Caso 08:
  - Arquivo de output gerado: Resultados/Marcela/tMapa/Casos/08/result_valgrind.txt.
- - Valgrind: Incorreto! allocs: 54,082, frees: 54,082, errors: 14846 | Desconto do valgrind 30.00%
+ - Valgrind: Ok! allocs: 54,082, frees: 54,082, errors: 0 | Desconto do valgrind: 0.0%
  - Resultado para o estatisticas.txt: Ok! Peso: 1.5
- - Resultado para o inicializacao.txt: Incorreto!
+ - Resultado para o inicializacao.txt: Ok! Peso: 1.0
  - Resultado para o ranking.txt: Ok! Peso: 1.5
  - Resultado para o resumo.txt: Ok! Peso: 1.5
- - Resultado para o saida.txt: Incorreto!
- - Resultado para o trilha.txt: Incorreto!
+ - Resultado para o saida.txt: Ok! Peso: 3.0
+ - Resultado para o trilha.txt: Ok! Peso: 1.5
  - Pasta tMapa / Caso 09:
  - Arquivo de output gerado: Resultados/Marcela/tMapa/Casos/09/result_valgrind.txt.
- - Valgrind: Incorreto! allocs: 749,236, frees: 749,236, errors: 22167 | Desconto do valgrind 30.00%
+ - Valgrind: Ok! allocs: 749,236, frees: 749,236, errors: 0 | Desconto do valgrind: 0.0%
  - Resultado para o estatisticas.txt: Ok! Peso: 1.5
- - Resultado para o inicializacao.txt: Incorreto!
+ - Resultado para o inicializacao.txt: Ok! Peso: 1.0
  - Resultado para o ranking.txt: Ok! Peso: 1.5
  - Resultado para o resumo.txt: Ok! Peso: 1.5
- - Resultado para o saida.txt: Incorreto!
- - Resultado para o trilha.txt: Incorreto!
+ - Resultado para o saida.txt: Ok! Peso: 3.0
+ - Resultado para o trilha.txt: Ok! Peso: 1.5
  - Pasta tMapa / Caso 10:
  - Arquivo de output gerado: Resultados/Marcela/tMapa/Casos/10/result_valgrind.txt.
- - Valgrind: Incorreto! allocs: 115,959, frees: 115,959, errors: 36497 | Desconto do valgrind 30.00%
- - Resultado para o estatisticas.txt: Incorreto!
- - Resultado para o inicializacao.txt: Incorreto!
- - Resultado para o ranking.txt: Incorreto!
- - Resultado para o resumo.txt: Incorreto!
- - Resultado para o saida.txt: Incorreto!
- - Resultado para o trilha.txt: Incorreto!
+ - Valgrind: Ok! allocs: 116,043, frees: 116,043, errors: 0 | Desconto do valgrind: 0.0%
+ - Resultado para o estatisticas.txt: Ok! Peso: 1.5
+ - Resultado para o inicializacao.txt: Ok! Peso: 1.0
+ - Resultado para o ranking.txt: Ok! Peso: 1.5
+ - Resultado para o resumo.txt: Ok! Peso: 1.5
+ - Resultado para o saida.txt: Ok! Peso: 3.0
+ - Resultado para o trilha.txt: Ok! Peso: 1.5
  - Pasta tMapa / Caso 11:
  - Arquivo de output gerado: Resultados/Marcela/tMapa/Casos/11/result_valgrind.txt.
- - Valgrind: Incorreto! allocs: 933,533, frees: 933,533, errors: 24893 | Desconto do valgrind 30.00%
+ - Valgrind: Ok! allocs: 933,533, frees: 933,533, errors: 0 | Desconto do valgrind: 0.0%
  - Resultado para o estatisticas.txt: Ok! Peso: 1.5
- - Resultado para o inicializacao.txt: Incorreto!
+ - Resultado para o inicializacao.txt: Ok! Peso: 1.0
  - Resultado para o ranking.txt: Ok! Peso: 1.5
  - Resultado para o resumo.txt: Ok! Peso: 1.5
- - Resultado para o saida.txt: Incorreto!
- - Resultado para o trilha.txt: Incorreto!
+ - Resultado para o saida.txt: Ok! Peso: 3.0
+ - Resultado para o trilha.txt: Ok! Peso: 1.5
  - Pasta tMapa / Caso 12:
  - Arquivo de output gerado: Resultados/Marcela/tMapa/Casos/12/result_valgrind.txt.
- - Valgrind: Incorreto! allocs: 58,028, frees: 58,028, errors: 6165 | Desconto do valgrind 30.00%
+ - Valgrind: Ok! allocs: 58,028, frees: 58,028, errors: 0 | Desconto do valgrind: 0.0%
  - Resultado para o estatisticas.txt: Ok! Peso: 1.5
- - Resultado para o inicializacao.txt: Incorreto!
+ - Resultado para o inicializacao.txt: Ok! Peso: 1.0
  - Resultado para o ranking.txt: Ok! Peso: 1.5
  - Resultado para o resumo.txt: Ok! Peso: 1.5
- - Resultado para o saida.txt: Incorreto!
- - Resultado para o trilha.txt: Incorreto!
+ - Resultado para o saida.txt: Ok! Peso: 3.0
+ - Resultado para o trilha.txt: Ok! Peso: 1.5
  - Pasta tMapa / Caso 13:
  - Arquivo de output gerado: Resultados/Marcela/tMapa/Casos/13/result_valgrind.txt.
- - Valgrind: Incorreto! allocs: 54,006, frees: 54,006, errors: 5983 | Desconto do valgrind 30.00%
+ - Valgrind: Ok! allocs: 54,006, frees: 54,006, errors: 0 | Desconto do valgrind: 0.0%
  - Resultado para o estatisticas.txt: Ok! Peso: 1.5
- - Resultado para o inicializacao.txt: Incorreto!
+ - Resultado para o inicializacao.txt: Ok! Peso: 1.0
  - Resultado para o ranking.txt: Ok! Peso: 1.5
  - Resultado para o resumo.txt: Ok! Peso: 1.5
- - Resultado para o saida.txt: Incorreto!
- - Resultado para o trilha.txt: Incorreto!
+ - Resultado para o saida.txt: Ok! Peso: 3.0
+ - Resultado para o trilha.txt: Ok! Peso: 1.5
  - Pasta tMapa / Caso 14:
  - Arquivo de output gerado: Resultados/Marcela/tMapa/Casos/14/result_valgrind.txt.
- - Valgrind: Incorreto! allocs: 38,247, frees: 38,247, errors: 5084 | Desconto do valgrind 30.00%
+ - Valgrind: Ok! allocs: 38,247, frees: 38,247, errors: 0 | Desconto do valgrind: 0.0%
  - Resultado para o estatisticas.txt: Ok! Peso: 1.5
- - Resultado para o inicializacao.txt: Incorreto!
+ - Resultado para o inicializacao.txt: Ok! Peso: 1.0
  - Resultado para o ranking.txt: Ok! Peso: 1.5
  - Resultado para o resumo.txt: Ok! Peso: 1.5
- - Resultado para o saida.txt: Incorreto!
- - Resultado para o trilha.txt: Incorreto!
+ - Resultado para o saida.txt: Ok! Peso: 3.0
+ - Resultado para o trilha.txt: Ok! Peso: 1.5
  - Pasta tMapa / Caso 15:
  - Arquivo de output gerado: Resultados/Marcela/tMapa/Casos/15/result_valgrind.txt.
- - Valgrind: Incorreto! allocs: 21,818, frees: 21,818, errors: 1957 | Desconto do valgrind 30.00%
+ - Valgrind: Ok! allocs: 21,818, frees: 21,818, errors: 0 | Desconto do valgrind: 0.0%
  - Resultado para o estatisticas.txt: Ok! Peso: 1.5
- - Resultado para o inicializacao.txt: Incorreto!
+ - Resultado para o inicializacao.txt: Ok! Peso: 1.0
  - Resultado para o ranking.txt: Ok! Peso: 1.5
  - Resultado para o resumo.txt: Ok! Peso: 1.5
- - Resultado para o saida.txt: Incorreto!
- - Resultado para o trilha.txt: Incorreto!
+ - Resultado para o saida.txt: Ok! Peso: 3.0
+ - Resultado para o trilha.txt: Ok! Peso: 1.5
  - Pasta tMapa / Caso 16:
  - Arquivo de output gerado: Resultados/Marcela/tMapa/Casos/16/result_valgrind.txt.
- - Valgrind: Incorreto! allocs: 7,032, frees: 7,032, errors: 885 | Desconto do valgrind 30.00%
- - Resultado para o estatisticas.txt: Incorreto!
- - Resultado para o inicializacao.txt: Incorreto!
- - Resultado para o ranking.txt: Incorreto!
- - Resultado para o resumo.txt: Incorreto!
- - Resultado para o saida.txt: Incorreto!
- - Resultado para o trilha.txt: Incorreto!
+ - Valgrind: Ok! allocs: 8,403, frees: 8,403, errors: 0 | Desconto do valgrind: 0.0%
+ - Resultado para o estatisticas.txt: Ok! Peso: 1.5
+ - Resultado para o inicializacao.txt: Ok! Peso: 1.0
+ - Resultado para o ranking.txt: Ok! Peso: 1.5
+ - Resultado para o resumo.txt: Ok! Peso: 1.5
+ - Resultado para o saida.txt: Ok! Peso: 3.0
+ - Resultado para o trilha.txt: Ok! Peso: 1.5
  - Pasta tMapa / Caso 17:
  - Arquivo de output gerado: Resultados/Marcela/tMapa/Casos/17/result_valgrind.txt.
- - Valgrind: Incorreto! allocs: 8,564, frees: 8,564, errors: 1079 | Desconto do valgrind 30.00%
- - Resultado para o estatisticas.txt: Incorreto!
- - Resultado para o inicializacao.txt: Incorreto!
- - Resultado para o ranking.txt: Incorreto!
- - Resultado para o resumo.txt: Incorreto!
- - Resultado para o saida.txt: Incorreto!
- - Resultado para o trilha.txt: Incorreto!
+ - Valgrind: Ok! allocs: 5,505, frees: 5,505, errors: 0 | Desconto do valgrind: 0.0%
+ - Resultado para o estatisticas.txt: Ok! Peso: 1.5
+ - Resultado para o inicializacao.txt: Ok! Peso: 1.0
+ - Resultado para o ranking.txt: Ok! Peso: 1.5
+ - Resultado para o resumo.txt: Ok! Peso: 1.5
+ - Resultado para o saida.txt: Ok! Peso: 3.0
+ - Resultado para o trilha.txt: Ok! Peso: 1.5
  - Pasta tMapa / Caso 18:
  - Arquivo de output gerado: Resultados/Marcela/tMapa/Casos/18/result_valgrind.txt.
- - Valgrind: Incorreto! allocs: 15,072, frees: 15,072, errors: 1813 | Desconto do valgrind 30.00%
- - Resultado para o estatisticas.txt: Incorreto!
- - Resultado para o inicializacao.txt: Incorreto!
- - Resultado para o ranking.txt: Incorreto!
- - Resultado para o resumo.txt: Incorreto!
- - Resultado para o saida.txt: Incorreto!
- - Resultado para o trilha.txt: Incorreto!
+ - Valgrind: Ok! allocs: 15,476, frees: 15,476, errors: 0 | Desconto do valgrind: 0.0%
+ - Resultado para o estatisticas.txt: Ok! Peso: 1.5
+ - Resultado para o inicializacao.txt: Ok! Peso: 1.0
+ - Resultado para o ranking.txt: Ok! Peso: 1.5
+ - Resultado para o resumo.txt: Ok! Peso: 1.5
+ - Resultado para o saida.txt: Ok! Peso: 3.0
+ - Resultado para o trilha.txt: Ok! Peso: 1.5
  - Pasta tMapa / Caso 19:
  - Arquivo de output gerado: Resultados/Marcela/tMapa/Casos/19/result_valgrind.txt.
- - Valgrind: Incorreto! allocs: 59,066, frees: 59,066, errors: 5283 | Desconto do valgrind 30.00%
- - Resultado para o estatisticas.txt: Incorreto!
- - Resultado para o inicializacao.txt: Incorreto!
- - Resultado para o ranking.txt: Incorreto!
- - Resultado para o resumo.txt: Incorreto!
- - Resultado para o saida.txt: Incorreto!
- - Resultado para o trilha.txt: Incorreto!
+ - Valgrind: Ok! allocs: 58,601, frees: 58,601, errors: 0 | Desconto do valgrind: 0.0%
+ - Resultado para o estatisticas.txt: Ok! Peso: 1.5
+ - Resultado para o inicializacao.txt: Ok! Peso: 1.0
+ - Resultado para o ranking.txt: Ok! Peso: 1.5
+ - Resultado para o resumo.txt: Ok! Peso: 1.5
+ - Resultado para o saida.txt: Ok! Peso: 3.0
+ - Resultado para o trilha.txt: Ok! Peso: 1.5
  - Pasta tMapa / Caso 20:
  - Arquivo de output gerado: Resultados/Marcela/tMapa/Casos/20/result_valgrind.txt.
- - Valgrind: Incorreto! allocs: 17,458, frees: 17,375, errors: 2304 | Desconto do valgrind 30.00%
- - O aluno não gerou o arquivo de saída Resultados/Marcela/tMapa/Casos/20/saida/estatisticas.txt, considerando resultado incorreto!
- - Resultado para o inicializacao.txt: Incorreto!
- - O aluno não gerou o arquivo de saída Resultados/Marcela/tMapa/Casos/20/saida/ranking.txt, considerando resultado incorreto!
- - O aluno não gerou o arquivo de saída Resultados/Marcela/tMapa/Casos/20/saida/resumo.txt, considerando resultado incorreto!
- - Resultado para o saida.txt: Incorreto!
- - O aluno não gerou o arquivo de saída Resultados/Marcela/tMapa/Casos/20/saida/trilha.txt, considerando resultado incorreto!
+ - Valgrind: Ok! allocs: 42,228, frees: 42,228, errors: 0 | Desconto do valgrind: 0.0%
+ - Resultado para o estatisticas.txt: Ok! Peso: 1.5
+ - Resultado para o inicializacao.txt: Ok! Peso: 1.0
+ - Resultado para o ranking.txt: Ok! Peso: 1.5
+ - Resultado para o resumo.txt: Ok! Peso: 1.5
+ - Resultado para o saida.txt: Ok! Peso: 3.0
+ - Resultado para o trilha.txt: Ok! Peso: 1.5
  - Pasta tMapa / Caso 21:
  - Arquivo de output gerado: Resultados/Marcela/tMapa/Casos/21/result_valgrind.txt.
- - Valgrind: Incorreto! allocs: 8,514, frees: 8,514, errors: 1213 | Desconto do valgrind 30.00%
- - Resultado para o estatisticas.txt: Incorreto!
- - Resultado para o inicializacao.txt: Incorreto!
- - Resultado para o ranking.txt: Incorreto!
- - Resultado para o resumo.txt: Incorreto!
- - Resultado para o saida.txt: Incorreto!
- - Resultado para o trilha.txt: Incorreto!
+ - Valgrind: Ok! allocs: 11,002, frees: 11,002, errors: 0 | Desconto do valgrind: 0.0%
+ - Resultado para o estatisticas.txt: Ok! Peso: 1.5
+ - Resultado para o inicializacao.txt: Ok! Peso: 1.0
+ - Resultado para o ranking.txt: Ok! Peso: 1.5
+ - Resultado para o resumo.txt: Ok! Peso: 1.5
+ - Resultado para o saida.txt: Ok! Peso: 3.0
+ - Resultado para o trilha.txt: Ok! Peso: 1.5
  - Pasta tMapa / Caso 22:
  - Arquivo de output gerado: Resultados/Marcela/tMapa/Casos/22/result_valgrind.txt.
- - Valgrind: Incorreto! allocs: 33,272, frees: 33,272, errors: 4355 | Desconto do valgrind 30.00%
+ - Valgrind: Ok! allocs: 33,272, frees: 33,272, errors: 0 | Desconto do valgrind: 0.0%
  - Resultado para o estatisticas.txt: Ok! Peso: 1.5
- - Resultado para o inicializacao.txt: Incorreto!
+ - Resultado para o inicializacao.txt: Ok! Peso: 1.0
  - Resultado para o ranking.txt: Ok! Peso: 1.5
  - Resultado para o resumo.txt: Ok! Peso: 1.5
- - Resultado para o saida.txt: Incorreto!
- - Resultado para o trilha.txt: Incorreto!
+ - Resultado para o saida.txt: Ok! Peso: 3.0
+ - Resultado para o trilha.txt: Ok! Peso: 1.5
  - Pasta tMapa / Caso 23:
  - Arquivo de output gerado: Resultados/Marcela/tMapa/Casos/23/result_valgrind.txt.
- - Valgrind: Incorreto! allocs: 34,277, frees: 34,277, errors: 2209 | Desconto do valgrind 30.00%
+ - Valgrind: Ok! allocs: 34,277, frees: 34,277, errors: 0 | Desconto do valgrind: 0.0%
  - Resultado para o estatisticas.txt: Ok! Peso: 1.5
- - Resultado para o inicializacao.txt: Incorreto!
+ - Resultado para o inicializacao.txt: Ok! Peso: 1.0
  - Resultado para o ranking.txt: Ok! Peso: 1.5
  - Resultado para o resumo.txt: Ok! Peso: 1.5
- - Resultado para o saida.txt: Incorreto!
- - Resultado para o trilha.txt: Incorreto!
+ - Resultado para o saida.txt: Ok! Peso: 3.0
+ - Resultado para o trilha.txt: Ok! Peso: 1.5
  - Pasta tMapa / Caso 24:
  - Arquivo de output gerado: Resultados/Marcela/tMapa/Casos/24/result_valgrind.txt.
- - Valgrind: Incorreto! allocs: 20,958, frees: 20,958, errors: 3657 | Desconto do valgrind 30.00%
+ - Valgrind: Ok! allocs: 20,958, frees: 20,958, errors: 0 | Desconto do valgrind: 0.0%
  - Resultado para o estatisticas.txt: Ok! Peso: 1.5
- - Resultado para o inicializacao.txt: Incorreto!
+ - Resultado para o inicializacao.txt: Ok! Peso: 1.0
  - Resultado para o ranking.txt: Ok! Peso: 1.5
  - Resultado para o resumo.txt: Ok! Peso: 1.5
- - Resultado para o saida.txt: Incorreto!
- - Resultado para o trilha.txt: Incorreto!
+ - Resultado para o saida.txt: Ok! Peso: 3.0
+ - Resultado para o trilha.txt: Ok! Peso: 1.5
  - Pasta tMapa / Caso 25:
  - Arquivo de output gerado: Resultados/Marcela/tMapa/Casos/25/result_valgrind.txt.
- - Valgrind: Incorreto! allocs: 134,643, frees: 134,643, errors: 14755 | Desconto do valgrind 30.00%
- - Resultado para o estatisticas.txt: Incorreto!
- - Resultado para o inicializacao.txt: Incorreto!
- - Resultado para o ranking.txt: Incorreto!
- - Resultado para o resumo.txt: Incorreto!
- - Resultado para o saida.txt: Incorreto!
- - Resultado para o trilha.txt: Incorreto!
+ - Valgrind: Ok! allocs: 134,645, frees: 134,645, errors: 0 | Desconto do valgrind: 0.0%
+ - Resultado para o estatisticas.txt: Ok! Peso: 1.5
+ - Resultado para o inicializacao.txt: Ok! Peso: 1.0
+ - Resultado para o ranking.txt: Ok! Peso: 1.5
+ - Resultado para o resumo.txt: Ok! Peso: 1.5
+ - Resultado para o saida.txt: Ok! Peso: 3.0
+ - Resultado para o trilha.txt: Ok! Peso: 1.5
  - Pasta tMapa / Caso 26:
  - Arquivo de output gerado: Resultados/Marcela/tMapa/Casos/26/result_valgrind.txt.
- - Valgrind: Incorreto! allocs: 75,573, frees: 75,573, errors: 13970 | Desconto do valgrind 30.00%
+ - Valgrind: Ok! allocs: 75,573, frees: 75,573, errors: 0 | Desconto do valgrind: 0.0%
  - Resultado para o estatisticas.txt: Ok! Peso: 1.5
- - Resultado para o inicializacao.txt: Incorreto!
+ - Resultado para o inicializacao.txt: Ok! Peso: 1.0
  - Resultado para o ranking.txt: Ok! Peso: 1.5
  - Resultado para o resumo.txt: Ok! Peso: 1.5
- - Resultado para o saida.txt: Incorreto!
- - Resultado para o trilha.txt: Incorreto!
+ - Resultado para o saida.txt: Ok! Peso: 3.0
+ - Resultado para o trilha.txt: Ok! Peso: 1.5
  - Pasta tMapa / Caso 27:
  - Arquivo de output gerado: Resultados/Marcela/tMapa/Casos/27/result_valgrind.txt.
- - Valgrind: Incorreto! allocs: 9,384, frees: 9,384, errors: 1299 | Desconto do valgrind 30.00%
+ - Valgrind: Ok! allocs: 8,966, frees: 8,966, errors: 0 | Desconto do valgrind: 0.0%
  - Resultado para o estatisticas.txt: Ok! Peso: 1.5
- - Resultado para o inicializacao.txt: Incorreto!
+ - Resultado para o inicializacao.txt: Ok! Peso: 1.0
  - Resultado para o ranking.txt: Ok! Peso: 1.5
- - Resultado para o resumo.txt: Incorreto!
- - Resultado para o saida.txt: Incorreto!
- - Resultado para o trilha.txt: Incorreto!
+ - Resultado para o resumo.txt: Ok! Peso: 1.5
+ - Resultado para o saida.txt: Ok! Peso: 3.0
+ - Resultado para o trilha.txt: Ok! Peso: 1.5
  - Pasta tMapa / Caso 28:
  - Arquivo de output gerado: Resultados/Marcela/tMapa/Casos/28/result_valgrind.txt.
- - Valgrind: Incorreto! allocs: 78,392, frees: 78,392, errors: 8800 | Desconto do valgrind 30.00%
- - Resultado para o estatisticas.txt: Incorreto!
- - Resultado para o inicializacao.txt: Incorreto!
- - Resultado para o ranking.txt: Incorreto!
- - Resultado para o resumo.txt: Incorreto!
- - Resultado para o saida.txt: Incorreto!
- - Resultado para o trilha.txt: Incorreto!
+ - Valgrind: Ok! allocs: 77,761, frees: 77,761, errors: 0 | Desconto do valgrind: 0.0%
+ - Resultado para o estatisticas.txt: Ok! Peso: 1.5
+ - Resultado para o inicializacao.txt: Ok! Peso: 1.0
+ - Resultado para o ranking.txt: Ok! Peso: 1.5
+ - Resultado para o resumo.txt: Ok! Peso: 1.5
+ - Resultado para o saida.txt: Ok! Peso: 3.0
+ - Resultado para o trilha.txt: Ok! Peso: 1.5
  - Pasta tMapa / Caso 29:
  - Arquivo de output gerado: Resultados/Marcela/tMapa/Casos/29/result_valgrind.txt.
- - Valgrind: Incorreto! allocs: 78,522, frees: 78,522, errors: 7464 | Desconto do valgrind 30.00%
+ - Valgrind: Ok! allocs: 78,522, frees: 78,522, errors: 0 | Desconto do valgrind: 0.0%
  - Resultado para o estatisticas.txt: Ok! Peso: 1.5
- - Resultado para o inicializacao.txt: Incorreto!
+ - Resultado para o inicializacao.txt: Ok! Peso: 1.0
  - Resultado para o ranking.txt: Ok! Peso: 1.5
  - Resultado para o resumo.txt: Ok! Peso: 1.5
- - Resultado para o saida.txt: Incorreto!
- - Resultado para o trilha.txt: Incorreto!
+ - Resultado para o saida.txt: Ok! Peso: 3.0
+ - Resultado para o trilha.txt: Ok! Peso: 1.5
  - Pasta tMapa / Caso 30:
  - Arquivo de output gerado: Resultados/Marcela/tMapa/Casos/30/result_valgrind.txt.
- - Valgrind: Incorreto! allocs: 110,196, frees: 110,196, errors: 12060 | Desconto do valgrind 30.00%
+ - Valgrind: Ok! allocs: 110,196, frees: 110,196, errors: 0 | Desconto do valgrind: 0.0%
  - Resultado para o estatisticas.txt: Ok! Peso: 1.5
- - Resultado para o inicializacao.txt: Incorreto!
+ - Resultado para o inicializacao.txt: Ok! Peso: 1.0
  - Resultado para o ranking.txt: Ok! Peso: 1.5
  - Resultado para o resumo.txt: Ok! Peso: 1.5
- - Resultado para o saida.txt: Incorreto!
- - Resultado para o trilha.txt: Incorreto!
+ - Resultado para o saida.txt: Ok! Peso: 3.0
+ - Resultado para o trilha.txt: Ok! Peso: 1.5
  - Pasta tMovimento / Caso 01:
  - Arquivo de output gerado: Resultados/Marcela/tMovimento/Casos/01/result_valgrind.txt.
  - Valgrind: Ok! allocs: 34,839, frees: 34,839, errors: 0 | Desconto do valgrind: 0.0%
@@ -1946,7 +1946,7 @@ Nome 0: Marcela
  - Resumo das Compilações: 4 compilações corretas de 7 no total
  - Resumo das Linkagens: 4 linkagens corretas de 7 no total
  - Valgrinds Corretos tPacman: 0 valgrinds corretos de 30 (teve desconto na nota para a pasta tPacman, olhar detalhamento nos prints acima!)
- - Valgrinds Corretos tMapa: 0 valgrinds corretos de 30 (teve desconto na nota para a pasta tMapa, olhar detalhamento nos prints acima!)
+ - Valgrinds Corretos tMapa: 30 valgrinds corretos de 30 (não teve desconto na nota)
  - Valgrinds Corretos tMovimento: 30 valgrinds corretos de 30 (não teve desconto na nota)
  - Valgrinds Corretos tTunel: 30 valgrinds corretos de 30 (não teve desconto na nota)
  - Valgrinds Corretos tPosicao: 30 valgrinds corretos de 30 (não teve desconto na nota)
@@ -1954,13 +1954,13 @@ Nome 0: Marcela
  - Valgrinds Corretos main: 0 valgrinds corretos de 30 (teve desconto na nota para a pasta main, olhar detalhamento nos prints acima!)
  - Cômputo final das Notas:
  - Pasta tPacman (peso 2.5): 0 resultados corretos de 180 / Nota 0
- - Pasta tMapa (peso 2.5): 56 resultados corretos de 180 / Nota .49
+ - Pasta tMapa (peso 2.5): 180 resultados corretos de 180 / Nota 2.50
  - Pasta tMovimento (peso 0.5): 180 resultados corretos de 180 / Nota .50
  - Pasta tTunel (peso 0.5): 180 resultados corretos de 180 / Nota .50
  - Pasta tPosicao (peso 0.5): 180 resultados corretos de 180 / Nota .50
  - Pasta completo (peso 0.0): 0 resultados corretos de 180 / Nota 0
  - Pasta main (peso 3.5): 0 resultados corretos de 180 / Nota 0
- - Nota Final Marcela: 1.99
+ - Nota Final Marcela: 4.00
 
 ----------------------------------------------------------------------------
 
