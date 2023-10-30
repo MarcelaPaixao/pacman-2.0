@@ -1,15 +1,15 @@
-==391421== Memcheck, a memory error detector
-==391421== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
-==391421== Using Valgrind-3.18.1 and LibVEX; rerun with -h for copyright info
-==391421== Command: Resultados/Marcela/completo/prog Resultados/Marcela/completo/Casos/09
-==391421== Parent PID: 391420
-==391421== 
-==391421== 
-==391421== HEAP SUMMARY:
-==391421==     in use at exit: 0 bytes in 0 blocks
-==391421==   total heap usage: 0 allocs, 0 frees, 0 bytes allocated
-==391421== 
-==391421== All heap blocks were freed -- no leaks are possible
-==391421== 
-==391421== For lists of detected and suppressed errors, rerun with: -s
-==391421== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+==818580== Memcheck, a memory error detector
+==818580== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==818580== Using Valgrind-3.18.1 and LibVEX; rerun with -h for copyright info
+==818580== Command: Resultados/Marcela/completo/prog Resultados/Marcela/completo/Casos/09
+==818580== Parent PID: 818579
+==818580== 
+==818580== 
+==818580== HEAP SUMMARY:
+==818580==     in use at exit: 0 bytes in 0 blocks
+==818580==   total heap usage: 0 allocs, 0 frees, 0 bytes allocated
+==818580== 
+==818580== All heap blocks were freed -- no leaks are possible
+==818580== 
+==818580== For lists of detected and suppressed errors, rerun with: -s
+==818580== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)

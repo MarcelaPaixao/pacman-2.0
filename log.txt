@@ -132,272 +132,272 @@ LINKANDO OS ARQUIVOS COMPILADOS:
 EXECUTANDO O VALGRIND EM CADA CASO:
  - Pasta tPacman / Caso 01:
  - Arquivo de output gerado: Resultados/Marcela/tPacman/Casos/01/result_valgrind.txt.
- - Valgrind: Incorreto! allocs: 34,670, frees: 34,681, errors: 66016 | Desconto do valgrind 30.00%
+ - Valgrind: Incorreto! allocs: 34,667, frees: 34,679, errors: 66223 | Desconto do valgrind 30.00%
  - Resultado para o estatisticas.txt: Incorreto!
  - Resultado para o inicializacao.txt: Ok! Peso: 1.0
- - O aluno não gerou o arquivo de saída Resultados/Marcela/tPacman/Casos/01/saida/ranking.txt, considerando resultado incorreto!
+ - Resultado para o ranking.txt: Incorreto!
  - Resultado para o resumo.txt: Incorreto!
  - Resultado para o saida.txt: Incorreto!
- - O aluno não gerou o arquivo de saída Resultados/Marcela/tPacman/Casos/01/saida/trilha.txt, considerando resultado incorreto!
+ - Resultado para o trilha.txt: Incorreto!
  - Pasta tPacman / Caso 02:
  - Arquivo de output gerado: Resultados/Marcela/tPacman/Casos/02/result_valgrind.txt.
- - Valgrind: Incorreto! allocs: 1,806, frees: 1,779, errors: 2993 | Desconto do valgrind 30.00%
- - Resultado para o estatisticas.txt: Incorreto!
+ - Valgrind: Incorreto! allocs: 1,803, frees: 1,777, errors: 3022 | Desconto do valgrind 30.00%
+ - O aluno não gerou o arquivo de saída Resultados/Marcela/tPacman/Casos/02/saida/estatisticas.txt, considerando resultado incorreto!
  - Resultado para o inicializacao.txt: Ok! Peso: 1.0
  - O aluno não gerou o arquivo de saída Resultados/Marcela/tPacman/Casos/02/saida/ranking.txt, considerando resultado incorreto!
- - Resultado para o resumo.txt: Incorreto!
+ - O aluno não gerou o arquivo de saída Resultados/Marcela/tPacman/Casos/02/saida/resumo.txt, considerando resultado incorreto!
  - Resultado para o saida.txt: Incorreto!
  - O aluno não gerou o arquivo de saída Resultados/Marcela/tPacman/Casos/02/saida/trilha.txt, considerando resultado incorreto!
  - Pasta tPacman / Caso 03:
  - Arquivo de output gerado: Resultados/Marcela/tPacman/Casos/03/result_valgrind.txt.
- - Valgrind: Incorreto! allocs: 1,318,174, frees: 1,318,604, errors: 2615744 | Desconto do valgrind 30.00%
- - Resultado para o estatisticas.txt: Incorreto!
+ - Valgrind: Incorreto! allocs: 1,318,171, frees: 1,318,602, errors: 2617143 | Desconto do valgrind 30.00%
+ - O aluno não gerou o arquivo de saída Resultados/Marcela/tPacman/Casos/03/saida/estatisticas.txt, considerando resultado incorreto!
  - Resultado para o inicializacao.txt: Ok! Peso: 1.0
  - O aluno não gerou o arquivo de saída Resultados/Marcela/tPacman/Casos/03/saida/ranking.txt, considerando resultado incorreto!
- - Resultado para o resumo.txt: Incorreto!
+ - O aluno não gerou o arquivo de saída Resultados/Marcela/tPacman/Casos/03/saida/resumo.txt, considerando resultado incorreto!
  - Resultado para o saida.txt: Incorreto!
  - O aluno não gerou o arquivo de saída Resultados/Marcela/tPacman/Casos/03/saida/trilha.txt, considerando resultado incorreto!
  - Pasta tPacman / Caso 04:
  - Arquivo de output gerado: Resultados/Marcela/tPacman/Casos/04/result_valgrind.txt.
- - Valgrind: Incorreto! allocs: 397,726, frees: 398,175, errors: 781257 | Desconto do valgrind 30.00%
- - Resultado para o estatisticas.txt: Incorreto!
+ - Valgrind: Incorreto! allocs: 397,104, frees: 397,552, errors: 781067 | Desconto do valgrind 30.00%
+ - O aluno não gerou o arquivo de saída Resultados/Marcela/tPacman/Casos/04/saida/estatisticas.txt, considerando resultado incorreto!
  - Resultado para o inicializacao.txt: Ok! Peso: 1.0
  - O aluno não gerou o arquivo de saída Resultados/Marcela/tPacman/Casos/04/saida/ranking.txt, considerando resultado incorreto!
- - Resultado para o resumo.txt: Incorreto!
+ - O aluno não gerou o arquivo de saída Resultados/Marcela/tPacman/Casos/04/saida/resumo.txt, considerando resultado incorreto!
  - Resultado para o saida.txt: Incorreto!
  - O aluno não gerou o arquivo de saída Resultados/Marcela/tPacman/Casos/04/saida/trilha.txt, considerando resultado incorreto!
  - Pasta tPacman / Caso 05:
  - Arquivo de output gerado: Resultados/Marcela/tPacman/Casos/05/result_valgrind.txt.
- - Valgrind: Incorreto! allocs: 1,431,283, frees: 1,431,994, errors: 2835891 | Desconto do valgrind 30.00%
- - Resultado para o estatisticas.txt: Incorreto!
+ - Valgrind: Incorreto! allocs: 1,430,036, frees: 1,430,746, errors: 2835067 | Desconto do valgrind 30.00%
+ - O aluno não gerou o arquivo de saída Resultados/Marcela/tPacman/Casos/05/saida/estatisticas.txt, considerando resultado incorreto!
  - Resultado para o inicializacao.txt: Ok! Peso: 1.0
  - O aluno não gerou o arquivo de saída Resultados/Marcela/tPacman/Casos/05/saida/ranking.txt, considerando resultado incorreto!
- - Resultado para o resumo.txt: Incorreto!
+ - O aluno não gerou o arquivo de saída Resultados/Marcela/tPacman/Casos/05/saida/resumo.txt, considerando resultado incorreto!
  - Resultado para o saida.txt: Incorreto!
  - O aluno não gerou o arquivo de saída Resultados/Marcela/tPacman/Casos/05/saida/trilha.txt, considerando resultado incorreto!
  - Pasta tPacman / Caso 06:
  - Arquivo de output gerado: Resultados/Marcela/tPacman/Casos/06/result_valgrind.txt.
- - Valgrind: Incorreto! allocs: 192,738, frees: 192,939, errors: 377839 | Desconto do valgrind 30.00%
- - Resultado para o estatisticas.txt: Incorreto!
+ - Valgrind: Incorreto! allocs: 192,735, frees: 192,937, errors: 378394 | Desconto do valgrind 30.00%
+ - O aluno não gerou o arquivo de saída Resultados/Marcela/tPacman/Casos/06/saida/estatisticas.txt, considerando resultado incorreto!
  - Resultado para o inicializacao.txt: Ok! Peso: 1.0
  - O aluno não gerou o arquivo de saída Resultados/Marcela/tPacman/Casos/06/saida/ranking.txt, considerando resultado incorreto!
- - Resultado para o resumo.txt: Incorreto!
+ - O aluno não gerou o arquivo de saída Resultados/Marcela/tPacman/Casos/06/saida/resumo.txt, considerando resultado incorreto!
  - Resultado para o saida.txt: Incorreto!
  - O aluno não gerou o arquivo de saída Resultados/Marcela/tPacman/Casos/06/saida/trilha.txt, considerando resultado incorreto!
  - Pasta tPacman / Caso 07:
  - Arquivo de output gerado: Resultados/Marcela/tPacman/Casos/07/result_valgrind.txt.
- - Valgrind: Incorreto! allocs: 9,037, frees: 9,062, errors: 17064 | Desconto do valgrind 30.00%
- - Resultado para o estatisticas.txt: Incorreto!
+ - Valgrind: Incorreto! allocs: 8,927, frees: 8,951, errors: 16977 | Desconto do valgrind 30.00%
+ - O aluno não gerou o arquivo de saída Resultados/Marcela/tPacman/Casos/07/saida/estatisticas.txt, considerando resultado incorreto!
  - Resultado para o inicializacao.txt: Ok! Peso: 1.0
  - O aluno não gerou o arquivo de saída Resultados/Marcela/tPacman/Casos/07/saida/ranking.txt, considerando resultado incorreto!
- - Resultado para o resumo.txt: Incorreto!
+ - O aluno não gerou o arquivo de saída Resultados/Marcela/tPacman/Casos/07/saida/resumo.txt, considerando resultado incorreto!
  - Resultado para o saida.txt: Incorreto!
  - O aluno não gerou o arquivo de saída Resultados/Marcela/tPacman/Casos/07/saida/trilha.txt, considerando resultado incorreto!
  - Pasta tPacman / Caso 08:
  - Arquivo de output gerado: Resultados/Marcela/tPacman/Casos/08/result_valgrind.txt.
- - Valgrind: Incorreto! allocs: 54,362, frees: 54,471, errors: 105531 | Desconto do valgrind 30.00%
- - Resultado para o estatisticas.txt: Incorreto!
+ - Valgrind: Incorreto! allocs: 54,098, frees: 54,206, errors: 105373 | Desconto do valgrind 30.00%
+ - O aluno não gerou o arquivo de saída Resultados/Marcela/tPacman/Casos/08/saida/estatisticas.txt, considerando resultado incorreto!
  - Resultado para o inicializacao.txt: Ok! Peso: 1.0
  - O aluno não gerou o arquivo de saída Resultados/Marcela/tPacman/Casos/08/saida/ranking.txt, considerando resultado incorreto!
- - Resultado para o resumo.txt: Incorreto!
+ - O aluno não gerou o arquivo de saída Resultados/Marcela/tPacman/Casos/08/saida/resumo.txt, considerando resultado incorreto!
  - Resultado para o saida.txt: Incorreto!
  - O aluno não gerou o arquivo de saída Resultados/Marcela/tPacman/Casos/08/saida/trilha.txt, considerando resultado incorreto!
  - Pasta tPacman / Caso 09:
  - Arquivo de output gerado: Resultados/Marcela/tPacman/Casos/09/result_valgrind.txt.
- - Valgrind: Incorreto! allocs: 750,077, frees: 750,666, errors: 1487968 | Desconto do valgrind 30.00%
- - Resultado para o estatisticas.txt: Incorreto!
+ - Valgrind: Incorreto! allocs: 749,163, frees: 749,751, errors: 1487452 | Desconto do valgrind 30.00%
+ - O aluno não gerou o arquivo de saída Resultados/Marcela/tPacman/Casos/09/saida/estatisticas.txt, considerando resultado incorreto!
  - Resultado para o inicializacao.txt: Ok! Peso: 1.0
  - O aluno não gerou o arquivo de saída Resultados/Marcela/tPacman/Casos/09/saida/ranking.txt, considerando resultado incorreto!
- - Resultado para o resumo.txt: Incorreto!
+ - O aluno não gerou o arquivo de saída Resultados/Marcela/tPacman/Casos/09/saida/resumo.txt, considerando resultado incorreto!
  - Resultado para o saida.txt: Incorreto!
  - O aluno não gerou o arquivo de saída Resultados/Marcela/tPacman/Casos/09/saida/trilha.txt, considerando resultado incorreto!
  - Pasta tPacman / Caso 10:
  - Arquivo de output gerado: Resultados/Marcela/tPacman/Casos/10/result_valgrind.txt.
- - Valgrind: Incorreto! allocs: 116,415, frees: 116,510, errors: 227652 | Desconto do valgrind 30.00%
- - Resultado para o estatisticas.txt: Incorreto!
+ - Valgrind: Incorreto! allocs: 116,041, frees: 116,135, errors: 227330 | Desconto do valgrind 30.00%
+ - O aluno não gerou o arquivo de saída Resultados/Marcela/tPacman/Casos/10/saida/estatisticas.txt, considerando resultado incorreto!
  - Resultado para o inicializacao.txt: Ok! Peso: 1.0
  - O aluno não gerou o arquivo de saída Resultados/Marcela/tPacman/Casos/10/saida/ranking.txt, considerando resultado incorreto!
- - Resultado para o resumo.txt: Incorreto!
+ - O aluno não gerou o arquivo de saída Resultados/Marcela/tPacman/Casos/10/saida/resumo.txt, considerando resultado incorreto!
  - Resultado para o saida.txt: Incorreto!
  - O aluno não gerou o arquivo de saída Resultados/Marcela/tPacman/Casos/10/saida/trilha.txt, considerando resultado incorreto!
  - Pasta tPacman / Caso 11:
  - Arquivo de output gerado: Resultados/Marcela/tPacman/Casos/11/result_valgrind.txt.
- - Valgrind: Incorreto! allocs: 934,465, frees: 935,167, errors: 1855505 | Desconto do valgrind 30.00%
- - Resultado para o estatisticas.txt: Incorreto!
+ - Valgrind: Incorreto! allocs: 933,451, frees: 934,152, errors: 1855013 | Desconto do valgrind 30.00%
+ - O aluno não gerou o arquivo de saída Resultados/Marcela/tPacman/Casos/11/saida/estatisticas.txt, considerando resultado incorreto!
  - Resultado para o inicializacao.txt: Ok! Peso: 1.0
  - O aluno não gerou o arquivo de saída Resultados/Marcela/tPacman/Casos/11/saida/ranking.txt, considerando resultado incorreto!
- - Resultado para o resumo.txt: Incorreto!
+ - O aluno não gerou o arquivo de saída Resultados/Marcela/tPacman/Casos/11/saida/resumo.txt, considerando resultado incorreto!
  - Resultado para o saida.txt: Incorreto!
  - O aluno não gerou o arquivo de saída Resultados/Marcela/tPacman/Casos/11/saida/trilha.txt, considerando resultado incorreto!
  - Pasta tPacman / Caso 12:
  - Arquivo de output gerado: Resultados/Marcela/tPacman/Casos/12/result_valgrind.txt.
- - Valgrind: Incorreto! allocs: 58,166, frees: 58,223, errors: 112059 | Desconto do valgrind 30.00%
- - Resultado para o estatisticas.txt: Incorreto!
+ - Valgrind: Incorreto! allocs: 58,163, frees: 58,221, errors: 112340 | Desconto do valgrind 30.00%
+ - O aluno não gerou o arquivo de saída Resultados/Marcela/tPacman/Casos/12/saida/estatisticas.txt, considerando resultado incorreto!
  - Resultado para o inicializacao.txt: Ok! Peso: 1.0
  - O aluno não gerou o arquivo de saída Resultados/Marcela/tPacman/Casos/12/saida/ranking.txt, considerando resultado incorreto!
- - Resultado para o resumo.txt: Incorreto!
+ - O aluno não gerou o arquivo de saída Resultados/Marcela/tPacman/Casos/12/saida/resumo.txt, considerando resultado incorreto!
  - Resultado para o saida.txt: Incorreto!
  - O aluno não gerou o arquivo de saída Resultados/Marcela/tPacman/Casos/12/saida/trilha.txt, considerando resultado incorreto!
  - Pasta tPacman / Caso 13:
  - Arquivo de output gerado: Resultados/Marcela/tPacman/Casos/13/result_valgrind.txt.
- - Valgrind: Incorreto! allocs: 54,817, frees: 54,826, errors: 105969 | Desconto do valgrind 30.00%
- - Resultado para o estatisticas.txt: Ok! Peso: 1.5
+ - Valgrind: Incorreto! allocs: 54,814, frees: 54,824, errors: 106174 | Desconto do valgrind 30.00%
+ - O aluno não gerou o arquivo de saída Resultados/Marcela/tPacman/Casos/13/saida/estatisticas.txt, considerando resultado incorreto!
  - Resultado para o inicializacao.txt: Ok! Peso: 1.0
  - O aluno não gerou o arquivo de saída Resultados/Marcela/tPacman/Casos/13/saida/ranking.txt, considerando resultado incorreto!
- - Resultado para o resumo.txt: Incorreto!
+ - O aluno não gerou o arquivo de saída Resultados/Marcela/tPacman/Casos/13/saida/resumo.txt, considerando resultado incorreto!
  - Resultado para o saida.txt: Incorreto!
  - O aluno não gerou o arquivo de saída Resultados/Marcela/tPacman/Casos/13/saida/trilha.txt, considerando resultado incorreto!
  - Pasta tPacman / Caso 14:
  - Arquivo de output gerado: Resultados/Marcela/tPacman/Casos/14/result_valgrind.txt.
- - Valgrind: Incorreto! allocs: 38,343, frees: 38,376, errors: 73637 | Desconto do valgrind 30.00%
- - Resultado para o estatisticas.txt: Incorreto!
+ - Valgrind: Incorreto! allocs: 38,340, frees: 38,374, errors: 73864 | Desconto do valgrind 30.00%
+ - O aluno não gerou o arquivo de saída Resultados/Marcela/tPacman/Casos/14/saida/estatisticas.txt, considerando resultado incorreto!
  - Resultado para o inicializacao.txt: Ok! Peso: 1.0
  - O aluno não gerou o arquivo de saída Resultados/Marcela/tPacman/Casos/14/saida/ranking.txt, considerando resultado incorreto!
- - Resultado para o resumo.txt: Incorreto!
+ - O aluno não gerou o arquivo de saída Resultados/Marcela/tPacman/Casos/14/saida/resumo.txt, considerando resultado incorreto!
  - Resultado para o saida.txt: Incorreto!
  - O aluno não gerou o arquivo de saída Resultados/Marcela/tPacman/Casos/14/saida/trilha.txt, considerando resultado incorreto!
  - Pasta tPacman / Caso 15:
  - Arquivo de output gerado: Resultados/Marcela/tPacman/Casos/15/result_valgrind.txt.
- - Valgrind: Incorreto! allocs: 22,624, frees: 22,601, errors: 42446 | Desconto do valgrind 30.00%
- - Resultado para o estatisticas.txt: Incorreto!
+ - Valgrind: Incorreto! allocs: 22,621, frees: 22,599, errors: 42533 | Desconto do valgrind 30.00%
+ - O aluno não gerou o arquivo de saída Resultados/Marcela/tPacman/Casos/15/saida/estatisticas.txt, considerando resultado incorreto!
  - Resultado para o inicializacao.txt: Ok! Peso: 1.0
  - O aluno não gerou o arquivo de saída Resultados/Marcela/tPacman/Casos/15/saida/ranking.txt, considerando resultado incorreto!
- - Resultado para o resumo.txt: Incorreto!
+ - O aluno não gerou o arquivo de saída Resultados/Marcela/tPacman/Casos/15/saida/resumo.txt, considerando resultado incorreto!
  - Resultado para o saida.txt: Incorreto!
  - O aluno não gerou o arquivo de saída Resultados/Marcela/tPacman/Casos/15/saida/trilha.txt, considerando resultado incorreto!
  - Pasta tPacman / Caso 16:
  - Arquivo de output gerado: Resultados/Marcela/tPacman/Casos/16/result_valgrind.txt.
- - Valgrind: Incorreto! allocs: 6,773, frees: 6,764, errors: 12566 | Desconto do valgrind 30.00%
- - Resultado para o estatisticas.txt: Incorreto!
+ - Valgrind: Incorreto! allocs: 6,770, frees: 6,762, errors: 12639 | Desconto do valgrind 30.00%
+ - O aluno não gerou o arquivo de saída Resultados/Marcela/tPacman/Casos/16/saida/estatisticas.txt, considerando resultado incorreto!
  - Resultado para o inicializacao.txt: Ok! Peso: 1.0
  - O aluno não gerou o arquivo de saída Resultados/Marcela/tPacman/Casos/16/saida/ranking.txt, considerando resultado incorreto!
- - Resultado para o resumo.txt: Incorreto!
+ - O aluno não gerou o arquivo de saída Resultados/Marcela/tPacman/Casos/16/saida/resumo.txt, considerando resultado incorreto!
  - Resultado para o saida.txt: Incorreto!
  - O aluno não gerou o arquivo de saída Resultados/Marcela/tPacman/Casos/16/saida/trilha.txt, considerando resultado incorreto!
  - Pasta tPacman / Caso 17:
  - Arquivo de output gerado: Resultados/Marcela/tPacman/Casos/17/result_valgrind.txt.
- - Valgrind: Incorreto! allocs: 8,620, frees: 8,623, errors: 16192 | Desconto do valgrind 30.00%
- - Resultado para o estatisticas.txt: Incorreto!
+ - Valgrind: Incorreto! allocs: 8,617, frees: 8,621, errors: 16281 | Desconto do valgrind 30.00%
+ - O aluno não gerou o arquivo de saída Resultados/Marcela/tPacman/Casos/17/saida/estatisticas.txt, considerando resultado incorreto!
  - Resultado para o inicializacao.txt: Ok! Peso: 1.0
  - O aluno não gerou o arquivo de saída Resultados/Marcela/tPacman/Casos/17/saida/ranking.txt, considerando resultado incorreto!
- - Resultado para o resumo.txt: Incorreto!
+ - O aluno não gerou o arquivo de saída Resultados/Marcela/tPacman/Casos/17/saida/resumo.txt, considerando resultado incorreto!
  - Resultado para o saida.txt: Incorreto!
  - O aluno não gerou o arquivo de saída Resultados/Marcela/tPacman/Casos/17/saida/trilha.txt, considerando resultado incorreto!
  - Pasta tPacman / Caso 18:
  - Arquivo de output gerado: Resultados/Marcela/tPacman/Casos/18/result_valgrind.txt.
- - Valgrind: Incorreto! allocs: 15,229, frees: 15,233, errors: 28038 | Desconto do valgrind 30.00%
- - Resultado para o estatisticas.txt: Incorreto!
+ - Valgrind: Incorreto! allocs: 15,226, frees: 15,231, errors: 28175 | Desconto do valgrind 30.00%
+ - O aluno não gerou o arquivo de saída Resultados/Marcela/tPacman/Casos/18/saida/estatisticas.txt, considerando resultado incorreto!
  - Resultado para o inicializacao.txt: Ok! Peso: 1.0
  - O aluno não gerou o arquivo de saída Resultados/Marcela/tPacman/Casos/18/saida/ranking.txt, considerando resultado incorreto!
- - Resultado para o resumo.txt: Incorreto!
+ - O aluno não gerou o arquivo de saída Resultados/Marcela/tPacman/Casos/18/saida/resumo.txt, considerando resultado incorreto!
  - Resultado para o saida.txt: Incorreto!
  - O aluno não gerou o arquivo de saída Resultados/Marcela/tPacman/Casos/18/saida/trilha.txt, considerando resultado incorreto!
  - Pasta tPacman / Caso 19:
  - Arquivo de output gerado: Resultados/Marcela/tPacman/Casos/19/result_valgrind.txt.
- - Valgrind: Incorreto! allocs: 53,214, frees: 53,234, errors: 102383 | Desconto do valgrind 30.00%
- - Resultado para o estatisticas.txt: Incorreto!
+ - Valgrind: Incorreto! allocs: 53,211, frees: 53,232, errors: 102560 | Desconto do valgrind 30.00%
+ - O aluno não gerou o arquivo de saída Resultados/Marcela/tPacman/Casos/19/saida/estatisticas.txt, considerando resultado incorreto!
  - Resultado para o inicializacao.txt: Ok! Peso: 1.0
  - O aluno não gerou o arquivo de saída Resultados/Marcela/tPacman/Casos/19/saida/ranking.txt, considerando resultado incorreto!
- - Resultado para o resumo.txt: Incorreto!
+ - O aluno não gerou o arquivo de saída Resultados/Marcela/tPacman/Casos/19/saida/resumo.txt, considerando resultado incorreto!
  - Resultado para o saida.txt: Incorreto!
  - O aluno não gerou o arquivo de saída Resultados/Marcela/tPacman/Casos/19/saida/trilha.txt, considerando resultado incorreto!
  - Pasta tPacman / Caso 20:
  - Arquivo de output gerado: Resultados/Marcela/tPacman/Casos/20/result_valgrind.txt.
- - Valgrind: Incorreto! allocs: 23,742, frees: 23,744, errors: 44820 | Desconto do valgrind 30.00%
- - Resultado para o estatisticas.txt: Incorreto!
+ - Valgrind: Incorreto! allocs: 23,739, frees: 23,742, errors: 44961 | Desconto do valgrind 30.00%
+ - O aluno não gerou o arquivo de saída Resultados/Marcela/tPacman/Casos/20/saida/estatisticas.txt, considerando resultado incorreto!
  - Resultado para o inicializacao.txt: Ok! Peso: 1.0
  - O aluno não gerou o arquivo de saída Resultados/Marcela/tPacman/Casos/20/saida/ranking.txt, considerando resultado incorreto!
- - Resultado para o resumo.txt: Incorreto!
+ - O aluno não gerou o arquivo de saída Resultados/Marcela/tPacman/Casos/20/saida/resumo.txt, considerando resultado incorreto!
  - Resultado para o saida.txt: Incorreto!
  - O aluno não gerou o arquivo de saída Resultados/Marcela/tPacman/Casos/20/saida/trilha.txt, considerando resultado incorreto!
  - Pasta tPacman / Caso 21:
  - Arquivo de output gerado: Resultados/Marcela/tPacman/Casos/21/result_valgrind.txt.
- - Valgrind: Incorreto! allocs: 11,270, frees: 11,261, errors: 20633 | Desconto do valgrind 30.00%
- - Resultado para o estatisticas.txt: Incorreto!
+ - Valgrind: Incorreto! allocs: 11,267, frees: 11,259, errors: 20712 | Desconto do valgrind 30.00%
+ - O aluno não gerou o arquivo de saída Resultados/Marcela/tPacman/Casos/21/saida/estatisticas.txt, considerando resultado incorreto!
  - Resultado para o inicializacao.txt: Ok! Peso: 1.0
  - O aluno não gerou o arquivo de saída Resultados/Marcela/tPacman/Casos/21/saida/ranking.txt, considerando resultado incorreto!
- - Resultado para o resumo.txt: Incorreto!
+ - O aluno não gerou o arquivo de saída Resultados/Marcela/tPacman/Casos/21/saida/resumo.txt, considerando resultado incorreto!
  - Resultado para o saida.txt: Incorreto!
  - O aluno não gerou o arquivo de saída Resultados/Marcela/tPacman/Casos/21/saida/trilha.txt, considerando resultado incorreto!
  - Pasta tPacman / Caso 22:
  - Arquivo de output gerado: Resultados/Marcela/tPacman/Casos/22/result_valgrind.txt.
- - Valgrind: Incorreto! allocs: 33,383, frees: 33,396, errors: 63518 | Desconto do valgrind 30.00%
- - Resultado para o estatisticas.txt: Incorreto!
+ - Valgrind: Incorreto! allocs: 33,380, frees: 33,394, errors: 63711 | Desconto do valgrind 30.00%
+ - O aluno não gerou o arquivo de saída Resultados/Marcela/tPacman/Casos/22/saida/estatisticas.txt, considerando resultado incorreto!
  - Resultado para o inicializacao.txt: Ok! Peso: 1.0
  - O aluno não gerou o arquivo de saída Resultados/Marcela/tPacman/Casos/22/saida/ranking.txt, considerando resultado incorreto!
- - Resultado para o resumo.txt: Incorreto!
+ - O aluno não gerou o arquivo de saída Resultados/Marcela/tPacman/Casos/22/saida/resumo.txt, considerando resultado incorreto!
  - Resultado para o saida.txt: Incorreto!
  - O aluno não gerou o arquivo de saída Resultados/Marcela/tPacman/Casos/22/saida/trilha.txt, considerando resultado incorreto!
  - Pasta tPacman / Caso 23:
  - Arquivo de output gerado: Resultados/Marcela/tPacman/Casos/23/result_valgrind.txt.
- - Valgrind: Incorreto! allocs: 34,925, frees: 34,939, errors: 66651 | Desconto do valgrind 30.00%
- - Resultado para o estatisticas.txt: Incorreto!
+ - Valgrind: Incorreto! allocs: 34,503, frees: 34,516, errors: 65973 | Desconto do valgrind 30.00%
+ - O aluno não gerou o arquivo de saída Resultados/Marcela/tPacman/Casos/23/saida/estatisticas.txt, considerando resultado incorreto!
  - Resultado para o inicializacao.txt: Ok! Peso: 1.0
  - O aluno não gerou o arquivo de saída Resultados/Marcela/tPacman/Casos/23/saida/ranking.txt, considerando resultado incorreto!
- - Resultado para o resumo.txt: Incorreto!
+ - O aluno não gerou o arquivo de saída Resultados/Marcela/tPacman/Casos/23/saida/resumo.txt, considerando resultado incorreto!
  - Resultado para o saida.txt: Incorreto!
  - O aluno não gerou o arquivo de saída Resultados/Marcela/tPacman/Casos/23/saida/trilha.txt, considerando resultado incorreto!
  - Pasta tPacman / Caso 24:
  - Arquivo de output gerado: Resultados/Marcela/tPacman/Casos/24/result_valgrind.txt.
- - Valgrind: Incorreto! allocs: 21,044, frees: 21,058, errors: 39845 | Desconto do valgrind 30.00%
- - Resultado para o estatisticas.txt: Incorreto!
+ - Valgrind: Incorreto! allocs: 21,041, frees: 21,056, errors: 40008 | Desconto do valgrind 30.00%
+ - O aluno não gerou o arquivo de saída Resultados/Marcela/tPacman/Casos/24/saida/estatisticas.txt, considerando resultado incorreto!
  - Resultado para o inicializacao.txt: Ok! Peso: 1.0
  - O aluno não gerou o arquivo de saída Resultados/Marcela/tPacman/Casos/24/saida/ranking.txt, considerando resultado incorreto!
- - Resultado para o resumo.txt: Incorreto!
+ - O aluno não gerou o arquivo de saída Resultados/Marcela/tPacman/Casos/24/saida/resumo.txt, considerando resultado incorreto!
  - Resultado para o saida.txt: Incorreto!
  - O aluno não gerou o arquivo de saída Resultados/Marcela/tPacman/Casos/24/saida/trilha.txt, considerando resultado incorreto!
  - Pasta tPacman / Caso 25:
  - Arquivo de output gerado: Resultados/Marcela/tPacman/Casos/25/result_valgrind.txt.
- - Valgrind: Incorreto! allocs: 135,345, frees: 135,491, errors: 263858 | Desconto do valgrind 30.00%
- - Resultado para o estatisticas.txt: Incorreto!
+ - Valgrind: Incorreto! allocs: 134,823, frees: 134,968, errors: 263270 | Desconto do valgrind 30.00%
+ - O aluno não gerou o arquivo de saída Resultados/Marcela/tPacman/Casos/25/saida/estatisticas.txt, considerando resultado incorreto!
  - Resultado para o inicializacao.txt: Ok! Peso: 1.0
  - O aluno não gerou o arquivo de saída Resultados/Marcela/tPacman/Casos/25/saida/ranking.txt, considerando resultado incorreto!
- - Resultado para o resumo.txt: Incorreto!
+ - O aluno não gerou o arquivo de saída Resultados/Marcela/tPacman/Casos/25/saida/resumo.txt, considerando resultado incorreto!
  - Resultado para o saida.txt: Incorreto!
  - O aluno não gerou o arquivo de saída Resultados/Marcela/tPacman/Casos/25/saida/trilha.txt, considerando resultado incorreto!
  - Pasta tPacman / Caso 26:
  - Arquivo de output gerado: Resultados/Marcela/tPacman/Casos/26/result_valgrind.txt.
- - Valgrind: Incorreto! allocs: 76,307, frees: 76,339, errors: 147586 | Desconto do valgrind 30.00%
- - Resultado para o estatisticas.txt: Incorreto!
+ - Valgrind: Incorreto! allocs: 75,835, frees: 75,866, errors: 146884 | Desconto do valgrind 30.00%
+ - O aluno não gerou o arquivo de saída Resultados/Marcela/tPacman/Casos/26/saida/estatisticas.txt, considerando resultado incorreto!
  - Resultado para o inicializacao.txt: Ok! Peso: 1.0
  - O aluno não gerou o arquivo de saída Resultados/Marcela/tPacman/Casos/26/saida/ranking.txt, considerando resultado incorreto!
- - Resultado para o resumo.txt: Incorreto!
+ - O aluno não gerou o arquivo de saída Resultados/Marcela/tPacman/Casos/26/saida/resumo.txt, considerando resultado incorreto!
  - Resultado para o saida.txt: Incorreto!
  - O aluno não gerou o arquivo de saída Resultados/Marcela/tPacman/Casos/26/saida/trilha.txt, considerando resultado incorreto!
  - Pasta tPacman / Caso 27:
  - Arquivo de output gerado: Resultados/Marcela/tPacman/Casos/27/result_valgrind.txt.
- - Valgrind: Incorreto! allocs: 9,306, frees: 9,253, errors: 16424 | Desconto do valgrind 30.00%
- - Resultado para o estatisticas.txt: Incorreto!
+ - Valgrind: Incorreto! allocs: 9,303, frees: 9,251, errors: 16459 | Desconto do valgrind 30.00%
+ - O aluno não gerou o arquivo de saída Resultados/Marcela/tPacman/Casos/27/saida/estatisticas.txt, considerando resultado incorreto!
  - Resultado para o inicializacao.txt: Ok! Peso: 1.0
  - O aluno não gerou o arquivo de saída Resultados/Marcela/tPacman/Casos/27/saida/ranking.txt, considerando resultado incorreto!
- - Resultado para o resumo.txt: Incorreto!
+ - O aluno não gerou o arquivo de saída Resultados/Marcela/tPacman/Casos/27/saida/resumo.txt, considerando resultado incorreto!
  - Resultado para o saida.txt: Incorreto!
  - O aluno não gerou o arquivo de saída Resultados/Marcela/tPacman/Casos/27/saida/trilha.txt, considerando resultado incorreto!
  - Pasta tPacman / Caso 28:
  - Arquivo de output gerado: Resultados/Marcela/tPacman/Casos/28/result_valgrind.txt.
- - Valgrind: Incorreto! allocs: 78,176, frees: 78,187, errors: 151451 | Desconto do valgrind 30.00%
- - Resultado para o estatisticas.txt: Incorreto!
+ - Valgrind: Incorreto! allocs: 78,173, frees: 78,185, errors: 151680 | Desconto do valgrind 30.00%
+ - O aluno não gerou o arquivo de saída Resultados/Marcela/tPacman/Casos/28/saida/estatisticas.txt, considerando resultado incorreto!
  - Resultado para o inicializacao.txt: Ok! Peso: 1.0
  - O aluno não gerou o arquivo de saída Resultados/Marcela/tPacman/Casos/28/saida/ranking.txt, considerando resultado incorreto!
- - Resultado para o resumo.txt: Incorreto!
+ - O aluno não gerou o arquivo de saída Resultados/Marcela/tPacman/Casos/28/saida/resumo.txt, considerando resultado incorreto!
  - Resultado para o saida.txt: Incorreto!
  - O aluno não gerou o arquivo de saída Resultados/Marcela/tPacman/Casos/28/saida/trilha.txt, considerando resultado incorreto!
  - Pasta tPacman / Caso 29:
  - Arquivo de output gerado: Resultados/Marcela/tPacman/Casos/29/result_valgrind.txt.
- - Valgrind: Incorreto! allocs: 79,260, frees: 79,229, errors: 153092 | Desconto do valgrind 30.00%
- - Resultado para o estatisticas.txt: Incorreto!
+ - Valgrind: Incorreto! allocs: 79,257, frees: 79,227, errors: 153239 | Desconto do valgrind 30.00%
+ - O aluno não gerou o arquivo de saída Resultados/Marcela/tPacman/Casos/29/saida/estatisticas.txt, considerando resultado incorreto!
  - Resultado para o inicializacao.txt: Ok! Peso: 1.0
  - O aluno não gerou o arquivo de saída Resultados/Marcela/tPacman/Casos/29/saida/ranking.txt, considerando resultado incorreto!
- - Resultado para o resumo.txt: Incorreto!
+ - O aluno não gerou o arquivo de saída Resultados/Marcela/tPacman/Casos/29/saida/resumo.txt, considerando resultado incorreto!
  - Resultado para o saida.txt: Incorreto!
  - O aluno não gerou o arquivo de saída Resultados/Marcela/tPacman/Casos/29/saida/trilha.txt, considerando resultado incorreto!
  - Pasta tPacman / Caso 30:
  - Arquivo de output gerado: Resultados/Marcela/tPacman/Casos/30/result_valgrind.txt.
- - Valgrind: Incorreto! allocs: 110,961, frees: 111,032, errors: 215703 | Desconto do valgrind 30.00%
- - Resultado para o estatisticas.txt: Incorreto!
+ - Valgrind: Incorreto! allocs: 110,439, frees: 110,509, errors: 214947 | Desconto do valgrind 30.00%
+ - O aluno não gerou o arquivo de saída Resultados/Marcela/tPacman/Casos/30/saida/estatisticas.txt, considerando resultado incorreto!
  - Resultado para o inicializacao.txt: Ok! Peso: 1.0
  - O aluno não gerou o arquivo de saída Resultados/Marcela/tPacman/Casos/30/saida/ranking.txt, considerando resultado incorreto!
- - Resultado para o resumo.txt: Incorreto!
+ - O aluno não gerou o arquivo de saída Resultados/Marcela/tPacman/Casos/30/saida/resumo.txt, considerando resultado incorreto!
  - Resultado para o saida.txt: Incorreto!
  - O aluno não gerou o arquivo de saída Resultados/Marcela/tPacman/Casos/30/saida/trilha.txt, considerando resultado incorreto!
  - Pasta tMapa / Caso 01:
@@ -2038,14 +2038,14 @@ Nome 0: Marcela
  - Valgrinds Corretos completo: 30 valgrinds corretos de 30 (não teve desconto na nota)
  - Valgrinds Corretos main: 30 valgrinds corretos de 30 (não teve desconto na nota)
  - Cômputo final das Notas:
- - Pasta tPacman (peso 2.5): 31 resultados corretos de 180 / Nota .18
+ - Pasta tPacman (peso 2.5): 30 resultados corretos de 180 / Nota .17
  - Pasta tMapa (peso 2.5): 180 resultados corretos de 180 / Nota 2.50
  - Pasta tMovimento (peso 0.5): 180 resultados corretos de 180 / Nota .50
  - Pasta tTunel (peso 0.5): 180 resultados corretos de 180 / Nota .50
  - Pasta tPosicao (peso 0.5): 180 resultados corretos de 180 / Nota .50
  - Pasta completo (peso 0.0): 0 resultados corretos de 180 / Nota 0
  - Pasta main (peso 3.5): 0 resultados corretos de 180 / Nota 0
- - Nota Final Marcela: 4.18
+ - Nota Final Marcela: 4.17
 
 ----------------------------------------------------------------------------
 

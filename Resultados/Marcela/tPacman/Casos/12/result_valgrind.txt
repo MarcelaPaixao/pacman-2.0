@@ -1,403 +1,548 @@
-==331075== Memcheck, a memory error detector
-==331075== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
-==331075== Using Valgrind-3.18.1 and LibVEX; rerun with -h for copyright info
-==331075== Command: Resultados/Marcela/tPacman/prog Resultados/Marcela/tPacman/Casos/12
-==331075== Parent PID: 331074
-==331075== 
-==331075== Invalid read of size 4
-==331075==    at 0x10CF59: ObtemLinhaPosicao (in /home/mcpaixao/trab/Resultados/Marcela/tPacman/prog)
-==331075==    by 0x10ABBC: PrintaGridMapa (in /home/mcpaixao/trab/Resultados/Marcela/tPacman/prog)
-==331075==    by 0x10B5DC: ExecutaJogo (in /home/mcpaixao/trab/Resultados/Marcela/tPacman/prog)
-==331075==    by 0x10B88F: main (in /home/mcpaixao/trab/Resultados/Marcela/tPacman/prog)
-==331075==  Address 0x4aaeed0 is 0 bytes inside a block of size 8 free'd
-==331075==    at 0x484B27F: free (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
-==331075==    by 0x10D001: DesalocaPosicao (in /home/mcpaixao/trab/Resultados/Marcela/tPacman/prog)
-==331075==    by 0x10CC9C: DesalocaPacman (in /home/mcpaixao/trab/Resultados/Marcela/tPacman/prog)
-==331075==    by 0x10B476: ExecutaJogo (in /home/mcpaixao/trab/Resultados/Marcela/tPacman/prog)
-==331075==    by 0x10B88F: main (in /home/mcpaixao/trab/Resultados/Marcela/tPacman/prog)
-==331075==  Block was alloc'd at
-==331075==    at 0x4848899: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
-==331075==    by 0x10CEED: CriaPosicao (in /home/mcpaixao/trab/Resultados/Marcela/tPacman/prog)
-==331075==    by 0x10BEE9: ObtemPosicaoItemMapa (in /home/mcpaixao/trab/Resultados/Marcela/tPacman/prog)
-==331075==    by 0x10A77A: CriaJogo (in /home/mcpaixao/trab/Resultados/Marcela/tPacman/prog)
-==331075==    by 0x10B87F: main (in /home/mcpaixao/trab/Resultados/Marcela/tPacman/prog)
-==331075== 
-==331075== Invalid read of size 4
-==331075==    at 0x10CF6D: ObtemColunaPosicao (in /home/mcpaixao/trab/Resultados/Marcela/tPacman/prog)
-==331075==    by 0x10ABD1: PrintaGridMapa (in /home/mcpaixao/trab/Resultados/Marcela/tPacman/prog)
-==331075==    by 0x10B5DC: ExecutaJogo (in /home/mcpaixao/trab/Resultados/Marcela/tPacman/prog)
-==331075==    by 0x10B88F: main (in /home/mcpaixao/trab/Resultados/Marcela/tPacman/prog)
-==331075==  Address 0x4aaeed4 is 4 bytes inside a block of size 8 free'd
-==331075==    at 0x484B27F: free (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
-==331075==    by 0x10D001: DesalocaPosicao (in /home/mcpaixao/trab/Resultados/Marcela/tPacman/prog)
-==331075==    by 0x10CC9C: DesalocaPacman (in /home/mcpaixao/trab/Resultados/Marcela/tPacman/prog)
-==331075==    by 0x10B476: ExecutaJogo (in /home/mcpaixao/trab/Resultados/Marcela/tPacman/prog)
-==331075==    by 0x10B88F: main (in /home/mcpaixao/trab/Resultados/Marcela/tPacman/prog)
-==331075==  Block was alloc'd at
-==331075==    at 0x4848899: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
-==331075==    by 0x10CEED: CriaPosicao (in /home/mcpaixao/trab/Resultados/Marcela/tPacman/prog)
-==331075==    by 0x10BEE9: ObtemPosicaoItemMapa (in /home/mcpaixao/trab/Resultados/Marcela/tPacman/prog)
-==331075==    by 0x10A77A: CriaJogo (in /home/mcpaixao/trab/Resultados/Marcela/tPacman/prog)
-==331075==    by 0x10B87F: main (in /home/mcpaixao/trab/Resultados/Marcela/tPacman/prog)
-==331075== 
-==331075== Invalid read of size 4
-==331075==    at 0x10CF59: ObtemLinhaPosicao (in /home/mcpaixao/trab/Resultados/Marcela/tPacman/prog)
-==331075==    by 0x10C468: MovePacman (in /home/mcpaixao/trab/Resultados/Marcela/tPacman/prog)
-==331075==    by 0x10B450: ExecutaJogo (in /home/mcpaixao/trab/Resultados/Marcela/tPacman/prog)
-==331075==    by 0x10B88F: main (in /home/mcpaixao/trab/Resultados/Marcela/tPacman/prog)
-==331075==  Address 0x4aaeed0 is 0 bytes inside a block of size 8 free'd
-==331075==    at 0x484B27F: free (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
-==331075==    by 0x10D001: DesalocaPosicao (in /home/mcpaixao/trab/Resultados/Marcela/tPacman/prog)
-==331075==    by 0x10CC9C: DesalocaPacman (in /home/mcpaixao/trab/Resultados/Marcela/tPacman/prog)
-==331075==    by 0x10B476: ExecutaJogo (in /home/mcpaixao/trab/Resultados/Marcela/tPacman/prog)
-==331075==    by 0x10B88F: main (in /home/mcpaixao/trab/Resultados/Marcela/tPacman/prog)
-==331075==  Block was alloc'd at
-==331075==    at 0x4848899: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
-==331075==    by 0x10CEED: CriaPosicao (in /home/mcpaixao/trab/Resultados/Marcela/tPacman/prog)
-==331075==    by 0x10BEE9: ObtemPosicaoItemMapa (in /home/mcpaixao/trab/Resultados/Marcela/tPacman/prog)
-==331075==    by 0x10A77A: CriaJogo (in /home/mcpaixao/trab/Resultados/Marcela/tPacman/prog)
-==331075==    by 0x10B87F: main (in /home/mcpaixao/trab/Resultados/Marcela/tPacman/prog)
-==331075== 
-==331075== Invalid read of size 4
-==331075==    at 0x10CF6D: ObtemColunaPosicao (in /home/mcpaixao/trab/Resultados/Marcela/tPacman/prog)
-==331075==    by 0x10C47A: MovePacman (in /home/mcpaixao/trab/Resultados/Marcela/tPacman/prog)
-==331075==    by 0x10B450: ExecutaJogo (in /home/mcpaixao/trab/Resultados/Marcela/tPacman/prog)
-==331075==    by 0x10B88F: main (in /home/mcpaixao/trab/Resultados/Marcela/tPacman/prog)
-==331075==  Address 0x4aaeed4 is 4 bytes inside a block of size 8 free'd
-==331075==    at 0x484B27F: free (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
-==331075==    by 0x10D001: DesalocaPosicao (in /home/mcpaixao/trab/Resultados/Marcela/tPacman/prog)
-==331075==    by 0x10CC9C: DesalocaPacman (in /home/mcpaixao/trab/Resultados/Marcela/tPacman/prog)
-==331075==    by 0x10B476: ExecutaJogo (in /home/mcpaixao/trab/Resultados/Marcela/tPacman/prog)
-==331075==    by 0x10B88F: main (in /home/mcpaixao/trab/Resultados/Marcela/tPacman/prog)
-==331075==  Block was alloc'd at
-==331075==    at 0x4848899: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
-==331075==    by 0x10CEED: CriaPosicao (in /home/mcpaixao/trab/Resultados/Marcela/tPacman/prog)
-==331075==    by 0x10BEE9: ObtemPosicaoItemMapa (in /home/mcpaixao/trab/Resultados/Marcela/tPacman/prog)
-==331075==    by 0x10A77A: CriaJogo (in /home/mcpaixao/trab/Resultados/Marcela/tPacman/prog)
-==331075==    by 0x10B87F: main (in /home/mcpaixao/trab/Resultados/Marcela/tPacman/prog)
-==331075== 
-==331075== Invalid write of size 4
-==331075==    at 0x10CF8C: AtualizaPosicao (in /home/mcpaixao/trab/Resultados/Marcela/tPacman/prog)
-==331075==    by 0x10C7E7: MovePacman (in /home/mcpaixao/trab/Resultados/Marcela/tPacman/prog)
-==331075==    by 0x10B450: ExecutaJogo (in /home/mcpaixao/trab/Resultados/Marcela/tPacman/prog)
-==331075==    by 0x10B88F: main (in /home/mcpaixao/trab/Resultados/Marcela/tPacman/prog)
-==331075==  Address 0x4aaeed0 is 0 bytes inside a block of size 8 free'd
-==331075==    at 0x484B27F: free (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
-==331075==    by 0x10D001: DesalocaPosicao (in /home/mcpaixao/trab/Resultados/Marcela/tPacman/prog)
-==331075==    by 0x10CC9C: DesalocaPacman (in /home/mcpaixao/trab/Resultados/Marcela/tPacman/prog)
-==331075==    by 0x10B476: ExecutaJogo (in /home/mcpaixao/trab/Resultados/Marcela/tPacman/prog)
-==331075==    by 0x10B88F: main (in /home/mcpaixao/trab/Resultados/Marcela/tPacman/prog)
-==331075==  Block was alloc'd at
-==331075==    at 0x4848899: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
-==331075==    by 0x10CEED: CriaPosicao (in /home/mcpaixao/trab/Resultados/Marcela/tPacman/prog)
-==331075==    by 0x10BEE9: ObtemPosicaoItemMapa (in /home/mcpaixao/trab/Resultados/Marcela/tPacman/prog)
-==331075==    by 0x10A77A: CriaJogo (in /home/mcpaixao/trab/Resultados/Marcela/tPacman/prog)
-==331075==    by 0x10B87F: main (in /home/mcpaixao/trab/Resultados/Marcela/tPacman/prog)
-==331075== 
-==331075== Invalid write of size 4
-==331075==    at 0x10CF99: AtualizaPosicao (in /home/mcpaixao/trab/Resultados/Marcela/tPacman/prog)
-==331075==    by 0x10C7E7: MovePacman (in /home/mcpaixao/trab/Resultados/Marcela/tPacman/prog)
-==331075==    by 0x10B450: ExecutaJogo (in /home/mcpaixao/trab/Resultados/Marcela/tPacman/prog)
-==331075==    by 0x10B88F: main (in /home/mcpaixao/trab/Resultados/Marcela/tPacman/prog)
-==331075==  Address 0x4aaeed4 is 4 bytes inside a block of size 8 free'd
-==331075==    at 0x484B27F: free (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
-==331075==    by 0x10D001: DesalocaPosicao (in /home/mcpaixao/trab/Resultados/Marcela/tPacman/prog)
-==331075==    by 0x10CC9C: DesalocaPacman (in /home/mcpaixao/trab/Resultados/Marcela/tPacman/prog)
-==331075==    by 0x10B476: ExecutaJogo (in /home/mcpaixao/trab/Resultados/Marcela/tPacman/prog)
-==331075==    by 0x10B88F: main (in /home/mcpaixao/trab/Resultados/Marcela/tPacman/prog)
-==331075==  Block was alloc'd at
-==331075==    at 0x4848899: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
-==331075==    by 0x10CEED: CriaPosicao (in /home/mcpaixao/trab/Resultados/Marcela/tPacman/prog)
-==331075==    by 0x10BEE9: ObtemPosicaoItemMapa (in /home/mcpaixao/trab/Resultados/Marcela/tPacman/prog)
-==331075==    by 0x10A77A: CriaJogo (in /home/mcpaixao/trab/Resultados/Marcela/tPacman/prog)
-==331075==    by 0x10B87F: main (in /home/mcpaixao/trab/Resultados/Marcela/tPacman/prog)
-==331075== 
-==331075== Invalid read of size 4
-==331075==    at 0x10CF59: ObtemLinhaPosicao (in /home/mcpaixao/trab/Resultados/Marcela/tPacman/prog)
-==331075==    by 0x10CA91: AtualizaTrilhaPacman (in /home/mcpaixao/trab/Resultados/Marcela/tPacman/prog)
-==331075==    by 0x10C977: MovePacman (in /home/mcpaixao/trab/Resultados/Marcela/tPacman/prog)
-==331075==    by 0x10B450: ExecutaJogo (in /home/mcpaixao/trab/Resultados/Marcela/tPacman/prog)
-==331075==    by 0x10B88F: main (in /home/mcpaixao/trab/Resultados/Marcela/tPacman/prog)
-==331075==  Address 0x4aaeed0 is 0 bytes inside a block of size 8 free'd
-==331075==    at 0x484B27F: free (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
-==331075==    by 0x10D001: DesalocaPosicao (in /home/mcpaixao/trab/Resultados/Marcela/tPacman/prog)
-==331075==    by 0x10CC9C: DesalocaPacman (in /home/mcpaixao/trab/Resultados/Marcela/tPacman/prog)
-==331075==    by 0x10B476: ExecutaJogo (in /home/mcpaixao/trab/Resultados/Marcela/tPacman/prog)
-==331075==    by 0x10B88F: main (in /home/mcpaixao/trab/Resultados/Marcela/tPacman/prog)
-==331075==  Block was alloc'd at
-==331075==    at 0x4848899: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
-==331075==    by 0x10CEED: CriaPosicao (in /home/mcpaixao/trab/Resultados/Marcela/tPacman/prog)
-==331075==    by 0x10BEE9: ObtemPosicaoItemMapa (in /home/mcpaixao/trab/Resultados/Marcela/tPacman/prog)
-==331075==    by 0x10A77A: CriaJogo (in /home/mcpaixao/trab/Resultados/Marcela/tPacman/prog)
-==331075==    by 0x10B87F: main (in /home/mcpaixao/trab/Resultados/Marcela/tPacman/prog)
-==331075== 
-==331075== Invalid read of size 4
-==331075==    at 0x10CF6D: ObtemColunaPosicao (in /home/mcpaixao/trab/Resultados/Marcela/tPacman/prog)
-==331075==    by 0x10CAA3: AtualizaTrilhaPacman (in /home/mcpaixao/trab/Resultados/Marcela/tPacman/prog)
-==331075==    by 0x10C977: MovePacman (in /home/mcpaixao/trab/Resultados/Marcela/tPacman/prog)
-==331075==    by 0x10B450: ExecutaJogo (in /home/mcpaixao/trab/Resultados/Marcela/tPacman/prog)
-==331075==    by 0x10B88F: main (in /home/mcpaixao/trab/Resultados/Marcela/tPacman/prog)
-==331075==  Address 0x4aaeed4 is 4 bytes inside a block of size 8 free'd
-==331075==    at 0x484B27F: free (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
-==331075==    by 0x10D001: DesalocaPosicao (in /home/mcpaixao/trab/Resultados/Marcela/tPacman/prog)
-==331075==    by 0x10CC9C: DesalocaPacman (in /home/mcpaixao/trab/Resultados/Marcela/tPacman/prog)
-==331075==    by 0x10B476: ExecutaJogo (in /home/mcpaixao/trab/Resultados/Marcela/tPacman/prog)
-==331075==    by 0x10B88F: main (in /home/mcpaixao/trab/Resultados/Marcela/tPacman/prog)
-==331075==  Block was alloc'd at
-==331075==    at 0x4848899: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
-==331075==    by 0x10CEED: CriaPosicao (in /home/mcpaixao/trab/Resultados/Marcela/tPacman/prog)
-==331075==    by 0x10BEE9: ObtemPosicaoItemMapa (in /home/mcpaixao/trab/Resultados/Marcela/tPacman/prog)
-==331075==    by 0x10A77A: CriaJogo (in /home/mcpaixao/trab/Resultados/Marcela/tPacman/prog)
-==331075==    by 0x10B87F: main (in /home/mcpaixao/trab/Resultados/Marcela/tPacman/prog)
-==331075== 
-==331075== Invalid read of size 4
-==331075==    at 0x10CF59: ObtemLinhaPosicao (in /home/mcpaixao/trab/Resultados/Marcela/tPacman/prog)
-==331075==    by 0x10ADF0: VerificaColisaoComFantasma (in /home/mcpaixao/trab/Resultados/Marcela/tPacman/prog)
-==331075==    by 0x10B467: ExecutaJogo (in /home/mcpaixao/trab/Resultados/Marcela/tPacman/prog)
-==331075==    by 0x10B88F: main (in /home/mcpaixao/trab/Resultados/Marcela/tPacman/prog)
-==331075==  Address 0x4aaeed0 is 0 bytes inside a block of size 8 free'd
-==331075==    at 0x484B27F: free (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
-==331075==    by 0x10D001: DesalocaPosicao (in /home/mcpaixao/trab/Resultados/Marcela/tPacman/prog)
-==331075==    by 0x10CC9C: DesalocaPacman (in /home/mcpaixao/trab/Resultados/Marcela/tPacman/prog)
-==331075==    by 0x10B476: ExecutaJogo (in /home/mcpaixao/trab/Resultados/Marcela/tPacman/prog)
-==331075==    by 0x10B88F: main (in /home/mcpaixao/trab/Resultados/Marcela/tPacman/prog)
-==331075==  Block was alloc'd at
-==331075==    at 0x4848899: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
-==331075==    by 0x10CEED: CriaPosicao (in /home/mcpaixao/trab/Resultados/Marcela/tPacman/prog)
-==331075==    by 0x10BEE9: ObtemPosicaoItemMapa (in /home/mcpaixao/trab/Resultados/Marcela/tPacman/prog)
-==331075==    by 0x10A77A: CriaJogo (in /home/mcpaixao/trab/Resultados/Marcela/tPacman/prog)
-==331075==    by 0x10B87F: main (in /home/mcpaixao/trab/Resultados/Marcela/tPacman/prog)
-==331075== 
-==331075== Invalid read of size 4
-==331075==    at 0x10CF6D: ObtemColunaPosicao (in /home/mcpaixao/trab/Resultados/Marcela/tPacman/prog)
-==331075==    by 0x10ADFF: VerificaColisaoComFantasma (in /home/mcpaixao/trab/Resultados/Marcela/tPacman/prog)
-==331075==    by 0x10B467: ExecutaJogo (in /home/mcpaixao/trab/Resultados/Marcela/tPacman/prog)
-==331075==    by 0x10B88F: main (in /home/mcpaixao/trab/Resultados/Marcela/tPacman/prog)
-==331075==  Address 0x4aaeed4 is 4 bytes inside a block of size 8 free'd
-==331075==    at 0x484B27F: free (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
-==331075==    by 0x10D001: DesalocaPosicao (in /home/mcpaixao/trab/Resultados/Marcela/tPacman/prog)
-==331075==    by 0x10CC9C: DesalocaPacman (in /home/mcpaixao/trab/Resultados/Marcela/tPacman/prog)
-==331075==    by 0x10B476: ExecutaJogo (in /home/mcpaixao/trab/Resultados/Marcela/tPacman/prog)
-==331075==    by 0x10B88F: main (in /home/mcpaixao/trab/Resultados/Marcela/tPacman/prog)
-==331075==  Block was alloc'd at
-==331075==    at 0x4848899: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
-==331075==    by 0x10CEED: CriaPosicao (in /home/mcpaixao/trab/Resultados/Marcela/tPacman/prog)
-==331075==    by 0x10BEE9: ObtemPosicaoItemMapa (in /home/mcpaixao/trab/Resultados/Marcela/tPacman/prog)
-==331075==    by 0x10A77A: CriaJogo (in /home/mcpaixao/trab/Resultados/Marcela/tPacman/prog)
-==331075==    by 0x10B87F: main (in /home/mcpaixao/trab/Resultados/Marcela/tPacman/prog)
-==331075== 
-==331075== Invalid read of size 4
-==331075==    at 0x10CF59: ObtemLinhaPosicao (in /home/mcpaixao/trab/Resultados/Marcela/tPacman/prog)
-==331075==    by 0x10AE89: VerificaColisaoComFantasma (in /home/mcpaixao/trab/Resultados/Marcela/tPacman/prog)
-==331075==    by 0x10B467: ExecutaJogo (in /home/mcpaixao/trab/Resultados/Marcela/tPacman/prog)
-==331075==    by 0x10B88F: main (in /home/mcpaixao/trab/Resultados/Marcela/tPacman/prog)
-==331075==  Address 0x4aaeed0 is 0 bytes inside a block of size 8 free'd
-==331075==    at 0x484B27F: free (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
-==331075==    by 0x10D001: DesalocaPosicao (in /home/mcpaixao/trab/Resultados/Marcela/tPacman/prog)
-==331075==    by 0x10CC9C: DesalocaPacman (in /home/mcpaixao/trab/Resultados/Marcela/tPacman/prog)
-==331075==    by 0x10B476: ExecutaJogo (in /home/mcpaixao/trab/Resultados/Marcela/tPacman/prog)
-==331075==    by 0x10B88F: main (in /home/mcpaixao/trab/Resultados/Marcela/tPacman/prog)
-==331075==  Block was alloc'd at
-==331075==    at 0x4848899: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
-==331075==    by 0x10CEED: CriaPosicao (in /home/mcpaixao/trab/Resultados/Marcela/tPacman/prog)
-==331075==    by 0x10BEE9: ObtemPosicaoItemMapa (in /home/mcpaixao/trab/Resultados/Marcela/tPacman/prog)
-==331075==    by 0x10A77A: CriaJogo (in /home/mcpaixao/trab/Resultados/Marcela/tPacman/prog)
-==331075==    by 0x10B87F: main (in /home/mcpaixao/trab/Resultados/Marcela/tPacman/prog)
-==331075== 
-==331075== Invalid read of size 4
-==331075==    at 0x10CF6D: ObtemColunaPosicao (in /home/mcpaixao/trab/Resultados/Marcela/tPacman/prog)
-==331075==    by 0x10AE98: VerificaColisaoComFantasma (in /home/mcpaixao/trab/Resultados/Marcela/tPacman/prog)
-==331075==    by 0x10B467: ExecutaJogo (in /home/mcpaixao/trab/Resultados/Marcela/tPacman/prog)
-==331075==    by 0x10B88F: main (in /home/mcpaixao/trab/Resultados/Marcela/tPacman/prog)
-==331075==  Address 0x4aaeed4 is 4 bytes inside a block of size 8 free'd
-==331075==    at 0x484B27F: free (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
-==331075==    by 0x10D001: DesalocaPosicao (in /home/mcpaixao/trab/Resultados/Marcela/tPacman/prog)
-==331075==    by 0x10CC9C: DesalocaPacman (in /home/mcpaixao/trab/Resultados/Marcela/tPacman/prog)
-==331075==    by 0x10B476: ExecutaJogo (in /home/mcpaixao/trab/Resultados/Marcela/tPacman/prog)
-==331075==    by 0x10B88F: main (in /home/mcpaixao/trab/Resultados/Marcela/tPacman/prog)
-==331075==  Block was alloc'd at
-==331075==    at 0x4848899: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
-==331075==    by 0x10CEED: CriaPosicao (in /home/mcpaixao/trab/Resultados/Marcela/tPacman/prog)
-==331075==    by 0x10BEE9: ObtemPosicaoItemMapa (in /home/mcpaixao/trab/Resultados/Marcela/tPacman/prog)
-==331075==    by 0x10A77A: CriaJogo (in /home/mcpaixao/trab/Resultados/Marcela/tPacman/prog)
-==331075==    by 0x10B87F: main (in /home/mcpaixao/trab/Resultados/Marcela/tPacman/prog)
-==331075== 
-==331075== Invalid free() / delete / delete[] / realloc()
-==331075==    at 0x484B27F: free (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
-==331075==    by 0x10D001: DesalocaPosicao (in /home/mcpaixao/trab/Resultados/Marcela/tPacman/prog)
-==331075==    by 0x10CC9C: DesalocaPacman (in /home/mcpaixao/trab/Resultados/Marcela/tPacman/prog)
-==331075==    by 0x10B476: ExecutaJogo (in /home/mcpaixao/trab/Resultados/Marcela/tPacman/prog)
-==331075==    by 0x10B88F: main (in /home/mcpaixao/trab/Resultados/Marcela/tPacman/prog)
-==331075==  Address 0x4aaeed0 is 0 bytes inside a block of size 8 free'd
-==331075==    at 0x484B27F: free (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
-==331075==    by 0x10D001: DesalocaPosicao (in /home/mcpaixao/trab/Resultados/Marcela/tPacman/prog)
-==331075==    by 0x10CC9C: DesalocaPacman (in /home/mcpaixao/trab/Resultados/Marcela/tPacman/prog)
-==331075==    by 0x10B476: ExecutaJogo (in /home/mcpaixao/trab/Resultados/Marcela/tPacman/prog)
-==331075==    by 0x10B88F: main (in /home/mcpaixao/trab/Resultados/Marcela/tPacman/prog)
-==331075==  Block was alloc'd at
-==331075==    at 0x4848899: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
-==331075==    by 0x10CEED: CriaPosicao (in /home/mcpaixao/trab/Resultados/Marcela/tPacman/prog)
-==331075==    by 0x10BEE9: ObtemPosicaoItemMapa (in /home/mcpaixao/trab/Resultados/Marcela/tPacman/prog)
-==331075==    by 0x10A77A: CriaJogo (in /home/mcpaixao/trab/Resultados/Marcela/tPacman/prog)
-==331075==    by 0x10B87F: main (in /home/mcpaixao/trab/Resultados/Marcela/tPacman/prog)
-==331075== 
-==331075== Invalid write of size 4
-==331075==    at 0x10CF8C: AtualizaPosicao (in /home/mcpaixao/trab/Resultados/Marcela/tPacman/prog)
-==331075==    by 0x10C8FC: MovePacman (in /home/mcpaixao/trab/Resultados/Marcela/tPacman/prog)
-==331075==    by 0x10B450: ExecutaJogo (in /home/mcpaixao/trab/Resultados/Marcela/tPacman/prog)
-==331075==    by 0x10B88F: main (in /home/mcpaixao/trab/Resultados/Marcela/tPacman/prog)
-==331075==  Address 0x4aaeed0 is 0 bytes inside a block of size 8 free'd
-==331075==    at 0x484B27F: free (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
-==331075==    by 0x10D001: DesalocaPosicao (in /home/mcpaixao/trab/Resultados/Marcela/tPacman/prog)
-==331075==    by 0x10CC9C: DesalocaPacman (in /home/mcpaixao/trab/Resultados/Marcela/tPacman/prog)
-==331075==    by 0x10B476: ExecutaJogo (in /home/mcpaixao/trab/Resultados/Marcela/tPacman/prog)
-==331075==    by 0x10B88F: main (in /home/mcpaixao/trab/Resultados/Marcela/tPacman/prog)
-==331075==  Block was alloc'd at
-==331075==    at 0x4848899: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
-==331075==    by 0x10CEED: CriaPosicao (in /home/mcpaixao/trab/Resultados/Marcela/tPacman/prog)
-==331075==    by 0x10BEE9: ObtemPosicaoItemMapa (in /home/mcpaixao/trab/Resultados/Marcela/tPacman/prog)
-==331075==    by 0x10A77A: CriaJogo (in /home/mcpaixao/trab/Resultados/Marcela/tPacman/prog)
-==331075==    by 0x10B87F: main (in /home/mcpaixao/trab/Resultados/Marcela/tPacman/prog)
-==331075== 
-==331075== Invalid write of size 4
-==331075==    at 0x10CF99: AtualizaPosicao (in /home/mcpaixao/trab/Resultados/Marcela/tPacman/prog)
-==331075==    by 0x10C8FC: MovePacman (in /home/mcpaixao/trab/Resultados/Marcela/tPacman/prog)
-==331075==    by 0x10B450: ExecutaJogo (in /home/mcpaixao/trab/Resultados/Marcela/tPacman/prog)
-==331075==    by 0x10B88F: main (in /home/mcpaixao/trab/Resultados/Marcela/tPacman/prog)
-==331075==  Address 0x4aaeed4 is 4 bytes inside a block of size 8 free'd
-==331075==    at 0x484B27F: free (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
-==331075==    by 0x10D001: DesalocaPosicao (in /home/mcpaixao/trab/Resultados/Marcela/tPacman/prog)
-==331075==    by 0x10CC9C: DesalocaPacman (in /home/mcpaixao/trab/Resultados/Marcela/tPacman/prog)
-==331075==    by 0x10B476: ExecutaJogo (in /home/mcpaixao/trab/Resultados/Marcela/tPacman/prog)
-==331075==    by 0x10B88F: main (in /home/mcpaixao/trab/Resultados/Marcela/tPacman/prog)
-==331075==  Block was alloc'd at
-==331075==    at 0x4848899: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
-==331075==    by 0x10CEED: CriaPosicao (in /home/mcpaixao/trab/Resultados/Marcela/tPacman/prog)
-==331075==    by 0x10BEE9: ObtemPosicaoItemMapa (in /home/mcpaixao/trab/Resultados/Marcela/tPacman/prog)
-==331075==    by 0x10A77A: CriaJogo (in /home/mcpaixao/trab/Resultados/Marcela/tPacman/prog)
-==331075==    by 0x10B87F: main (in /home/mcpaixao/trab/Resultados/Marcela/tPacman/prog)
-==331075== 
-==331075== Invalid write of size 4
-==331075==    at 0x10CF8C: AtualizaPosicao (in /home/mcpaixao/trab/Resultados/Marcela/tPacman/prog)
-==331075==    by 0x10C6CB: MovePacman (in /home/mcpaixao/trab/Resultados/Marcela/tPacman/prog)
-==331075==    by 0x10B450: ExecutaJogo (in /home/mcpaixao/trab/Resultados/Marcela/tPacman/prog)
-==331075==    by 0x10B88F: main (in /home/mcpaixao/trab/Resultados/Marcela/tPacman/prog)
-==331075==  Address 0x4aaeed0 is 0 bytes inside a block of size 8 free'd
-==331075==    at 0x484B27F: free (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
-==331075==    by 0x10D001: DesalocaPosicao (in /home/mcpaixao/trab/Resultados/Marcela/tPacman/prog)
-==331075==    by 0x10CC9C: DesalocaPacman (in /home/mcpaixao/trab/Resultados/Marcela/tPacman/prog)
-==331075==    by 0x10B476: ExecutaJogo (in /home/mcpaixao/trab/Resultados/Marcela/tPacman/prog)
-==331075==    by 0x10B88F: main (in /home/mcpaixao/trab/Resultados/Marcela/tPacman/prog)
-==331075==  Block was alloc'd at
-==331075==    at 0x4848899: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
-==331075==    by 0x10CEED: CriaPosicao (in /home/mcpaixao/trab/Resultados/Marcela/tPacman/prog)
-==331075==    by 0x10BEE9: ObtemPosicaoItemMapa (in /home/mcpaixao/trab/Resultados/Marcela/tPacman/prog)
-==331075==    by 0x10A77A: CriaJogo (in /home/mcpaixao/trab/Resultados/Marcela/tPacman/prog)
-==331075==    by 0x10B87F: main (in /home/mcpaixao/trab/Resultados/Marcela/tPacman/prog)
-==331075== 
-==331075== Invalid write of size 4
-==331075==    at 0x10CF99: AtualizaPosicao (in /home/mcpaixao/trab/Resultados/Marcela/tPacman/prog)
-==331075==    by 0x10C6CB: MovePacman (in /home/mcpaixao/trab/Resultados/Marcela/tPacman/prog)
-==331075==    by 0x10B450: ExecutaJogo (in /home/mcpaixao/trab/Resultados/Marcela/tPacman/prog)
-==331075==    by 0x10B88F: main (in /home/mcpaixao/trab/Resultados/Marcela/tPacman/prog)
-==331075==  Address 0x4aaeed4 is 4 bytes inside a block of size 8 free'd
-==331075==    at 0x484B27F: free (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
-==331075==    by 0x10D001: DesalocaPosicao (in /home/mcpaixao/trab/Resultados/Marcela/tPacman/prog)
-==331075==    by 0x10CC9C: DesalocaPacman (in /home/mcpaixao/trab/Resultados/Marcela/tPacman/prog)
-==331075==    by 0x10B476: ExecutaJogo (in /home/mcpaixao/trab/Resultados/Marcela/tPacman/prog)
-==331075==    by 0x10B88F: main (in /home/mcpaixao/trab/Resultados/Marcela/tPacman/prog)
-==331075==  Block was alloc'd at
-==331075==    at 0x4848899: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
-==331075==    by 0x10CEED: CriaPosicao (in /home/mcpaixao/trab/Resultados/Marcela/tPacman/prog)
-==331075==    by 0x10BEE9: ObtemPosicaoItemMapa (in /home/mcpaixao/trab/Resultados/Marcela/tPacman/prog)
-==331075==    by 0x10A77A: CriaJogo (in /home/mcpaixao/trab/Resultados/Marcela/tPacman/prog)
-==331075==    by 0x10B87F: main (in /home/mcpaixao/trab/Resultados/Marcela/tPacman/prog)
-==331075== 
-==331075== Invalid write of size 4
-==331075==    at 0x10CF8C: AtualizaPosicao (in /home/mcpaixao/trab/Resultados/Marcela/tPacman/prog)
-==331075==    by 0x10C5AF: MovePacman (in /home/mcpaixao/trab/Resultados/Marcela/tPacman/prog)
-==331075==    by 0x10B450: ExecutaJogo (in /home/mcpaixao/trab/Resultados/Marcela/tPacman/prog)
-==331075==    by 0x10B88F: main (in /home/mcpaixao/trab/Resultados/Marcela/tPacman/prog)
-==331075==  Address 0x4aaeed0 is 0 bytes inside a block of size 8 free'd
-==331075==    at 0x484B27F: free (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
-==331075==    by 0x10D001: DesalocaPosicao (in /home/mcpaixao/trab/Resultados/Marcela/tPacman/prog)
-==331075==    by 0x10CC9C: DesalocaPacman (in /home/mcpaixao/trab/Resultados/Marcela/tPacman/prog)
-==331075==    by 0x10B476: ExecutaJogo (in /home/mcpaixao/trab/Resultados/Marcela/tPacman/prog)
-==331075==    by 0x10B88F: main (in /home/mcpaixao/trab/Resultados/Marcela/tPacman/prog)
-==331075==  Block was alloc'd at
-==331075==    at 0x4848899: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
-==331075==    by 0x10CEED: CriaPosicao (in /home/mcpaixao/trab/Resultados/Marcela/tPacman/prog)
-==331075==    by 0x10BEE9: ObtemPosicaoItemMapa (in /home/mcpaixao/trab/Resultados/Marcela/tPacman/prog)
-==331075==    by 0x10A77A: CriaJogo (in /home/mcpaixao/trab/Resultados/Marcela/tPacman/prog)
-==331075==    by 0x10B87F: main (in /home/mcpaixao/trab/Resultados/Marcela/tPacman/prog)
-==331075== 
-==331075== Invalid write of size 4
-==331075==    at 0x10CF99: AtualizaPosicao (in /home/mcpaixao/trab/Resultados/Marcela/tPacman/prog)
-==331075==    by 0x10C5AF: MovePacman (in /home/mcpaixao/trab/Resultados/Marcela/tPacman/prog)
-==331075==    by 0x10B450: ExecutaJogo (in /home/mcpaixao/trab/Resultados/Marcela/tPacman/prog)
-==331075==    by 0x10B88F: main (in /home/mcpaixao/trab/Resultados/Marcela/tPacman/prog)
-==331075==  Address 0x4aaeed4 is 4 bytes inside a block of size 8 free'd
-==331075==    at 0x484B27F: free (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
-==331075==    by 0x10D001: DesalocaPosicao (in /home/mcpaixao/trab/Resultados/Marcela/tPacman/prog)
-==331075==    by 0x10CC9C: DesalocaPacman (in /home/mcpaixao/trab/Resultados/Marcela/tPacman/prog)
-==331075==    by 0x10B476: ExecutaJogo (in /home/mcpaixao/trab/Resultados/Marcela/tPacman/prog)
-==331075==    by 0x10B88F: main (in /home/mcpaixao/trab/Resultados/Marcela/tPacman/prog)
-==331075==  Block was alloc'd at
-==331075==    at 0x4848899: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
-==331075==    by 0x10CEED: CriaPosicao (in /home/mcpaixao/trab/Resultados/Marcela/tPacman/prog)
-==331075==    by 0x10BEE9: ObtemPosicaoItemMapa (in /home/mcpaixao/trab/Resultados/Marcela/tPacman/prog)
-==331075==    by 0x10A77A: CriaJogo (in /home/mcpaixao/trab/Resultados/Marcela/tPacman/prog)
-==331075==    by 0x10B87F: main (in /home/mcpaixao/trab/Resultados/Marcela/tPacman/prog)
-==331075== 
-==331075== Use of uninitialised value of size 8
-==331075==    at 0x10C25A: ObtemNumeroMovimento (in /home/mcpaixao/trab/Resultados/Marcela/tPacman/prog)
-==331075==    by 0x1094F1: SalvaResumo (in /home/mcpaixao/trab/Resultados/Marcela/tPacman/prog)
-==331075==    by 0x10B24A: GeraArquivos (in /home/mcpaixao/trab/Resultados/Marcela/tPacman/prog)
-==331075==    by 0x10B76E: ExecutaJogo (in /home/mcpaixao/trab/Resultados/Marcela/tPacman/prog)
-==331075==    by 0x10B88F: main (in /home/mcpaixao/trab/Resultados/Marcela/tPacman/prog)
-==331075== 
-==331075== Invalid read of size 4
-==331075==    at 0x10C25A: ObtemNumeroMovimento (in /home/mcpaixao/trab/Resultados/Marcela/tPacman/prog)
-==331075==    by 0x1094F1: SalvaResumo (in /home/mcpaixao/trab/Resultados/Marcela/tPacman/prog)
-==331075==    by 0x10B24A: GeraArquivos (in /home/mcpaixao/trab/Resultados/Marcela/tPacman/prog)
-==331075==    by 0x10B76E: ExecutaJogo (in /home/mcpaixao/trab/Resultados/Marcela/tPacman/prog)
-==331075==    by 0x10B88F: main (in /home/mcpaixao/trab/Resultados/Marcela/tPacman/prog)
-==331075==  Address 0x0 is not stack'd, malloc'd or (recently) free'd
-==331075== 
-==331075== 
-==331075== Process terminating with default action of signal 11 (SIGSEGV)
-==331075==  Access not within mapped region at address 0x0
-==331075==    at 0x10C25A: ObtemNumeroMovimento (in /home/mcpaixao/trab/Resultados/Marcela/tPacman/prog)
-==331075==    by 0x1094F1: SalvaResumo (in /home/mcpaixao/trab/Resultados/Marcela/tPacman/prog)
-==331075==    by 0x10B24A: GeraArquivos (in /home/mcpaixao/trab/Resultados/Marcela/tPacman/prog)
-==331075==    by 0x10B76E: ExecutaJogo (in /home/mcpaixao/trab/Resultados/Marcela/tPacman/prog)
-==331075==    by 0x10B88F: main (in /home/mcpaixao/trab/Resultados/Marcela/tPacman/prog)
-==331075==  If you believe this happened as a result of a stack
-==331075==  overflow in your program's main thread (unlikely but
-==331075==  possible), you can try to increase the size of the
-==331075==  main thread stack using the --main-stacksize= flag.
-==331075==  The main thread stack size used in this run was 8388608.
-==331075== 
-==331075== HEAP SUMMARY:
-==331075==     in use at exit: 18,283 bytes in 87 blocks
-==331075==   total heap usage: 58,166 allocs, 58,223 frees, 526,726 bytes allocated
-==331075== 
-==331075== 8 bytes in 1 blocks are definitely lost in loss record 5 of 28
-==331075==    at 0x4848899: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
-==331075==    by 0x10C402: ClonaHistoricoDeMovimentosSignificativosPacman (in /home/mcpaixao/trab/Resultados/Marcela/tPacman/prog)
-==331075==    by 0x10B0DD: GeraArquivos (in /home/mcpaixao/trab/Resultados/Marcela/tPacman/prog)
-==331075==    by 0x10B76E: ExecutaJogo (in /home/mcpaixao/trab/Resultados/Marcela/tPacman/prog)
-==331075==    by 0x10B88F: main (in /home/mcpaixao/trab/Resultados/Marcela/tPacman/prog)
-==331075== 
-==331075== LEAK SUMMARY:
-==331075==    definitely lost: 8 bytes in 1 blocks
-==331075==    indirectly lost: 0 bytes in 0 blocks
-==331075==      possibly lost: 0 bytes in 0 blocks
-==331075==    still reachable: 18,275 bytes in 86 blocks
-==331075==         suppressed: 0 bytes in 0 blocks
-==331075== Reachable blocks (those to which a pointer was found) are not shown.
-==331075== To see them, rerun with: --leak-check=full --show-leak-kinds=all
-==331075== 
-==331075== Use --track-origins=yes to see where uninitialised values come from
-==331075== For lists of detected and suppressed errors, rerun with: -s
-==331075== ERROR SUMMARY: 112059 errors from 22 contexts (suppressed: 0 from 0)
+==748025== Memcheck, a memory error detector
+==748025== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==748025== Using Valgrind-3.18.1 and LibVEX; rerun with -h for copyright info
+==748025== Command: Resultados/Marcela/tPacman/prog Resultados/Marcela/tPacman/Casos/12
+==748025== Parent PID: 748024
+==748025== 
+==748025== Invalid read of size 4
+==748025==    at 0x10D26E: ObtemLinhaPosicao (in /home/mcpaixao/trab/Resultados/Marcela/tPacman/prog)
+==748025==    by 0x10ABFC: PrintaGridMapa (in /home/mcpaixao/trab/Resultados/Marcela/tPacman/prog)
+==748025==    by 0x10B61C: ExecutaJogo (in /home/mcpaixao/trab/Resultados/Marcela/tPacman/prog)
+==748025==    by 0x10B8CF: main (in /home/mcpaixao/trab/Resultados/Marcela/tPacman/prog)
+==748025==  Address 0x4aaeed0 is 0 bytes inside a block of size 8 free'd
+==748025==    at 0x484B27F: free (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==748025==    by 0x10D316: DesalocaPosicao (in /home/mcpaixao/trab/Resultados/Marcela/tPacman/prog)
+==748025==    by 0x10CFB1: DesalocaPacman (in /home/mcpaixao/trab/Resultados/Marcela/tPacman/prog)
+==748025==    by 0x10B4B6: ExecutaJogo (in /home/mcpaixao/trab/Resultados/Marcela/tPacman/prog)
+==748025==    by 0x10B8CF: main (in /home/mcpaixao/trab/Resultados/Marcela/tPacman/prog)
+==748025==  Block was alloc'd at
+==748025==    at 0x4848899: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==748025==    by 0x10D202: CriaPosicao (in /home/mcpaixao/trab/Resultados/Marcela/tPacman/prog)
+==748025==    by 0x10BF29: ObtemPosicaoItemMapa (in /home/mcpaixao/trab/Resultados/Marcela/tPacman/prog)
+==748025==    by 0x10A7BA: CriaJogo (in /home/mcpaixao/trab/Resultados/Marcela/tPacman/prog)
+==748025==    by 0x10B8BF: main (in /home/mcpaixao/trab/Resultados/Marcela/tPacman/prog)
+==748025== 
+==748025== Invalid read of size 4
+==748025==    at 0x10D282: ObtemColunaPosicao (in /home/mcpaixao/trab/Resultados/Marcela/tPacman/prog)
+==748025==    by 0x10AC11: PrintaGridMapa (in /home/mcpaixao/trab/Resultados/Marcela/tPacman/prog)
+==748025==    by 0x10B61C: ExecutaJogo (in /home/mcpaixao/trab/Resultados/Marcela/tPacman/prog)
+==748025==    by 0x10B8CF: main (in /home/mcpaixao/trab/Resultados/Marcela/tPacman/prog)
+==748025==  Address 0x4aaeed4 is 4 bytes inside a block of size 8 free'd
+==748025==    at 0x484B27F: free (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==748025==    by 0x10D316: DesalocaPosicao (in /home/mcpaixao/trab/Resultados/Marcela/tPacman/prog)
+==748025==    by 0x10CFB1: DesalocaPacman (in /home/mcpaixao/trab/Resultados/Marcela/tPacman/prog)
+==748025==    by 0x10B4B6: ExecutaJogo (in /home/mcpaixao/trab/Resultados/Marcela/tPacman/prog)
+==748025==    by 0x10B8CF: main (in /home/mcpaixao/trab/Resultados/Marcela/tPacman/prog)
+==748025==  Block was alloc'd at
+==748025==    at 0x4848899: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==748025==    by 0x10D202: CriaPosicao (in /home/mcpaixao/trab/Resultados/Marcela/tPacman/prog)
+==748025==    by 0x10BF29: ObtemPosicaoItemMapa (in /home/mcpaixao/trab/Resultados/Marcela/tPacman/prog)
+==748025==    by 0x10A7BA: CriaJogo (in /home/mcpaixao/trab/Resultados/Marcela/tPacman/prog)
+==748025==    by 0x10B8BF: main (in /home/mcpaixao/trab/Resultados/Marcela/tPacman/prog)
+==748025== 
+==748025== Invalid read of size 4
+==748025==    at 0x10D26E: ObtemLinhaPosicao (in /home/mcpaixao/trab/Resultados/Marcela/tPacman/prog)
+==748025==    by 0x10C553: MovePacman (in /home/mcpaixao/trab/Resultados/Marcela/tPacman/prog)
+==748025==    by 0x10B490: ExecutaJogo (in /home/mcpaixao/trab/Resultados/Marcela/tPacman/prog)
+==748025==    by 0x10B8CF: main (in /home/mcpaixao/trab/Resultados/Marcela/tPacman/prog)
+==748025==  Address 0x4aaeed0 is 0 bytes inside a block of size 8 free'd
+==748025==    at 0x484B27F: free (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==748025==    by 0x10D316: DesalocaPosicao (in /home/mcpaixao/trab/Resultados/Marcela/tPacman/prog)
+==748025==    by 0x10CFB1: DesalocaPacman (in /home/mcpaixao/trab/Resultados/Marcela/tPacman/prog)
+==748025==    by 0x10B4B6: ExecutaJogo (in /home/mcpaixao/trab/Resultados/Marcela/tPacman/prog)
+==748025==    by 0x10B8CF: main (in /home/mcpaixao/trab/Resultados/Marcela/tPacman/prog)
+==748025==  Block was alloc'd at
+==748025==    at 0x4848899: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==748025==    by 0x10D202: CriaPosicao (in /home/mcpaixao/trab/Resultados/Marcela/tPacman/prog)
+==748025==    by 0x10BF29: ObtemPosicaoItemMapa (in /home/mcpaixao/trab/Resultados/Marcela/tPacman/prog)
+==748025==    by 0x10A7BA: CriaJogo (in /home/mcpaixao/trab/Resultados/Marcela/tPacman/prog)
+==748025==    by 0x10B8BF: main (in /home/mcpaixao/trab/Resultados/Marcela/tPacman/prog)
+==748025== 
+==748025== Invalid read of size 4
+==748025==    at 0x10D282: ObtemColunaPosicao (in /home/mcpaixao/trab/Resultados/Marcela/tPacman/prog)
+==748025==    by 0x10C565: MovePacman (in /home/mcpaixao/trab/Resultados/Marcela/tPacman/prog)
+==748025==    by 0x10B490: ExecutaJogo (in /home/mcpaixao/trab/Resultados/Marcela/tPacman/prog)
+==748025==    by 0x10B8CF: main (in /home/mcpaixao/trab/Resultados/Marcela/tPacman/prog)
+==748025==  Address 0x4aaeed4 is 4 bytes inside a block of size 8 free'd
+==748025==    at 0x484B27F: free (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==748025==    by 0x10D316: DesalocaPosicao (in /home/mcpaixao/trab/Resultados/Marcela/tPacman/prog)
+==748025==    by 0x10CFB1: DesalocaPacman (in /home/mcpaixao/trab/Resultados/Marcela/tPacman/prog)
+==748025==    by 0x10B4B6: ExecutaJogo (in /home/mcpaixao/trab/Resultados/Marcela/tPacman/prog)
+==748025==    by 0x10B8CF: main (in /home/mcpaixao/trab/Resultados/Marcela/tPacman/prog)
+==748025==  Block was alloc'd at
+==748025==    at 0x4848899: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==748025==    by 0x10D202: CriaPosicao (in /home/mcpaixao/trab/Resultados/Marcela/tPacman/prog)
+==748025==    by 0x10BF29: ObtemPosicaoItemMapa (in /home/mcpaixao/trab/Resultados/Marcela/tPacman/prog)
+==748025==    by 0x10A7BA: CriaJogo (in /home/mcpaixao/trab/Resultados/Marcela/tPacman/prog)
+==748025==    by 0x10B8BF: main (in /home/mcpaixao/trab/Resultados/Marcela/tPacman/prog)
+==748025== 
+==748025== Invalid read of size 4
+==748025==    at 0x10D26E: ObtemLinhaPosicao (in /home/mcpaixao/trab/Resultados/Marcela/tPacman/prog)
+==748025==    by 0x10C04D: AtualizaItemMapa (in /home/mcpaixao/trab/Resultados/Marcela/tPacman/prog)
+==748025==    by 0x10C94F: MovePacman (in /home/mcpaixao/trab/Resultados/Marcela/tPacman/prog)
+==748025==    by 0x10B490: ExecutaJogo (in /home/mcpaixao/trab/Resultados/Marcela/tPacman/prog)
+==748025==    by 0x10B8CF: main (in /home/mcpaixao/trab/Resultados/Marcela/tPacman/prog)
+==748025==  Address 0x4aaeed0 is 0 bytes inside a block of size 8 free'd
+==748025==    at 0x484B27F: free (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==748025==    by 0x10D316: DesalocaPosicao (in /home/mcpaixao/trab/Resultados/Marcela/tPacman/prog)
+==748025==    by 0x10CFB1: DesalocaPacman (in /home/mcpaixao/trab/Resultados/Marcela/tPacman/prog)
+==748025==    by 0x10B4B6: ExecutaJogo (in /home/mcpaixao/trab/Resultados/Marcela/tPacman/prog)
+==748025==    by 0x10B8CF: main (in /home/mcpaixao/trab/Resultados/Marcela/tPacman/prog)
+==748025==  Block was alloc'd at
+==748025==    at 0x4848899: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==748025==    by 0x10D202: CriaPosicao (in /home/mcpaixao/trab/Resultados/Marcela/tPacman/prog)
+==748025==    by 0x10BF29: ObtemPosicaoItemMapa (in /home/mcpaixao/trab/Resultados/Marcela/tPacman/prog)
+==748025==    by 0x10A7BA: CriaJogo (in /home/mcpaixao/trab/Resultados/Marcela/tPacman/prog)
+==748025==    by 0x10B8BF: main (in /home/mcpaixao/trab/Resultados/Marcela/tPacman/prog)
+==748025== 
+==748025== Invalid read of size 4
+==748025==    at 0x10D282: ObtemColunaPosicao (in /home/mcpaixao/trab/Resultados/Marcela/tPacman/prog)
+==748025==    by 0x10C05C: AtualizaItemMapa (in /home/mcpaixao/trab/Resultados/Marcela/tPacman/prog)
+==748025==    by 0x10C94F: MovePacman (in /home/mcpaixao/trab/Resultados/Marcela/tPacman/prog)
+==748025==    by 0x10B490: ExecutaJogo (in /home/mcpaixao/trab/Resultados/Marcela/tPacman/prog)
+==748025==    by 0x10B8CF: main (in /home/mcpaixao/trab/Resultados/Marcela/tPacman/prog)
+==748025==  Address 0x4aaeed4 is 4 bytes inside a block of size 8 free'd
+==748025==    at 0x484B27F: free (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==748025==    by 0x10D316: DesalocaPosicao (in /home/mcpaixao/trab/Resultados/Marcela/tPacman/prog)
+==748025==    by 0x10CFB1: DesalocaPacman (in /home/mcpaixao/trab/Resultados/Marcela/tPacman/prog)
+==748025==    by 0x10B4B6: ExecutaJogo (in /home/mcpaixao/trab/Resultados/Marcela/tPacman/prog)
+==748025==    by 0x10B8CF: main (in /home/mcpaixao/trab/Resultados/Marcela/tPacman/prog)
+==748025==  Block was alloc'd at
+==748025==    at 0x4848899: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==748025==    by 0x10D202: CriaPosicao (in /home/mcpaixao/trab/Resultados/Marcela/tPacman/prog)
+==748025==    by 0x10BF29: ObtemPosicaoItemMapa (in /home/mcpaixao/trab/Resultados/Marcela/tPacman/prog)
+==748025==    by 0x10A7BA: CriaJogo (in /home/mcpaixao/trab/Resultados/Marcela/tPacman/prog)
+==748025==    by 0x10B8BF: main (in /home/mcpaixao/trab/Resultados/Marcela/tPacman/prog)
+==748025== 
+==748025== Invalid write of size 4
+==748025==    at 0x10D2A1: AtualizaPosicao (in /home/mcpaixao/trab/Resultados/Marcela/tPacman/prog)
+==748025==    by 0x10C985: MovePacman (in /home/mcpaixao/trab/Resultados/Marcela/tPacman/prog)
+==748025==    by 0x10B490: ExecutaJogo (in /home/mcpaixao/trab/Resultados/Marcela/tPacman/prog)
+==748025==    by 0x10B8CF: main (in /home/mcpaixao/trab/Resultados/Marcela/tPacman/prog)
+==748025==  Address 0x4aaeed0 is 0 bytes inside a block of size 8 free'd
+==748025==    at 0x484B27F: free (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==748025==    by 0x10D316: DesalocaPosicao (in /home/mcpaixao/trab/Resultados/Marcela/tPacman/prog)
+==748025==    by 0x10CFB1: DesalocaPacman (in /home/mcpaixao/trab/Resultados/Marcela/tPacman/prog)
+==748025==    by 0x10B4B6: ExecutaJogo (in /home/mcpaixao/trab/Resultados/Marcela/tPacman/prog)
+==748025==    by 0x10B8CF: main (in /home/mcpaixao/trab/Resultados/Marcela/tPacman/prog)
+==748025==  Block was alloc'd at
+==748025==    at 0x4848899: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==748025==    by 0x10D202: CriaPosicao (in /home/mcpaixao/trab/Resultados/Marcela/tPacman/prog)
+==748025==    by 0x10BF29: ObtemPosicaoItemMapa (in /home/mcpaixao/trab/Resultados/Marcela/tPacman/prog)
+==748025==    by 0x10A7BA: CriaJogo (in /home/mcpaixao/trab/Resultados/Marcela/tPacman/prog)
+==748025==    by 0x10B8BF: main (in /home/mcpaixao/trab/Resultados/Marcela/tPacman/prog)
+==748025== 
+==748025== Invalid write of size 4
+==748025==    at 0x10D2AE: AtualizaPosicao (in /home/mcpaixao/trab/Resultados/Marcela/tPacman/prog)
+==748025==    by 0x10C985: MovePacman (in /home/mcpaixao/trab/Resultados/Marcela/tPacman/prog)
+==748025==    by 0x10B490: ExecutaJogo (in /home/mcpaixao/trab/Resultados/Marcela/tPacman/prog)
+==748025==    by 0x10B8CF: main (in /home/mcpaixao/trab/Resultados/Marcela/tPacman/prog)
+==748025==  Address 0x4aaeed4 is 4 bytes inside a block of size 8 free'd
+==748025==    at 0x484B27F: free (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==748025==    by 0x10D316: DesalocaPosicao (in /home/mcpaixao/trab/Resultados/Marcela/tPacman/prog)
+==748025==    by 0x10CFB1: DesalocaPacman (in /home/mcpaixao/trab/Resultados/Marcela/tPacman/prog)
+==748025==    by 0x10B4B6: ExecutaJogo (in /home/mcpaixao/trab/Resultados/Marcela/tPacman/prog)
+==748025==    by 0x10B8CF: main (in /home/mcpaixao/trab/Resultados/Marcela/tPacman/prog)
+==748025==  Block was alloc'd at
+==748025==    at 0x4848899: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==748025==    by 0x10D202: CriaPosicao (in /home/mcpaixao/trab/Resultados/Marcela/tPacman/prog)
+==748025==    by 0x10BF29: ObtemPosicaoItemMapa (in /home/mcpaixao/trab/Resultados/Marcela/tPacman/prog)
+==748025==    by 0x10A7BA: CriaJogo (in /home/mcpaixao/trab/Resultados/Marcela/tPacman/prog)
+==748025==    by 0x10B8BF: main (in /home/mcpaixao/trab/Resultados/Marcela/tPacman/prog)
+==748025== 
+==748025== Invalid read of size 4
+==748025==    at 0x10D26E: ObtemLinhaPosicao (in /home/mcpaixao/trab/Resultados/Marcela/tPacman/prog)
+==748025==    by 0x10CC5B: AtualizaTrilhaPacman (in /home/mcpaixao/trab/Resultados/Marcela/tPacman/prog)
+==748025==    by 0x10CB3A: MovePacman (in /home/mcpaixao/trab/Resultados/Marcela/tPacman/prog)
+==748025==    by 0x10B490: ExecutaJogo (in /home/mcpaixao/trab/Resultados/Marcela/tPacman/prog)
+==748025==    by 0x10B8CF: main (in /home/mcpaixao/trab/Resultados/Marcela/tPacman/prog)
+==748025==  Address 0x4aaeed0 is 0 bytes inside a block of size 8 free'd
+==748025==    at 0x484B27F: free (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==748025==    by 0x10D316: DesalocaPosicao (in /home/mcpaixao/trab/Resultados/Marcela/tPacman/prog)
+==748025==    by 0x10CFB1: DesalocaPacman (in /home/mcpaixao/trab/Resultados/Marcela/tPacman/prog)
+==748025==    by 0x10B4B6: ExecutaJogo (in /home/mcpaixao/trab/Resultados/Marcela/tPacman/prog)
+==748025==    by 0x10B8CF: main (in /home/mcpaixao/trab/Resultados/Marcela/tPacman/prog)
+==748025==  Block was alloc'd at
+==748025==    at 0x4848899: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==748025==    by 0x10D202: CriaPosicao (in /home/mcpaixao/trab/Resultados/Marcela/tPacman/prog)
+==748025==    by 0x10BF29: ObtemPosicaoItemMapa (in /home/mcpaixao/trab/Resultados/Marcela/tPacman/prog)
+==748025==    by 0x10A7BA: CriaJogo (in /home/mcpaixao/trab/Resultados/Marcela/tPacman/prog)
+==748025==    by 0x10B8BF: main (in /home/mcpaixao/trab/Resultados/Marcela/tPacman/prog)
+==748025== 
+==748025== Invalid read of size 4
+==748025==    at 0x10D282: ObtemColunaPosicao (in /home/mcpaixao/trab/Resultados/Marcela/tPacman/prog)
+==748025==    by 0x10CC6D: AtualizaTrilhaPacman (in /home/mcpaixao/trab/Resultados/Marcela/tPacman/prog)
+==748025==    by 0x10CB3A: MovePacman (in /home/mcpaixao/trab/Resultados/Marcela/tPacman/prog)
+==748025==    by 0x10B490: ExecutaJogo (in /home/mcpaixao/trab/Resultados/Marcela/tPacman/prog)
+==748025==    by 0x10B8CF: main (in /home/mcpaixao/trab/Resultados/Marcela/tPacman/prog)
+==748025==  Address 0x4aaeed4 is 4 bytes inside a block of size 8 free'd
+==748025==    at 0x484B27F: free (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==748025==    by 0x10D316: DesalocaPosicao (in /home/mcpaixao/trab/Resultados/Marcela/tPacman/prog)
+==748025==    by 0x10CFB1: DesalocaPacman (in /home/mcpaixao/trab/Resultados/Marcela/tPacman/prog)
+==748025==    by 0x10B4B6: ExecutaJogo (in /home/mcpaixao/trab/Resultados/Marcela/tPacman/prog)
+==748025==    by 0x10B8CF: main (in /home/mcpaixao/trab/Resultados/Marcela/tPacman/prog)
+==748025==  Block was alloc'd at
+==748025==    at 0x4848899: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==748025==    by 0x10D202: CriaPosicao (in /home/mcpaixao/trab/Resultados/Marcela/tPacman/prog)
+==748025==    by 0x10BF29: ObtemPosicaoItemMapa (in /home/mcpaixao/trab/Resultados/Marcela/tPacman/prog)
+==748025==    by 0x10A7BA: CriaJogo (in /home/mcpaixao/trab/Resultados/Marcela/tPacman/prog)
+==748025==    by 0x10B8BF: main (in /home/mcpaixao/trab/Resultados/Marcela/tPacman/prog)
+==748025== 
+==748025== Invalid read of size 4
+==748025==    at 0x10D26E: ObtemLinhaPosicao (in /home/mcpaixao/trab/Resultados/Marcela/tPacman/prog)
+==748025==    by 0x10AE30: VerificaColisaoComFantasma (in /home/mcpaixao/trab/Resultados/Marcela/tPacman/prog)
+==748025==    by 0x10B4A7: ExecutaJogo (in /home/mcpaixao/trab/Resultados/Marcela/tPacman/prog)
+==748025==    by 0x10B8CF: main (in /home/mcpaixao/trab/Resultados/Marcela/tPacman/prog)
+==748025==  Address 0x4aaeed0 is 0 bytes inside a block of size 8 free'd
+==748025==    at 0x484B27F: free (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==748025==    by 0x10D316: DesalocaPosicao (in /home/mcpaixao/trab/Resultados/Marcela/tPacman/prog)
+==748025==    by 0x10CFB1: DesalocaPacman (in /home/mcpaixao/trab/Resultados/Marcela/tPacman/prog)
+==748025==    by 0x10B4B6: ExecutaJogo (in /home/mcpaixao/trab/Resultados/Marcela/tPacman/prog)
+==748025==    by 0x10B8CF: main (in /home/mcpaixao/trab/Resultados/Marcela/tPacman/prog)
+==748025==  Block was alloc'd at
+==748025==    at 0x4848899: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==748025==    by 0x10D202: CriaPosicao (in /home/mcpaixao/trab/Resultados/Marcela/tPacman/prog)
+==748025==    by 0x10BF29: ObtemPosicaoItemMapa (in /home/mcpaixao/trab/Resultados/Marcela/tPacman/prog)
+==748025==    by 0x10A7BA: CriaJogo (in /home/mcpaixao/trab/Resultados/Marcela/tPacman/prog)
+==748025==    by 0x10B8BF: main (in /home/mcpaixao/trab/Resultados/Marcela/tPacman/prog)
+==748025== 
+==748025== Invalid read of size 4
+==748025==    at 0x10D282: ObtemColunaPosicao (in /home/mcpaixao/trab/Resultados/Marcela/tPacman/prog)
+==748025==    by 0x10AE3F: VerificaColisaoComFantasma (in /home/mcpaixao/trab/Resultados/Marcela/tPacman/prog)
+==748025==    by 0x10B4A7: ExecutaJogo (in /home/mcpaixao/trab/Resultados/Marcela/tPacman/prog)
+==748025==    by 0x10B8CF: main (in /home/mcpaixao/trab/Resultados/Marcela/tPacman/prog)
+==748025==  Address 0x4aaeed4 is 4 bytes inside a block of size 8 free'd
+==748025==    at 0x484B27F: free (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==748025==    by 0x10D316: DesalocaPosicao (in /home/mcpaixao/trab/Resultados/Marcela/tPacman/prog)
+==748025==    by 0x10CFB1: DesalocaPacman (in /home/mcpaixao/trab/Resultados/Marcela/tPacman/prog)
+==748025==    by 0x10B4B6: ExecutaJogo (in /home/mcpaixao/trab/Resultados/Marcela/tPacman/prog)
+==748025==    by 0x10B8CF: main (in /home/mcpaixao/trab/Resultados/Marcela/tPacman/prog)
+==748025==  Block was alloc'd at
+==748025==    at 0x4848899: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==748025==    by 0x10D202: CriaPosicao (in /home/mcpaixao/trab/Resultados/Marcela/tPacman/prog)
+==748025==    by 0x10BF29: ObtemPosicaoItemMapa (in /home/mcpaixao/trab/Resultados/Marcela/tPacman/prog)
+==748025==    by 0x10A7BA: CriaJogo (in /home/mcpaixao/trab/Resultados/Marcela/tPacman/prog)
+==748025==    by 0x10B8BF: main (in /home/mcpaixao/trab/Resultados/Marcela/tPacman/prog)
+==748025== 
+==748025== Invalid read of size 4
+==748025==    at 0x10D26E: ObtemLinhaPosicao (in /home/mcpaixao/trab/Resultados/Marcela/tPacman/prog)
+==748025==    by 0x10AEC9: VerificaColisaoComFantasma (in /home/mcpaixao/trab/Resultados/Marcela/tPacman/prog)
+==748025==    by 0x10B4A7: ExecutaJogo (in /home/mcpaixao/trab/Resultados/Marcela/tPacman/prog)
+==748025==    by 0x10B8CF: main (in /home/mcpaixao/trab/Resultados/Marcela/tPacman/prog)
+==748025==  Address 0x4aaeed0 is 0 bytes inside a block of size 8 free'd
+==748025==    at 0x484B27F: free (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==748025==    by 0x10D316: DesalocaPosicao (in /home/mcpaixao/trab/Resultados/Marcela/tPacman/prog)
+==748025==    by 0x10CFB1: DesalocaPacman (in /home/mcpaixao/trab/Resultados/Marcela/tPacman/prog)
+==748025==    by 0x10B4B6: ExecutaJogo (in /home/mcpaixao/trab/Resultados/Marcela/tPacman/prog)
+==748025==    by 0x10B8CF: main (in /home/mcpaixao/trab/Resultados/Marcela/tPacman/prog)
+==748025==  Block was alloc'd at
+==748025==    at 0x4848899: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==748025==    by 0x10D202: CriaPosicao (in /home/mcpaixao/trab/Resultados/Marcela/tPacman/prog)
+==748025==    by 0x10BF29: ObtemPosicaoItemMapa (in /home/mcpaixao/trab/Resultados/Marcela/tPacman/prog)
+==748025==    by 0x10A7BA: CriaJogo (in /home/mcpaixao/trab/Resultados/Marcela/tPacman/prog)
+==748025==    by 0x10B8BF: main (in /home/mcpaixao/trab/Resultados/Marcela/tPacman/prog)
+==748025== 
+==748025== Invalid read of size 4
+==748025==    at 0x10D282: ObtemColunaPosicao (in /home/mcpaixao/trab/Resultados/Marcela/tPacman/prog)
+==748025==    by 0x10AED8: VerificaColisaoComFantasma (in /home/mcpaixao/trab/Resultados/Marcela/tPacman/prog)
+==748025==    by 0x10B4A7: ExecutaJogo (in /home/mcpaixao/trab/Resultados/Marcela/tPacman/prog)
+==748025==    by 0x10B8CF: main (in /home/mcpaixao/trab/Resultados/Marcela/tPacman/prog)
+==748025==  Address 0x4aaeed4 is 4 bytes inside a block of size 8 free'd
+==748025==    at 0x484B27F: free (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==748025==    by 0x10D316: DesalocaPosicao (in /home/mcpaixao/trab/Resultados/Marcela/tPacman/prog)
+==748025==    by 0x10CFB1: DesalocaPacman (in /home/mcpaixao/trab/Resultados/Marcela/tPacman/prog)
+==748025==    by 0x10B4B6: ExecutaJogo (in /home/mcpaixao/trab/Resultados/Marcela/tPacman/prog)
+==748025==    by 0x10B8CF: main (in /home/mcpaixao/trab/Resultados/Marcela/tPacman/prog)
+==748025==  Block was alloc'd at
+==748025==    at 0x4848899: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==748025==    by 0x10D202: CriaPosicao (in /home/mcpaixao/trab/Resultados/Marcela/tPacman/prog)
+==748025==    by 0x10BF29: ObtemPosicaoItemMapa (in /home/mcpaixao/trab/Resultados/Marcela/tPacman/prog)
+==748025==    by 0x10A7BA: CriaJogo (in /home/mcpaixao/trab/Resultados/Marcela/tPacman/prog)
+==748025==    by 0x10B8BF: main (in /home/mcpaixao/trab/Resultados/Marcela/tPacman/prog)
+==748025== 
+==748025== Invalid free() / delete / delete[] / realloc()
+==748025==    at 0x484B27F: free (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==748025==    by 0x10D316: DesalocaPosicao (in /home/mcpaixao/trab/Resultados/Marcela/tPacman/prog)
+==748025==    by 0x10CFB1: DesalocaPacman (in /home/mcpaixao/trab/Resultados/Marcela/tPacman/prog)
+==748025==    by 0x10B4B6: ExecutaJogo (in /home/mcpaixao/trab/Resultados/Marcela/tPacman/prog)
+==748025==    by 0x10B8CF: main (in /home/mcpaixao/trab/Resultados/Marcela/tPacman/prog)
+==748025==  Address 0x4aaeed0 is 0 bytes inside a block of size 8 free'd
+==748025==    at 0x484B27F: free (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==748025==    by 0x10D316: DesalocaPosicao (in /home/mcpaixao/trab/Resultados/Marcela/tPacman/prog)
+==748025==    by 0x10CFB1: DesalocaPacman (in /home/mcpaixao/trab/Resultados/Marcela/tPacman/prog)
+==748025==    by 0x10B4B6: ExecutaJogo (in /home/mcpaixao/trab/Resultados/Marcela/tPacman/prog)
+==748025==    by 0x10B8CF: main (in /home/mcpaixao/trab/Resultados/Marcela/tPacman/prog)
+==748025==  Block was alloc'd at
+==748025==    at 0x4848899: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==748025==    by 0x10D202: CriaPosicao (in /home/mcpaixao/trab/Resultados/Marcela/tPacman/prog)
+==748025==    by 0x10BF29: ObtemPosicaoItemMapa (in /home/mcpaixao/trab/Resultados/Marcela/tPacman/prog)
+==748025==    by 0x10A7BA: CriaJogo (in /home/mcpaixao/trab/Resultados/Marcela/tPacman/prog)
+==748025==    by 0x10B8BF: main (in /home/mcpaixao/trab/Resultados/Marcela/tPacman/prog)
+==748025== 
+==748025== Invalid read of size 4
+==748025==    at 0x10D26E: ObtemLinhaPosicao (in /home/mcpaixao/trab/Resultados/Marcela/tPacman/prog)
+==748025==    by 0x10C04D: AtualizaItemMapa (in /home/mcpaixao/trab/Resultados/Marcela/tPacman/prog)
+==748025==    by 0x10CA9E: MovePacman (in /home/mcpaixao/trab/Resultados/Marcela/tPacman/prog)
+==748025==    by 0x10B490: ExecutaJogo (in /home/mcpaixao/trab/Resultados/Marcela/tPacman/prog)
+==748025==    by 0x10B8CF: main (in /home/mcpaixao/trab/Resultados/Marcela/tPacman/prog)
+==748025==  Address 0x4aaeed0 is 0 bytes inside a block of size 8 free'd
+==748025==    at 0x484B27F: free (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==748025==    by 0x10D316: DesalocaPosicao (in /home/mcpaixao/trab/Resultados/Marcela/tPacman/prog)
+==748025==    by 0x10CFB1: DesalocaPacman (in /home/mcpaixao/trab/Resultados/Marcela/tPacman/prog)
+==748025==    by 0x10B4B6: ExecutaJogo (in /home/mcpaixao/trab/Resultados/Marcela/tPacman/prog)
+==748025==    by 0x10B8CF: main (in /home/mcpaixao/trab/Resultados/Marcela/tPacman/prog)
+==748025==  Block was alloc'd at
+==748025==    at 0x4848899: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==748025==    by 0x10D202: CriaPosicao (in /home/mcpaixao/trab/Resultados/Marcela/tPacman/prog)
+==748025==    by 0x10BF29: ObtemPosicaoItemMapa (in /home/mcpaixao/trab/Resultados/Marcela/tPacman/prog)
+==748025==    by 0x10A7BA: CriaJogo (in /home/mcpaixao/trab/Resultados/Marcela/tPacman/prog)
+==748025==    by 0x10B8BF: main (in /home/mcpaixao/trab/Resultados/Marcela/tPacman/prog)
+==748025== 
+==748025== Invalid read of size 4
+==748025==    at 0x10D282: ObtemColunaPosicao (in /home/mcpaixao/trab/Resultados/Marcela/tPacman/prog)
+==748025==    by 0x10C05C: AtualizaItemMapa (in /home/mcpaixao/trab/Resultados/Marcela/tPacman/prog)
+==748025==    by 0x10CA9E: MovePacman (in /home/mcpaixao/trab/Resultados/Marcela/tPacman/prog)
+==748025==    by 0x10B490: ExecutaJogo (in /home/mcpaixao/trab/Resultados/Marcela/tPacman/prog)
+==748025==    by 0x10B8CF: main (in /home/mcpaixao/trab/Resultados/Marcela/tPacman/prog)
+==748025==  Address 0x4aaeed4 is 4 bytes inside a block of size 8 free'd
+==748025==    at 0x484B27F: free (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==748025==    by 0x10D316: DesalocaPosicao (in /home/mcpaixao/trab/Resultados/Marcela/tPacman/prog)
+==748025==    by 0x10CFB1: DesalocaPacman (in /home/mcpaixao/trab/Resultados/Marcela/tPacman/prog)
+==748025==    by 0x10B4B6: ExecutaJogo (in /home/mcpaixao/trab/Resultados/Marcela/tPacman/prog)
+==748025==    by 0x10B8CF: main (in /home/mcpaixao/trab/Resultados/Marcela/tPacman/prog)
+==748025==  Block was alloc'd at
+==748025==    at 0x4848899: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==748025==    by 0x10D202: CriaPosicao (in /home/mcpaixao/trab/Resultados/Marcela/tPacman/prog)
+==748025==    by 0x10BF29: ObtemPosicaoItemMapa (in /home/mcpaixao/trab/Resultados/Marcela/tPacman/prog)
+==748025==    by 0x10A7BA: CriaJogo (in /home/mcpaixao/trab/Resultados/Marcela/tPacman/prog)
+==748025==    by 0x10B8BF: main (in /home/mcpaixao/trab/Resultados/Marcela/tPacman/prog)
+==748025== 
+==748025== Invalid write of size 4
+==748025==    at 0x10D2A1: AtualizaPosicao (in /home/mcpaixao/trab/Resultados/Marcela/tPacman/prog)
+==748025==    by 0x10CAD0: MovePacman (in /home/mcpaixao/trab/Resultados/Marcela/tPacman/prog)
+==748025==    by 0x10B490: ExecutaJogo (in /home/mcpaixao/trab/Resultados/Marcela/tPacman/prog)
+==748025==    by 0x10B8CF: main (in /home/mcpaixao/trab/Resultados/Marcela/tPacman/prog)
+==748025==  Address 0x4aaeed0 is 0 bytes inside a block of size 8 free'd
+==748025==    at 0x484B27F: free (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==748025==    by 0x10D316: DesalocaPosicao (in /home/mcpaixao/trab/Resultados/Marcela/tPacman/prog)
+==748025==    by 0x10CFB1: DesalocaPacman (in /home/mcpaixao/trab/Resultados/Marcela/tPacman/prog)
+==748025==    by 0x10B4B6: ExecutaJogo (in /home/mcpaixao/trab/Resultados/Marcela/tPacman/prog)
+==748025==    by 0x10B8CF: main (in /home/mcpaixao/trab/Resultados/Marcela/tPacman/prog)
+==748025==  Block was alloc'd at
+==748025==    at 0x4848899: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==748025==    by 0x10D202: CriaPosicao (in /home/mcpaixao/trab/Resultados/Marcela/tPacman/prog)
+==748025==    by 0x10BF29: ObtemPosicaoItemMapa (in /home/mcpaixao/trab/Resultados/Marcela/tPacman/prog)
+==748025==    by 0x10A7BA: CriaJogo (in /home/mcpaixao/trab/Resultados/Marcela/tPacman/prog)
+==748025==    by 0x10B8BF: main (in /home/mcpaixao/trab/Resultados/Marcela/tPacman/prog)
+==748025== 
+==748025== Invalid write of size 4
+==748025==    at 0x10D2AE: AtualizaPosicao (in /home/mcpaixao/trab/Resultados/Marcela/tPacman/prog)
+==748025==    by 0x10CAD0: MovePacman (in /home/mcpaixao/trab/Resultados/Marcela/tPacman/prog)
+==748025==    by 0x10B490: ExecutaJogo (in /home/mcpaixao/trab/Resultados/Marcela/tPacman/prog)
+==748025==    by 0x10B8CF: main (in /home/mcpaixao/trab/Resultados/Marcela/tPacman/prog)
+==748025==  Address 0x4aaeed4 is 4 bytes inside a block of size 8 free'd
+==748025==    at 0x484B27F: free (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==748025==    by 0x10D316: DesalocaPosicao (in /home/mcpaixao/trab/Resultados/Marcela/tPacman/prog)
+==748025==    by 0x10CFB1: DesalocaPacman (in /home/mcpaixao/trab/Resultados/Marcela/tPacman/prog)
+==748025==    by 0x10B4B6: ExecutaJogo (in /home/mcpaixao/trab/Resultados/Marcela/tPacman/prog)
+==748025==    by 0x10B8CF: main (in /home/mcpaixao/trab/Resultados/Marcela/tPacman/prog)
+==748025==  Block was alloc'd at
+==748025==    at 0x4848899: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==748025==    by 0x10D202: CriaPosicao (in /home/mcpaixao/trab/Resultados/Marcela/tPacman/prog)
+==748025==    by 0x10BF29: ObtemPosicaoItemMapa (in /home/mcpaixao/trab/Resultados/Marcela/tPacman/prog)
+==748025==    by 0x10A7BA: CriaJogo (in /home/mcpaixao/trab/Resultados/Marcela/tPacman/prog)
+==748025==    by 0x10B8BF: main (in /home/mcpaixao/trab/Resultados/Marcela/tPacman/prog)
+==748025== 
+==748025== Invalid read of size 4
+==748025==    at 0x10D26E: ObtemLinhaPosicao (in /home/mcpaixao/trab/Resultados/Marcela/tPacman/prog)
+==748025==    by 0x10C04D: AtualizaItemMapa (in /home/mcpaixao/trab/Resultados/Marcela/tPacman/prog)
+==748025==    by 0x10C7FD: MovePacman (in /home/mcpaixao/trab/Resultados/Marcela/tPacman/prog)
+==748025==    by 0x10B490: ExecutaJogo (in /home/mcpaixao/trab/Resultados/Marcela/tPacman/prog)
+==748025==    by 0x10B8CF: main (in /home/mcpaixao/trab/Resultados/Marcela/tPacman/prog)
+==748025==  Address 0x4aaeed0 is 0 bytes inside a block of size 8 free'd
+==748025==    at 0x484B27F: free (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==748025==    by 0x10D316: DesalocaPosicao (in /home/mcpaixao/trab/Resultados/Marcela/tPacman/prog)
+==748025==    by 0x10CFB1: DesalocaPacman (in /home/mcpaixao/trab/Resultados/Marcela/tPacman/prog)
+==748025==    by 0x10B4B6: ExecutaJogo (in /home/mcpaixao/trab/Resultados/Marcela/tPacman/prog)
+==748025==    by 0x10B8CF: main (in /home/mcpaixao/trab/Resultados/Marcela/tPacman/prog)
+==748025==  Block was alloc'd at
+==748025==    at 0x4848899: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==748025==    by 0x10D202: CriaPosicao (in /home/mcpaixao/trab/Resultados/Marcela/tPacman/prog)
+==748025==    by 0x10BF29: ObtemPosicaoItemMapa (in /home/mcpaixao/trab/Resultados/Marcela/tPacman/prog)
+==748025==    by 0x10A7BA: CriaJogo (in /home/mcpaixao/trab/Resultados/Marcela/tPacman/prog)
+==748025==    by 0x10B8BF: main (in /home/mcpaixao/trab/Resultados/Marcela/tPacman/prog)
+==748025== 
+==748025== Invalid read of size 4
+==748025==    at 0x10D282: ObtemColunaPosicao (in /home/mcpaixao/trab/Resultados/Marcela/tPacman/prog)
+==748025==    by 0x10C05C: AtualizaItemMapa (in /home/mcpaixao/trab/Resultados/Marcela/tPacman/prog)
+==748025==    by 0x10C7FD: MovePacman (in /home/mcpaixao/trab/Resultados/Marcela/tPacman/prog)
+==748025==    by 0x10B490: ExecutaJogo (in /home/mcpaixao/trab/Resultados/Marcela/tPacman/prog)
+==748025==    by 0x10B8CF: main (in /home/mcpaixao/trab/Resultados/Marcela/tPacman/prog)
+==748025==  Address 0x4aaeed4 is 4 bytes inside a block of size 8 free'd
+==748025==    at 0x484B27F: free (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==748025==    by 0x10D316: DesalocaPosicao (in /home/mcpaixao/trab/Resultados/Marcela/tPacman/prog)
+==748025==    by 0x10CFB1: DesalocaPacman (in /home/mcpaixao/trab/Resultados/Marcela/tPacman/prog)
+==748025==    by 0x10B4B6: ExecutaJogo (in /home/mcpaixao/trab/Resultados/Marcela/tPacman/prog)
+==748025==    by 0x10B8CF: main (in /home/mcpaixao/trab/Resultados/Marcela/tPacman/prog)
+==748025==  Block was alloc'd at
+==748025==    at 0x4848899: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==748025==    by 0x10D202: CriaPosicao (in /home/mcpaixao/trab/Resultados/Marcela/tPacman/prog)
+==748025==    by 0x10BF29: ObtemPosicaoItemMapa (in /home/mcpaixao/trab/Resultados/Marcela/tPacman/prog)
+==748025==    by 0x10A7BA: CriaJogo (in /home/mcpaixao/trab/Resultados/Marcela/tPacman/prog)
+==748025==    by 0x10B8BF: main (in /home/mcpaixao/trab/Resultados/Marcela/tPacman/prog)
+==748025== 
+==748025== Invalid write of size 4
+==748025==    at 0x10D2A1: AtualizaPosicao (in /home/mcpaixao/trab/Resultados/Marcela/tPacman/prog)
+==748025==    by 0x10C833: MovePacman (in /home/mcpaixao/trab/Resultados/Marcela/tPacman/prog)
+==748025==    by 0x10B490: ExecutaJogo (in /home/mcpaixao/trab/Resultados/Marcela/tPacman/prog)
+==748025==    by 0x10B8CF: main (in /home/mcpaixao/trab/Resultados/Marcela/tPacman/prog)
+==748025==  Address 0x4aaeed0 is 0 bytes inside a block of size 8 free'd
+==748025==    at 0x484B27F: free (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==748025==    by 0x10D316: DesalocaPosicao (in /home/mcpaixao/trab/Resultados/Marcela/tPacman/prog)
+==748025==    by 0x10CFB1: DesalocaPacman (in /home/mcpaixao/trab/Resultados/Marcela/tPacman/prog)
+==748025==    by 0x10B4B6: ExecutaJogo (in /home/mcpaixao/trab/Resultados/Marcela/tPacman/prog)
+==748025==    by 0x10B8CF: main (in /home/mcpaixao/trab/Resultados/Marcela/tPacman/prog)
+==748025==  Block was alloc'd at
+==748025==    at 0x4848899: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==748025==    by 0x10D202: CriaPosicao (in /home/mcpaixao/trab/Resultados/Marcela/tPacman/prog)
+==748025==    by 0x10BF29: ObtemPosicaoItemMapa (in /home/mcpaixao/trab/Resultados/Marcela/tPacman/prog)
+==748025==    by 0x10A7BA: CriaJogo (in /home/mcpaixao/trab/Resultados/Marcela/tPacman/prog)
+==748025==    by 0x10B8BF: main (in /home/mcpaixao/trab/Resultados/Marcela/tPacman/prog)
+==748025== 
+==748025== Invalid write of size 4
+==748025==    at 0x10D2AE: AtualizaPosicao (in /home/mcpaixao/trab/Resultados/Marcela/tPacman/prog)
+==748025==    by 0x10C833: MovePacman (in /home/mcpaixao/trab/Resultados/Marcela/tPacman/prog)
+==748025==    by 0x10B490: ExecutaJogo (in /home/mcpaixao/trab/Resultados/Marcela/tPacman/prog)
+==748025==    by 0x10B8CF: main (in /home/mcpaixao/trab/Resultados/Marcela/tPacman/prog)
+==748025==  Address 0x4aaeed4 is 4 bytes inside a block of size 8 free'd
+==748025==    at 0x484B27F: free (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==748025==    by 0x10D316: DesalocaPosicao (in /home/mcpaixao/trab/Resultados/Marcela/tPacman/prog)
+==748025==    by 0x10CFB1: DesalocaPacman (in /home/mcpaixao/trab/Resultados/Marcela/tPacman/prog)
+==748025==    by 0x10B4B6: ExecutaJogo (in /home/mcpaixao/trab/Resultados/Marcela/tPacman/prog)
+==748025==    by 0x10B8CF: main (in /home/mcpaixao/trab/Resultados/Marcela/tPacman/prog)
+==748025==  Block was alloc'd at
+==748025==    at 0x4848899: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==748025==    by 0x10D202: CriaPosicao (in /home/mcpaixao/trab/Resultados/Marcela/tPacman/prog)
+==748025==    by 0x10BF29: ObtemPosicaoItemMapa (in /home/mcpaixao/trab/Resultados/Marcela/tPacman/prog)
+==748025==    by 0x10A7BA: CriaJogo (in /home/mcpaixao/trab/Resultados/Marcela/tPacman/prog)
+==748025==    by 0x10B8BF: main (in /home/mcpaixao/trab/Resultados/Marcela/tPacman/prog)
+==748025== 
+==748025== Invalid read of size 4
+==748025==    at 0x10D26E: ObtemLinhaPosicao (in /home/mcpaixao/trab/Resultados/Marcela/tPacman/prog)
+==748025==    by 0x10C04D: AtualizaItemMapa (in /home/mcpaixao/trab/Resultados/Marcela/tPacman/prog)
+==748025==    by 0x10C6AB: MovePacman (in /home/mcpaixao/trab/Resultados/Marcela/tPacman/prog)
+==748025==    by 0x10B490: ExecutaJogo (in /home/mcpaixao/trab/Resultados/Marcela/tPacman/prog)
+==748025==    by 0x10B8CF: main (in /home/mcpaixao/trab/Resultados/Marcela/tPacman/prog)
+==748025==  Address 0x4aaeed0 is 0 bytes inside a block of size 8 free'd
+==748025==    at 0x484B27F: free (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==748025==    by 0x10D316: DesalocaPosicao (in /home/mcpaixao/trab/Resultados/Marcela/tPacman/prog)
+==748025==    by 0x10CFB1: DesalocaPacman (in /home/mcpaixao/trab/Resultados/Marcela/tPacman/prog)
+==748025==    by 0x10B4B6: ExecutaJogo (in /home/mcpaixao/trab/Resultados/Marcela/tPacman/prog)
+==748025==    by 0x10B8CF: main (in /home/mcpaixao/trab/Resultados/Marcela/tPacman/prog)
+==748025==  Block was alloc'd at
+==748025==    at 0x4848899: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==748025==    by 0x10D202: CriaPosicao (in /home/mcpaixao/trab/Resultados/Marcela/tPacman/prog)
+==748025==    by 0x10BF29: ObtemPosicaoItemMapa (in /home/mcpaixao/trab/Resultados/Marcela/tPacman/prog)
+==748025==    by 0x10A7BA: CriaJogo (in /home/mcpaixao/trab/Resultados/Marcela/tPacman/prog)
+==748025==    by 0x10B8BF: main (in /home/mcpaixao/trab/Resultados/Marcela/tPacman/prog)
+==748025== 
+==748025== Invalid read of size 4
+==748025==    at 0x10D282: ObtemColunaPosicao (in /home/mcpaixao/trab/Resultados/Marcela/tPacman/prog)
+==748025==    by 0x10C05C: AtualizaItemMapa (in /home/mcpaixao/trab/Resultados/Marcela/tPacman/prog)
+==748025==    by 0x10C6AB: MovePacman (in /home/mcpaixao/trab/Resultados/Marcela/tPacman/prog)
+==748025==    by 0x10B490: ExecutaJogo (in /home/mcpaixao/trab/Resultados/Marcela/tPacman/prog)
+==748025==    by 0x10B8CF: main (in /home/mcpaixao/trab/Resultados/Marcela/tPacman/prog)
+==748025==  Address 0x4aaeed4 is 4 bytes inside a block of size 8 free'd
+==748025==    at 0x484B27F: free (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==748025==    by 0x10D316: DesalocaPosicao (in /home/mcpaixao/trab/Resultados/Marcela/tPacman/prog)
+==748025==    by 0x10CFB1: DesalocaPacman (in /home/mcpaixao/trab/Resultados/Marcela/tPacman/prog)
+==748025==    by 0x10B4B6: ExecutaJogo (in /home/mcpaixao/trab/Resultados/Marcela/tPacman/prog)
+==748025==    by 0x10B8CF: main (in /home/mcpaixao/trab/Resultados/Marcela/tPacman/prog)
+==748025==  Block was alloc'd at
+==748025==    at 0x4848899: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==748025==    by 0x10D202: CriaPosicao (in /home/mcpaixao/trab/Resultados/Marcela/tPacman/prog)
+==748025==    by 0x10BF29: ObtemPosicaoItemMapa (in /home/mcpaixao/trab/Resultados/Marcela/tPacman/prog)
+==748025==    by 0x10A7BA: CriaJogo (in /home/mcpaixao/trab/Resultados/Marcela/tPacman/prog)
+==748025==    by 0x10B8BF: main (in /home/mcpaixao/trab/Resultados/Marcela/tPacman/prog)
+==748025== 
+==748025== Invalid write of size 4
+==748025==    at 0x10D2A1: AtualizaPosicao (in /home/mcpaixao/trab/Resultados/Marcela/tPacman/prog)
+==748025==    by 0x10C6E1: MovePacman (in /home/mcpaixao/trab/Resultados/Marcela/tPacman/prog)
+==748025==    by 0x10B490: ExecutaJogo (in /home/mcpaixao/trab/Resultados/Marcela/tPacman/prog)
+==748025==    by 0x10B8CF: main (in /home/mcpaixao/trab/Resultados/Marcela/tPacman/prog)
+==748025==  Address 0x4aaeed0 is 0 bytes inside a block of size 8 free'd
+==748025==    at 0x484B27F: free (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==748025==    by 0x10D316: DesalocaPosicao (in /home/mcpaixao/trab/Resultados/Marcela/tPacman/prog)
+==748025==    by 0x10CFB1: DesalocaPacman (in /home/mcpaixao/trab/Resultados/Marcela/tPacman/prog)
+==748025==    by 0x10B4B6: ExecutaJogo (in /home/mcpaixao/trab/Resultados/Marcela/tPacman/prog)
+==748025==    by 0x10B8CF: main (in /home/mcpaixao/trab/Resultados/Marcela/tPacman/prog)
+==748025==  Block was alloc'd at
+==748025==    at 0x4848899: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==748025==    by 0x10D202: CriaPosicao (in /home/mcpaixao/trab/Resultados/Marcela/tPacman/prog)
+==748025==    by 0x10BF29: ObtemPosicaoItemMapa (in /home/mcpaixao/trab/Resultados/Marcela/tPacman/prog)
+==748025==    by 0x10A7BA: CriaJogo (in /home/mcpaixao/trab/Resultados/Marcela/tPacman/prog)
+==748025==    by 0x10B8BF: main (in /home/mcpaixao/trab/Resultados/Marcela/tPacman/prog)
+==748025== 
+==748025== Invalid write of size 4
+==748025==    at 0x10D2AE: AtualizaPosicao (in /home/mcpaixao/trab/Resultados/Marcela/tPacman/prog)
+==748025==    by 0x10C6E1: MovePacman (in /home/mcpaixao/trab/Resultados/Marcela/tPacman/prog)
+==748025==    by 0x10B490: ExecutaJogo (in /home/mcpaixao/trab/Resultados/Marcela/tPacman/prog)
+==748025==    by 0x10B8CF: main (in /home/mcpaixao/trab/Resultados/Marcela/tPacman/prog)
+==748025==  Address 0x4aaeed4 is 4 bytes inside a block of size 8 free'd
+==748025==    at 0x484B27F: free (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==748025==    by 0x10D316: DesalocaPosicao (in /home/mcpaixao/trab/Resultados/Marcela/tPacman/prog)
+==748025==    by 0x10CFB1: DesalocaPacman (in /home/mcpaixao/trab/Resultados/Marcela/tPacman/prog)
+==748025==    by 0x10B4B6: ExecutaJogo (in /home/mcpaixao/trab/Resultados/Marcela/tPacman/prog)
+==748025==    by 0x10B8CF: main (in /home/mcpaixao/trab/Resultados/Marcela/tPacman/prog)
+==748025==  Block was alloc'd at
+==748025==    at 0x4848899: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==748025==    by 0x10D202: CriaPosicao (in /home/mcpaixao/trab/Resultados/Marcela/tPacman/prog)
+==748025==    by 0x10BF29: ObtemPosicaoItemMapa (in /home/mcpaixao/trab/Resultados/Marcela/tPacman/prog)
+==748025==    by 0x10A7BA: CriaJogo (in /home/mcpaixao/trab/Resultados/Marcela/tPacman/prog)
+==748025==    by 0x10B8BF: main (in /home/mcpaixao/trab/Resultados/Marcela/tPacman/prog)
+==748025== 
+==748025== Use of uninitialised value of size 8
+==748025==    at 0x10C2AE: ObtemComandoMovimento (in /home/mcpaixao/trab/Resultados/Marcela/tPacman/prog)
+==748025==    by 0x10C498: ClonaHistoricoDeMovimentosSignificativosPacman (in /home/mcpaixao/trab/Resultados/Marcela/tPacman/prog)
+==748025==    by 0x10B11D: GeraArquivos (in /home/mcpaixao/trab/Resultados/Marcela/tPacman/prog)
+==748025==    by 0x10B7AE: ExecutaJogo (in /home/mcpaixao/trab/Resultados/Marcela/tPacman/prog)
+==748025==    by 0x10B8CF: main (in /home/mcpaixao/trab/Resultados/Marcela/tPacman/prog)
+==748025== 
+==748025== Invalid read of size 4
+==748025==    at 0x10C2AE: ObtemComandoMovimento (in /home/mcpaixao/trab/Resultados/Marcela/tPacman/prog)
+==748025==    by 0x10C498: ClonaHistoricoDeMovimentosSignificativosPacman (in /home/mcpaixao/trab/Resultados/Marcela/tPacman/prog)
+==748025==    by 0x10B11D: GeraArquivos (in /home/mcpaixao/trab/Resultados/Marcela/tPacman/prog)
+==748025==    by 0x10B7AE: ExecutaJogo (in /home/mcpaixao/trab/Resultados/Marcela/tPacman/prog)
+==748025==    by 0x10B8CF: main (in /home/mcpaixao/trab/Resultados/Marcela/tPacman/prog)
+==748025==  Address 0x4 is not stack'd, malloc'd or (recently) free'd
+==748025== 
+==748025== 
+==748025== Process terminating with default action of signal 11 (SIGSEGV)
+==748025==  Access not within mapped region at address 0x4
+==748025==    at 0x10C2AE: ObtemComandoMovimento (in /home/mcpaixao/trab/Resultados/Marcela/tPacman/prog)
+==748025==    by 0x10C498: ClonaHistoricoDeMovimentosSignificativosPacman (in /home/mcpaixao/trab/Resultados/Marcela/tPacman/prog)
+==748025==    by 0x10B11D: GeraArquivos (in /home/mcpaixao/trab/Resultados/Marcela/tPacman/prog)
+==748025==    by 0x10B7AE: ExecutaJogo (in /home/mcpaixao/trab/Resultados/Marcela/tPacman/prog)
+==748025==    by 0x10B8CF: main (in /home/mcpaixao/trab/Resultados/Marcela/tPacman/prog)
+==748025==  If you believe this happened as a result of a stack
+==748025==  overflow in your program's main thread (unlikely but
+==748025==  possible), you can try to increase the size of the
+==748025==  main thread stack using the --main-stacksize= flag.
+==748025==  The main thread stack size used in this run was 8388608.
+==748025== 
+==748025== HEAP SUMMARY:
+==748025==     in use at exit: 17,811 bytes in 86 blocks
+==748025==   total heap usage: 58,163 allocs, 58,221 frees, 521,686 bytes allocated
+==748025== 
+==748025== LEAK SUMMARY:
+==748025==    definitely lost: 0 bytes in 0 blocks
+==748025==    indirectly lost: 0 bytes in 0 blocks
+==748025==      possibly lost: 0 bytes in 0 blocks
+==748025==    still reachable: 17,811 bytes in 86 blocks
+==748025==         suppressed: 0 bytes in 0 blocks
+==748025== Reachable blocks (those to which a pointer was found) are not shown.
+==748025== To see them, rerun with: --leak-check=full --show-leak-kinds=all
+==748025== 
+==748025== Use --track-origins=yes to see where uninitialised values come from
+==748025== For lists of detected and suppressed errors, rerun with: -s
+==748025== ERROR SUMMARY: 112340 errors from 29 contexts (suppressed: 0 from 0)
