@@ -133,8 +133,8 @@ void MovePacman(tPacman* pacman, tMapa* mapa, COMANDO comando){
                 AtualizaTrilhaPacman(pacman); 
                 AtualizaPosicao(pacman->posicaoAtual, novaPosicao);
                 EntraTunelMapa(mapa, pacman->posicaoAtual);
-                AtualizaItemMapa(mapa, antigaPosicao, TUNEL); 
-                AtualizaItemMapa(mapa, novaPosicao, PAC);
+                //AtualizaItemMapa(mapa, antigaPosicao, TUNEL); 
+                AtualizaItemMapa(mapa, pacman->posicaoAtual, PAC);
             }
         }
         else {
@@ -161,8 +161,8 @@ void MovePacman(tPacman* pacman, tMapa* mapa, COMANDO comando){
                 AtualizaTrilhaPacman(pacman); 
                 AtualizaPosicao(pacman->posicaoAtual, novaPosicao);
                 EntraTunelMapa(mapa, pacman->posicaoAtual);
-                AtualizaItemMapa(mapa, antigaPosicao, TUNEL); 
-                AtualizaItemMapa(mapa, novaPosicao, PAC);
+                //AtualizaItemMapa(mapa, antigaPosicao, TUNEL); 
+                AtualizaItemMapa(mapa, pacman->posicaoAtual, PAC);
             }
         }
         else {
@@ -188,8 +188,8 @@ void MovePacman(tPacman* pacman, tMapa* mapa, COMANDO comando){
                 AtualizaTrilhaPacman(pacman); 
                 AtualizaPosicao(pacman->posicaoAtual, novaPosicao);
                 EntraTunelMapa(mapa, pacman->posicaoAtual);
-                AtualizaItemMapa(mapa, antigaPosicao, TUNEL); 
-                AtualizaItemMapa(mapa, novaPosicao, PAC);
+                //AtualizaItemMapa(mapa, antigaPosicao, TUNEL); 
+                AtualizaItemMapa(mapa, pacman->posicaoAtual, PAC);
             }
         }
         else {
@@ -216,8 +216,8 @@ void MovePacman(tPacman* pacman, tMapa* mapa, COMANDO comando){
                 AtualizaTrilhaPacman(pacman); 
                 AtualizaPosicao(pacman->posicaoAtual, novaPosicao);
                 EntraTunelMapa(mapa, pacman->posicaoAtual);
-                AtualizaItemMapa(mapa, antigaPosicao, TUNEL); 
-                AtualizaItemMapa(mapa, novaPosicao, PAC); 
+                //AtualizaItemMapa(mapa, antigaPosicao, TUNEL); 
+                AtualizaItemMapa(mapa, pacman->posicaoAtual, PAC); 
             }
         }
         else {
