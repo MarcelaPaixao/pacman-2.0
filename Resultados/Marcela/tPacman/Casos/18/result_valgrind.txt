@@ -1,26 +1,15 @@
-==217934== Memcheck, a memory error detector
-==217934== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
-==217934== Using Valgrind-3.18.1 and LibVEX; rerun with -h for copyright info
-==217934== Command: Resultados/Marcela/tPacman/prog Resultados/Marcela/tPacman/Casos/18
-==217934== Parent PID: 217933
-==217934== 
-==217934== Conditional jump or move depends on uninitialised value(s)
-==217934==    at 0x10B326: lerComandoTeclado (in /home/mcpaixao/trab/Resultados/Marcela/tPacman/prog)
-==217934==    by 0x10B3EE: ExecutaJogo (in /home/mcpaixao/trab/Resultados/Marcela/tPacman/prog)
-==217934==    by 0x10B918: main (in /home/mcpaixao/trab/Resultados/Marcela/tPacman/prog)
-==217934== 
-==217934== Conditional jump or move depends on uninitialised value(s)
-==217934==    at 0x10B33C: lerComandoTeclado (in /home/mcpaixao/trab/Resultados/Marcela/tPacman/prog)
-==217934==    by 0x10B3EE: ExecutaJogo (in /home/mcpaixao/trab/Resultados/Marcela/tPacman/prog)
-==217934==    by 0x10B918: main (in /home/mcpaixao/trab/Resultados/Marcela/tPacman/prog)
-==217934== 
-==217934== 
-==217934== HEAP SUMMARY:
-==217934==     in use at exit: 0 bytes in 0 blocks
-==217934==   total heap usage: 15,737 allocs, 15,737 frees, 194,188 bytes allocated
-==217934== 
-==217934== All heap blocks were freed -- no leaks are possible
-==217934== 
-==217934== Use --track-origins=yes to see where uninitialised values come from
-==217934== For lists of detected and suppressed errors, rerun with: -s
-==217934== ERROR SUMMARY: 2 errors from 2 contexts (suppressed: 0 from 0)
+==311350== Memcheck, a memory error detector
+==311350== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==311350== Using Valgrind-3.18.1 and LibVEX; rerun with -h for copyright info
+==311350== Command: Resultados/Marcela/tPacman/prog Resultados/Marcela/tPacman/Casos/18
+==311350== Parent PID: 311349
+==311350== 
+==311350== 
+==311350== HEAP SUMMARY:
+==311350==     in use at exit: 0 bytes in 0 blocks
+==311350==   total heap usage: 15,568 allocs, 15,568 frees, 193,204 bytes allocated
+==311350== 
+==311350== All heap blocks were freed -- no leaks are possible
+==311350== 
+==311350== For lists of detected and suppressed errors, rerun with: -s
+==311350== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)

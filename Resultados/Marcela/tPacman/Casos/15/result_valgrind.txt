@@ -1,28 +1,15 @@
-==217202== Memcheck, a memory error detector
-==217202== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
-==217202== Using Valgrind-3.18.1 and LibVEX; rerun with -h for copyright info
-==217202== Command: Resultados/Marcela/tPacman/prog Resultados/Marcela/tPacman/Casos/15
-==217202== Parent PID: 217201
-==217202== 
-==217202== 
-==217202== HEAP SUMMARY:
-==217202==     in use at exit: 60 bytes in 1 blocks
-==217202==   total heap usage: 22,223 allocs, 22,222 frees, 232,838 bytes allocated
-==217202== 
-==217202== 60 bytes in 1 blocks are definitely lost in loss record 1 of 1
-==217202==    at 0x4848899: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
-==217202==    by 0x10C322: CriaMovimento (in /home/mcpaixao/trab/Resultados/Marcela/tPacman/prog)
-==217202==    by 0x10D01C: InsereNovoMovimentoSignificativoPacman (in /home/mcpaixao/trab/Resultados/Marcela/tPacman/prog)
-==217202==    by 0x10CC88: MovePacman (in /home/mcpaixao/trab/Resultados/Marcela/tPacman/prog)
-==217202==    by 0x10B4C5: ExecutaJogo (in /home/mcpaixao/trab/Resultados/Marcela/tPacman/prog)
-==217202==    by 0x10B918: main (in /home/mcpaixao/trab/Resultados/Marcela/tPacman/prog)
-==217202== 
-==217202== LEAK SUMMARY:
-==217202==    definitely lost: 60 bytes in 1 blocks
-==217202==    indirectly lost: 0 bytes in 0 blocks
-==217202==      possibly lost: 0 bytes in 0 blocks
-==217202==    still reachable: 0 bytes in 0 blocks
-==217202==         suppressed: 0 bytes in 0 blocks
-==217202== 
-==217202== For lists of detected and suppressed errors, rerun with: -s
-==217202== ERROR SUMMARY: 1 errors from 1 contexts (suppressed: 0 from 0)
+==310772== Memcheck, a memory error detector
+==310772== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==310772== Using Valgrind-3.18.1 and LibVEX; rerun with -h for copyright info
+==310772== Command: Resultados/Marcela/tPacman/prog Resultados/Marcela/tPacman/Casos/15
+==310772== Parent PID: 310771
+==310772== 
+==310772== 
+==310772== HEAP SUMMARY:
+==310772==     in use at exit: 0 bytes in 0 blocks
+==310772==   total heap usage: 22,224 allocs, 22,224 frees, 232,914 bytes allocated
+==310772== 
+==310772== All heap blocks were freed -- no leaks are possible
+==310772== 
+==310772== For lists of detected and suppressed errors, rerun with: -s
+==310772== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
