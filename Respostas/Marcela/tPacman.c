@@ -73,7 +73,7 @@ tPacman* ClonaPacman(tPacman* pacman){
  * \param pacman pacman
  */
 tMovimento** ClonaHistoricoDeMovimentosSignificativosPacman(tPacman* pacman){
-    tMovimento** clone = malloc(pacman->nMovimentosSignificativos * sizeof(tMovimento*));
+    tMovimento **clone = malloc(pacman->nMovimentosSignificativos * sizeof(tMovimento*));
 
     for(int i=0; i < pacman->nMovimentosSignificativos; i++){
         clone[i] = CriaMovimento(ObtemNumeroMovimento(pacman->historicoDeMovimentosSignificativos[i]), 
@@ -248,6 +248,7 @@ void MovePacman(tPacman* pacman, tMapa* mapa, COMANDO comando){
     DesalocaPosicao(antigaPosicao);
 }
 
+
 /**
  * Aloca a trilha dinamicamente.
  * Caso a trilha seja igual a NULL, a matriz int** deverá ser
@@ -326,7 +327,6 @@ void SalvaTrilhaPacman(tPacman* pacman){
  * \param acao a ação do movimento
  */
 void InsereNovoMovimentoSignificativoPacman(tPacman* pacman, COMANDO comando, const char* acao){
-    pacman->nMovimentosSignificativos++;
     pacman->historicoDeMovimentosSignificativos = realloc(pacman->historicoDeMovimentosSignificativos, 
                                                           pacman->nMovimentosSignificativos * sizeof(tMovimento*));
     tMovimento * mov = CriaMovimento(ObtemNumeroAtualMovimentosPacman(pacman), comando, acao);
@@ -344,7 +344,8 @@ void MataPacman(tPacman* pacman){
 
 /**
  * Caso o pacman seja diferente de NULL, libera o espaço 
- * alocado para a estrutura tPacman
+ * alocado para a estrutura tPacman.
+ * Sempre verificar se é NULL antes de dar free.
  * 
  * \param pacman pacman
  */

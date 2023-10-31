@@ -1,0 +1,28 @@
+==139744== Memcheck, a memory error detector
+==139744== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==139744== Using Valgrind-3.18.1 and LibVEX; rerun with -h for copyright info
+==139744== Command: Resultados/Marcela/tPacman/prog Resultados/Marcela/tPacman/Casos/06
+==139744== Parent PID: 139743
+==139744== 
+==139744== 
+==139744== HEAP SUMMARY:
+==139744==     in use at exit: 60 bytes in 1 blocks
+==139744==   total heap usage: 193,221 allocs, 193,220 frees, 1,693,776 bytes allocated
+==139744== 
+==139744== 60 bytes in 1 blocks are definitely lost in loss record 1 of 1
+==139744==    at 0x4848899: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==139744==    by 0x10C322: CriaMovimento (in /home/mcpaixao/trab/Resultados/Marcela/tPacman/prog)
+==139744==    by 0x10D080: InsereNovoMovimentoSignificativoPacman (in /home/mcpaixao/trab/Resultados/Marcela/tPacman/prog)
+==139744==    by 0x10CCBD: MovePacman (in /home/mcpaixao/trab/Resultados/Marcela/tPacman/prog)
+==139744==    by 0x10B4C5: ExecutaJogo (in /home/mcpaixao/trab/Resultados/Marcela/tPacman/prog)
+==139744==    by 0x10B918: main (in /home/mcpaixao/trab/Resultados/Marcela/tPacman/prog)
+==139744== 
+==139744== LEAK SUMMARY:
+==139744==    definitely lost: 60 bytes in 1 blocks
+==139744==    indirectly lost: 0 bytes in 0 blocks
+==139744==      possibly lost: 0 bytes in 0 blocks
+==139744==    still reachable: 0 bytes in 0 blocks
+==139744==         suppressed: 0 bytes in 0 blocks
+==139744== 
+==139744== For lists of detected and suppressed errors, rerun with: -s
+==139744== ERROR SUMMARY: 1 errors from 1 contexts (suppressed: 0 from 0)

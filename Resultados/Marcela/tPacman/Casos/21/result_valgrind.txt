@@ -1,0 +1,26 @@
+==143208== Memcheck, a memory error detector
+==143208== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==143208== Using Valgrind-3.18.1 and LibVEX; rerun with -h for copyright info
+==143208== Command: Resultados/Marcela/tPacman/prog Resultados/Marcela/tPacman/Casos/21
+==143208== Parent PID: 143207
+==143208== 
+==143208== Conditional jump or move depends on uninitialised value(s)
+==143208==    at 0x10B326: lerComandoTeclado (in /home/mcpaixao/trab/Resultados/Marcela/tPacman/prog)
+==143208==    by 0x10B3EE: ExecutaJogo (in /home/mcpaixao/trab/Resultados/Marcela/tPacman/prog)
+==143208==    by 0x10B918: main (in /home/mcpaixao/trab/Resultados/Marcela/tPacman/prog)
+==143208== 
+==143208== Conditional jump or move depends on uninitialised value(s)
+==143208==    at 0x10B33C: lerComandoTeclado (in /home/mcpaixao/trab/Resultados/Marcela/tPacman/prog)
+==143208==    by 0x10B3EE: ExecutaJogo (in /home/mcpaixao/trab/Resultados/Marcela/tPacman/prog)
+==143208==    by 0x10B918: main (in /home/mcpaixao/trab/Resultados/Marcela/tPacman/prog)
+==143208== 
+==143208== 
+==143208== HEAP SUMMARY:
+==143208==     in use at exit: 0 bytes in 0 blocks
+==143208==   total heap usage: 11,337 allocs, 11,337 frees, 142,232 bytes allocated
+==143208== 
+==143208== All heap blocks were freed -- no leaks are possible
+==143208== 
+==143208== Use --track-origins=yes to see where uninitialised values come from
+==143208== For lists of detected and suppressed errors, rerun with: -s
+==143208== ERROR SUMMARY: 2 errors from 2 contexts (suppressed: 0 from 0)

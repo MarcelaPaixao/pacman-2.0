@@ -1,51 +1,28 @@
-==25074== Memcheck, a memory error detector
-==25074== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
-==25074== Using Valgrind-3.18.1 and LibVEX; rerun with -h for copyright info
-==25074== Command: Resultados/Marcela/tPacman/prog Resultados/Marcela/tPacman/Casos/02
-==25074== Parent PID: 25073
-==25074== 
-==25074== Use of uninitialised value of size 8
-==25074==    at 0x10C2CE: ObtemComandoMovimento (in /home/mcpaixao/trab/Resultados/Marcela/tPacman/prog)
-==25074==    by 0x10C4F1: ClonaHistoricoDeMovimentosSignificativosPacman (in /home/mcpaixao/trab/Resultados/Marcela/tPacman/prog)
-==25074==    by 0x10B13D: GeraArquivos (in /home/mcpaixao/trab/Resultados/Marcela/tPacman/prog)
-==25074==    by 0x10B7CE: ExecutaJogo (in /home/mcpaixao/trab/Resultados/Marcela/tPacman/prog)
-==25074==    by 0x10B8EF: main (in /home/mcpaixao/trab/Resultados/Marcela/tPacman/prog)
-==25074== 
-==25074== Invalid read of size 4
-==25074==    at 0x10C2CE: ObtemComandoMovimento (in /home/mcpaixao/trab/Resultados/Marcela/tPacman/prog)
-==25074==    by 0x10C4F1: ClonaHistoricoDeMovimentosSignificativosPacman (in /home/mcpaixao/trab/Resultados/Marcela/tPacman/prog)
-==25074==    by 0x10B13D: GeraArquivos (in /home/mcpaixao/trab/Resultados/Marcela/tPacman/prog)
-==25074==    by 0x10B7CE: ExecutaJogo (in /home/mcpaixao/trab/Resultados/Marcela/tPacman/prog)
-==25074==    by 0x10B8EF: main (in /home/mcpaixao/trab/Resultados/Marcela/tPacman/prog)
-==25074==  Address 0x4 is not stack'd, malloc'd or (recently) free'd
-==25074== 
-==25074== 
-==25074== Process terminating with default action of signal 11 (SIGSEGV)
-==25074==  Access not within mapped region at address 0x4
-==25074==    at 0x10C2CE: ObtemComandoMovimento (in /home/mcpaixao/trab/Resultados/Marcela/tPacman/prog)
-==25074==    by 0x10C4F1: ClonaHistoricoDeMovimentosSignificativosPacman (in /home/mcpaixao/trab/Resultados/Marcela/tPacman/prog)
-==25074==    by 0x10B13D: GeraArquivos (in /home/mcpaixao/trab/Resultados/Marcela/tPacman/prog)
-==25074==    by 0x10B7CE: ExecutaJogo (in /home/mcpaixao/trab/Resultados/Marcela/tPacman/prog)
-==25074==    by 0x10B8EF: main (in /home/mcpaixao/trab/Resultados/Marcela/tPacman/prog)
-==25074==  If you believe this happened as a result of a stack
-==25074==  overflow in your program's main thread (unlikely but
-==25074==  possible), you can try to increase the size of the
-==25074==  main thread stack using the --main-stacksize= flag.
-==25074==  The main thread stack size used in this run was 8388608.
-==25074== 
-==25074== HEAP SUMMARY:
-==25074==     in use at exit: 14,117 bytes in 43 blocks
-==25074==   total heap usage: 1,820 allocs, 1,777 frees, 39,242 bytes allocated
-==25074== 
-==25074== LEAK SUMMARY:
-==25074==    definitely lost: 0 bytes in 0 blocks
-==25074==    indirectly lost: 0 bytes in 0 blocks
-==25074==      possibly lost: 0 bytes in 0 blocks
-==25074==    still reachable: 14,117 bytes in 43 blocks
-==25074==         suppressed: 0 bytes in 0 blocks
-==25074== Reachable blocks (those to which a pointer was found) are not shown.
-==25074== To see them, rerun with: --leak-check=full --show-leak-kinds=all
-==25074== 
-==25074== Use --track-origins=yes to see where uninitialised values come from
-==25074== For lists of detected and suppressed errors, rerun with: -s
-==25074== ERROR SUMMARY: 2 errors from 2 contexts (suppressed: 0 from 0)
+==138671== Memcheck, a memory error detector
+==138671== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==138671== Using Valgrind-3.18.1 and LibVEX; rerun with -h for copyright info
+==138671== Command: Resultados/Marcela/tPacman/prog Resultados/Marcela/tPacman/Casos/02
+==138671== Parent PID: 138670
+==138671== 
+==138671== 
+==138671== HEAP SUMMARY:
+==138671==     in use at exit: 60 bytes in 1 blocks
+==138671==   total heap usage: 1,833 allocs, 1,832 frees, 57,618 bytes allocated
+==138671== 
+==138671== 60 bytes in 1 blocks are definitely lost in loss record 1 of 1
+==138671==    at 0x4848899: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==138671==    by 0x10C322: CriaMovimento (in /home/mcpaixao/trab/Resultados/Marcela/tPacman/prog)
+==138671==    by 0x10D080: InsereNovoMovimentoSignificativoPacman (in /home/mcpaixao/trab/Resultados/Marcela/tPacman/prog)
+==138671==    by 0x10CCEC: MovePacman (in /home/mcpaixao/trab/Resultados/Marcela/tPacman/prog)
+==138671==    by 0x10B4C5: ExecutaJogo (in /home/mcpaixao/trab/Resultados/Marcela/tPacman/prog)
+==138671==    by 0x10B918: main (in /home/mcpaixao/trab/Resultados/Marcela/tPacman/prog)
+==138671== 
+==138671== LEAK SUMMARY:
+==138671==    definitely lost: 60 bytes in 1 blocks
+==138671==    indirectly lost: 0 bytes in 0 blocks
+==138671==      possibly lost: 0 bytes in 0 blocks
+==138671==    still reachable: 0 bytes in 0 blocks
+==138671==         suppressed: 0 bytes in 0 blocks
+==138671== 
+==138671== For lists of detected and suppressed errors, rerun with: -s
+==138671== ERROR SUMMARY: 1 errors from 1 contexts (suppressed: 0 from 0)

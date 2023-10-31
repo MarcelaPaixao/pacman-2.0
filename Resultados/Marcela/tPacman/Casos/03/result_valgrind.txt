@@ -1,51 +1,15 @@
-==25402== Memcheck, a memory error detector
-==25402== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
-==25402== Using Valgrind-3.18.1 and LibVEX; rerun with -h for copyright info
-==25402== Command: Resultados/Marcela/tPacman/prog Resultados/Marcela/tPacman/Casos/03
-==25402== Parent PID: 25401
-==25402== 
-==25402== Use of uninitialised value of size 8
-==25402==    at 0x10C2CE: ObtemComandoMovimento (in /home/mcpaixao/trab/Resultados/Marcela/tPacman/prog)
-==25402==    by 0x10C4F1: ClonaHistoricoDeMovimentosSignificativosPacman (in /home/mcpaixao/trab/Resultados/Marcela/tPacman/prog)
-==25402==    by 0x10B13D: GeraArquivos (in /home/mcpaixao/trab/Resultados/Marcela/tPacman/prog)
-==25402==    by 0x10B7CE: ExecutaJogo (in /home/mcpaixao/trab/Resultados/Marcela/tPacman/prog)
-==25402==    by 0x10B8EF: main (in /home/mcpaixao/trab/Resultados/Marcela/tPacman/prog)
-==25402== 
-==25402== Invalid read of size 4
-==25402==    at 0x10C2CE: ObtemComandoMovimento (in /home/mcpaixao/trab/Resultados/Marcela/tPacman/prog)
-==25402==    by 0x10C4F1: ClonaHistoricoDeMovimentosSignificativosPacman (in /home/mcpaixao/trab/Resultados/Marcela/tPacman/prog)
-==25402==    by 0x10B13D: GeraArquivos (in /home/mcpaixao/trab/Resultados/Marcela/tPacman/prog)
-==25402==    by 0x10B7CE: ExecutaJogo (in /home/mcpaixao/trab/Resultados/Marcela/tPacman/prog)
-==25402==    by 0x10B8EF: main (in /home/mcpaixao/trab/Resultados/Marcela/tPacman/prog)
-==25402==  Address 0x4 is not stack'd, malloc'd or (recently) free'd
-==25402== 
-==25402== 
-==25402== Process terminating with default action of signal 11 (SIGSEGV)
-==25402==  Access not within mapped region at address 0x4
-==25402==    at 0x10C2CE: ObtemComandoMovimento (in /home/mcpaixao/trab/Resultados/Marcela/tPacman/prog)
-==25402==    by 0x10C4F1: ClonaHistoricoDeMovimentosSignificativosPacman (in /home/mcpaixao/trab/Resultados/Marcela/tPacman/prog)
-==25402==    by 0x10B13D: GeraArquivos (in /home/mcpaixao/trab/Resultados/Marcela/tPacman/prog)
-==25402==    by 0x10B7CE: ExecutaJogo (in /home/mcpaixao/trab/Resultados/Marcela/tPacman/prog)
-==25402==    by 0x10B8EF: main (in /home/mcpaixao/trab/Resultados/Marcela/tPacman/prog)
-==25402==  If you believe this happened as a result of a stack
-==25402==  overflow in your program's main thread (unlikely but
-==25402==  possible), you can try to increase the size of the
-==25402==  main thread stack using the --main-stacksize= flag.
-==25402==  The main thread stack size used in this run was 8388608.
-==25402== 
-==25402== HEAP SUMMARY:
-==25402==     in use at exit: 41,712 bytes in 291 blocks
-==25402==   total heap usage: 1,318,893 allocs, 1,318,602 frees, 11,079,290 bytes allocated
-==25402== 
-==25402== LEAK SUMMARY:
-==25402==    definitely lost: 0 bytes in 0 blocks
-==25402==    indirectly lost: 0 bytes in 0 blocks
-==25402==      possibly lost: 0 bytes in 0 blocks
-==25402==    still reachable: 41,712 bytes in 291 blocks
-==25402==         suppressed: 0 bytes in 0 blocks
-==25402== Reachable blocks (those to which a pointer was found) are not shown.
-==25402== To see them, rerun with: --leak-check=full --show-leak-kinds=all
-==25402== 
-==25402== Use --track-origins=yes to see where uninitialised values come from
-==25402== For lists of detected and suppressed errors, rerun with: -s
-==25402== ERROR SUMMARY: 2 errors from 2 contexts (suppressed: 0 from 0)
+==138920== Memcheck, a memory error detector
+==138920== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==138920== Using Valgrind-3.18.1 and LibVEX; rerun with -h for copyright info
+==138920== Command: Resultados/Marcela/tPacman/prog Resultados/Marcela/tPacman/Casos/03
+==138920== Parent PID: 138919
+==138920== 
+==138920== 
+==138920== HEAP SUMMARY:
+==138920==     in use at exit: 0 bytes in 0 blocks
+==138920==   total heap usage: 1,319,109 allocs, 1,319,109 frees, 10,936,126 bytes allocated
+==138920== 
+==138920== All heap blocks were freed -- no leaks are possible
+==138920== 
+==138920== For lists of detected and suppressed errors, rerun with: -s
+==138920== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
