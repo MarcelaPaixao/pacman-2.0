@@ -6,6 +6,8 @@ int main(){
     return 0;
 }
 
+//criar vetor tfantasmas pra alocar se achar fantasmas na main
+
 
 //int main(){
  //   tMapa *mapa;
