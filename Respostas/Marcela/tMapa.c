@@ -1,4 +1,6 @@
 #include "tMapa.h"
+#include <stdio.h>
+#include <stdlib.h>
 
 #define COMIDA '*'
 #define PAREDE '#'

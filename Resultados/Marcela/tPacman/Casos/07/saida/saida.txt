@@ -988,4 +988,55 @@ Pontuacao: 5
 
 Estado do jogo apos o movimento 'd':
 ##########
-#   
+#      * #
+#      # #
+#    > # #
+#      # #
+#  # #   #
+#*## ## *#
+#  # #  P#
+#    *   #
+##########
+Pontuacao: 5
+
+Estado do jogo apos o movimento 'a':
+##########
+#      * #
+#      # #
+#   >  # #
+#      # #
+#  # #   #
+#*## ## *#
+#  # #   #
+#    *  P#
+##########
+Pontuacao: 5
+
+Estado do jogo apos o movimento 'a':
+##########
+#      * #
+#      # #
+#  >   # #
+#      # #
+#  # #   #
+#*## ## *#
+#  # #  P#
+#    *   #
+##########
+Pontuacao: 5
+
+Estado do jogo apos o movimento 'w':
+##########
+#      * #
+#  >   # #
+#      # #
+#      # #
+#  # #   #
+#*## ## P#
+#  # #   #
+#    *   #
+##########
+Pontuacao: 5
+
+Game over!
+Pontuacao final: 5

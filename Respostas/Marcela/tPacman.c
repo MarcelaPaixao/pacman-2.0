@@ -107,14 +107,11 @@ int EstaVivoPacman(tPacman* pacman){
  * \param comando o comando para onde irá o pacman
  */
 void MovePacman(tPacman* pacman, tMapa* mapa, COMANDO comando){
-    tPosicao * novaPosicao;
     int lin = ObtemLinhaPosicao(pacman->posicaoAtual);
     int col = ObtemColunaPosicao(pacman->posicaoAtual);
-    int parede=0, fruta=0, tunel=0;
+    int parede=0, fruta=0;
     
-    if(PossuiTunelMapa(mapa)){
-        tunel = 1;
-    }
+    tPosicao * novaPosicao = NULL;
     
     if(comando == ESQUERDA){
         pacman->nMovimentosEsquerda++;
@@ -123,20 +120,21 @@ void MovePacman(tPacman* pacman, tMapa* mapa, COMANDO comando){
             pacman->nColisoesParedeEsquerda++;
             parede = 1;
         }
-        else if(tunel == 1 && (AcessouTunelMapa(mapa, novaPosicao))){
-                AtualizaItemMapa(mapa, pacman->posicaoAtual, TUNEL);
-                EntraTunelMapa(mapa, novaPosicao);
-                AtualizaItemMapa(mapa, novaPosicao, PAC);
+        else if(PossuiTunelMapa(mapa) && AcessouTunelMapa(mapa, novaPosicao)){
+                AtualizaTrilhaPacman(pacman); 
+                if(AtualizaItemMapa(mapa, pacman->posicaoAtual, TUNEL) && AtualizaItemMapa(mapa, novaPosicao, PAC)){
+                    EntraTunelMapa(mapa, novaPosicao);
+                }  
         }
         else {
             if(EncontrouComidaMapa(mapa,novaPosicao)){
                 pacman->nFrutasComidasEsquerda++;
                 fruta = 1;
             }
-            AtualizaItemMapa(mapa, pacman->posicaoAtual, VAZIO);
-            if(AtualizaItemMapa(mapa, novaPosicao, PAC)){
+            if (AtualizaItemMapa(mapa, pacman->posicaoAtual, VAZIO) &&
+                AtualizaItemMapa(mapa, novaPosicao, PAC)) {
                 AtualizaPosicao(pacman->posicaoAtual, novaPosicao);
-            }  
+            }
         }
     }
 
@@ -147,21 +145,21 @@ void MovePacman(tPacman* pacman, tMapa* mapa, COMANDO comando){
             pacman->nColisoesParedeDireita++;
             parede = 1;
         }
-        else if(tunel == 1 && (AcessouTunelMapa(mapa, novaPosicao))){
-                AtualizaItemMapa(mapa, pacman->posicaoAtual, TUNEL);
-                EntraTunelMapa(mapa, novaPosicao);
-                AtualizaItemMapa(mapa, novaPosicao, PAC);
-
+        else if(PossuiTunelMapa(mapa) && AcessouTunelMapa(mapa, novaPosicao)){
+                AtualizaTrilhaPacman(pacman);
+                if(AtualizaItemMapa(mapa, pacman->posicaoAtual, TUNEL) && AtualizaItemMapa(mapa, novaPosicao, PAC)){
+                    EntraTunelMapa(mapa, novaPosicao);
+                }   
         }
         else {
             if(EncontrouComidaMapa(mapa,novaPosicao)){
                 pacman->nFrutasComidasDireita++;
                 fruta = 1;
             }
-            AtualizaItemMapa(mapa, pacman->posicaoAtual, VAZIO);
-            if(AtualizaItemMapa(mapa, novaPosicao, PAC)){
+            if (AtualizaItemMapa(mapa, pacman->posicaoAtual, VAZIO) &&
+                AtualizaItemMapa(mapa, novaPosicao, PAC)) {
                 AtualizaPosicao(pacman->posicaoAtual, novaPosicao);
-            }  
+            }
         }
     }
     
@@ -172,20 +170,21 @@ void MovePacman(tPacman* pacman, tMapa* mapa, COMANDO comando){
             pacman->nColisoesParedeCima++;
             parede = 1;
         }
-        else if(tunel == 1 && (AcessouTunelMapa(mapa, novaPosicao))){
-                AtualizaItemMapa(mapa, pacman->posicaoAtual, TUNEL);
-                EntraTunelMapa(mapa, novaPosicao);
-                AtualizaItemMapa(mapa, novaPosicao, PAC);
+        else if(PossuiTunelMapa(mapa) && AcessouTunelMapa(mapa, novaPosicao)){
+                AtualizaTrilhaPacman(pacman);
+                if(AtualizaItemMapa(mapa, pacman->posicaoAtual, TUNEL) && AtualizaItemMapa(mapa, novaPosicao, PAC)){
+                    EntraTunelMapa(mapa, novaPosicao);
+                }  
         }
         else {
             if(EncontrouComidaMapa(mapa,novaPosicao)){
                 pacman->nFrutasComidasCima++;
                 fruta = 1;
             }
-            AtualizaItemMapa(mapa, pacman->posicaoAtual, VAZIO);
-            if(AtualizaItemMapa(mapa, novaPosicao, PAC)){
-                AtualizaPosicao(pacman->posicaoAtual, novaPosicao);            
-            }  
+            if (AtualizaItemMapa(mapa, pacman->posicaoAtual, VAZIO) &&
+                AtualizaItemMapa(mapa, novaPosicao, PAC)) {
+                AtualizaPosicao(pacman->posicaoAtual, novaPosicao);
+            }             
         }
     }
 
@@ -196,20 +195,21 @@ void MovePacman(tPacman* pacman, tMapa* mapa, COMANDO comando){
             pacman->nColisoesParedeBaixo++;
             parede = 1;
         }
-        else if(tunel == 1 && (AcessouTunelMapa(mapa, novaPosicao))){
-                AtualizaItemMapa(mapa, pacman->posicaoAtual, TUNEL);
-                EntraTunelMapa(mapa, novaPosicao);
-                AtualizaItemMapa(mapa, novaPosicao, PAC);
+        else if(PossuiTunelMapa(mapa) && AcessouTunelMapa(mapa, novaPosicao)){
+                AtualizaTrilhaPacman(pacman);
+                if(AtualizaItemMapa(mapa, pacman->posicaoAtual, TUNEL) && AtualizaItemMapa(mapa, novaPosicao, PAC)){
+                    EntraTunelMapa(mapa, novaPosicao);
+                }  
         }
         else {
             if(EncontrouComidaMapa(mapa,novaPosicao)){
                 pacman->nFrutasComidasBaixo++;
                 fruta = 1;
             }
-            AtualizaItemMapa(mapa, pacman->posicaoAtual, VAZIO);
-            if(AtualizaItemMapa(mapa, novaPosicao, PAC)){
-                AtualizaPosicao(pacman->posicaoAtual, novaPosicao);      
-            }  
+            if (AtualizaItemMapa(mapa, pacman->posicaoAtual, VAZIO) &&
+                AtualizaItemMapa(mapa, novaPosicao, PAC)) {
+                AtualizaPosicao(pacman->posicaoAtual, novaPosicao);
+            }
         }
     }
     
@@ -221,7 +221,9 @@ void MovePacman(tPacman* pacman, tMapa* mapa, COMANDO comando){
         pacman->nMovimentosSignificativos++;
         InsereNovoMovimentoSignificativoPacman(pacman, comando, "pegou comida");
     }
+    
     AtualizaTrilhaPacman(pacman);
+    
     if(novaPosicao != NULL){
         DesalocaPosicao(novaPosicao);
     }
@@ -239,9 +241,11 @@ void MovePacman(tPacman* pacman, tMapa* mapa, COMANDO comando){
 void CriaTrilhaPacman(tPacman* pacman, int nLinhas, int nColunas){
     if(pacman->trilha == NULL){
         pacman->trilha = (int **)malloc(nLinhas * sizeof(int *));
+        
         for (int i = 0; i < nLinhas; i++) {
-            pacman->trilha[i] = (int *)malloc(nColunas * sizeof(int));
+            pacman->trilha[i] = (int *) malloc(nColunas * sizeof(int));
         }
+        
         for(int i = 0; i < nLinhas; i++){
             for(int j = 0; j < nColunas; j++){
                 pacman->trilha[i][j] = -1;
