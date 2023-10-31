@@ -220,11 +220,9 @@ void MovePacman(tPacman* pacman, tMapa* mapa, COMANDO comando){
         AtualizaItemMapa(mapa, antigaPosicao, TUNEL);
     }
     if(parede > 0){
-        //pacman->nMovimentosSignificativos++;
         InsereNovoMovimentoSignificativoPacman(pacman, comando, "colidiu com a parede");
     }
     if(fruta > 0){
-        //pacman->nMovimentosSignificativos++;
         InsereNovoMovimentoSignificativoPacman(pacman, comando, "pegou comida");
     }
     
