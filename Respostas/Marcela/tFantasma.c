@@ -35,13 +35,6 @@ tFantasma* CriaFantasma(tPosicao* posicao, char tipo){ //pode usar a obtem item 
     return fantasma;
 }
 
-bool VaiBaterParede(tMapa* mapa, tPosicao* posicao){
-    if(ObtemItemMapa(mapa, posicao) == '#'){
-        return true;
-    }
-    return false;
-}
-
 void InverteDirecaoFant(tFantasma* fantasma){
     fantasma->direcao = fantasma->direcao * (-1);
 }
@@ -53,37 +46,62 @@ void InverteDirecaoFant(tFantasma* fantasma){
  * \param fantasma fantasma
  * \param mapa o mapa que contem os fantasmas
  */
-void MoveFantasmaHorizontal(tFantasma* fantasma, tMapa* mapa){
+void MoveFantasma(tFantasma* fantasma, tMapa* mapa){
     int lin = ObtemLinhaPosicao(fantasma->posicaoAtualFant);
     int col = ObtemColunaPosicao(fantasma->posicaoAtualFant);
 
     tPosicao * novaPosicao = NULL;
+    tPosicao * PosicaoFinal = NULL;
 
-    if(fantasma->tipo == 'B'){
-        novaPosicao = CriaPosicao(lin, col-1);
-        if(VaiBaterParede(mapa, novaPosicao)){
-            InverteDirecaoFant(fantasma);
-            novaPosicao = CriaPosicao(lin, col+1);//erro no valgrind
-        }
-        
+    AtualizaPosicao(fantasma->posicaoAntigaFant, fantasma->posicaoAtualFant);
+
+    if(fantasma->tocaFruta){
+        AtualizaItemMapa(mapa, fantasma->posicaoAntigaFant, '*');
+        fantasma->tocaFruta = 0;
     }
-   
-}
-//pode usar a obtem tipo e obtem direcao aqui dentro pra saber pra onde ele vai;
 
- /* Função que irá mover o fantasma no mapa, atualizando sua posição.
- * Dado o fantasma e o mapa,  a posição do fantasma é atualizada. 
- * Se o fantasma encontrou uma parede, ele muda a direção.
- * 
- * \param fantasma fantasma
- * \param mapa o mapa que contem os fantasmas
- */
-void MoveFantasmaVertical(tFantasma* fantasma, tMapa* mapa){
-    int lin = ObtemLinhaPosicao(fantasma->posicaoAtualFant);
-    int col = ObtemColunaPosicao(fantasma->posicaoAtualFant);
+    if(fantasma->tipo == 'B' || fantasma->tipo == 'C'){
+        novaPosicao = CriaPosicao(lin, col+fantasma->direcao);
+        if(EncontrouParedeMapa(mapa, novaPosicao)){
+            InverteDirecaoFant(fantasma);
+            //fantasma->tocaParede = 1;
+            PosicaoFinal = CriaPosicao(lin, ObtemColunaPosicao(fantasma->posicaoAntigaFant)+fantasma->direcao);
+        }
+        else {
+            AtualizaPosicao(PosicaoFinal, novaPosicao);
+        } 
+    }
 
-    tPosicao * novaPosicao = NULL;
-   
+    if(fantasma->tipo == 'I' || fantasma->tipo == 'P'){
+        novaPosicao = CriaPosicao(lin+fantasma->direcao, col);
+        if(EncontrouParedeMapa(mapa, novaPosicao)){
+            InverteDirecaoFant(fantasma);
+            //fantasma->tocaParede = 1;
+            PosicaoFinal = CriaPosicao(ObtemLinhaPosicao(fantasma->posicaoAntigaFant)+fantasma->direcao, col);
+        }
+        else {
+            AtualizaPosicao(PosicaoFinal, novaPosicao);
+        } 
+    }
+
+    if(EncontrouFrutaMapa(mapa, PosicaoFinal)){
+        fantasma->tocaFruta = 1;
+    }
+    else{
+        fantasma->tocaFruta = 0;
+    }
+
+    char tipo = fantasma->tipo;
+    AtualizaItemMapa(mapa, PosicaoFinal, tipo);
+    
+    AtualizaPosicao(fantasma->posicaoAtualFant, PosicaoFinal);
+    
+    if(novaPosicao != NULL){
+        DesalocaPosicao(novaPosicao);
+    }
+    if(PosicaoFinal != NULL){
+        DesalocaPosicao(PosicaoFinal);
+    }
 }
 
 /**
@@ -92,17 +110,23 @@ void MoveFantasmaVertical(tFantasma* fantasma, tMapa* mapa){
  *
  * \param fantasma fantasma
  * \param pacman pacman
+ * \param posicao posição antiga do pacman
  */
-bool MatouPacmanFantasma(tFantasma* fantasma, tPacman* pacman);
+bool MatouPacmanFantasma(tFantasma* fantasma, tPacman* pacman, tPosicao* posAntigaPacman){ //pac anda primeiro e mandar a posicao antiga do pacman, obtem item mapa
+    if(SaoIguaisPosicao(ObtemPosicaoPacman(pacman), fantasma->posicaoAtualFant)){
+        return true;
+    }
+    if(SaoIguaisPosicao(posAntigaPacman, fantasma->posicaoAtualFant) && 
+       SaoIguaisPosicao(ObtemPosicaoPacman(pacman), fantasma->posicaoAntigaFant)){
+        return true;
+    }
+    return false;
+}
 
-/**
- * Chama a função AtualizaPosição do tPosicao;
- * \param fantasma fantasma
- * \param posicaoNova posição nova
- */
+/*Função inutil
 void AtualizaPosicaoFantasma(tFantasma* fantasma, tPosicao* posicaoNova){
     AtualizaPosicao(fantasma->posicaoAtualFant, posicaoNova);
-}
+}*/
 
 /**
  * Caso o fantasma seja diferente de NULL, libera o espaço 

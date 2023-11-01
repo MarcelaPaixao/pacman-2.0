@@ -8,8 +8,8 @@
 
 #define DIREITA 1
 #define ESQUERDA -1
-#define BAIXO 2
-#define CIMA -2
+#define BAIXO 1
+#define CIMA -1
 
 typedef struct{
     tPosicao * posicaoAtualFant;
@@ -38,9 +38,7 @@ void InverteDirecaoFant(tFantasma* fantasma);
  * \param fantasma fantasma
  * \param mapa o mapa que contem os fantasmas
  */
-void MoveFantasmaHorizontal(tFantasma* fantasma, tMapa* mapa);
-
-void MoveFantasmaVertical(tFantasma* fantasma, tMapa* mapa);
+void MoveFantasma(tFantasma* fantasma, tMapa* mapa);
 
 /**
  * Retorna verdadeiro se a posição do fantasma e a do pacman são iguais,
@@ -48,8 +46,9 @@ void MoveFantasmaVertical(tFantasma* fantasma, tMapa* mapa);
  *
  * \param fantasma fantasma
  * \param pacman pacman
+ * \param posicao posição antiga do pacman
  */
-bool MatouPacmanFantasma(tFantasma* fantasma, tPacman* pacman);
+bool MatouPacmanFantasma(tFantasma* fantasma, tPacman* pacman, tPosicao* posAntigaPacman)
 
 /**
  * Chama a função AtualizaPosição do tPosicao;

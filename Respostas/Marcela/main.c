@@ -1,5 +1,11 @@
 #include <stdlib.h>
 #include <stdio.h>
+#include <stdbool.h>
+#include "tPosicao.h"
+#include "tPacman.h"
+#include "tMapa.h"
+#include "tFantasma.h"
+
 
 int main(){
 
