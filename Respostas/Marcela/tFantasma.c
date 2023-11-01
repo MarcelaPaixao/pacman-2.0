@@ -118,10 +118,12 @@ void MoveFantasma(tFantasma* fantasma, tMapa* mapa){
  */
 bool MatouPacmanFantasma(tFantasma* fantasma, tPacman* pacman, tPosicao* posAntigaPacman){ //pac anda primeiro e mandar a posicao antiga do pacman, obtem item mapa
     if(SaoIguaisPosicao(ObtemPosicaoPacman(pacman), fantasma->posicaoAtualFant)){
+        MataPacman(pacman);
         return true;
     }
     if(SaoIguaisPosicao(posAntigaPacman, fantasma->posicaoAtualFant) && 
        SaoIguaisPosicao(ObtemPosicaoPacman(pacman), fantasma->posicaoAntigaFant)){
+        MataPacman(pacman);
         return true;
     }
     return false;

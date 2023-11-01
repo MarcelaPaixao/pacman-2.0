@@ -21,7 +21,21 @@ tJogo* InicializaJogo(tMapa* mapa);
 
 void ExecutaJogo(tJogo* jogo);
 
-bool EhGameOver(tJogo* jogo);
+bool EhGameOver(tJogo* jogo){ //if(ehGameOver), ai desaloca tudo e finaliza o jogo; sla;
+    if(!EstaVivoPacman(jogo->pacman)){
+        return true;
+    }
+    if(ObtemNumeroAtualMovimentosPacman(jogo->pacman) == ObtemNumeroMaximoMovimentosMapa(jogo->mapa)){
+        if(ObtemPontuacaoAtualPacman(jogo->pacman) < ObtemQuantidadeFrutasIniciaisMapa(jogo->mapa)){
+            return true;
+        }
+    }
+    return false;
+}
+
+bool GanhouJogo(tJogo* jogo){
+
+}
 
 void GeraEstatistica(tJogo* jogo);
 
@@ -30,3 +44,4 @@ void GeraTrilha(tJogo* jogo); //Precisa?? as funcoes de trilha estão no tPacman
 void GeraRanking(tJogo* jogo);
 
 void GeraResumo(tJogo* jogo);
+
