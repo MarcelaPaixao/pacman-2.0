@@ -12,25 +12,31 @@ tFantasma* CriaFantasma(tPosicao* posicao, char tipo){
     if(fantasma == NULL){
         return NULL;
     }
-    
-    fantasma->tipo = tipo;
-    fantasma->tocaFruta = 0;
-    fantasma->posicaoAntigaFant = CriaPosicao(-1, -1);
-    fantasma->posicaoAtualFant = posicao;
+    else if(posicao == NULL){
+        fantasma->existe = 0;
+        fantasma->posicaoAntigaFant = NULL;
+        fantasma->posicaoAtualFant = NULL;
+    }
+    else {
+        fantasma->tipo = tipo;
+        fantasma->existe = 1;
+        fantasma->tocaFruta = 0;
+        fantasma->posicaoAntigaFant = CriaPosicao(-1, -1);
+        fantasma->posicaoAtualFant = posicao;
 
-    if(tipo == 'B'){
-        fantasma->direcao = ESQUERDA;
-    } 
-    else if(tipo == 'C'){
-        fantasma->direcao = DIREITA;
+        if(tipo == 'B'){
+            fantasma->direcao = ESQUERDA;
+        } 
+        else if(tipo == 'C'){
+            fantasma->direcao = DIREITA;
+        }   
+        else if(tipo == 'I'){
+            fantasma->direcao = BAIXO;
+        }
+        else if(tipo == 'P'){
+            fantasma->direcao = CIMA;
+        }
     }
-    else if(tipo == 'I'){
-        fantasma->direcao = BAIXO;
-    }
-    else if(tipo == 'P'){
-        fantasma->direcao = CIMA;
-    }
-
     return fantasma;
 }
 
@@ -46,87 +52,79 @@ void InverteDirecaoFant(tFantasma* fantasma){
  * \param mapa o mapa que contem os fantasmas
  */
 void MoveFantasma(tFantasma* fantasma, tMapa* mapa){
-    int lin = ObtemLinhaPosicao(fantasma->posicaoAtualFant);
-    int col = ObtemColunaPosicao(fantasma->posicaoAtualFant);
-    int jaAtualizouMapa=0;
+    if(fantasma->existe){
+        int lin = ObtemLinhaPosicao(fantasma->posicaoAtualFant);
+        int col = ObtemColunaPosicao(fantasma->posicaoAtualFant);
+        int jaAtualizouMapa=0;
 
-    tPosicao * novaPosicao = NULL;
-    tPosicao * PosicaoFinal = NULL;
+        tPosicao * novaPosicao = NULL;
+        tPosicao * PosicaoFinal = NULL;
 
-    AtualizaPosicao(fantasma->posicaoAntigaFant, fantasma->posicaoAtualFant);
+        AtualizaPosicao(fantasma->posicaoAntigaFant, fantasma->posicaoAtualFant);
 
-    if(fantasma->tocaFruta){
-        AtualizaItemMapa(mapa, fantasma->posicaoAntigaFant, '*');
-        fantasma->tocaFruta = 0;
-        jaAtualizouMapa = 1;
-    }
-
-    if(fantasma->tipo == 'B' || fantasma->tipo == 'C'){
-        novaPosicao = CriaPosicao(lin, col+fantasma->direcao);
-        if(EncontrouParedeMapa(mapa, novaPosicao)){
-            InverteDirecaoFant(fantasma);
-            PosicaoFinal = CriaPosicao(lin, ObtemColunaPosicao(fantasma->posicaoAntigaFant)+fantasma->direcao);
+        if(fantasma->tocaFruta){
+            AtualizaItemMapa(mapa, fantasma->posicaoAntigaFant, '*');
+            fantasma->tocaFruta = 0;
+            jaAtualizouMapa = 1;
         }
-        else {
-            PosicaoFinal = CriaPosicao(-1, -1);
-            AtualizaPosicao(PosicaoFinal, novaPosicao);
-        } 
-    }
 
-    if(fantasma->tipo == 'I' || fantasma->tipo == 'P'){
-        novaPosicao = CriaPosicao(lin+fantasma->direcao, col);
-        if(EncontrouParedeMapa(mapa, novaPosicao)){
-            InverteDirecaoFant(fantasma);
-            PosicaoFinal = CriaPosicao(ObtemLinhaPosicao(fantasma->posicaoAntigaFant)+fantasma->direcao, col);
+        if(fantasma->tipo == 'B' || fantasma->tipo == 'C'){
+            novaPosicao = CriaPosicao(lin, col+fantasma->direcao);
+            if(EncontrouParedeMapa(mapa, novaPosicao)){
+                InverteDirecaoFant(fantasma);
+                PosicaoFinal = CriaPosicao(lin, ObtemColunaPosicao(fantasma->posicaoAntigaFant)+fantasma->direcao);
+            }
+            else {
+                PosicaoFinal = CriaPosicao(-1, -1);
+                AtualizaPosicao(PosicaoFinal, novaPosicao);
+            } 
         }
-        else {
-            PosicaoFinal = CriaPosicao(-1, -1);
-            AtualizaPosicao(PosicaoFinal, novaPosicao);
-        } 
-    }
 
-    if(EncontrouComidaMapa(mapa, PosicaoFinal)){
-        fantasma->tocaFruta = 1;
-    }
-    else{
-        fantasma->tocaFruta = 0;
-    }
+        if(fantasma->tipo == 'I' || fantasma->tipo == 'P'){
+            novaPosicao = CriaPosicao(lin+fantasma->direcao, col);
+            if(EncontrouParedeMapa(mapa, novaPosicao)){
+                InverteDirecaoFant(fantasma);
+                PosicaoFinal = CriaPosicao(ObtemLinhaPosicao(fantasma->posicaoAntigaFant)+fantasma->direcao, col);
+            }
+            else {
+                PosicaoFinal = CriaPosicao(-1, -1);
+                AtualizaPosicao(PosicaoFinal, novaPosicao);
+            } 
+        }
 
-    AtualizaItemMapa(mapa, PosicaoFinal, fantasma->tipo);
+        if(EncontrouComidaMapa(mapa, PosicaoFinal)){
+            fantasma->tocaFruta = 1;
+        }
+        else{
+            fantasma->tocaFruta = 0;
+        }
 
-    if(!jaAtualizouMapa){
-        AtualizaItemMapa(mapa, fantasma->posicaoAntigaFant, ' ');
-    }
+        AtualizaItemMapa(mapa, PosicaoFinal, fantasma->tipo);
+
+        if(!jaAtualizouMapa){
+            AtualizaItemMapa(mapa, fantasma->posicaoAntigaFant, ' ');
+        }
     
-    AtualizaPosicao(fantasma->posicaoAtualFant, PosicaoFinal);
+        AtualizaPosicao(fantasma->posicaoAtualFant, PosicaoFinal);
     
-    if(novaPosicao != NULL){
-        DesalocaPosicao(novaPosicao);
-    }
-    if(PosicaoFinal != NULL){
-        DesalocaPosicao(PosicaoFinal);
+        if(novaPosicao != NULL){
+            DesalocaPosicao(novaPosicao);
+        }
+        if(PosicaoFinal != NULL){
+            DesalocaPosicao(PosicaoFinal);
+        }
     }
 }
 
-/**
- * Retorna verdadeiro se a posição do fantasma e a do pacman são iguais,
- * ou se eles se cruzaram, e falso caso contrário;
- *
- * \param fantasma fantasma
- * \param pacman pacman
- * \param posicao posição antiga do pacman
- */
-bool MatouPacmanFantasma(tFantasma* fantasma, tPacman* pacman, tPosicao* posAntigaPacman){ //pac anda primeiro e mandar a posicao antiga do pacman, obtem item mapa
+
+void VerificaSeMatouPacmanFantasma(tFantasma* fantasma, tPacman* pacman, tPosicao* posAntigaPacman){ 
     if(SaoIguaisPosicao(ObtemPosicaoPacman(pacman), fantasma->posicaoAtualFant)){
         MataPacman(pacman);
-        return true;
     }
     if(SaoIguaisPosicao(posAntigaPacman, fantasma->posicaoAtualFant) && 
-       SaoIguaisPosicao(ObtemPosicaoPacman(pacman), fantasma->posicaoAntigaFant)){
+        SaoIguaisPosicao(ObtemPosicaoPacman(pacman), fantasma->posicaoAntigaFant)){
         MataPacman(pacman);
-        return true;
     }
-    return false;
 }
 
 /*Função inutil

@@ -17,6 +17,7 @@ typedef struct{
     char tipo;
     int direcao;
     int tocaFruta;
+    int existe;
 } tFantasma;
 
 /**
@@ -39,15 +40,8 @@ void InverteDirecaoFant(tFantasma* fantasma);
  */
 void MoveFantasma(tFantasma* fantasma, tMapa* mapa);
 
-/**
- * Retorna verdadeiro se a posição do fantasma e a do pacman são iguais,
- * ou se eles se cruzaram, e falso caso contrário;
- *
- * \param fantasma fantasma
- * \param pacman pacman
- * \param posicao posição antiga do pacman
- */
-bool MatouPacmanFantasma(tFantasma* fantasma, tPacman* pacman, tPosicao* posAntigaPacman);
+
+void VerificaSeMatouPacmanFantasma(tFantasma* fantasma, tPacman* pacman, tPosicao* posAntigaPacman);
 
 /**
  * Caso o fantasma seja diferente de NULL, libera o espaço 
