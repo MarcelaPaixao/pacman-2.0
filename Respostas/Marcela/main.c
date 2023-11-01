@@ -5,11 +5,12 @@
 #include "tPacman.h"
 #include "tMapa.h"
 #include "tFantasma.h"
-
+#include "tMovimento.h"
+#include "tTunel.h"
 
 int main(){
-
-    return 0;
+  
+  return 0;
 }
 
 //criar vetor tfantasmas pra alocar se achar fantasmas na main
