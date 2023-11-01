@@ -66,6 +66,9 @@ COPIANDO OS ARQUIVOS PARA A PASTA DE RESULTADO DO ALUNO:
  - Arquivos copiados: ok!
 
 COMPILANDO OS ARQUIVOS NA PASTA DE RESULTADO DO ALUNO:
+ - Erro de compilação! Verifique os arquivos da pasta completo.
+ - Erro de compilação! Verifique os arquivos da pasta main.
+ - Arquivos Compilados: Erro!: 2 arquivos com erros de compilacao.
  - Copiando os arquivos objetos do professor para cada subpasta do Resultado do Marcela:
  - Copiando o Gabarito-obj/tPacman.o para a pasta Resultados/Marcela/tMapa
  - Copiando o Gabarito-obj/tPacman.o para a pasta Resultados/Marcela/tMovimento
@@ -2028,7 +2031,7 @@ RESULTADOS FINAIS
 ----------------------------------------------------------------------------
 Nome 0: Marcela
  - Resumo dos Resultados:
- - Resumo das Compilações: 7 compilações corretas de 7 no total
+ - Resumo das Compilações: 5 compilações corretas de 7 no total
  - Resumo das Linkagens: 7 linkagens corretas de 7 no total
  - Valgrinds Corretos tPacman: 30 valgrinds corretos de 30 (não teve desconto na nota)
  - Valgrinds Corretos tMapa: 30 valgrinds corretos de 30 (não teve desconto na nota)

@@ -29,8 +29,6 @@ typedef struct{
  */
 tFantasma* CriaFantasma(tPosicao* posicao, char tipo);
 
-void InverteDirecaoFant(tFantasma* fantasma);
-
  /* Função que irá mover o fantasma no mapa, atualizando sua posição.
  * Dado o fantasma e o mapa,  a posição do fantasma é atualizada. 
  * Se o fantasma encontrou uma parede, ele muda a direção.
@@ -38,9 +36,7 @@ void InverteDirecaoFant(tFantasma* fantasma);
  * \param fantasma fantasma
  * \param mapa o mapa que contem os fantasmas
  */
-void MoveFantasmaHorizontal(tFantasma* fantasma, tMapa* mapa);
-
-void MoveFantasmaVertical(tFantasma* fantasma, tMapa* mapa);
+void MoveFantasma(tFantasma* fantasma, tMapa* mapa);
 
 /**
  * Retorna verdadeiro se a posição do fantasma e a do pacman são iguais,
@@ -66,6 +62,7 @@ void AtualizaPosicaoFantasma(tFantasma* fantasma, tPosicao* posicaoNova);
  * \param fantasma fantasma
  */
 void DesalocaFantasma(tFantasma* fantasma);
+
 
 /**
  * Retorna o tipo do fantasma.

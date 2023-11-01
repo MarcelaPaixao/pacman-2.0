@@ -1,4 +1,7 @@
-#include "tFantasma.h"
+#define DIREITA 1
+#define ESQUERDA -1
+#define BAIXO 2
+#define CIMA -2
 
 /**
  * Cria o fantasma dinamicamente. Caso dê erro na alocação da estrutura tFantasma, 
@@ -7,7 +10,7 @@
  * Caso não dê erros, retorna o ponteiro para o tFantasma alocado.
  * \param posicao Ponteiro para tPosicao
  */
-tFantasma* CriaFantasma(tPosicao* posicao, char tipo){ //pode usar a obtem item mapa pra descobrir a posicao dele
+tFantasma* CriaFantasma(tPosicao* posicao, char tipo){
     tFantasma * fantasma = (tFantasma *) malloc (sizeof(tFantasma));
     if(fantasma == NULL){
         return NULL;
@@ -16,7 +19,7 @@ tFantasma* CriaFantasma(tPosicao* posicao, char tipo){ //pode usar a obtem item 
     fantasma->tipo = tipo;
     fantasma->tocaFruta = 0;
     fantasma->tocaParede = 0;
-    fantasma->posicaoAntigaFant = NULL;
+    fantasma->posicaoAntigaFant = NULL:
     fantasma->posicaoAtualFant = posicao;
 
     if(tipo == 'B'){
@@ -35,17 +38,6 @@ tFantasma* CriaFantasma(tPosicao* posicao, char tipo){ //pode usar a obtem item 
     return fantasma;
 }
 
-bool VaiBaterParede(tMapa* mapa, tPosicao* posicao){
-    if(ObtemItemMapa(mapa, posicao) == '#'){
-        return true;
-    }
-    return false;
-}
-
-void InverteDirecaoFant(tFantasma* fantasma){
-    fantasma->direcao = fantasma->direcao * (-1);
-}
-
  /* Função que irá mover o fantasma no mapa, atualizando sua posição.
  * Dado o fantasma e o mapa,  a posição do fantasma é atualizada. 
  * Se o fantasma encontrou uma parede, ele muda a direção.
@@ -53,38 +45,8 @@ void InverteDirecaoFant(tFantasma* fantasma){
  * \param fantasma fantasma
  * \param mapa o mapa que contem os fantasmas
  */
-void MoveFantasmaHorizontal(tFantasma* fantasma, tMapa* mapa){
-    int lin = ObtemLinhaPosicao(fantasma->posicaoAtualFant);
-    int col = ObtemColunaPosicao(fantasma->posicaoAtualFant);
-
-    tPosicao * novaPosicao = NULL;
-
-    if(fantasma->tipo == 'B'){
-        novaPosicao = CriaPosicao(lin, col-1);
-        if(VaiBaterParede(mapa, novaPosicao)){
-            InverteDirecaoFant(fantasma);
-            novaPosicao = CriaPosicao(lin, col+1);//erro no valgrind
-        }
-        
-    }
-   
-}
+void MoveFantasma(tFantasma* fantasma, tMapa* mapa);
 //pode usar a obtem tipo e obtem direcao aqui dentro pra saber pra onde ele vai;
-
- /* Função que irá mover o fantasma no mapa, atualizando sua posição.
- * Dado o fantasma e o mapa,  a posição do fantasma é atualizada. 
- * Se o fantasma encontrou uma parede, ele muda a direção.
- * 
- * \param fantasma fantasma
- * \param mapa o mapa que contem os fantasmas
- */
-void MoveFantasmaVertical(tFantasma* fantasma, tMapa* mapa){
-    int lin = ObtemLinhaPosicao(fantasma->posicaoAtualFant);
-    int col = ObtemColunaPosicao(fantasma->posicaoAtualFant);
-
-    tPosicao * novaPosicao = NULL;
-   
-}
 
 /**
  * Retorna verdadeiro se a posição do fantasma e a do pacman são iguais,
@@ -118,6 +80,7 @@ void DesalocaFantasma(tFantasma* fantasma){
         free(fantasma);
     }
 }
+
 
 /**
  * Retorna o tipo do fantasma.

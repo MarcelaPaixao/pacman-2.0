@@ -220,11 +220,9 @@ void MovePacman(tPacman* pacman, tMapa* mapa, COMANDO comando){
         AtualizaItemMapa(mapa, antigaPosicao, TUNEL);
     }
     if(parede > 0){
-        //pacman->nMovimentosSignificativos++;
         InsereNovoMovimentoSignificativoPacman(pacman, comando, "colidiu com a parede");
     }
     if(fruta > 0){
-        //pacman->nMovimentosSignificativos++;
         InsereNovoMovimentoSignificativoPacman(pacman, comando, "pegou comida");
     }
     
@@ -526,17 +524,3 @@ int ObtemPontuacaoAtualPacman(tPacman* pacman){
     pontos += pacman->nFrutasComidasEsquerda + pacman->nFrutasComidasDireita;
     return pontos;
 }
-
-//int main(){
- //   tMapa *mapa;
-   // int c=0;
-   // mapa = CriaMapa("./");
-   // tPosicao * pos = ObtemPosicaoItemMapa(mapa, '>');
-   // tPacman * pac = CriaPacman(pos);
-   // for(int i=0; i < 20; i++){
-   //     scanf("%i", &c);
-   //     MovePacman(pac, mapa, c);
-  //  }
-
-  //  return 0;
-//}
