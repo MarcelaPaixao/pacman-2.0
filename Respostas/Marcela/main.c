@@ -2,30 +2,31 @@
 #include <stdio.h>
 #include <stdbool.h>
 #include "tPosicao.h"
-#include "tPacman.h"
-#include "tMapa.h"
 #include "tFantasma.h"
 #include "tMovimento.h"
 #include "tTunel.h"
+#include "tPacman.h"
+#include "tMapa.h"
 
-int main(){
-  
-  return 0;
-}
+typedef struct{
+    tPacman *pacman;
+    tMapa *mapa;
+    tFantasma *fantB;
+    tFantasma *fantC;
+    tFantasma *fantI;
+    tFantasma *fantP;
+} tJogo; 
 
-//criar vetor tfantasmas pra alocar se achar fantasmas na main
+tJogo* InicializaJogo(tMapa* mapa);
 
+void ExecutaJogo(tJogo* jogo);
 
-//int main(){
- //   tMapa *mapa;
-   // int c=0;
-   // mapa = CriaMapa("./");
-   // tPosicao * pos = ObtemPosicaoItemMapa(mapa, '>');
-   // tPacman * pac = CriaPacman(pos);
-   // for(int i=0; i < 20; i++){
-   //     scanf("%i", &c);
-   //     MovePacman(pac, mapa, c);
-  //  }
+bool EhGameOver(tJogo* jogo);
 
-  //  return 0;
-//}
+void GeraEstatistica(tJogo* jogo);
+
+void GeraTrilha(tJogo* jogo); //Precisa?? as funcoes de trilha estão no tPacman
+
+void GeraRanking(tJogo* jogo);
+
+void GeraResumo(tJogo* jogo);

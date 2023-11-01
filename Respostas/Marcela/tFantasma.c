@@ -7,7 +7,7 @@
  * Caso não dê erros, retorna o ponteiro para o tFantasma alocado.
  * \param posicao Ponteiro para tPosicao
  */
-tFantasma* CriaFantasma(tPosicao* posicao, char tipo){ //pode usar a obtem item mapa pra descobrir a posicao dele
+tFantasma* CriaFantasma(tPosicao* posicao, char tipo){ 
     tFantasma * fantasma = (tFantasma *) malloc (sizeof(tFantasma));
     if(fantasma == NULL){
         return NULL;
@@ -15,8 +15,7 @@ tFantasma* CriaFantasma(tPosicao* posicao, char tipo){ //pode usar a obtem item 
     
     fantasma->tipo = tipo;
     fantasma->tocaFruta = 0;
-    fantasma->tocaParede = 0;
-    fantasma->posicaoAntigaFant = NULL;
+    fantasma->posicaoAntigaFant = CriaPosicao(-1, -1);
     fantasma->posicaoAtualFant = posicao;
 
     if(tipo == 'B'){
@@ -49,6 +48,7 @@ void InverteDirecaoFant(tFantasma* fantasma){
 void MoveFantasma(tFantasma* fantasma, tMapa* mapa){
     int lin = ObtemLinhaPosicao(fantasma->posicaoAtualFant);
     int col = ObtemColunaPosicao(fantasma->posicaoAtualFant);
+    int jaAtualizouMapa=0;
 
     tPosicao * novaPosicao = NULL;
     tPosicao * PosicaoFinal = NULL;
@@ -58,16 +58,17 @@ void MoveFantasma(tFantasma* fantasma, tMapa* mapa){
     if(fantasma->tocaFruta){
         AtualizaItemMapa(mapa, fantasma->posicaoAntigaFant, '*');
         fantasma->tocaFruta = 0;
+        jaAtualizouMapa = 1;
     }
 
     if(fantasma->tipo == 'B' || fantasma->tipo == 'C'){
         novaPosicao = CriaPosicao(lin, col+fantasma->direcao);
         if(EncontrouParedeMapa(mapa, novaPosicao)){
             InverteDirecaoFant(fantasma);
-            //fantasma->tocaParede = 1;
             PosicaoFinal = CriaPosicao(lin, ObtemColunaPosicao(fantasma->posicaoAntigaFant)+fantasma->direcao);
         }
         else {
+            PosicaoFinal = CriaPosicao(-1, -1);
             AtualizaPosicao(PosicaoFinal, novaPosicao);
         } 
     }
@@ -76,23 +77,26 @@ void MoveFantasma(tFantasma* fantasma, tMapa* mapa){
         novaPosicao = CriaPosicao(lin+fantasma->direcao, col);
         if(EncontrouParedeMapa(mapa, novaPosicao)){
             InverteDirecaoFant(fantasma);
-            //fantasma->tocaParede = 1;
             PosicaoFinal = CriaPosicao(ObtemLinhaPosicao(fantasma->posicaoAntigaFant)+fantasma->direcao, col);
         }
         else {
+            PosicaoFinal = CriaPosicao(-1, -1);
             AtualizaPosicao(PosicaoFinal, novaPosicao);
         } 
     }
 
-    if(EncontrouFrutaMapa(mapa, PosicaoFinal)){
+    if(EncontrouComidaMapa(mapa, PosicaoFinal)){
         fantasma->tocaFruta = 1;
     }
     else{
         fantasma->tocaFruta = 0;
     }
 
-    char tipo = fantasma->tipo;
-    AtualizaItemMapa(mapa, PosicaoFinal, tipo);
+    AtualizaItemMapa(mapa, PosicaoFinal, fantasma->tipo);
+
+    if(!jaAtualizouMapa){
+        AtualizaItemMapa(mapa, fantasma->posicaoAntigaFant, ' ');
+    }
     
     AtualizaPosicao(fantasma->posicaoAtualFant, PosicaoFinal);
     
@@ -169,19 +173,6 @@ int ObtemDirecaoFantasma(tFantasma* fantasma){
  */
 bool TocouFrutaFantasma(tFantasma* fantasma){
     if(fantasma->tocaFruta){
-        return true;
-    }
-    return false;
-}
-
-/**
- * Retorna verdadeiro se o fantasma tocou a parede,
- * e falso caso contrário;
- *
- * \param fantasma fantasma
- */
-bool TocouParedeFantasma(tFantasma* fantasma){
-    if(fantasma->tocaParede){
         return true;
     }
     return false;

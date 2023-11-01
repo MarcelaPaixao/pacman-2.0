@@ -1,5 +1,5 @@
-#ifndef TTUNEL_H_
-#define TTUNEL_H_
+#ifndef TFANTASMA_H_
+#define TFANTASMA_H_
 
 #include <stdbool.h>
 #include "tPosicao.h"
@@ -17,7 +17,6 @@ typedef struct{
     char tipo;
     int direcao;
     int tocaFruta;
-    int tocaParede;
 } tFantasma;
 
 /**
@@ -48,14 +47,7 @@ void MoveFantasma(tFantasma* fantasma, tMapa* mapa);
  * \param pacman pacman
  * \param posicao posição antiga do pacman
  */
-bool MatouPacmanFantasma(tFantasma* fantasma, tPacman* pacman, tPosicao* posAntigaPacman)
-
-/**
- * Chama a função AtualizaPosição do tPosicao;
- * \param fantasma fantasma
- * \param posicaoNova posição nova
- */
-void AtualizaPosicaoFantasma(tFantasma* fantasma, tPosicao* posicaoNova);
+bool MatouPacmanFantasma(tFantasma* fantasma, tPacman* pacman, tPosicao* posAntigaPacman);
 
 /**
  * Caso o fantasma seja diferente de NULL, libera o espaço 
@@ -88,13 +80,6 @@ int ObtemDirecaoFantasma(tFantasma* fantasma);
  */
 bool TocouFrutaFantasma(tFantasma* fantasma);
 
-/**
- * Retorna verdadeiro se o fantasma tocou a parede,
- * e falso caso contrário;
- *
- * \param fantasma fantasma
- */
-bool TocouParedeFantasma(tFantasma* fantasma);
 
 /**
  * Retorna a posição atual do fantasma.
