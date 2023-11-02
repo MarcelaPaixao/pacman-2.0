@@ -66,9 +66,6 @@ COPIANDO OS ARQUIVOS PARA A PASTA DE RESULTADO DO ALUNO:
  - Arquivos copiados: ok!
 
 COMPILANDO OS ARQUIVOS NA PASTA DE RESULTADO DO ALUNO:
- - Erro de compilação! Verifique os arquivos da pasta completo.
- - Erro de compilação! Verifique os arquivos da pasta main.
- - Arquivos Compilados: Erro!: 2 arquivos com erros de compilacao.
  - Copiando os arquivos objetos do professor para cada subpasta do Resultado do Marcela:
  - Copiando o Gabarito-obj/tPacman.o para a pasta Resultados/Marcela/tMapa
  - Copiando o Gabarito-obj/tPacman.o para a pasta Resultados/Marcela/tMovimento
@@ -1485,16 +1482,16 @@ EXECUTANDO O VALGRIND EM CADA CASO:
  - Resultado para o trilha.txt: Ok! Peso: 1.5
  - Pasta completo / Caso 01:
  - Arquivo de output gerado: Resultados/Marcela/completo/Casos/01/result_valgrind.txt.
- - Valgrind: Ok! allocs: 0, frees: 0, errors: 0 | Desconto do valgrind: 0.0%
+ - Valgrind: Incorreto! allocs: 5,753, frees: 5,501, errors: 279 | Desconto do valgrind 30.00%
  - O aluno não gerou o arquivo de saída Resultados/Marcela/completo/Casos/01/saida/estatisticas.txt, considerando resultado incorreto!
  - O aluno não gerou o arquivo de saída Resultados/Marcela/completo/Casos/01/saida/inicializacao.txt, considerando resultado incorreto!
  - O aluno não gerou o arquivo de saída Resultados/Marcela/completo/Casos/01/saida/ranking.txt, considerando resultado incorreto!
  - O aluno não gerou o arquivo de saída Resultados/Marcela/completo/Casos/01/saida/resumo.txt, considerando resultado incorreto!
  - Resultado para o saida.txt: Incorreto!
- - O aluno não gerou o arquivo de saída Resultados/Marcela/completo/Casos/01/saida/trilha.txt, considerando resultado incorreto!
+ - Resultado para o trilha.txt: Incorreto!
  - Pasta completo / Caso 02:
  - Arquivo de output gerado: Resultados/Marcela/completo/Casos/02/result_valgrind.txt.
- - Valgrind: Ok! allocs: 0, frees: 0, errors: 0 | Desconto do valgrind: 0.0%
+ - Valgrind: Incorreto! allocs: 64, frees: 25, errors: 1 | Desconto do valgrind 30.00%
  - O aluno não gerou o arquivo de saída Resultados/Marcela/completo/Casos/02/saida/estatisticas.txt, considerando resultado incorreto!
  - O aluno não gerou o arquivo de saída Resultados/Marcela/completo/Casos/02/saida/inicializacao.txt, considerando resultado incorreto!
  - O aluno não gerou o arquivo de saída Resultados/Marcela/completo/Casos/02/saida/ranking.txt, considerando resultado incorreto!
@@ -1503,34 +1500,34 @@ EXECUTANDO O VALGRIND EM CADA CASO:
  - O aluno não gerou o arquivo de saída Resultados/Marcela/completo/Casos/02/saida/trilha.txt, considerando resultado incorreto!
  - Pasta completo / Caso 03:
  - Arquivo de output gerado: Resultados/Marcela/completo/Casos/03/result_valgrind.txt.
- - Valgrind: Ok! allocs: 0, frees: 0, errors: 0 | Desconto do valgrind: 0.0%
+ - Valgrind: Incorreto! allocs: 37,538, frees: 35,901, errors: 2407 | Desconto do valgrind 30.00%
  - O aluno não gerou o arquivo de saída Resultados/Marcela/completo/Casos/03/saida/estatisticas.txt, considerando resultado incorreto!
  - O aluno não gerou o arquivo de saída Resultados/Marcela/completo/Casos/03/saida/inicializacao.txt, considerando resultado incorreto!
  - O aluno não gerou o arquivo de saída Resultados/Marcela/completo/Casos/03/saida/ranking.txt, considerando resultado incorreto!
  - O aluno não gerou o arquivo de saída Resultados/Marcela/completo/Casos/03/saida/resumo.txt, considerando resultado incorreto!
  - Resultado para o saida.txt: Incorreto!
- - O aluno não gerou o arquivo de saída Resultados/Marcela/completo/Casos/03/saida/trilha.txt, considerando resultado incorreto!
+ - Resultado para o trilha.txt: Incorreto!
  - Pasta completo / Caso 04:
  - Arquivo de output gerado: Resultados/Marcela/completo/Casos/04/result_valgrind.txt.
- - Valgrind: Ok! allocs: 0, frees: 0, errors: 0 | Desconto do valgrind: 0.0%
+ - Valgrind: Incorreto! allocs: 21,795, frees: 21,161, errors: 750 | Desconto do valgrind 30.00%
  - O aluno não gerou o arquivo de saída Resultados/Marcela/completo/Casos/04/saida/estatisticas.txt, considerando resultado incorreto!
  - O aluno não gerou o arquivo de saída Resultados/Marcela/completo/Casos/04/saida/inicializacao.txt, considerando resultado incorreto!
  - O aluno não gerou o arquivo de saída Resultados/Marcela/completo/Casos/04/saida/ranking.txt, considerando resultado incorreto!
  - O aluno não gerou o arquivo de saída Resultados/Marcela/completo/Casos/04/saida/resumo.txt, considerando resultado incorreto!
  - Resultado para o saida.txt: Incorreto!
- - O aluno não gerou o arquivo de saída Resultados/Marcela/completo/Casos/04/saida/trilha.txt, considerando resultado incorreto!
+ - Resultado para o trilha.txt: Incorreto!
  - Pasta completo / Caso 05:
  - Arquivo de output gerado: Resultados/Marcela/completo/Casos/05/result_valgrind.txt.
- - Valgrind: Ok! allocs: 0, frees: 0, errors: 0 | Desconto do valgrind: 0.0%
+ - Valgrind: Incorreto! allocs: 39,122, frees: 37,980, errors: 1526 | Desconto do valgrind 30.00%
  - O aluno não gerou o arquivo de saída Resultados/Marcela/completo/Casos/05/saida/estatisticas.txt, considerando resultado incorreto!
  - O aluno não gerou o arquivo de saída Resultados/Marcela/completo/Casos/05/saida/inicializacao.txt, considerando resultado incorreto!
  - O aluno não gerou o arquivo de saída Resultados/Marcela/completo/Casos/05/saida/ranking.txt, considerando resultado incorreto!
  - O aluno não gerou o arquivo de saída Resultados/Marcela/completo/Casos/05/saida/resumo.txt, considerando resultado incorreto!
  - Resultado para o saida.txt: Incorreto!
- - O aluno não gerou o arquivo de saída Resultados/Marcela/completo/Casos/05/saida/trilha.txt, considerando resultado incorreto!
+ - Resultado para o trilha.txt: Incorreto!
  - Pasta completo / Caso 06:
  - Arquivo de output gerado: Resultados/Marcela/completo/Casos/06/result_valgrind.txt.
- - Valgrind: Ok! allocs: 0, frees: 0, errors: 0 | Desconto do valgrind: 0.0%
+ - Valgrind: Incorreto! allocs: 117, frees: 54, errors: 1 | Desconto do valgrind 30.00%
  - O aluno não gerou o arquivo de saída Resultados/Marcela/completo/Casos/06/saida/estatisticas.txt, considerando resultado incorreto!
  - O aluno não gerou o arquivo de saída Resultados/Marcela/completo/Casos/06/saida/inicializacao.txt, considerando resultado incorreto!
  - O aluno não gerou o arquivo de saída Resultados/Marcela/completo/Casos/06/saida/ranking.txt, considerando resultado incorreto!
@@ -1539,7 +1536,7 @@ EXECUTANDO O VALGRIND EM CADA CASO:
  - O aluno não gerou o arquivo de saída Resultados/Marcela/completo/Casos/06/saida/trilha.txt, considerando resultado incorreto!
  - Pasta completo / Caso 07:
  - Arquivo de output gerado: Resultados/Marcela/completo/Casos/07/result_valgrind.txt.
- - Valgrind: Ok! allocs: 0, frees: 0, errors: 0 | Desconto do valgrind: 0.0%
+ - Valgrind: Incorreto! allocs: 64, frees: 25, errors: 1 | Desconto do valgrind 30.00%
  - O aluno não gerou o arquivo de saída Resultados/Marcela/completo/Casos/07/saida/estatisticas.txt, considerando resultado incorreto!
  - O aluno não gerou o arquivo de saída Resultados/Marcela/completo/Casos/07/saida/inicializacao.txt, considerando resultado incorreto!
  - O aluno não gerou o arquivo de saída Resultados/Marcela/completo/Casos/07/saida/ranking.txt, considerando resultado incorreto!
@@ -1548,7 +1545,7 @@ EXECUTANDO O VALGRIND EM CADA CASO:
  - O aluno não gerou o arquivo de saída Resultados/Marcela/completo/Casos/07/saida/trilha.txt, considerando resultado incorreto!
  - Pasta completo / Caso 08:
  - Arquivo de output gerado: Resultados/Marcela/completo/Casos/08/result_valgrind.txt.
- - Valgrind: Ok! allocs: 0, frees: 0, errors: 0 | Desconto do valgrind: 0.0%
+ - Valgrind: Incorreto! allocs: 113, frees: 42, errors: 1 | Desconto do valgrind 30.00%
  - O aluno não gerou o arquivo de saída Resultados/Marcela/completo/Casos/08/saida/estatisticas.txt, considerando resultado incorreto!
  - O aluno não gerou o arquivo de saída Resultados/Marcela/completo/Casos/08/saida/inicializacao.txt, considerando resultado incorreto!
  - O aluno não gerou o arquivo de saída Resultados/Marcela/completo/Casos/08/saida/ranking.txt, considerando resultado incorreto!
@@ -1557,7 +1554,7 @@ EXECUTANDO O VALGRIND EM CADA CASO:
  - O aluno não gerou o arquivo de saída Resultados/Marcela/completo/Casos/08/saida/trilha.txt, considerando resultado incorreto!
  - Pasta completo / Caso 09:
  - Arquivo de output gerado: Resultados/Marcela/completo/Casos/09/result_valgrind.txt.
- - Valgrind: Ok! allocs: 0, frees: 0, errors: 0 | Desconto do valgrind: 0.0%
+ - Valgrind: Incorreto! allocs: 148, frees: 107, errors: 1 | Desconto do valgrind 30.00%
  - O aluno não gerou o arquivo de saída Resultados/Marcela/completo/Casos/09/saida/estatisticas.txt, considerando resultado incorreto!
  - O aluno não gerou o arquivo de saída Resultados/Marcela/completo/Casos/09/saida/inicializacao.txt, considerando resultado incorreto!
  - O aluno não gerou o arquivo de saída Resultados/Marcela/completo/Casos/09/saida/ranking.txt, considerando resultado incorreto!
@@ -1566,7 +1563,7 @@ EXECUTANDO O VALGRIND EM CADA CASO:
  - O aluno não gerou o arquivo de saída Resultados/Marcela/completo/Casos/09/saida/trilha.txt, considerando resultado incorreto!
  - Pasta completo / Caso 10:
  - Arquivo de output gerado: Resultados/Marcela/completo/Casos/10/result_valgrind.txt.
- - Valgrind: Ok! allocs: 0, frees: 0, errors: 0 | Desconto do valgrind: 0.0%
+ - Valgrind: Incorreto! allocs: 157, frees: 56, errors: 1 | Desconto do valgrind 30.00%
  - O aluno não gerou o arquivo de saída Resultados/Marcela/completo/Casos/10/saida/estatisticas.txt, considerando resultado incorreto!
  - O aluno não gerou o arquivo de saída Resultados/Marcela/completo/Casos/10/saida/inicializacao.txt, considerando resultado incorreto!
  - O aluno não gerou o arquivo de saída Resultados/Marcela/completo/Casos/10/saida/ranking.txt, considerando resultado incorreto!
@@ -1575,7 +1572,7 @@ EXECUTANDO O VALGRIND EM CADA CASO:
  - O aluno não gerou o arquivo de saída Resultados/Marcela/completo/Casos/10/saida/trilha.txt, considerando resultado incorreto!
  - Pasta completo / Caso 11:
  - Arquivo de output gerado: Resultados/Marcela/completo/Casos/11/result_valgrind.txt.
- - Valgrind: Ok! allocs: 0, frees: 0, errors: 0 | Desconto do valgrind: 0.0%
+ - Valgrind: Incorreto! allocs: 158, frees: 117, errors: 1 | Desconto do valgrind 30.00%
  - O aluno não gerou o arquivo de saída Resultados/Marcela/completo/Casos/11/saida/estatisticas.txt, considerando resultado incorreto!
  - O aluno não gerou o arquivo de saída Resultados/Marcela/completo/Casos/11/saida/inicializacao.txt, considerando resultado incorreto!
  - O aluno não gerou o arquivo de saída Resultados/Marcela/completo/Casos/11/saida/ranking.txt, considerando resultado incorreto!
@@ -1584,16 +1581,16 @@ EXECUTANDO O VALGRIND EM CADA CASO:
  - O aluno não gerou o arquivo de saída Resultados/Marcela/completo/Casos/11/saida/trilha.txt, considerando resultado incorreto!
  - Pasta completo / Caso 12:
  - Arquivo de output gerado: Resultados/Marcela/completo/Casos/12/result_valgrind.txt.
- - Valgrind: Ok! allocs: 0, frees: 0, errors: 0 | Desconto do valgrind: 0.0%
+ - Valgrind: Incorreto! allocs: 166, frees: 164, errors: 1 | Desconto do valgrind 30.00%
  - O aluno não gerou o arquivo de saída Resultados/Marcela/completo/Casos/12/saida/estatisticas.txt, considerando resultado incorreto!
  - O aluno não gerou o arquivo de saída Resultados/Marcela/completo/Casos/12/saida/inicializacao.txt, considerando resultado incorreto!
  - O aluno não gerou o arquivo de saída Resultados/Marcela/completo/Casos/12/saida/ranking.txt, considerando resultado incorreto!
  - O aluno não gerou o arquivo de saída Resultados/Marcela/completo/Casos/12/saida/resumo.txt, considerando resultado incorreto!
  - Resultado para o saida.txt: Incorreto!
- - O aluno não gerou o arquivo de saída Resultados/Marcela/completo/Casos/12/saida/trilha.txt, considerando resultado incorreto!
+ - Resultado para o trilha.txt: Incorreto!
  - Pasta completo / Caso 13:
  - Arquivo de output gerado: Resultados/Marcela/completo/Casos/13/result_valgrind.txt.
- - Valgrind: Ok! allocs: 0, frees: 0, errors: 0 | Desconto do valgrind: 0.0%
+ - Valgrind: Incorreto! allocs: 117, frees: 54, errors: 1 | Desconto do valgrind 30.00%
  - O aluno não gerou o arquivo de saída Resultados/Marcela/completo/Casos/13/saida/estatisticas.txt, considerando resultado incorreto!
  - O aluno não gerou o arquivo de saída Resultados/Marcela/completo/Casos/13/saida/inicializacao.txt, considerando resultado incorreto!
  - O aluno não gerou o arquivo de saída Resultados/Marcela/completo/Casos/13/saida/ranking.txt, considerando resultado incorreto!
@@ -1602,7 +1599,7 @@ EXECUTANDO O VALGRIND EM CADA CASO:
  - O aluno não gerou o arquivo de saída Resultados/Marcela/completo/Casos/13/saida/trilha.txt, considerando resultado incorreto!
  - Pasta completo / Caso 14:
  - Arquivo de output gerado: Resultados/Marcela/completo/Casos/14/result_valgrind.txt.
- - Valgrind: Ok! allocs: 0, frees: 0, errors: 0 | Desconto do valgrind: 0.0%
+ - Valgrind: Incorreto! allocs: 97, frees: 44, errors: 1 | Desconto do valgrind 30.00%
  - O aluno não gerou o arquivo de saída Resultados/Marcela/completo/Casos/14/saida/estatisticas.txt, considerando resultado incorreto!
  - O aluno não gerou o arquivo de saída Resultados/Marcela/completo/Casos/14/saida/inicializacao.txt, considerando resultado incorreto!
  - O aluno não gerou o arquivo de saída Resultados/Marcela/completo/Casos/14/saida/ranking.txt, considerando resultado incorreto!
@@ -1611,16 +1608,16 @@ EXECUTANDO O VALGRIND EM CADA CASO:
  - O aluno não gerou o arquivo de saída Resultados/Marcela/completo/Casos/14/saida/trilha.txt, considerando resultado incorreto!
  - Pasta completo / Caso 15:
  - Arquivo de output gerado: Resultados/Marcela/completo/Casos/15/result_valgrind.txt.
- - Valgrind: Ok! allocs: 0, frees: 0, errors: 0 | Desconto do valgrind: 0.0%
+ - Valgrind: Incorreto! allocs: 6,918, frees: 6,498, errors: 482 | Desconto do valgrind 30.00%
  - O aluno não gerou o arquivo de saída Resultados/Marcela/completo/Casos/15/saida/estatisticas.txt, considerando resultado incorreto!
  - O aluno não gerou o arquivo de saída Resultados/Marcela/completo/Casos/15/saida/inicializacao.txt, considerando resultado incorreto!
  - O aluno não gerou o arquivo de saída Resultados/Marcela/completo/Casos/15/saida/ranking.txt, considerando resultado incorreto!
  - O aluno não gerou o arquivo de saída Resultados/Marcela/completo/Casos/15/saida/resumo.txt, considerando resultado incorreto!
  - Resultado para o saida.txt: Incorreto!
- - O aluno não gerou o arquivo de saída Resultados/Marcela/completo/Casos/15/saida/trilha.txt, considerando resultado incorreto!
+ - Resultado para o trilha.txt: Incorreto!
  - Pasta completo / Caso 16:
  - Arquivo de output gerado: Resultados/Marcela/completo/Casos/16/result_valgrind.txt.
- - Valgrind: Ok! allocs: 0, frees: 0, errors: 0 | Desconto do valgrind: 0.0%
+ - Valgrind: Incorreto! allocs: 68, frees: 33, errors: 1 | Desconto do valgrind 30.00%
  - O aluno não gerou o arquivo de saída Resultados/Marcela/completo/Casos/16/saida/estatisticas.txt, considerando resultado incorreto!
  - O aluno não gerou o arquivo de saída Resultados/Marcela/completo/Casos/16/saida/inicializacao.txt, considerando resultado incorreto!
  - O aluno não gerou o arquivo de saída Resultados/Marcela/completo/Casos/16/saida/ranking.txt, considerando resultado incorreto!
@@ -1629,7 +1626,7 @@ EXECUTANDO O VALGRIND EM CADA CASO:
  - O aluno não gerou o arquivo de saída Resultados/Marcela/completo/Casos/16/saida/trilha.txt, considerando resultado incorreto!
  - Pasta completo / Caso 17:
  - Arquivo de output gerado: Resultados/Marcela/completo/Casos/17/result_valgrind.txt.
- - Valgrind: Ok! allocs: 0, frees: 0, errors: 0 | Desconto do valgrind: 0.0%
+ - Valgrind: Incorreto! allocs: 68, frees: 33, errors: 1 | Desconto do valgrind 30.00%
  - O aluno não gerou o arquivo de saída Resultados/Marcela/completo/Casos/17/saida/estatisticas.txt, considerando resultado incorreto!
  - O aluno não gerou o arquivo de saída Resultados/Marcela/completo/Casos/17/saida/inicializacao.txt, considerando resultado incorreto!
  - O aluno não gerou o arquivo de saída Resultados/Marcela/completo/Casos/17/saida/ranking.txt, considerando resultado incorreto!
@@ -1638,61 +1635,61 @@ EXECUTANDO O VALGRIND EM CADA CASO:
  - O aluno não gerou o arquivo de saída Resultados/Marcela/completo/Casos/17/saida/trilha.txt, considerando resultado incorreto!
  - Pasta completo / Caso 18:
  - Arquivo de output gerado: Resultados/Marcela/completo/Casos/18/result_valgrind.txt.
- - Valgrind: Ok! allocs: 0, frees: 0, errors: 0 | Desconto do valgrind: 0.0%
+ - Valgrind: Incorreto! allocs: 8,806, frees: 8,305, errors: 533 | Desconto do valgrind 30.00%
  - O aluno não gerou o arquivo de saída Resultados/Marcela/completo/Casos/18/saida/estatisticas.txt, considerando resultado incorreto!
  - O aluno não gerou o arquivo de saída Resultados/Marcela/completo/Casos/18/saida/inicializacao.txt, considerando resultado incorreto!
  - O aluno não gerou o arquivo de saída Resultados/Marcela/completo/Casos/18/saida/ranking.txt, considerando resultado incorreto!
  - O aluno não gerou o arquivo de saída Resultados/Marcela/completo/Casos/18/saida/resumo.txt, considerando resultado incorreto!
  - Resultado para o saida.txt: Incorreto!
- - O aluno não gerou o arquivo de saída Resultados/Marcela/completo/Casos/18/saida/trilha.txt, considerando resultado incorreto!
+ - Resultado para o trilha.txt: Incorreto!
  - Pasta completo / Caso 19:
  - Arquivo de output gerado: Resultados/Marcela/completo/Casos/19/result_valgrind.txt.
- - Valgrind: Ok! allocs: 0, frees: 0, errors: 0 | Desconto do valgrind: 0.0%
+ - Valgrind: Incorreto! allocs: 7,476, frees: 7,126, errors: 400 | Desconto do valgrind 30.00%
  - O aluno não gerou o arquivo de saída Resultados/Marcela/completo/Casos/19/saida/estatisticas.txt, considerando resultado incorreto!
  - O aluno não gerou o arquivo de saída Resultados/Marcela/completo/Casos/19/saida/inicializacao.txt, considerando resultado incorreto!
  - O aluno não gerou o arquivo de saída Resultados/Marcela/completo/Casos/19/saida/ranking.txt, considerando resultado incorreto!
  - O aluno não gerou o arquivo de saída Resultados/Marcela/completo/Casos/19/saida/resumo.txt, considerando resultado incorreto!
  - Resultado para o saida.txt: Incorreto!
- - O aluno não gerou o arquivo de saída Resultados/Marcela/completo/Casos/19/saida/trilha.txt, considerando resultado incorreto!
+ - Resultado para o trilha.txt: Incorreto!
  - Pasta completo / Caso 20:
  - Arquivo de output gerado: Resultados/Marcela/completo/Casos/20/result_valgrind.txt.
- - Valgrind: Ok! allocs: 0, frees: 0, errors: 0 | Desconto do valgrind: 0.0%
+ - Valgrind: Incorreto! allocs: 6,349, frees: 6,088, errors: 289 | Desconto do valgrind 30.00%
  - O aluno não gerou o arquivo de saída Resultados/Marcela/completo/Casos/20/saida/estatisticas.txt, considerando resultado incorreto!
  - O aluno não gerou o arquivo de saída Resultados/Marcela/completo/Casos/20/saida/inicializacao.txt, considerando resultado incorreto!
  - O aluno não gerou o arquivo de saída Resultados/Marcela/completo/Casos/20/saida/ranking.txt, considerando resultado incorreto!
  - O aluno não gerou o arquivo de saída Resultados/Marcela/completo/Casos/20/saida/resumo.txt, considerando resultado incorreto!
  - Resultado para o saida.txt: Incorreto!
- - O aluno não gerou o arquivo de saída Resultados/Marcela/completo/Casos/20/saida/trilha.txt, considerando resultado incorreto!
+ - Resultado para o trilha.txt: Incorreto!
  - Pasta completo / Caso 21:
  - Arquivo de output gerado: Resultados/Marcela/completo/Casos/21/result_valgrind.txt.
- - Valgrind: Ok! allocs: 0, frees: 0, errors: 0 | Desconto do valgrind: 0.0%
+ - Valgrind: Incorreto! allocs: 3,042, frees: 2,911, errors: 143 | Desconto do valgrind 30.00%
  - O aluno não gerou o arquivo de saída Resultados/Marcela/completo/Casos/21/saida/estatisticas.txt, considerando resultado incorreto!
  - O aluno não gerou o arquivo de saída Resultados/Marcela/completo/Casos/21/saida/inicializacao.txt, considerando resultado incorreto!
  - O aluno não gerou o arquivo de saída Resultados/Marcela/completo/Casos/21/saida/ranking.txt, considerando resultado incorreto!
  - O aluno não gerou o arquivo de saída Resultados/Marcela/completo/Casos/21/saida/resumo.txt, considerando resultado incorreto!
  - Resultado para o saida.txt: Incorreto!
- - O aluno não gerou o arquivo de saída Resultados/Marcela/completo/Casos/21/saida/trilha.txt, considerando resultado incorreto!
+ - Resultado para o trilha.txt: Incorreto!
  - Pasta completo / Caso 22:
  - Arquivo de output gerado: Resultados/Marcela/completo/Casos/22/result_valgrind.txt.
- - Valgrind: Ok! allocs: 0, frees: 0, errors: 0 | Desconto do valgrind: 0.0%
+ - Valgrind: Incorreto! allocs: 6,041, frees: 5,762, errors: 308 | Desconto do valgrind 30.00%
  - O aluno não gerou o arquivo de saída Resultados/Marcela/completo/Casos/22/saida/estatisticas.txt, considerando resultado incorreto!
  - O aluno não gerou o arquivo de saída Resultados/Marcela/completo/Casos/22/saida/inicializacao.txt, considerando resultado incorreto!
  - O aluno não gerou o arquivo de saída Resultados/Marcela/completo/Casos/22/saida/ranking.txt, considerando resultado incorreto!
  - O aluno não gerou o arquivo de saída Resultados/Marcela/completo/Casos/22/saida/resumo.txt, considerando resultado incorreto!
  - Resultado para o saida.txt: Incorreto!
- - O aluno não gerou o arquivo de saída Resultados/Marcela/completo/Casos/22/saida/trilha.txt, considerando resultado incorreto!
+ - Resultado para o trilha.txt: Incorreto!
  - Pasta completo / Caso 23:
  - Arquivo de output gerado: Resultados/Marcela/completo/Casos/23/result_valgrind.txt.
- - Valgrind: Ok! allocs: 0, frees: 0, errors: 0 | Desconto do valgrind: 0.0%
+ - Valgrind: Incorreto! allocs: 2,784, frees: 2,716, errors: 91 | Desconto do valgrind 30.00%
  - O aluno não gerou o arquivo de saída Resultados/Marcela/completo/Casos/23/saida/estatisticas.txt, considerando resultado incorreto!
  - O aluno não gerou o arquivo de saída Resultados/Marcela/completo/Casos/23/saida/inicializacao.txt, considerando resultado incorreto!
  - O aluno não gerou o arquivo de saída Resultados/Marcela/completo/Casos/23/saida/ranking.txt, considerando resultado incorreto!
  - O aluno não gerou o arquivo de saída Resultados/Marcela/completo/Casos/23/saida/resumo.txt, considerando resultado incorreto!
  - Resultado para o saida.txt: Incorreto!
- - O aluno não gerou o arquivo de saída Resultados/Marcela/completo/Casos/23/saida/trilha.txt, considerando resultado incorreto!
+ - Resultado para o trilha.txt: Incorreto!
  - Pasta completo / Caso 24:
  - Arquivo de output gerado: Resultados/Marcela/completo/Casos/24/result_valgrind.txt.
- - Valgrind: Ok! allocs: 0, frees: 0, errors: 0 | Desconto do valgrind: 0.0%
+ - Valgrind: Incorreto! allocs: 92, frees: 39, errors: 1 | Desconto do valgrind 30.00%
  - O aluno não gerou o arquivo de saída Resultados/Marcela/completo/Casos/24/saida/estatisticas.txt, considerando resultado incorreto!
  - O aluno não gerou o arquivo de saída Resultados/Marcela/completo/Casos/24/saida/inicializacao.txt, considerando resultado incorreto!
  - O aluno não gerou o arquivo de saída Resultados/Marcela/completo/Casos/24/saida/ranking.txt, considerando resultado incorreto!
@@ -1701,70 +1698,70 @@ EXECUTANDO O VALGRIND EM CADA CASO:
  - O aluno não gerou o arquivo de saída Resultados/Marcela/completo/Casos/24/saida/trilha.txt, considerando resultado incorreto!
  - Pasta completo / Caso 25:
  - Arquivo de output gerado: Resultados/Marcela/completo/Casos/25/result_valgrind.txt.
- - Valgrind: Ok! allocs: 0, frees: 0, errors: 0 | Desconto do valgrind: 0.0%
+ - Valgrind: Incorreto! allocs: 8,856, frees: 8,598, errors: 298 | Desconto do valgrind 30.00%
  - O aluno não gerou o arquivo de saída Resultados/Marcela/completo/Casos/25/saida/estatisticas.txt, considerando resultado incorreto!
  - O aluno não gerou o arquivo de saída Resultados/Marcela/completo/Casos/25/saida/inicializacao.txt, considerando resultado incorreto!
  - O aluno não gerou o arquivo de saída Resultados/Marcela/completo/Casos/25/saida/ranking.txt, considerando resultado incorreto!
  - O aluno não gerou o arquivo de saída Resultados/Marcela/completo/Casos/25/saida/resumo.txt, considerando resultado incorreto!
  - Resultado para o saida.txt: Incorreto!
- - O aluno não gerou o arquivo de saída Resultados/Marcela/completo/Casos/25/saida/trilha.txt, considerando resultado incorreto!
+ - Resultado para o trilha.txt: Incorreto!
  - Pasta completo / Caso 26:
  - Arquivo de output gerado: Resultados/Marcela/completo/Casos/26/result_valgrind.txt.
- - Valgrind: Ok! allocs: 0, frees: 0, errors: 0 | Desconto do valgrind: 0.0%
+ - Valgrind: Incorreto! allocs: 5,544, frees: 5,384, errors: 183 | Desconto do valgrind 30.00%
  - O aluno não gerou o arquivo de saída Resultados/Marcela/completo/Casos/26/saida/estatisticas.txt, considerando resultado incorreto!
  - O aluno não gerou o arquivo de saída Resultados/Marcela/completo/Casos/26/saida/inicializacao.txt, considerando resultado incorreto!
  - O aluno não gerou o arquivo de saída Resultados/Marcela/completo/Casos/26/saida/ranking.txt, considerando resultado incorreto!
  - O aluno não gerou o arquivo de saída Resultados/Marcela/completo/Casos/26/saida/resumo.txt, considerando resultado incorreto!
  - Resultado para o saida.txt: Incorreto!
- - O aluno não gerou o arquivo de saída Resultados/Marcela/completo/Casos/26/saida/trilha.txt, considerando resultado incorreto!
+ - Resultado para o trilha.txt: Incorreto!
  - Pasta completo / Caso 27:
  - Arquivo de output gerado: Resultados/Marcela/completo/Casos/27/result_valgrind.txt.
- - Valgrind: Ok! allocs: 0, frees: 0, errors: 0 | Desconto do valgrind: 0.0%
+ - Valgrind: Incorreto! allocs: 5,155, frees: 4,824, errors: 375 | Desconto do valgrind 30.00%
  - O aluno não gerou o arquivo de saída Resultados/Marcela/completo/Casos/27/saida/estatisticas.txt, considerando resultado incorreto!
  - O aluno não gerou o arquivo de saída Resultados/Marcela/completo/Casos/27/saida/inicializacao.txt, considerando resultado incorreto!
  - O aluno não gerou o arquivo de saída Resultados/Marcela/completo/Casos/27/saida/ranking.txt, considerando resultado incorreto!
  - O aluno não gerou o arquivo de saída Resultados/Marcela/completo/Casos/27/saida/resumo.txt, considerando resultado incorreto!
  - Resultado para o saida.txt: Incorreto!
- - O aluno não gerou o arquivo de saída Resultados/Marcela/completo/Casos/27/saida/trilha.txt, considerando resultado incorreto!
+ - Resultado para o trilha.txt: Incorreto!
  - Pasta completo / Caso 28:
  - Arquivo de output gerado: Resultados/Marcela/completo/Casos/28/result_valgrind.txt.
- - Valgrind: Ok! allocs: 0, frees: 0, errors: 0 | Desconto do valgrind: 0.0%
+ - Valgrind: Incorreto! allocs: 10,245, frees: 9,698, errors: 656 | Desconto do valgrind 30.00%
  - O aluno não gerou o arquivo de saída Resultados/Marcela/completo/Casos/28/saida/estatisticas.txt, considerando resultado incorreto!
  - O aluno não gerou o arquivo de saída Resultados/Marcela/completo/Casos/28/saida/inicializacao.txt, considerando resultado incorreto!
  - O aluno não gerou o arquivo de saída Resultados/Marcela/completo/Casos/28/saida/ranking.txt, considerando resultado incorreto!
  - O aluno não gerou o arquivo de saída Resultados/Marcela/completo/Casos/28/saida/resumo.txt, considerando resultado incorreto!
  - Resultado para o saida.txt: Incorreto!
- - O aluno não gerou o arquivo de saída Resultados/Marcela/completo/Casos/28/saida/trilha.txt, considerando resultado incorreto!
+ - Resultado para o trilha.txt: Incorreto!
  - Pasta completo / Caso 29:
  - Arquivo de output gerado: Resultados/Marcela/completo/Casos/29/result_valgrind.txt.
- - Valgrind: Ok! allocs: 0, frees: 0, errors: 0 | Desconto do valgrind: 0.0%
+ - Valgrind: Incorreto! allocs: 13,374, frees: 12,551, errors: 1032 | Desconto do valgrind 30.00%
  - O aluno não gerou o arquivo de saída Resultados/Marcela/completo/Casos/29/saida/estatisticas.txt, considerando resultado incorreto!
  - O aluno não gerou o arquivo de saída Resultados/Marcela/completo/Casos/29/saida/inicializacao.txt, considerando resultado incorreto!
  - O aluno não gerou o arquivo de saída Resultados/Marcela/completo/Casos/29/saida/ranking.txt, considerando resultado incorreto!
  - O aluno não gerou o arquivo de saída Resultados/Marcela/completo/Casos/29/saida/resumo.txt, considerando resultado incorreto!
  - Resultado para o saida.txt: Incorreto!
- - O aluno não gerou o arquivo de saída Resultados/Marcela/completo/Casos/29/saida/trilha.txt, considerando resultado incorreto!
+ - Resultado para o trilha.txt: Incorreto!
  - Pasta completo / Caso 30:
  - Arquivo de output gerado: Resultados/Marcela/completo/Casos/30/result_valgrind.txt.
- - Valgrind: Ok! allocs: 0, frees: 0, errors: 0 | Desconto do valgrind: 0.0%
+ - Valgrind: Incorreto! allocs: 7,258, frees: 7,047, errors: 243 | Desconto do valgrind 30.00%
  - O aluno não gerou o arquivo de saída Resultados/Marcela/completo/Casos/30/saida/estatisticas.txt, considerando resultado incorreto!
  - O aluno não gerou o arquivo de saída Resultados/Marcela/completo/Casos/30/saida/inicializacao.txt, considerando resultado incorreto!
  - O aluno não gerou o arquivo de saída Resultados/Marcela/completo/Casos/30/saida/ranking.txt, considerando resultado incorreto!
  - O aluno não gerou o arquivo de saída Resultados/Marcela/completo/Casos/30/saida/resumo.txt, considerando resultado incorreto!
  - Resultado para o saida.txt: Incorreto!
- - O aluno não gerou o arquivo de saída Resultados/Marcela/completo/Casos/30/saida/trilha.txt, considerando resultado incorreto!
+ - Resultado para o trilha.txt: Incorreto!
  - Pasta main / Caso 01:
  - Arquivo de output gerado: Resultados/Marcela/main/Casos/01/result_valgrind.txt.
- - Valgrind: Ok! allocs: 0, frees: 0, errors: 0 | Desconto do valgrind: 0.0%
+ - Valgrind: Incorreto! allocs: 5,996, frees: 5,744, errors: 2542 | Desconto do valgrind 30.00%
  - O aluno não gerou o arquivo de saída Resultados/Marcela/main/Casos/01/saida/estatisticas.txt, considerando resultado incorreto!
  - O aluno não gerou o arquivo de saída Resultados/Marcela/main/Casos/01/saida/inicializacao.txt, considerando resultado incorreto!
  - O aluno não gerou o arquivo de saída Resultados/Marcela/main/Casos/01/saida/ranking.txt, considerando resultado incorreto!
  - O aluno não gerou o arquivo de saída Resultados/Marcela/main/Casos/01/saida/resumo.txt, considerando resultado incorreto!
  - Resultado para o saida.txt: Incorreto!
- - O aluno não gerou o arquivo de saída Resultados/Marcela/main/Casos/01/saida/trilha.txt, considerando resultado incorreto!
+ - Resultado para o trilha.txt: Incorreto!
  - Pasta main / Caso 02:
  - Arquivo de output gerado: Resultados/Marcela/main/Casos/02/result_valgrind.txt.
- - Valgrind: Ok! allocs: 0, frees: 0, errors: 0 | Desconto do valgrind: 0.0%
+ - Valgrind: Incorreto! allocs: 134, frees: 99, errors: 1 | Desconto do valgrind 30.00%
  - O aluno não gerou o arquivo de saída Resultados/Marcela/main/Casos/02/saida/estatisticas.txt, considerando resultado incorreto!
  - O aluno não gerou o arquivo de saída Resultados/Marcela/main/Casos/02/saida/inicializacao.txt, considerando resultado incorreto!
  - O aluno não gerou o arquivo de saída Resultados/Marcela/main/Casos/02/saida/ranking.txt, considerando resultado incorreto!
@@ -1773,34 +1770,34 @@ EXECUTANDO O VALGRIND EM CADA CASO:
  - O aluno não gerou o arquivo de saída Resultados/Marcela/main/Casos/02/saida/trilha.txt, considerando resultado incorreto!
  - Pasta main / Caso 03:
  - Arquivo de output gerado: Resultados/Marcela/main/Casos/03/result_valgrind.txt.
- - Valgrind: Ok! allocs: 0, frees: 0, errors: 0 | Desconto do valgrind: 0.0%
+ - Valgrind: Incorreto! allocs: 39,083, frees: 37,446, errors: 17135 | Desconto do valgrind 30.00%
  - O aluno não gerou o arquivo de saída Resultados/Marcela/main/Casos/03/saida/estatisticas.txt, considerando resultado incorreto!
  - O aluno não gerou o arquivo de saída Resultados/Marcela/main/Casos/03/saida/inicializacao.txt, considerando resultado incorreto!
  - O aluno não gerou o arquivo de saída Resultados/Marcela/main/Casos/03/saida/ranking.txt, considerando resultado incorreto!
  - O aluno não gerou o arquivo de saída Resultados/Marcela/main/Casos/03/saida/resumo.txt, considerando resultado incorreto!
  - Resultado para o saida.txt: Incorreto!
- - O aluno não gerou o arquivo de saída Resultados/Marcela/main/Casos/03/saida/trilha.txt, considerando resultado incorreto!
+ - Resultado para o trilha.txt: Incorreto!
  - Pasta main / Caso 04:
  - Arquivo de output gerado: Resultados/Marcela/main/Casos/04/result_valgrind.txt.
- - Valgrind: Ok! allocs: 0, frees: 0, errors: 0 | Desconto do valgrind: 0.0%
+ - Valgrind: Incorreto! allocs: 22,995, frees: 22,361, errors: 6467 | Desconto do valgrind 30.00%
  - O aluno não gerou o arquivo de saída Resultados/Marcela/main/Casos/04/saida/estatisticas.txt, considerando resultado incorreto!
  - O aluno não gerou o arquivo de saída Resultados/Marcela/main/Casos/04/saida/inicializacao.txt, considerando resultado incorreto!
  - O aluno não gerou o arquivo de saída Resultados/Marcela/main/Casos/04/saida/ranking.txt, considerando resultado incorreto!
  - O aluno não gerou o arquivo de saída Resultados/Marcela/main/Casos/04/saida/resumo.txt, considerando resultado incorreto!
  - Resultado para o saida.txt: Incorreto!
- - O aluno não gerou o arquivo de saída Resultados/Marcela/main/Casos/04/saida/trilha.txt, considerando resultado incorreto!
+ - Resultado para o trilha.txt: Incorreto!
  - Pasta main / Caso 05:
  - Arquivo de output gerado: Resultados/Marcela/main/Casos/05/result_valgrind.txt.
- - Valgrind: Ok! allocs: 0, frees: 0, errors: 0 | Desconto do valgrind: 0.0%
+ - Valgrind: Incorreto! allocs: 41,462, frees: 40,320, errors: 11815 | Desconto do valgrind 30.00%
  - O aluno não gerou o arquivo de saída Resultados/Marcela/main/Casos/05/saida/estatisticas.txt, considerando resultado incorreto!
  - O aluno não gerou o arquivo de saída Resultados/Marcela/main/Casos/05/saida/inicializacao.txt, considerando resultado incorreto!
  - O aluno não gerou o arquivo de saída Resultados/Marcela/main/Casos/05/saida/ranking.txt, considerando resultado incorreto!
  - O aluno não gerou o arquivo de saída Resultados/Marcela/main/Casos/05/saida/resumo.txt, considerando resultado incorreto!
  - Resultado para o saida.txt: Incorreto!
- - O aluno não gerou o arquivo de saída Resultados/Marcela/main/Casos/05/saida/trilha.txt, considerando resultado incorreto!
+ - Resultado para o trilha.txt: Incorreto!
  - Pasta main / Caso 06:
  - Arquivo de output gerado: Resultados/Marcela/main/Casos/06/result_valgrind.txt.
- - Valgrind: Ok! allocs: 0, frees: 0, errors: 0 | Desconto do valgrind: 0.0%
+ - Valgrind: Incorreto! allocs: 590, frees: 531, errors: 1 | Desconto do valgrind 30.00%
  - O aluno não gerou o arquivo de saída Resultados/Marcela/main/Casos/06/saida/estatisticas.txt, considerando resultado incorreto!
  - O aluno não gerou o arquivo de saída Resultados/Marcela/main/Casos/06/saida/inicializacao.txt, considerando resultado incorreto!
  - O aluno não gerou o arquivo de saída Resultados/Marcela/main/Casos/06/saida/ranking.txt, considerando resultado incorreto!
@@ -1809,7 +1806,7 @@ EXECUTANDO O VALGRIND EM CADA CASO:
  - O aluno não gerou o arquivo de saída Resultados/Marcela/main/Casos/06/saida/trilha.txt, considerando resultado incorreto!
  - Pasta main / Caso 07:
  - Arquivo de output gerado: Resultados/Marcela/main/Casos/07/result_valgrind.txt.
- - Valgrind: Ok! allocs: 0, frees: 0, errors: 0 | Desconto do valgrind: 0.0%
+ - Valgrind: Incorreto! allocs: 152, frees: 117, errors: 1 | Desconto do valgrind 30.00%
  - O aluno não gerou o arquivo de saída Resultados/Marcela/main/Casos/07/saida/estatisticas.txt, considerando resultado incorreto!
  - O aluno não gerou o arquivo de saída Resultados/Marcela/main/Casos/07/saida/inicializacao.txt, considerando resultado incorreto!
  - O aluno não gerou o arquivo de saída Resultados/Marcela/main/Casos/07/saida/ranking.txt, considerando resultado incorreto!
@@ -1818,7 +1815,7 @@ EXECUTANDO O VALGRIND EM CADA CASO:
  - O aluno não gerou o arquivo de saída Resultados/Marcela/main/Casos/07/saida/trilha.txt, considerando resultado incorreto!
  - Pasta main / Caso 08:
  - Arquivo de output gerado: Resultados/Marcela/main/Casos/08/result_valgrind.txt.
- - Valgrind: Ok! allocs: 0, frees: 0, errors: 0 | Desconto do valgrind: 0.0%
+ - Valgrind: Incorreto! allocs: 351, frees: 284, errors: 1 | Desconto do valgrind 30.00%
  - O aluno não gerou o arquivo de saída Resultados/Marcela/main/Casos/08/saida/estatisticas.txt, considerando resultado incorreto!
  - O aluno não gerou o arquivo de saída Resultados/Marcela/main/Casos/08/saida/inicializacao.txt, considerando resultado incorreto!
  - O aluno não gerou o arquivo de saída Resultados/Marcela/main/Casos/08/saida/ranking.txt, considerando resultado incorreto!
@@ -1827,7 +1824,7 @@ EXECUTANDO O VALGRIND EM CADA CASO:
  - O aluno não gerou o arquivo de saída Resultados/Marcela/main/Casos/08/saida/trilha.txt, considerando resultado incorreto!
  - Pasta main / Caso 09:
  - Arquivo de output gerado: Resultados/Marcela/main/Casos/09/result_valgrind.txt.
- - Valgrind: Ok! allocs: 0, frees: 0, errors: 0 | Desconto do valgrind: 0.0%
+ - Valgrind: Incorreto! allocs: 956, frees: 919, errors: 1 | Desconto do valgrind 30.00%
  - O aluno não gerou o arquivo de saída Resultados/Marcela/main/Casos/09/saida/estatisticas.txt, considerando resultado incorreto!
  - O aluno não gerou o arquivo de saída Resultados/Marcela/main/Casos/09/saida/inicializacao.txt, considerando resultado incorreto!
  - O aluno não gerou o arquivo de saída Resultados/Marcela/main/Casos/09/saida/ranking.txt, considerando resultado incorreto!
@@ -1836,7 +1833,7 @@ EXECUTANDO O VALGRIND EM CADA CASO:
  - O aluno não gerou o arquivo de saída Resultados/Marcela/main/Casos/09/saida/trilha.txt, considerando resultado incorreto!
  - Pasta main / Caso 10:
  - Arquivo de output gerado: Resultados/Marcela/main/Casos/10/result_valgrind.txt.
- - Valgrind: Ok! allocs: 0, frees: 0, errors: 0 | Desconto do valgrind: 0.0%
+ - Valgrind: Incorreto! allocs: 506, frees: 409, errors: 1 | Desconto do valgrind 30.00%
  - O aluno não gerou o arquivo de saída Resultados/Marcela/main/Casos/10/saida/estatisticas.txt, considerando resultado incorreto!
  - O aluno não gerou o arquivo de saída Resultados/Marcela/main/Casos/10/saida/inicializacao.txt, considerando resultado incorreto!
  - O aluno não gerou o arquivo de saída Resultados/Marcela/main/Casos/10/saida/ranking.txt, considerando resultado incorreto!
@@ -1845,7 +1842,7 @@ EXECUTANDO O VALGRIND EM CADA CASO:
  - O aluno não gerou o arquivo de saída Resultados/Marcela/main/Casos/10/saida/trilha.txt, considerando resultado incorreto!
  - Pasta main / Caso 11:
  - Arquivo de output gerado: Resultados/Marcela/main/Casos/11/result_valgrind.txt.
- - Valgrind: Ok! allocs: 0, frees: 0, errors: 0 | Desconto do valgrind: 0.0%
+ - Valgrind: Incorreto! allocs: 1,056, frees: 1,019, errors: 1 | Desconto do valgrind 30.00%
  - O aluno não gerou o arquivo de saída Resultados/Marcela/main/Casos/11/saida/estatisticas.txt, considerando resultado incorreto!
  - O aluno não gerou o arquivo de saída Resultados/Marcela/main/Casos/11/saida/inicializacao.txt, considerando resultado incorreto!
  - O aluno não gerou o arquivo de saída Resultados/Marcela/main/Casos/11/saida/ranking.txt, considerando resultado incorreto!
@@ -1854,16 +1851,16 @@ EXECUTANDO O VALGRIND EM CADA CASO:
  - O aluno não gerou o arquivo de saída Resultados/Marcela/main/Casos/11/saida/trilha.txt, considerando resultado incorreto!
  - Pasta main / Caso 12:
  - Arquivo de output gerado: Resultados/Marcela/main/Casos/12/result_valgrind.txt.
- - Valgrind: Ok! allocs: 0, frees: 0, errors: 0 | Desconto do valgrind: 0.0%
+ - Valgrind: Incorreto! allocs: 519, frees: 517, errors: 1 | Desconto do valgrind 30.00%
  - O aluno não gerou o arquivo de saída Resultados/Marcela/main/Casos/12/saida/estatisticas.txt, considerando resultado incorreto!
  - O aluno não gerou o arquivo de saída Resultados/Marcela/main/Casos/12/saida/inicializacao.txt, considerando resultado incorreto!
  - O aluno não gerou o arquivo de saída Resultados/Marcela/main/Casos/12/saida/ranking.txt, considerando resultado incorreto!
  - O aluno não gerou o arquivo de saída Resultados/Marcela/main/Casos/12/saida/resumo.txt, considerando resultado incorreto!
  - Resultado para o saida.txt: Incorreto!
- - O aluno não gerou o arquivo de saída Resultados/Marcela/main/Casos/12/saida/trilha.txt, considerando resultado incorreto!
+ - Resultado para o trilha.txt: Incorreto!
  - Pasta main / Caso 13:
  - Arquivo de output gerado: Resultados/Marcela/main/Casos/13/result_valgrind.txt.
- - Valgrind: Ok! allocs: 0, frees: 0, errors: 0 | Desconto do valgrind: 0.0%
+ - Valgrind: Incorreto! allocs: 590, frees: 531, errors: 1 | Desconto do valgrind 30.00%
  - O aluno não gerou o arquivo de saída Resultados/Marcela/main/Casos/13/saida/estatisticas.txt, considerando resultado incorreto!
  - O aluno não gerou o arquivo de saída Resultados/Marcela/main/Casos/13/saida/inicializacao.txt, considerando resultado incorreto!
  - O aluno não gerou o arquivo de saída Resultados/Marcela/main/Casos/13/saida/ranking.txt, considerando resultado incorreto!
@@ -1872,7 +1869,7 @@ EXECUTANDO O VALGRIND EM CADA CASO:
  - O aluno não gerou o arquivo de saída Resultados/Marcela/main/Casos/13/saida/trilha.txt, considerando resultado incorreto!
  - Pasta main / Caso 14:
  - Arquivo de output gerado: Resultados/Marcela/main/Casos/14/result_valgrind.txt.
- - Valgrind: Ok! allocs: 0, frees: 0, errors: 0 | Desconto do valgrind: 0.0%
+ - Valgrind: Incorreto! allocs: 375, frees: 326, errors: 1 | Desconto do valgrind 30.00%
  - O aluno não gerou o arquivo de saída Resultados/Marcela/main/Casos/14/saida/estatisticas.txt, considerando resultado incorreto!
  - O aluno não gerou o arquivo de saída Resultados/Marcela/main/Casos/14/saida/inicializacao.txt, considerando resultado incorreto!
  - O aluno não gerou o arquivo de saída Resultados/Marcela/main/Casos/14/saida/ranking.txt, considerando resultado incorreto!
@@ -1881,16 +1878,16 @@ EXECUTANDO O VALGRIND EM CADA CASO:
  - O aluno não gerou o arquivo de saída Resultados/Marcela/main/Casos/14/saida/trilha.txt, considerando resultado incorreto!
  - Pasta main / Caso 15:
  - Arquivo de output gerado: Resultados/Marcela/main/Casos/15/result_valgrind.txt.
- - Valgrind: Ok! allocs: 0, frees: 0, errors: 0 | Desconto do valgrind: 0.0%
+ - Valgrind: Incorreto! allocs: 7,008, frees: 6,588, errors: 4269 | Desconto do valgrind 30.00%
  - O aluno não gerou o arquivo de saída Resultados/Marcela/main/Casos/15/saida/estatisticas.txt, considerando resultado incorreto!
  - O aluno não gerou o arquivo de saída Resultados/Marcela/main/Casos/15/saida/inicializacao.txt, considerando resultado incorreto!
  - O aluno não gerou o arquivo de saída Resultados/Marcela/main/Casos/15/saida/ranking.txt, considerando resultado incorreto!
  - O aluno não gerou o arquivo de saída Resultados/Marcela/main/Casos/15/saida/resumo.txt, considerando resultado incorreto!
  - Resultado para o saida.txt: Incorreto!
- - O aluno não gerou o arquivo de saída Resultados/Marcela/main/Casos/15/saida/trilha.txt, considerando resultado incorreto!
+ - Resultado para o trilha.txt: Incorreto!
  - Pasta main / Caso 16:
  - Arquivo de output gerado: Resultados/Marcela/main/Casos/16/result_valgrind.txt.
- - Valgrind: Ok! allocs: 0, frees: 0, errors: 0 | Desconto do valgrind: 0.0%
+ - Valgrind: Incorreto! allocs: 209, frees: 175, errors: 1 | Desconto do valgrind 30.00%
  - O aluno não gerou o arquivo de saída Resultados/Marcela/main/Casos/16/saida/estatisticas.txt, considerando resultado incorreto!
  - O aluno não gerou o arquivo de saída Resultados/Marcela/main/Casos/16/saida/inicializacao.txt, considerando resultado incorreto!
  - O aluno não gerou o arquivo de saída Resultados/Marcela/main/Casos/16/saida/ranking.txt, considerando resultado incorreto!
@@ -1899,7 +1896,7 @@ EXECUTANDO O VALGRIND EM CADA CASO:
  - O aluno não gerou o arquivo de saída Resultados/Marcela/main/Casos/16/saida/trilha.txt, considerando resultado incorreto!
  - Pasta main / Caso 17:
  - Arquivo de output gerado: Resultados/Marcela/main/Casos/17/result_valgrind.txt.
- - Valgrind: Ok! allocs: 0, frees: 0, errors: 0 | Desconto do valgrind: 0.0%
+ - Valgrind: Incorreto! allocs: 209, frees: 175, errors: 1 | Desconto do valgrind 30.00%
  - O aluno não gerou o arquivo de saída Resultados/Marcela/main/Casos/17/saida/estatisticas.txt, considerando resultado incorreto!
  - O aluno não gerou o arquivo de saída Resultados/Marcela/main/Casos/17/saida/inicializacao.txt, considerando resultado incorreto!
  - O aluno não gerou o arquivo de saída Resultados/Marcela/main/Casos/17/saida/ranking.txt, considerando resultado incorreto!
@@ -1908,61 +1905,61 @@ EXECUTANDO O VALGRIND EM CADA CASO:
  - O aluno não gerou o arquivo de saída Resultados/Marcela/main/Casos/17/saida/trilha.txt, considerando resultado incorreto!
  - Pasta main / Caso 18:
  - Arquivo de output gerado: Resultados/Marcela/main/Casos/18/result_valgrind.txt.
- - Valgrind: Ok! allocs: 0, frees: 0, errors: 0 | Desconto do valgrind: 0.0%
+ - Valgrind: Incorreto! allocs: 8,612, frees: 8,111, errors: 5033 | Desconto do valgrind 30.00%
  - O aluno não gerou o arquivo de saída Resultados/Marcela/main/Casos/18/saida/estatisticas.txt, considerando resultado incorreto!
  - O aluno não gerou o arquivo de saída Resultados/Marcela/main/Casos/18/saida/inicializacao.txt, considerando resultado incorreto!
  - O aluno não gerou o arquivo de saída Resultados/Marcela/main/Casos/18/saida/ranking.txt, considerando resultado incorreto!
  - O aluno não gerou o arquivo de saída Resultados/Marcela/main/Casos/18/saida/resumo.txt, considerando resultado incorreto!
  - Resultado para o saida.txt: Incorreto!
- - O aluno não gerou o arquivo de saída Resultados/Marcela/main/Casos/18/saida/trilha.txt, considerando resultado incorreto!
+ - Resultado para o trilha.txt: Incorreto!
  - Pasta main / Caso 19:
  - Arquivo de output gerado: Resultados/Marcela/main/Casos/19/result_valgrind.txt.
- - Valgrind: Ok! allocs: 0, frees: 0, errors: 0 | Desconto do valgrind: 0.0%
+ - Valgrind: Incorreto! allocs: 7,793, frees: 7,443, errors: 3549 | Desconto do valgrind 30.00%
  - O aluno não gerou o arquivo de saída Resultados/Marcela/main/Casos/19/saida/estatisticas.txt, considerando resultado incorreto!
  - O aluno não gerou o arquivo de saída Resultados/Marcela/main/Casos/19/saida/inicializacao.txt, considerando resultado incorreto!
  - O aluno não gerou o arquivo de saída Resultados/Marcela/main/Casos/19/saida/ranking.txt, considerando resultado incorreto!
  - O aluno não gerou o arquivo de saída Resultados/Marcela/main/Casos/19/saida/resumo.txt, considerando resultado incorreto!
  - Resultado para o saida.txt: Incorreto!
- - O aluno não gerou o arquivo de saída Resultados/Marcela/main/Casos/19/saida/trilha.txt, considerando resultado incorreto!
+ - Resultado para o trilha.txt: Incorreto!
  - Pasta main / Caso 20:
  - Arquivo de output gerado: Resultados/Marcela/main/Casos/20/result_valgrind.txt.
- - Valgrind: Ok! allocs: 0, frees: 0, errors: 0 | Desconto do valgrind: 0.0%
+ - Valgrind: Incorreto! allocs: 6,629, frees: 6,368, errors: 2633 | Desconto do valgrind 30.00%
  - O aluno não gerou o arquivo de saída Resultados/Marcela/main/Casos/20/saida/estatisticas.txt, considerando resultado incorreto!
  - O aluno não gerou o arquivo de saída Resultados/Marcela/main/Casos/20/saida/inicializacao.txt, considerando resultado incorreto!
  - O aluno não gerou o arquivo de saída Resultados/Marcela/main/Casos/20/saida/ranking.txt, considerando resultado incorreto!
  - O aluno não gerou o arquivo de saída Resultados/Marcela/main/Casos/20/saida/resumo.txt, considerando resultado incorreto!
  - Resultado para o saida.txt: Incorreto!
- - O aluno não gerou o arquivo de saída Resultados/Marcela/main/Casos/20/saida/trilha.txt, considerando resultado incorreto!
+ - Resultado para o trilha.txt: Incorreto!
  - Pasta main / Caso 21:
  - Arquivo de output gerado: Resultados/Marcela/main/Casos/21/result_valgrind.txt.
- - Valgrind: Ok! allocs: 0, frees: 0, errors: 0 | Desconto do valgrind: 0.0%
+ - Valgrind: Incorreto! allocs: 3,177, frees: 3,046, errors: 1321 | Desconto do valgrind 30.00%
  - O aluno não gerou o arquivo de saída Resultados/Marcela/main/Casos/21/saida/estatisticas.txt, considerando resultado incorreto!
  - O aluno não gerou o arquivo de saída Resultados/Marcela/main/Casos/21/saida/inicializacao.txt, considerando resultado incorreto!
  - O aluno não gerou o arquivo de saída Resultados/Marcela/main/Casos/21/saida/ranking.txt, considerando resultado incorreto!
  - O aluno não gerou o arquivo de saída Resultados/Marcela/main/Casos/21/saida/resumo.txt, considerando resultado incorreto!
  - Resultado para o saida.txt: Incorreto!
- - O aluno não gerou o arquivo de saída Resultados/Marcela/main/Casos/21/saida/trilha.txt, considerando resultado incorreto!
+ - Resultado para o trilha.txt: Incorreto!
  - Pasta main / Caso 22:
  - Arquivo de output gerado: Resultados/Marcela/main/Casos/22/result_valgrind.txt.
- - Valgrind: Ok! allocs: 0, frees: 0, errors: 0 | Desconto do valgrind: 0.0%
+ - Valgrind: Incorreto! allocs: 6,244, frees: 5,965, errors: 2814 | Desconto do valgrind 30.00%
  - O aluno não gerou o arquivo de saída Resultados/Marcela/main/Casos/22/saida/estatisticas.txt, considerando resultado incorreto!
  - O aluno não gerou o arquivo de saída Resultados/Marcela/main/Casos/22/saida/inicializacao.txt, considerando resultado incorreto!
  - O aluno não gerou o arquivo de saída Resultados/Marcela/main/Casos/22/saida/ranking.txt, considerando resultado incorreto!
  - O aluno não gerou o arquivo de saída Resultados/Marcela/main/Casos/22/saida/resumo.txt, considerando resultado incorreto!
  - Resultado para o saida.txt: Incorreto!
- - O aluno não gerou o arquivo de saída Resultados/Marcela/main/Casos/22/saida/trilha.txt, considerando resultado incorreto!
+ - Resultado para o trilha.txt: Incorreto!
  - Pasta main / Caso 23:
  - Arquivo de output gerado: Resultados/Marcela/main/Casos/23/result_valgrind.txt.
- - Valgrind: Ok! allocs: 0, frees: 0, errors: 0 | Desconto do valgrind: 0.0%
+ - Valgrind: Incorreto! allocs: 3,244, frees: 3,176, errors: 746 | Desconto do valgrind 30.00%
  - O aluno não gerou o arquivo de saída Resultados/Marcela/main/Casos/23/saida/estatisticas.txt, considerando resultado incorreto!
  - O aluno não gerou o arquivo de saída Resultados/Marcela/main/Casos/23/saida/inicializacao.txt, considerando resultado incorreto!
  - O aluno não gerou o arquivo de saída Resultados/Marcela/main/Casos/23/saida/ranking.txt, considerando resultado incorreto!
  - O aluno não gerou o arquivo de saída Resultados/Marcela/main/Casos/23/saida/resumo.txt, considerando resultado incorreto!
  - Resultado para o saida.txt: Incorreto!
- - O aluno não gerou o arquivo de saída Resultados/Marcela/main/Casos/23/saida/trilha.txt, considerando resultado incorreto!
+ - Resultado para o trilha.txt: Incorreto!
  - Pasta main / Caso 24:
  - Arquivo de output gerado: Resultados/Marcela/main/Casos/24/result_valgrind.txt.
- - Valgrind: Ok! allocs: 0, frees: 0, errors: 0 | Desconto do valgrind: 0.0%
+ - Valgrind: Incorreto! allocs: 300, frees: 251, errors: 1 | Desconto do valgrind 30.00%
  - O aluno não gerou o arquivo de saída Resultados/Marcela/main/Casos/24/saida/estatisticas.txt, considerando resultado incorreto!
  - O aluno não gerou o arquivo de saída Resultados/Marcela/main/Casos/24/saida/inicializacao.txt, considerando resultado incorreto!
  - O aluno não gerou o arquivo de saída Resultados/Marcela/main/Casos/24/saida/ranking.txt, considerando resultado incorreto!
@@ -1971,58 +1968,58 @@ EXECUTANDO O VALGRIND EM CADA CASO:
  - O aluno não gerou o arquivo de saída Resultados/Marcela/main/Casos/24/saida/trilha.txt, considerando resultado incorreto!
  - Pasta main / Caso 25:
  - Arquivo de output gerado: Resultados/Marcela/main/Casos/25/result_valgrind.txt.
- - Valgrind: Ok! allocs: 0, frees: 0, errors: 0 | Desconto do valgrind: 0.0%
+ - Valgrind: Incorreto! allocs: 9,585, frees: 9,327, errors: 2611 | Desconto do valgrind 30.00%
  - O aluno não gerou o arquivo de saída Resultados/Marcela/main/Casos/25/saida/estatisticas.txt, considerando resultado incorreto!
  - O aluno não gerou o arquivo de saída Resultados/Marcela/main/Casos/25/saida/inicializacao.txt, considerando resultado incorreto!
  - O aluno não gerou o arquivo de saída Resultados/Marcela/main/Casos/25/saida/ranking.txt, considerando resultado incorreto!
  - O aluno não gerou o arquivo de saída Resultados/Marcela/main/Casos/25/saida/resumo.txt, considerando resultado incorreto!
  - Resultado para o saida.txt: Incorreto!
- - O aluno não gerou o arquivo de saída Resultados/Marcela/main/Casos/25/saida/trilha.txt, considerando resultado incorreto!
+ - Resultado para o trilha.txt: Incorreto!
  - Pasta main / Caso 26:
  - Arquivo de output gerado: Resultados/Marcela/main/Casos/26/result_valgrind.txt.
- - Valgrind: Ok! allocs: 0, frees: 0, errors: 0 | Desconto do valgrind: 0.0%
+ - Valgrind: Incorreto! allocs: 6,135, frees: 5,975, errors: 1614 | Desconto do valgrind 30.00%
  - O aluno não gerou o arquivo de saída Resultados/Marcela/main/Casos/26/saida/estatisticas.txt, considerando resultado incorreto!
  - O aluno não gerou o arquivo de saída Resultados/Marcela/main/Casos/26/saida/inicializacao.txt, considerando resultado incorreto!
  - O aluno não gerou o arquivo de saída Resultados/Marcela/main/Casos/26/saida/ranking.txt, considerando resultado incorreto!
  - O aluno não gerou o arquivo de saída Resultados/Marcela/main/Casos/26/saida/resumo.txt, considerando resultado incorreto!
  - Resultado para o saida.txt: Incorreto!
- - O aluno não gerou o arquivo de saída Resultados/Marcela/main/Casos/26/saida/trilha.txt, considerando resultado incorreto!
+ - Resultado para o trilha.txt: Incorreto!
  - Pasta main / Caso 27:
  - Arquivo de output gerado: Resultados/Marcela/main/Casos/27/result_valgrind.txt.
- - Valgrind: Ok! allocs: 0, frees: 0, errors: 0 | Desconto do valgrind: 0.0%
+ - Valgrind: Incorreto! allocs: 5,242, frees: 4,911, errors: 3353 | Desconto do valgrind 30.00%
  - O aluno não gerou o arquivo de saída Resultados/Marcela/main/Casos/27/saida/estatisticas.txt, considerando resultado incorreto!
  - O aluno não gerou o arquivo de saída Resultados/Marcela/main/Casos/27/saida/inicializacao.txt, considerando resultado incorreto!
  - O aluno não gerou o arquivo de saída Resultados/Marcela/main/Casos/27/saida/ranking.txt, considerando resultado incorreto!
  - O aluno não gerou o arquivo de saída Resultados/Marcela/main/Casos/27/saida/resumo.txt, considerando resultado incorreto!
  - Resultado para o saida.txt: Incorreto!
- - O aluno não gerou o arquivo de saída Resultados/Marcela/main/Casos/27/saida/trilha.txt, considerando resultado incorreto!
+ - Resultado para o trilha.txt: Incorreto!
  - Pasta main / Caso 28:
  - Arquivo de output gerado: Resultados/Marcela/main/Casos/28/result_valgrind.txt.
- - Valgrind: Ok! allocs: 0, frees: 0, errors: 0 | Desconto do valgrind: 0.0%
+ - Valgrind: Incorreto! allocs: 10,540, frees: 9,993, errors: 5602 | Desconto do valgrind 30.00%
  - O aluno não gerou o arquivo de saída Resultados/Marcela/main/Casos/28/saida/estatisticas.txt, considerando resultado incorreto!
  - O aluno não gerou o arquivo de saída Resultados/Marcela/main/Casos/28/saida/inicializacao.txt, considerando resultado incorreto!
  - O aluno não gerou o arquivo de saída Resultados/Marcela/main/Casos/28/saida/ranking.txt, considerando resultado incorreto!
  - O aluno não gerou o arquivo de saída Resultados/Marcela/main/Casos/28/saida/resumo.txt, considerando resultado incorreto!
  - Resultado para o saida.txt: Incorreto!
- - O aluno não gerou o arquivo de saída Resultados/Marcela/main/Casos/28/saida/trilha.txt, considerando resultado incorreto!
+ - Resultado para o trilha.txt: Incorreto!
  - Pasta main / Caso 29:
  - Arquivo de output gerado: Resultados/Marcela/main/Casos/29/result_valgrind.txt.
- - Valgrind: Ok! allocs: 0, frees: 0, errors: 0 | Desconto do valgrind: 0.0%
+ - Valgrind: Incorreto! allocs: 13,587, frees: 12,764, errors: 8442 | Desconto do valgrind 30.00%
  - O aluno não gerou o arquivo de saída Resultados/Marcela/main/Casos/29/saida/estatisticas.txt, considerando resultado incorreto!
  - O aluno não gerou o arquivo de saída Resultados/Marcela/main/Casos/29/saida/inicializacao.txt, considerando resultado incorreto!
  - O aluno não gerou o arquivo de saída Resultados/Marcela/main/Casos/29/saida/ranking.txt, considerando resultado incorreto!
  - O aluno não gerou o arquivo de saída Resultados/Marcela/main/Casos/29/saida/resumo.txt, considerando resultado incorreto!
  - Resultado para o saida.txt: Incorreto!
- - O aluno não gerou o arquivo de saída Resultados/Marcela/main/Casos/29/saida/trilha.txt, considerando resultado incorreto!
+ - Resultado para o trilha.txt: Incorreto!
  - Pasta main / Caso 30:
  - Arquivo de output gerado: Resultados/Marcela/main/Casos/30/result_valgrind.txt.
- - Valgrind: Ok! allocs: 0, frees: 0, errors: 0 | Desconto do valgrind: 0.0%
+ - Valgrind: Incorreto! allocs: 7,940, frees: 7,729, errors: 2133 | Desconto do valgrind 30.00%
  - O aluno não gerou o arquivo de saída Resultados/Marcela/main/Casos/30/saida/estatisticas.txt, considerando resultado incorreto!
  - O aluno não gerou o arquivo de saída Resultados/Marcela/main/Casos/30/saida/inicializacao.txt, considerando resultado incorreto!
  - O aluno não gerou o arquivo de saída Resultados/Marcela/main/Casos/30/saida/ranking.txt, considerando resultado incorreto!
  - O aluno não gerou o arquivo de saída Resultados/Marcela/main/Casos/30/saida/resumo.txt, considerando resultado incorreto!
  - Resultado para o saida.txt: Incorreto!
- - O aluno não gerou o arquivo de saída Resultados/Marcela/main/Casos/30/saida/trilha.txt, considerando resultado incorreto!
+ - Resultado para o trilha.txt: Incorreto!
 
 #######################################
 RESULTADOS FINAIS
@@ -2031,15 +2028,15 @@ RESULTADOS FINAIS
 ----------------------------------------------------------------------------
 Nome 0: Marcela
  - Resumo dos Resultados:
- - Resumo das Compilações: 5 compilações corretas de 7 no total
+ - Resumo das Compilações: 7 compilações corretas de 7 no total
  - Resumo das Linkagens: 7 linkagens corretas de 7 no total
  - Valgrinds Corretos tPacman: 30 valgrinds corretos de 30 (não teve desconto na nota)
  - Valgrinds Corretos tMapa: 30 valgrinds corretos de 30 (não teve desconto na nota)
  - Valgrinds Corretos tMovimento: 30 valgrinds corretos de 30 (não teve desconto na nota)
  - Valgrinds Corretos tTunel: 30 valgrinds corretos de 30 (não teve desconto na nota)
  - Valgrinds Corretos tPosicao: 30 valgrinds corretos de 30 (não teve desconto na nota)
- - Valgrinds Corretos completo: 30 valgrinds corretos de 30 (não teve desconto na nota)
- - Valgrinds Corretos main: 30 valgrinds corretos de 30 (não teve desconto na nota)
+ - Valgrinds Corretos completo: 0 valgrinds corretos de 30 (teve desconto na nota para a pasta completo, olhar detalhamento nos prints acima!)
+ - Valgrinds Corretos main: 0 valgrinds corretos de 30 (teve desconto na nota para a pasta main, olhar detalhamento nos prints acima!)
  - Cômputo final das Notas:
  - Pasta tPacman (peso 2.5): 180 resultados corretos de 180 / Nota 2.50
  - Pasta tMapa (peso 2.5): 180 resultados corretos de 180 / Nota 2.50

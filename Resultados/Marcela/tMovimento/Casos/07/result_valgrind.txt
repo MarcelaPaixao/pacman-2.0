@@ -1,15 +1,15 @@
-==22265== Memcheck, a memory error detector
-==22265== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
-==22265== Using Valgrind-3.18.1 and LibVEX; rerun with -h for copyright info
-==22265== Command: Resultados/Marcela/tMovimento/prog Resultados/Marcela/tMovimento/Casos/07
-==22265== Parent PID: 22264
-==22265== 
-==22265== 
-==22265== HEAP SUMMARY:
-==22265==     in use at exit: 0 bytes in 0 blocks
-==22265==   total heap usage: 9,025 allocs, 9,025 frees, 123,212 bytes allocated
-==22265== 
-==22265== All heap blocks were freed -- no leaks are possible
-==22265== 
-==22265== For lists of detected and suppressed errors, rerun with: -s
-==22265== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+==130717== Memcheck, a memory error detector
+==130717== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==130717== Using Valgrind-3.18.1 and LibVEX; rerun with -h for copyright info
+==130717== Command: Resultados/Marcela/tMovimento/prog Resultados/Marcela/tMovimento/Casos/07
+==130717== Parent PID: 130716
+==130717== 
+==130717== 
+==130717== HEAP SUMMARY:
+==130717==     in use at exit: 0 bytes in 0 blocks
+==130717==   total heap usage: 9,025 allocs, 9,025 frees, 123,212 bytes allocated
+==130717== 
+==130717== All heap blocks were freed -- no leaks are possible
+==130717== 
+==130717== For lists of detected and suppressed errors, rerun with: -s
+==130717== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)

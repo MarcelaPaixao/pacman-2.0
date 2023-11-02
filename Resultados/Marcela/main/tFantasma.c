@@ -1,7 +1,4 @@
-#define DIREITA 1
-#define ESQUERDA -1
-#define BAIXO 2
-#define CIMA -2
+#include "tFantasma.h"
 
 /**
  * Cria o fantasma dinamicamente. Caso dê erro na alocação da estrutura tFantasma, 
@@ -10,32 +7,41 @@
  * Caso não dê erros, retorna o ponteiro para o tFantasma alocado.
  * \param posicao Ponteiro para tPosicao
  */
-tFantasma* CriaFantasma(tPosicao* posicao, char tipo){
+tFantasma* CriaFantasma(tPosicao* posicao, char tipo){ 
     tFantasma * fantasma = (tFantasma *) malloc (sizeof(tFantasma));
     if(fantasma == NULL){
         return NULL;
     }
-    
-    fantasma->tipo = tipo;
-    fantasma->tocaFruta = 0;
-    fantasma->tocaParede = 0;
-    fantasma->posicaoAntigaFant = NULL:
-    fantasma->posicaoAtualFant = posicao;
+    else if(posicao == NULL){
+        fantasma->existe = 0;
+        fantasma->posicaoAntigaFant = NULL;
+        fantasma->posicaoAtualFant = NULL;
+    }
+    else {
+        fantasma->tipo = tipo;
+        fantasma->existe = 1;
+        fantasma->tocaFruta = 0;
+        fantasma->posicaoAntigaFant = CriaPosicao(-1, -1);
+        fantasma->posicaoAtualFant = posicao;
 
-    if(tipo == 'B'){
-        fantasma->direcao = ESQUERDA;
-    } 
-    else if(tipo == 'C'){
-        fantasma->direcao = DIREITA;
+        if(tipo == 'B'){
+            fantasma->direcao = ESQUERDA;
+        } 
+        else if(tipo == 'C'){
+            fantasma->direcao = DIREITA;
+        }   
+        else if(tipo == 'I'){
+            fantasma->direcao = BAIXO;
+        }
+        else if(tipo == 'P'){
+            fantasma->direcao = CIMA;
+        }
     }
-    else if(tipo == 'I'){
-        fantasma->direcao = BAIXO;
-    }
-    else if(tipo == 'P'){
-        fantasma->direcao = CIMA;
-    }
-
     return fantasma;
+}
+
+void InverteDirecaoFant(tFantasma* fantasma){
+    fantasma->direcao = fantasma->direcao * (-1);
 }
 
  /* Função que irá mover o fantasma no mapa, atualizando sua posição.
@@ -45,26 +51,86 @@ tFantasma* CriaFantasma(tPosicao* posicao, char tipo){
  * \param fantasma fantasma
  * \param mapa o mapa que contem os fantasmas
  */
-void MoveFantasma(tFantasma* fantasma, tMapa* mapa);
-//pode usar a obtem tipo e obtem direcao aqui dentro pra saber pra onde ele vai;
+void MoveFantasma(tFantasma* fantasma, tMapa* mapa){
+    if(fantasma->existe){
+        int lin = ObtemLinhaPosicao(fantasma->posicaoAtualFant);
+        int col = ObtemColunaPosicao(fantasma->posicaoAtualFant);
+        int jaAtualizouMapa=0;
 
-/**
- * Retorna verdadeiro se a posição do fantasma e a do pacman são iguais,
- * ou se eles se cruzaram, e falso caso contrário;
- *
- * \param fantasma fantasma
- * \param pacman pacman
- */
-bool MatouPacmanFantasma(tFantasma* fantasma, tPacman* pacman);
+        tPosicao * novaPosicao = NULL;
+        tPosicao * PosicaoFinal = NULL;
 
-/**
- * Chama a função AtualizaPosição do tPosicao;
- * \param fantasma fantasma
- * \param posicaoNova posição nova
- */
+        AtualizaPosicao(fantasma->posicaoAntigaFant, fantasma->posicaoAtualFant);
+
+        if(fantasma->tocaFruta){
+            AtualizaItemMapa(mapa, fantasma->posicaoAntigaFant, '*');
+            fantasma->tocaFruta = 0;
+            jaAtualizouMapa = 1;
+        }
+
+        if(fantasma->tipo == 'B' || fantasma->tipo == 'C'){
+            novaPosicao = CriaPosicao(lin, col+fantasma->direcao);
+            if(EncontrouParedeMapa(mapa, novaPosicao)){
+                InverteDirecaoFant(fantasma);
+                PosicaoFinal = CriaPosicao(lin, ObtemColunaPosicao(fantasma->posicaoAntigaFant)+fantasma->direcao);
+            }
+            else {
+                PosicaoFinal = CriaPosicao(-1, -1);
+                AtualizaPosicao(PosicaoFinal, novaPosicao);
+            } 
+        }
+
+        if(fantasma->tipo == 'I' || fantasma->tipo == 'P'){
+            novaPosicao = CriaPosicao(lin+fantasma->direcao, col);
+            if(EncontrouParedeMapa(mapa, novaPosicao)){
+                InverteDirecaoFant(fantasma);
+                PosicaoFinal = CriaPosicao(ObtemLinhaPosicao(fantasma->posicaoAntigaFant)+fantasma->direcao, col);
+            }
+            else {
+                PosicaoFinal = CriaPosicao(-1, -1);
+                AtualizaPosicao(PosicaoFinal, novaPosicao);
+            } 
+        }
+
+        if(EncontrouComidaMapa(mapa, PosicaoFinal)){
+            fantasma->tocaFruta = 1;
+        }
+        else{
+            fantasma->tocaFruta = 0;
+        }
+
+        AtualizaItemMapa(mapa, PosicaoFinal, fantasma->tipo);
+
+        if(!jaAtualizouMapa){
+            AtualizaItemMapa(mapa, fantasma->posicaoAntigaFant, ' ');
+        }
+    
+        AtualizaPosicao(fantasma->posicaoAtualFant, PosicaoFinal);
+    
+        if(novaPosicao != NULL){
+            DesalocaPosicao(novaPosicao);
+        }
+        if(PosicaoFinal != NULL){
+            DesalocaPosicao(PosicaoFinal);
+        }
+    }
+}
+
+
+void VerificaSeMatouPacmanFantasma(tFantasma* fantasma, tPacman* pacman, tPosicao* posAntigaPacman){ 
+    if(SaoIguaisPosicao(ObtemPosicaoPacman(pacman), fantasma->posicaoAtualFant)){
+        MataPacman(pacman);
+    }
+    if(SaoIguaisPosicao(posAntigaPacman, fantasma->posicaoAtualFant) && 
+        SaoIguaisPosicao(ObtemPosicaoPacman(pacman), fantasma->posicaoAntigaFant)){
+        MataPacman(pacman);
+    }
+}
+
+/*Função inutil
 void AtualizaPosicaoFantasma(tFantasma* fantasma, tPosicao* posicaoNova){
     AtualizaPosicao(fantasma->posicaoAtualFant, posicaoNova);
-}
+}*/
 
 /**
  * Caso o fantasma seja diferente de NULL, libera o espaço 
@@ -80,7 +146,6 @@ void DesalocaFantasma(tFantasma* fantasma){
         free(fantasma);
     }
 }
-
 
 /**
  * Retorna o tipo do fantasma.
@@ -108,19 +173,6 @@ int ObtemDirecaoFantasma(tFantasma* fantasma){
  */
 bool TocouFrutaFantasma(tFantasma* fantasma){
     if(fantasma->tocaFruta){
-        return true;
-    }
-    return false;
-}
-
-/**
- * Retorna verdadeiro se o fantasma tocou a parede,
- * e falso caso contrário;
- *
- * \param fantasma fantasma
- */
-bool TocouParedeFantasma(tFantasma* fantasma){
-    if(fantasma->tocaParede){
         return true;
     }
     return false;

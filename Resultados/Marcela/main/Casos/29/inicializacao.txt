@@ -1,0 +1,1 @@
+Pac-Man comecara o jogo na linha 17 e coluna 10

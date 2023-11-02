@@ -1,5 +1,5 @@
-#ifndef TTUNEL_H_
-#define TTUNEL_H_
+#ifndef TFANTASMA_H_
+#define TFANTASMA_H_
 
 #include <stdbool.h>
 #include "tPosicao.h"
@@ -8,8 +8,8 @@
 
 #define DIREITA 1
 #define ESQUERDA -1
-#define BAIXO 2
-#define CIMA -2
+#define BAIXO 1
+#define CIMA -1
 
 typedef struct{
     tPosicao * posicaoAtualFant;
@@ -17,7 +17,7 @@ typedef struct{
     char tipo;
     int direcao;
     int tocaFruta;
-    int tocaParede;
+    int existe;
 } tFantasma;
 
 /**
@@ -29,6 +29,8 @@ typedef struct{
  */
 tFantasma* CriaFantasma(tPosicao* posicao, char tipo);
 
+void InverteDirecaoFant(tFantasma* fantasma);
+
  /* Função que irá mover o fantasma no mapa, atualizando sua posição.
  * Dado o fantasma e o mapa,  a posição do fantasma é atualizada. 
  * Se o fantasma encontrou uma parede, ele muda a direção.
@@ -38,21 +40,8 @@ tFantasma* CriaFantasma(tPosicao* posicao, char tipo);
  */
 void MoveFantasma(tFantasma* fantasma, tMapa* mapa);
 
-/**
- * Retorna verdadeiro se a posição do fantasma e a do pacman são iguais,
- * ou se eles se cruzaram, e falso caso contrário;
- *
- * \param fantasma fantasma
- * \param pacman pacman
- */
-bool MatouPacmanFantasma(tFantasma* fantasma, tPacman* pacman);
 
-/**
- * Chama a função AtualizaPosição do tPosicao;
- * \param fantasma fantasma
- * \param posicaoNova posição nova
- */
-void AtualizaPosicaoFantasma(tFantasma* fantasma, tPosicao* posicaoNova);
+void VerificaSeMatouPacmanFantasma(tFantasma* fantasma, tPacman* pacman, tPosicao* posAntigaPacman);
 
 /**
  * Caso o fantasma seja diferente de NULL, libera o espaço 
@@ -62,7 +51,6 @@ void AtualizaPosicaoFantasma(tFantasma* fantasma, tPosicao* posicaoNova);
  * \param fantasma fantasma
  */
 void DesalocaFantasma(tFantasma* fantasma);
-
 
 /**
  * Retorna o tipo do fantasma.
@@ -86,13 +74,6 @@ int ObtemDirecaoFantasma(tFantasma* fantasma);
  */
 bool TocouFrutaFantasma(tFantasma* fantasma);
 
-/**
- * Retorna verdadeiro se o fantasma tocou a parede,
- * e falso caso contrário;
- *
- * \param fantasma fantasma
- */
-bool TocouParedeFantasma(tFantasma* fantasma);
 
 /**
  * Retorna a posição atual do fantasma.

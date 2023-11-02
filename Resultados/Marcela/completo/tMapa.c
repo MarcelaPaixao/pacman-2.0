@@ -16,11 +16,6 @@ tMapa* CriaMapa(const char* caminhoConfig) {
     FILE *arq_mapa;
     char nome_mapa[1000];
 
-    if (caminhoConfig == NULL) {
-        printf("ERRO: O diretorio de arquivos de configuracao nao foi informado\n");
-        return NULL;
-    }
-
     sprintf(nome_mapa, "%s/mapa.txt", caminhoConfig);
     arq_mapa = fopen(nome_mapa, "r");
 

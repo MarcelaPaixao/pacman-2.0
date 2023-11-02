@@ -1,15 +1,26 @@
-==47442== Memcheck, a memory error detector
-==47442== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
-==47442== Using Valgrind-3.18.1 and LibVEX; rerun with -h for copyright info
-==47442== Command: Resultados/Marcela/main/prog Resultados/Marcela/main/Casos/12
-==47442== Parent PID: 47441
-==47442== 
-==47442== 
-==47442== HEAP SUMMARY:
-==47442==     in use at exit: 0 bytes in 0 blocks
-==47442==   total heap usage: 0 allocs, 0 frees, 0 bytes allocated
-==47442== 
-==47442== All heap blocks were freed -- no leaks are possible
-==47442== 
-==47442== For lists of detected and suppressed errors, rerun with: -s
-==47442== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+==162336== Memcheck, a memory error detector
+==162336== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==162336== Using Valgrind-3.18.1 and LibVEX; rerun with -h for copyright info
+==162336== Command: Resultados/Marcela/main/prog Resultados/Marcela/main/Casos/12
+==162336== Parent PID: 162335
+==162336== 
+==162336== 
+==162336== HEAP SUMMARY:
+==162336==     in use at exit: 68 bytes in 2 blocks
+==162336==   total heap usage: 519 allocs, 517 frees, 35,918 bytes allocated
+==162336== 
+==162336== 68 (8 direct, 60 indirect) bytes in 1 blocks are definitely lost in loss record 2 of 2
+==162336==    at 0x4848899: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==162336==    by 0x10B4BE: ClonaHistoricoDeMovimentosSignificativosPacman (in /home/marcela_paixao/trab/Resultados/Marcela/main/prog)
+==162336==    by 0x109ABD: GeraResumo (in /home/marcela_paixao/trab/Resultados/Marcela/main/prog)
+==162336==    by 0x109614: main (in /home/marcela_paixao/trab/Resultados/Marcela/main/prog)
+==162336== 
+==162336== LEAK SUMMARY:
+==162336==    definitely lost: 8 bytes in 1 blocks
+==162336==    indirectly lost: 60 bytes in 1 blocks
+==162336==      possibly lost: 0 bytes in 0 blocks
+==162336==    still reachable: 0 bytes in 0 blocks
+==162336==         suppressed: 0 bytes in 0 blocks
+==162336== 
+==162336== For lists of detected and suppressed errors, rerun with: -s
+==162336== ERROR SUMMARY: 1 errors from 1 contexts (suppressed: 0 from 0)

@@ -1,15 +1,26 @@
-==43237== Memcheck, a memory error detector
-==43237== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
-==43237== Using Valgrind-3.18.1 and LibVEX; rerun with -h for copyright info
-==43237== Command: Resultados/Marcela/completo/prog Resultados/Marcela/completo/Casos/12
-==43237== Parent PID: 43236
-==43237== 
-==43237== 
-==43237== HEAP SUMMARY:
-==43237==     in use at exit: 0 bytes in 0 blocks
-==43237==   total heap usage: 0 allocs, 0 frees, 0 bytes allocated
-==43237== 
-==43237== All heap blocks were freed -- no leaks are possible
-==43237== 
-==43237== For lists of detected and suppressed errors, rerun with: -s
-==43237== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+==150415== Memcheck, a memory error detector
+==150415== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==150415== Using Valgrind-3.18.1 and LibVEX; rerun with -h for copyright info
+==150415== Command: Resultados/Marcela/completo/prog Resultados/Marcela/completo/Casos/12
+==150415== Parent PID: 150414
+==150415== 
+==150415== 
+==150415== HEAP SUMMARY:
+==150415==     in use at exit: 68 bytes in 2 blocks
+==150415==   total heap usage: 166 allocs, 164 frees, 31,695 bytes allocated
+==150415== 
+==150415== 68 (8 direct, 60 indirect) bytes in 1 blocks are definitely lost in loss record 2 of 2
+==150415==    at 0x4848899: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==150415==    by 0x10B105: ClonaHistoricoDeMovimentosSignificativosPacman (in /home/marcela_paixao/trab/Resultados/Marcela/completo/prog)
+==150415==    by 0x109A7D: GeraResumo (in /home/marcela_paixao/trab/Resultados/Marcela/completo/prog)
+==150415==    by 0x1095D4: main (in /home/marcela_paixao/trab/Resultados/Marcela/completo/prog)
+==150415== 
+==150415== LEAK SUMMARY:
+==150415==    definitely lost: 8 bytes in 1 blocks
+==150415==    indirectly lost: 60 bytes in 1 blocks
+==150415==      possibly lost: 0 bytes in 0 blocks
+==150415==    still reachable: 0 bytes in 0 blocks
+==150415==         suppressed: 0 bytes in 0 blocks
+==150415== 
+==150415== For lists of detected and suppressed errors, rerun with: -s
+==150415== ERROR SUMMARY: 1 errors from 1 contexts (suppressed: 0 from 0)

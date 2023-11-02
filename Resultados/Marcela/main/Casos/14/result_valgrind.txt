@@ -1,15 +1,41 @@
-==47725== Memcheck, a memory error detector
-==47725== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
-==47725== Using Valgrind-3.18.1 and LibVEX; rerun with -h for copyright info
-==47725== Command: Resultados/Marcela/main/prog Resultados/Marcela/main/Casos/14
-==47725== Parent PID: 47724
-==47725== 
-==47725== 
-==47725== HEAP SUMMARY:
-==47725==     in use at exit: 0 bytes in 0 blocks
-==47725==   total heap usage: 0 allocs, 0 frees, 0 bytes allocated
-==47725== 
-==47725== All heap blocks were freed -- no leaks are possible
-==47725== 
-==47725== For lists of detected and suppressed errors, rerun with: -s
-==47725== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+==162765== Memcheck, a memory error detector
+==162765== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==162765== Using Valgrind-3.18.1 and LibVEX; rerun with -h for copyright info
+==162765== Command: Resultados/Marcela/main/prog Resultados/Marcela/main/Casos/14
+==162765== Parent PID: 162764
+==162765== 
+==162765== Invalid read of size 4
+==162765==    at 0x10BD19: SaoIguaisPosicao (in /home/marcela_paixao/trab/Resultados/Marcela/main/prog)
+==162765==    by 0x109FBF: VerificaSeMatouPacmanFantasma (in /home/marcela_paixao/trab/Resultados/Marcela/main/prog)
+==162765==    by 0x10A383: ExecutaJogada (in /home/marcela_paixao/trab/Resultados/Marcela/main/prog)
+==162765==    by 0x10952B: main (in /home/marcela_paixao/trab/Resultados/Marcela/main/prog)
+==162765==  Address 0x0 is not stack'd, malloc'd or (recently) free'd
+==162765== 
+==162765== 
+==162765== Process terminating with default action of signal 11 (SIGSEGV)
+==162765==  Access not within mapped region at address 0x0
+==162765==    at 0x10BD19: SaoIguaisPosicao (in /home/marcela_paixao/trab/Resultados/Marcela/main/prog)
+==162765==    by 0x109FBF: VerificaSeMatouPacmanFantasma (in /home/marcela_paixao/trab/Resultados/Marcela/main/prog)
+==162765==    by 0x10A383: ExecutaJogada (in /home/marcela_paixao/trab/Resultados/Marcela/main/prog)
+==162765==    by 0x10952B: main (in /home/marcela_paixao/trab/Resultados/Marcela/main/prog)
+==162765==  If you believe this happened as a result of a stack
+==162765==  overflow in your program's main thread (unlikely but
+==162765==  possible), you can try to increase the size of the
+==162765==  main thread stack using the --main-stacksize= flag.
+==162765==  The main thread stack size used in this run was 8388608.
+==162765== 
+==162765== HEAP SUMMARY:
+==162765==     in use at exit: 10,300 bytes in 49 blocks
+==162765==   total heap usage: 375 allocs, 326 frees, 23,205 bytes allocated
+==162765== 
+==162765== LEAK SUMMARY:
+==162765==    definitely lost: 0 bytes in 0 blocks
+==162765==    indirectly lost: 0 bytes in 0 blocks
+==162765==      possibly lost: 0 bytes in 0 blocks
+==162765==    still reachable: 10,300 bytes in 49 blocks
+==162765==         suppressed: 0 bytes in 0 blocks
+==162765== Reachable blocks (those to which a pointer was found) are not shown.
+==162765== To see them, rerun with: --leak-check=full --show-leak-kinds=all
+==162765== 
+==162765== For lists of detected and suppressed errors, rerun with: -s
+==162765== ERROR SUMMARY: 1 errors from 1 contexts (suppressed: 0 from 0)

@@ -1,15 +1,121 @@
-==49584== Memcheck, a memory error detector
-==49584== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
-==49584== Using Valgrind-3.18.1 and LibVEX; rerun with -h for copyright info
-==49584== Command: Resultados/Marcela/main/prog Resultados/Marcela/main/Casos/27
-==49584== Parent PID: 49583
-==49584== 
-==49584== 
-==49584== HEAP SUMMARY:
-==49584==     in use at exit: 0 bytes in 0 blocks
-==49584==   total heap usage: 0 allocs, 0 frees, 0 bytes allocated
-==49584== 
-==49584== All heap blocks were freed -- no leaks are possible
-==49584== 
-==49584== For lists of detected and suppressed errors, rerun with: -s
-==49584== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+==169828== Memcheck, a memory error detector
+==169828== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==169828== Using Valgrind-3.18.1 and LibVEX; rerun with -h for copyright info
+==169828== Command: Resultados/Marcela/main/prog Resultados/Marcela/main/Casos/27
+==169828== Parent PID: 169827
+==169828== 
+==169828== Conditional jump or move depends on uninitialised value(s)
+==169828==    at 0x10B640: MovePacman (in /home/marcela_paixao/trab/Resultados/Marcela/main/prog)
+==169828==    by 0x10A2BD: ExecutaJogada (in /home/marcela_paixao/trab/Resultados/Marcela/main/prog)
+==169828==    by 0x10952B: main (in /home/marcela_paixao/trab/Resultados/Marcela/main/prog)
+==169828== 
+==169828== Conditional jump or move depends on uninitialised value(s)
+==169828==    at 0x10B646: MovePacman (in /home/marcela_paixao/trab/Resultados/Marcela/main/prog)
+==169828==    by 0x10A2BD: ExecutaJogada (in /home/marcela_paixao/trab/Resultados/Marcela/main/prog)
+==169828==    by 0x10952B: main (in /home/marcela_paixao/trab/Resultados/Marcela/main/prog)
+==169828== 
+==169828== Conditional jump or move depends on uninitialised value(s)
+==169828==    at 0x10B64C: MovePacman (in /home/marcela_paixao/trab/Resultados/Marcela/main/prog)
+==169828==    by 0x10A2BD: ExecutaJogada (in /home/marcela_paixao/trab/Resultados/Marcela/main/prog)
+==169828==    by 0x10952B: main (in /home/marcela_paixao/trab/Resultados/Marcela/main/prog)
+==169828== 
+==169828== Conditional jump or move depends on uninitialised value(s)
+==169828==    at 0x10B652: MovePacman (in /home/marcela_paixao/trab/Resultados/Marcela/main/prog)
+==169828==    by 0x10A2BD: ExecutaJogada (in /home/marcela_paixao/trab/Resultados/Marcela/main/prog)
+==169828==    by 0x10952B: main (in /home/marcela_paixao/trab/Resultados/Marcela/main/prog)
+==169828== 
+==169828== Conditional jump or move depends on uninitialised value(s)
+==169828==    at 0x10B658: MovePacman (in /home/marcela_paixao/trab/Resultados/Marcela/main/prog)
+==169828==    by 0x10A2BD: ExecutaJogada (in /home/marcela_paixao/trab/Resultados/Marcela/main/prog)
+==169828==    by 0x10952B: main (in /home/marcela_paixao/trab/Resultados/Marcela/main/prog)
+==169828== 
+==169828== Conditional jump or move depends on uninitialised value(s)
+==169828==    at 0x10B88D: MovePacman (in /home/marcela_paixao/trab/Resultados/Marcela/main/prog)
+==169828==    by 0x10A2BD: ExecutaJogada (in /home/marcela_paixao/trab/Resultados/Marcela/main/prog)
+==169828==    by 0x10952B: main (in /home/marcela_paixao/trab/Resultados/Marcela/main/prog)
+==169828== 
+==169828== Conditional jump or move depends on uninitialised value(s)
+==169828==    at 0x10B893: MovePacman (in /home/marcela_paixao/trab/Resultados/Marcela/main/prog)
+==169828==    by 0x10A2BD: ExecutaJogada (in /home/marcela_paixao/trab/Resultados/Marcela/main/prog)
+==169828==    by 0x10952B: main (in /home/marcela_paixao/trab/Resultados/Marcela/main/prog)
+==169828== 
+==169828== Conditional jump or move depends on uninitialised value(s)
+==169828==    at 0x10B899: MovePacman (in /home/marcela_paixao/trab/Resultados/Marcela/main/prog)
+==169828==    by 0x10A2BD: ExecutaJogada (in /home/marcela_paixao/trab/Resultados/Marcela/main/prog)
+==169828==    by 0x10952B: main (in /home/marcela_paixao/trab/Resultados/Marcela/main/prog)
+==169828== 
+==169828== Conditional jump or move depends on uninitialised value(s)
+==169828==    at 0x10B89F: MovePacman (in /home/marcela_paixao/trab/Resultados/Marcela/main/prog)
+==169828==    by 0x10A2BD: ExecutaJogada (in /home/marcela_paixao/trab/Resultados/Marcela/main/prog)
+==169828==    by 0x10952B: main (in /home/marcela_paixao/trab/Resultados/Marcela/main/prog)
+==169828== 
+==169828== Conditional jump or move depends on uninitialised value(s)
+==169828==    at 0x10B8A5: MovePacman (in /home/marcela_paixao/trab/Resultados/Marcela/main/prog)
+==169828==    by 0x10A2BD: ExecutaJogada (in /home/marcela_paixao/trab/Resultados/Marcela/main/prog)
+==169828==    by 0x10952B: main (in /home/marcela_paixao/trab/Resultados/Marcela/main/prog)
+==169828== 
+==169828== Syscall param write(buf) points to uninitialised byte(s)
+==169828==    at 0x4974A77: write (write.c:26)
+==169828==    by 0x48EAEEC: _IO_file_write@@GLIBC_2.2.5 (fileops.c:1180)
+==169828==    by 0x48EC9E0: new_do_write (fileops.c:448)
+==169828==    by 0x48EC9E0: _IO_new_do_write (fileops.c:425)
+==169828==    by 0x48EC9E0: _IO_do_write@@GLIBC_2.2.5 (fileops.c:422)
+==169828==    by 0x48ECF4A: _IO_file_overflow@@GLIBC_2.2.5 (fileops.c:778)
+==169828==    by 0x48E29F6: putchar (putchar.c:28)
+==169828==    by 0x10A494: ImprimeMapaJogo (in /home/marcela_paixao/trab/Resultados/Marcela/main/prog)
+==169828==    by 0x10A50C: ImprimeEstadoAtualJogo (in /home/marcela_paixao/trab/Resultados/Marcela/main/prog)
+==169828==    by 0x109543: main (in /home/marcela_paixao/trab/Resultados/Marcela/main/prog)
+==169828==  Address 0x4a9762d is 2,909 bytes inside a block of size 4,096 alloc'd
+==169828==    at 0x4848899: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==169828==    by 0x48DEBA3: _IO_file_doallocate (filedoalloc.c:101)
+==169828==    by 0x48EDCDF: _IO_doallocbuf (genops.c:347)
+==169828==    by 0x48ECF5F: _IO_file_overflow@@GLIBC_2.2.5 (fileops.c:744)
+==169828==    by 0x48E29F6: putchar (putchar.c:28)
+==169828==    by 0x10A494: ImprimeMapaJogo (in /home/marcela_paixao/trab/Resultados/Marcela/main/prog)
+==169828==    by 0x10970C: GeraInicializacao (in /home/marcela_paixao/trab/Resultados/Marcela/main/prog)
+==169828==    by 0x109503: main (in /home/marcela_paixao/trab/Resultados/Marcela/main/prog)
+==169828== 
+==169828== Syscall param write(buf) points to uninitialised byte(s)
+==169828==    at 0x4974A77: write (write.c:26)
+==169828==    by 0x48EAEEC: _IO_file_write@@GLIBC_2.2.5 (fileops.c:1180)
+==169828==    by 0x48EC9E0: new_do_write (fileops.c:448)
+==169828==    by 0x48EC9E0: _IO_new_do_write (fileops.c:425)
+==169828==    by 0x48EC9E0: _IO_do_write@@GLIBC_2.2.5 (fileops.c:422)
+==169828==    by 0x48EB6D4: _IO_new_file_xsputn (fileops.c:1243)
+==169828==    by 0x48EB6D4: _IO_file_xsputn@@GLIBC_2.2.5 (fileops.c:1196)
+==169828==    by 0x48D514C: outstring_func (vfprintf-internal.c:239)
+==169828==    by 0x48D514C: __vfprintf_internal (vfprintf-internal.c:1263)
+==169828==    by 0x48C079E: printf (printf.c:33)
+==169828==    by 0x10A531: ImprimeEstadoAtualJogo (in /home/marcela_paixao/trab/Resultados/Marcela/main/prog)
+==169828==    by 0x109543: main (in /home/marcela_paixao/trab/Resultados/Marcela/main/prog)
+==169828==  Address 0x4a96c41 is 369 bytes inside a block of size 4,096 alloc'd
+==169828==    at 0x4848899: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==169828==    by 0x48DEBA3: _IO_file_doallocate (filedoalloc.c:101)
+==169828==    by 0x48EDCDF: _IO_doallocbuf (genops.c:347)
+==169828==    by 0x48ECF5F: _IO_file_overflow@@GLIBC_2.2.5 (fileops.c:744)
+==169828==    by 0x48E29F6: putchar (putchar.c:28)
+==169828==    by 0x10A494: ImprimeMapaJogo (in /home/marcela_paixao/trab/Resultados/Marcela/main/prog)
+==169828==    by 0x10970C: GeraInicializacao (in /home/marcela_paixao/trab/Resultados/Marcela/main/prog)
+==169828==    by 0x109503: main (in /home/marcela_paixao/trab/Resultados/Marcela/main/prog)
+==169828== 
+==169828== 
+==169828== HEAP SUMMARY:
+==169828==     in use at exit: 22,440 bytes in 331 blocks
+==169828==   total heap usage: 5,242 allocs, 4,911 frees, 544,700 bytes allocated
+==169828== 
+==169828== 22,440 (2,640 direct, 19,800 indirect) bytes in 1 blocks are definitely lost in loss record 2 of 2
+==169828==    at 0x4848899: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==169828==    by 0x10B4BE: ClonaHistoricoDeMovimentosSignificativosPacman (in /home/marcela_paixao/trab/Resultados/Marcela/main/prog)
+==169828==    by 0x109ABD: GeraResumo (in /home/marcela_paixao/trab/Resultados/Marcela/main/prog)
+==169828==    by 0x109614: main (in /home/marcela_paixao/trab/Resultados/Marcela/main/prog)
+==169828== 
+==169828== LEAK SUMMARY:
+==169828==    definitely lost: 2,640 bytes in 1 blocks
+==169828==    indirectly lost: 19,800 bytes in 330 blocks
+==169828==      possibly lost: 0 bytes in 0 blocks
+==169828==    still reachable: 0 bytes in 0 blocks
+==169828==         suppressed: 0 bytes in 0 blocks
+==169828== 
+==169828== Use --track-origins=yes to see where uninitialised values come from
+==169828== For lists of detected and suppressed errors, rerun with: -s
+==169828== ERROR SUMMARY: 3353 errors from 13 contexts (suppressed: 0 from 0)
