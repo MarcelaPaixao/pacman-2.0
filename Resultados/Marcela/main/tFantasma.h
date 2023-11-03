@@ -38,10 +38,10 @@ void InverteDirecaoFant(tFantasma* fantasma);
  * \param fantasma fantasma
  * \param mapa o mapa que contem os fantasmas
  */
-void MoveFantasma(tFantasma* fantasma, tMapa* mapa);
+void MoveFantasma(tFantasma* fantasma, tMapa* mapa, tPacman* pacman, tPosicao* posAntigaPacman, COMANDO comando);
 
 
-void VerificaSeMatouPacmanFantasma(tFantasma* fantasma, tPacman* pacman, tPosicao* posAntigaPacman);
+void VerificaSeMatouPacmanFantasma(tMapa* mapa, tFantasma* fantasma, tPacman* pacman, tPosicao* posAntigaPacman);
 
 /**
  * Caso o fantasma seja diferente de NULL, libera o espaço 

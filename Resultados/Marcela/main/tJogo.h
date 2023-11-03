@@ -30,8 +30,6 @@ bool EhGameOver(tJogo* jogo);
 
 bool GanhouJogo(tJogo* jogo);
 
-void ImprimeMapaJogo(tJogo* jogo);
-
 void ImprimeEstadoAtualJogo(tJogo* jogo, char direcao);
 
 void DesalocaJogo(tJogo* jogo);

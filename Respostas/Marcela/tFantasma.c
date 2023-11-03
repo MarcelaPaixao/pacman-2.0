@@ -1,5 +1,9 @@
 #include "tFantasma.h"
 
+#define PAC '>'
+#define COMIDA '*'
+#define VAZIO ' '
+
 /**
  * Cria o fantasma dinamicamente. Caso dê erro na alocação da estrutura tFantasma, 
  * retorna NULL. 
@@ -51,7 +55,7 @@ void InverteDirecaoFant(tFantasma* fantasma){
  * \param fantasma fantasma
  * \param mapa o mapa que contem os fantasmas
  */
-void MoveFantasma(tFantasma* fantasma, tMapa* mapa){
+void MoveFantasma(tFantasma* fantasma, tMapa* mapa, tPacman* pacman, tPosicao* posAntigaPacman, COMANDO comando){
     if(fantasma->existe){
         int lin = ObtemLinhaPosicao(fantasma->posicaoAtualFant);
         int col = ObtemColunaPosicao(fantasma->posicaoAtualFant);
@@ -63,7 +67,25 @@ void MoveFantasma(tFantasma* fantasma, tMapa* mapa){
         AtualizaPosicao(fantasma->posicaoAntigaFant, fantasma->posicaoAtualFant);
 
         if(fantasma->tocaFruta){
-            AtualizaItemMapa(mapa, fantasma->posicaoAntigaFant, '*');
+            if(SaoIguaisPosicao(ObtemPosicaoPacman(pacman), fantasma->posicaoAntigaFant)){
+                AtualizaItemMapa(mapa, fantasma->posicaoAntigaFant, PAC);
+                InsereNovoMovimentoSignificativoPacman(pacman, comando, "pegou comida");
+                if(comando == MOV_ESQUERDA){
+                    pacman->nFrutasComidasEsquerda++;
+                }
+                if(comando == MOV_DIREITA){
+                    pacman->nFrutasComidasDireita++;
+                }
+                if(comando == MOV_BAIXO){
+                    pacman->nFrutasComidasBaixo++;
+                }
+                if(comando == MOV_CIMA){
+                    pacman->nFrutasComidasCima++;
+                }
+            }
+            else {
+                AtualizaItemMapa(mapa, fantasma->posicaoAntigaFant, COMIDA);
+            }
             fantasma->tocaFruta = 0;
             jaAtualizouMapa = 1;
         }
@@ -100,9 +122,9 @@ void MoveFantasma(tFantasma* fantasma, tMapa* mapa){
         }
 
         AtualizaItemMapa(mapa, PosicaoFinal, fantasma->tipo);
-
+    
         if(!jaAtualizouMapa){
-            AtualizaItemMapa(mapa, fantasma->posicaoAntigaFant, ' ');
+            AtualizaItemMapa(mapa, fantasma->posicaoAntigaFant, VAZIO);
         }
     
         AtualizaPosicao(fantasma->posicaoAtualFant, PosicaoFinal);
@@ -117,7 +139,7 @@ void MoveFantasma(tFantasma* fantasma, tMapa* mapa){
 }
 
 
-void VerificaSeMatouPacmanFantasma(tFantasma* fantasma, tPacman* pacman, tPosicao* posAntigaPacman){ 
+void VerificaSeMatouPacmanFantasma(tMapa* mapa, tFantasma* fantasma, tPacman* pacman, tPosicao* posAntigaPacman){ 
     if(fantasma->existe){
         if(SaoIguaisPosicao(ObtemPosicaoPacman(pacman), fantasma->posicaoAtualFant)){
             MataPacman(pacman);
@@ -125,6 +147,10 @@ void VerificaSeMatouPacmanFantasma(tFantasma* fantasma, tPacman* pacman, tPosica
         if(SaoIguaisPosicao(posAntigaPacman, fantasma->posicaoAtualFant) && 
             SaoIguaisPosicao(ObtemPosicaoPacman(pacman), fantasma->posicaoAntigaFant)){
             MataPacman(pacman);
+        }
+        if(!SaoIguaisPosicao(posAntigaPacman, fantasma->posicaoAtualFant) && 
+            SaoIguaisPosicao(ObtemPosicaoPacman(pacman), fantasma->posicaoAntigaFant)){
+            AtualizaItemMapa(mapa, ObtemPosicaoPacman(pacman), '>');
         }
     }
 }

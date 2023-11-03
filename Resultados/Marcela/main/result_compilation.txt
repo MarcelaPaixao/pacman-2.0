@@ -1,0 +1,14 @@
+tArquivo.c: In function ‘GeraRanking’:
+tArquivo.c:82:66: warning: suggest parentheses around ‘&&’ within ‘||’ [-Wparentheses]
+   82 |                                 mov[j].frutas == mov[max].frutas && mov[j].colisoes < mov[max].colisoes ||
+      |                                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+tArquivo.c:84:33: warning: suggest parentheses around ‘&&’ within ‘||’ [-Wparentheses]
+   83 |                                 mov[j].frutas == mov[max].frutas && mov[j].colisoes == mov[max].colisoes
+      |                                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   84 |                                 && mov[j].usos > mov[max].usos ||
+      |                                 ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+tArquivo.c:86:65: warning: suggest parentheses around ‘&&’ within ‘||’ [-Wparentheses]
+   85 |                                 mov[j].frutas == mov[max].frutas && mov[j].colisoes == mov[max].colisoes
+      |                                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   86 |                                 && mov[j].usos == mov[max].usos && mov[j].tipo < mov[max].tipo) {
+      |                                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~

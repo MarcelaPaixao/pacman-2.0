@@ -6,6 +6,13 @@
 #include <stdbool.h>
 #include "tJogo.h"
 
+typedef struct {
+    int frutas;
+    int colisoes;
+    int usos;
+    char tipo;
+} tComandos;
+
 void GeraInicializacao(tJogo* jogo);
 
 void GeraTrilha(tJogo* jogo);

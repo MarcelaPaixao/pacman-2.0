@@ -9,13 +9,13 @@ void GeraInicializacao(tJogo* jogo){
     int lin = ObtemLinhaPosicao(ObtemPosicaoPacman(ObtemPacman(jogo)));
     int col = ObtemColunaPosicao(ObtemPosicaoPacman(ObtemPacman(jogo)));
 
-    //ImprimeMapaJogo(jogo);
     for (int i=0; i < ObtemNumeroLinhasMapa(jogo->mapa); i++) {
 		for (int j=0; j < ObtemNumeroColunasMapa(jogo->mapa); j++) {
-			printf("%c", jogo->mapa->grid[i][j]);
+			fprintf(inicializacao, "%c", jogo->mapa->grid[i][j]);
 		}
-		printf("\n");
+		fprintf(inicializacao, "\n");
 	}
+    
     fprintf(inicializacao, "Pac-Man comecara o jogo na linha %d e coluna %d\n",
 			lin + 1, col + 1);
 
@@ -49,7 +49,57 @@ void GeraRanking(tJogo* jogo){
     sprintf(diretRanking, "ranking.txt"); 
     ranking = fopen( diretRanking, "w");
 
+    tComandos mov[4], aux;
+    mov[0].frutas = ObtemNumeroFrutasComidasEsquerdaPacman(ObtemPacman(jogo));
+    mov[0].colisoes = ObtemNumeroColisoesParedeEsquerdaPacman(ObtemPacman(jogo));
+    mov[0].usos = ObtemNumeroMovimentosEsquerdaPacman(ObtemPacman(jogo));
+    mov[0].tipo = 'a';
+    
+    mov[1].frutas = ObtemNumeroFrutasComidasCimaPacman(ObtemPacman(jogo));
+    mov[1].colisoes = ObtemNumeroColisoesParedeCimaPacman(ObtemPacman(jogo));
+    mov[1].usos = ObtemNumeroMovimentosCimaPacman(ObtemPacman(jogo));
+    mov[1].tipo = 'w';
 
+    mov[2].frutas = ObtemNumeroFrutasComidasBaixoPacman(ObtemPacman(jogo));
+    mov[2].colisoes = ObtemNumeroColisoesParedeBaixoPacman(ObtemPacman(jogo));
+    mov[2].usos = ObtemNumeroMovimentosBaixoPacman(ObtemPacman(jogo));
+    mov[2].tipo = 's'; 
+
+    mov[3].frutas = ObtemNumeroFrutasComidasDireitaPacman(ObtemPacman(jogo));
+    mov[3].colisoes = ObtemNumeroColisoesParedeDireitaPacman(ObtemPacman(jogo));
+    mov[3].usos = ObtemNumeroMovimentosDireitaPacman(ObtemPacman(jogo));
+    mov[3].tipo = 'd';
+
+    int n=4, max;
+    for (int i = 0; i < n - 1; i++) {
+		max = i;
+		// Procura pelo maior no restante do vetor
+		for (int j = i + 1; j < n; j++) {
+			// Compara os elementos mov[j] e mov[max] de acordo com os critehrios:
+			// maior qtd de comida, menor qtd de colisoes, 
+			// maior qtd de usos e ordem alfabehtica
+			if (mov[j].frutas > mov[max].frutas ||
+				mov[j].frutas == mov[max].frutas && mov[j].colisoes < mov[max].colisoes ||
+				mov[j].frutas == mov[max].frutas && mov[j].colisoes == mov[max].colisoes 
+				&& mov[j].usos > mov[max].usos ||
+				mov[j].frutas == mov[max].frutas && mov[j].colisoes == mov[max].colisoes 
+				&& mov[j].usos == mov[max].usos && mov[j].tipo < mov[max].tipo) {
+					
+			// Atualiza o indice do maior elemento
+			max = j;
+			}
+		}
+		// Faz a troca 
+		aux = mov[i];
+		mov[i] = mov[max];
+		mov[max] = aux;
+	}
+
+	for (int i = 0; i < n; i++) {
+		fprintf(ranking,"%c,%d,%d,%d\n", 
+				mov[i].tipo, mov[i].frutas,
+				mov[i].colisoes, mov[i].usos);
+	}
 
     fclose(ranking);
 }
@@ -63,20 +113,20 @@ void GeraResumo(tJogo* jogo){
     tMovimento **historico = ClonaHistoricoDeMovimentosSignificativosPacman(ObtemPacman(jogo));
 
     for(int i=0; i < ObtemNumeroMovimentosSignificativosPacman(ObtemPacman(jogo)); i++){
-        printf("Movimento %d ", historico[i]->numeroDoMovimento);
+        fprintf(resumo, "Movimento %d ", historico[i]->numeroDoMovimento);
         if(historico[i]->comando == MOV_ESQUERDA){
-            printf("(a) ");
+            fprintf(resumo, "(a) ");
         }
          if(historico[i]->comando == MOV_CIMA){
-            printf("(w) ");
+            fprintf(resumo, "(w) ");
         }
          if(historico[i]->comando == MOV_BAIXO){
-            printf("(s) ");
+            fprintf(resumo, "(s) ");
         }
          if(historico[i]->comando == MOV_DIREITA){
-            printf("(d) ");
+            fprintf(resumo, "(d) ");
         }
-        printf("%s\n", historico[i]->acao);
+        fprintf(resumo, "%s\n", historico[i]->acao);
     }
 
     for(int i=0; i < ObtemNumeroMovimentosSignificativosPacman(ObtemPacman(jogo)); i++){

@@ -55,7 +55,7 @@ int main(int argc, char *argv[]){
         comando = ConverteComando(direcao);
 
         ExecutaJogada(jogo, comando);
-        
+
         ImprimeEstadoAtualJogo(jogo, direcao);
 
         if(EhGameOver(jogo) || GanhouJogo(jogo)){
@@ -66,6 +66,7 @@ int main(int argc, char *argv[]){
             }
             break;
         }
+        scanf("%*c");
     }
     
     GeraTrilha(jogo);

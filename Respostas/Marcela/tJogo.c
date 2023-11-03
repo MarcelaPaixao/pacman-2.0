@@ -20,28 +20,28 @@ tJogo* InicializaJogo(tMapa* mapa){
     return jogo;
 }
 
+void ExecutaJogada(tJogo* jogo, COMANDO comando){
+    tPosicao * posAntigaPac = ClonaPosicao(ObtemPosicaoPacman(jogo->pacman));
+    MovePacman(jogo->pacman, jogo->mapa, comando);
+    MoveFantasma(jogo->fantB, jogo->mapa, jogo->pacman, posAntigaPac, comando);
+    MoveFantasma(jogo->fantC, jogo->mapa, jogo->pacman, posAntigaPac, comando);
+    MoveFantasma(jogo->fantI, jogo->mapa, jogo->pacman, posAntigaPac, comando);
+    MoveFantasma(jogo->fantP, jogo->mapa, jogo->pacman, posAntigaPac, comando);
+
+    VerificaSeMatouPacmanFantasma(jogo->mapa, jogo->fantB, jogo->pacman, posAntigaPac); 
+    VerificaSeMatouPacmanFantasma(jogo->mapa, jogo->fantC, jogo->pacman, posAntigaPac); 
+    VerificaSeMatouPacmanFantasma(jogo->mapa, jogo->fantI, jogo->pacman, posAntigaPac); 
+    VerificaSeMatouPacmanFantasma(jogo->mapa, jogo->fantP, jogo->pacman, posAntigaPac); 
+
+    DesalocaPosicao(posAntigaPac);  
+}
+
 bool GanhouJogo(tJogo* jogo){
     if(ObtemQuantidadeFrutasIniciaisMapa(jogo->mapa) == ObtemPontuacaoAtualPacman(jogo->pacman)){
         jogo->estadoJogo = GANHOU;
         return true;
     }
     return false;
-}
-
-void ExecutaJogada(tJogo* jogo, COMANDO comando){
-    tPosicao * posAntigaPac = ClonaPosicao(ObtemPosicaoPacman(jogo->pacman));
-    MovePacman(jogo->pacman, jogo->mapa, comando);
-    MoveFantasma(jogo->fantB, jogo->mapa);
-    MoveFantasma(jogo->fantC, jogo->mapa);
-    MoveFantasma(jogo->fantI, jogo->mapa);
-    MoveFantasma(jogo->fantP, jogo->mapa);
-
-    VerificaSeMatouPacmanFantasma(jogo->fantB, jogo->pacman, posAntigaPac); 
-    VerificaSeMatouPacmanFantasma(jogo->fantC, jogo->pacman, posAntigaPac); 
-    VerificaSeMatouPacmanFantasma(jogo->fantI, jogo->pacman, posAntigaPac); 
-    VerificaSeMatouPacmanFantasma(jogo->fantP, jogo->pacman, posAntigaPac); 
-
-    DesalocaPosicao(posAntigaPac);  
 }
 
 bool EhGameOver(tJogo* jogo){ 
@@ -57,18 +57,14 @@ bool EhGameOver(tJogo* jogo){
     return false;
 }
 
-void ImprimeMapaJogo(tJogo* jogo){
+void ImprimeEstadoAtualJogo(tJogo* jogo, char direcao){
+    printf("Estado do jogo apos o movimento '%c':\n", direcao);
     for (int i=0; i < ObtemNumeroLinhasMapa(jogo->mapa); i++) {
 		for (int j=0; j < ObtemNumeroColunasMapa(jogo->mapa); j++) {
 			printf("%c", jogo->mapa->grid[i][j]);
 		}
 		printf("\n");
 	}
-}
-
-void ImprimeEstadoAtualJogo(tJogo* jogo, char direcao){
-    printf("Estado do jogo apos o movimento '%c':\n", direcao);
-    ImprimeMapaJogo(jogo);
     printf("Pontuacao: %d\n\n", ObtemPontuacaoAtualPacman(jogo->pacman));
 }
 
