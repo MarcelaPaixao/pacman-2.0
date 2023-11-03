@@ -1,15 +1,16 @@
 #include "tArquivo.h"
 
-void GeraInicializacao(tJogo* jogo, char *diretorio){
+void GeraInicializacao(tJogo* jogo){
     FILE *inicializacao;
     char diretInicializacao[1000];
-    sprintf(diretInicializacao, "%s/inicializacao.txt", diretorio); 
+    sprintf(diretInicializacao, "inicializacao.txt"); 
 	inicializacao = fopen(diretInicializacao, "w");
 
     int lin = ObtemLinhaPosicao(ObtemPosicaoPacman(ObtemPacman(jogo)));
     int col = ObtemColunaPosicao(ObtemPosicaoPacman(ObtemPacman(jogo)));
 
     ImprimeMapaJogo(jogo);
+    
     fprintf(inicializacao, "Pac-Man comecara o jogo na linha %d e coluna %d\n",
 			lin + 1, col + 1);
 
@@ -20,10 +21,10 @@ void GeraTrilha(tJogo* jogo){
     SalvaTrilhaPacman(ObtemPacman(jogo));
 }
 
-void GeraEstatistica(tJogo* jogo, char *diretorio){
+void GeraEstatistica(tJogo* jogo){
     FILE *estatistica;
     char diretEstatistica[1000];
-    sprintf(diretEstatistica, "%s/estatisticas.txt", diretorio); 
+    sprintf(diretEstatistica, "estatisticas.txt"); 
 	estatistica = fopen( diretEstatistica, "w");
 
     fprintf(estatistica,"Numero de movimentos: %d\n", ObtemNumeroAtualMovimentosPacman(ObtemPacman(jogo)));
@@ -37,10 +38,10 @@ void GeraEstatistica(tJogo* jogo, char *diretorio){
     fclose(estatistica);
 }
 
-void GeraRanking(tJogo* jogo, char *diretorio){
+void GeraRanking(tJogo* jogo){
     FILE *ranking;
     char diretRanking[1000];
-    sprintf(diretRanking, "%s/ranking.txt", diretorio); 
+    sprintf(diretRanking, "ranking.txt"); 
     ranking = fopen( diretRanking, "w");
 
 
@@ -48,19 +49,35 @@ void GeraRanking(tJogo* jogo, char *diretorio){
     fclose(ranking);
 }
 
-void GeraResumo(tJogo* jogo, char *diretorio){
+void GeraResumo(tJogo* jogo){
     FILE *resumo;
     char diretResumo[1000];
-    sprintf(diretResumo, "%s/ranking.txt", diretorio); 
+    sprintf(diretResumo, "resumo.txt"); 
     resumo = fopen( diretResumo, "w");
 
     tMovimento **historico = ClonaHistoricoDeMovimentosSignificativosPacman(ObtemPacman(jogo));
 
     for(int i=0; i < ObtemNumeroMovimentosSignificativosPacman(ObtemPacman(jogo)); i++){
         printf("Movimento %d ", historico[i]->numeroDoMovimento);
-        printf("(%c) ", historico[i]->comando);
+        if(historico[i]->comando == MOV_ESQUERDA){
+            printf("(a) ");
+        }
+         if(historico[i]->comando == MOV_CIMA){
+            printf("(w) ");
+        }
+         if(historico[i]->comando == MOV_BAIXO){
+            printf("(s) ");
+        }
+         if(historico[i]->comando == MOV_DIREITA){
+            printf("(d) ");
+        }
         printf("%s\n", historico[i]->acao);
     }
+
+    for(int i=0; i < ObtemNumeroMovimentosSignificativosPacman(ObtemPacman(jogo)); i++){
+        DesalocaMovimento(historico[i]);
+    }
+    free(historico);
 
     fclose(resumo);
 }

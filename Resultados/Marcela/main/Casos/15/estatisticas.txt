@@ -1,7 +1,0 @@
-Numero de movimentos: 423
-Numero de movimentos sem pontuar: 422
-Numero de colisoes com parede: 418
-Numero de movimentos para baixo: 0
-Numero de movimentos para cima: 0
-Numero de movimentos para esquerda: 423
-Numero de movimentos para direita: 0

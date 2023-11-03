@@ -1,41 +1,15 @@
-==147295== Memcheck, a memory error detector
-==147295== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
-==147295== Using Valgrind-3.18.1 and LibVEX; rerun with -h for copyright info
-==147295== Command: Resultados/Marcela/completo/prog Resultados/Marcela/completo/Casos/02
-==147295== Parent PID: 147294
-==147295== 
-==147295== Invalid read of size 4
-==147295==    at 0x10C012: SaoIguaisPosicao (in /home/marcela_paixao/trab/Resultados/Marcela/completo/prog)
-==147295==    by 0x109F7F: VerificaSeMatouPacmanFantasma (in /home/marcela_paixao/trab/Resultados/Marcela/completo/prog)
-==147295==    by 0x10A307: ExecutaJogada (in /home/marcela_paixao/trab/Resultados/Marcela/completo/prog)
-==147295==    by 0x1094EB: main (in /home/marcela_paixao/trab/Resultados/Marcela/completo/prog)
-==147295==  Address 0x0 is not stack'd, malloc'd or (recently) free'd
-==147295== 
-==147295== 
-==147295== Process terminating with default action of signal 11 (SIGSEGV)
-==147295==  Access not within mapped region at address 0x0
-==147295==    at 0x10C012: SaoIguaisPosicao (in /home/marcela_paixao/trab/Resultados/Marcela/completo/prog)
-==147295==    by 0x109F7F: VerificaSeMatouPacmanFantasma (in /home/marcela_paixao/trab/Resultados/Marcela/completo/prog)
-==147295==    by 0x10A307: ExecutaJogada (in /home/marcela_paixao/trab/Resultados/Marcela/completo/prog)
-==147295==    by 0x1094EB: main (in /home/marcela_paixao/trab/Resultados/Marcela/completo/prog)
-==147295==  If you believe this happened as a result of a stack
-==147295==  overflow in your program's main thread (unlikely but
-==147295==  possible), you can try to increase the size of the
-==147295==  main thread stack using the --main-stacksize= flag.
-==147295==  The main thread stack size used in this run was 8388608.
-==147295== 
-==147295== HEAP SUMMARY:
-==147295==     in use at exit: 9,133 bytes in 39 blocks
-==147295==   total heap usage: 64 allocs, 25 frees, 18,633 bytes allocated
-==147295== 
-==147295== LEAK SUMMARY:
-==147295==    definitely lost: 0 bytes in 0 blocks
-==147295==    indirectly lost: 0 bytes in 0 blocks
-==147295==      possibly lost: 0 bytes in 0 blocks
-==147295==    still reachable: 9,133 bytes in 39 blocks
-==147295==         suppressed: 0 bytes in 0 blocks
-==147295== Reachable blocks (those to which a pointer was found) are not shown.
-==147295== To see them, rerun with: --leak-check=full --show-leak-kinds=all
-==147295== 
-==147295== For lists of detected and suppressed errors, rerun with: -s
-==147295== ERROR SUMMARY: 1 errors from 1 contexts (suppressed: 0 from 0)
+==332522== Memcheck, a memory error detector
+==332522== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==332522== Using Valgrind-3.18.1 and LibVEX; rerun with -h for copyright info
+==332522== Command: Resultados/Marcela/completo/prog Resultados/Marcela/completo/Casos/02
+==332522== Parent PID: 332521
+==332522== 
+==332522== 
+==332522== HEAP SUMMARY:
+==332522==     in use at exit: 0 bytes in 0 blocks
+==332522==   total heap usage: 101 allocs, 101 frees, 29,065 bytes allocated
+==332522== 
+==332522== All heap blocks were freed -- no leaks are possible
+==332522== 
+==332522== For lists of detected and suppressed errors, rerun with: -s
+==332522== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)

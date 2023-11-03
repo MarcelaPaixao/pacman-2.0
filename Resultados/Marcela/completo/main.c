@@ -7,10 +7,20 @@
 #define GANHOU 1
 #define PAC_MORREU 2
 
-char LeComandoTeclado(){
-    char comando;
-    scanf("%c", &comando);
-    return comando;
+int ConverteComando(char direcao){
+    if(direcao == 'a'){
+        return MOV_ESQUERDA;
+    }
+    if(direcao == 'w'){
+        return MOV_CIMA;
+    }
+    if(direcao == 's'){
+        return MOV_BAIXO;
+    }
+    if(direcao == 'd'){
+        return MOV_DIREITA;
+    }
+    return -1;
 }
 
 void ImprimeMsg(tJogo *jogo){ 
@@ -26,7 +36,8 @@ void ImprimeMsg(tJogo *jogo){
 int main(int argc, char *argv[]){
     tJogo *jogo = NULL;
     
-	char diretorio[1000], comando;
+	char diretorio[1000], direcao;
+    int comando;
 
 	// Se diretório nao for informado, finaliza o programa
 	if (argc <= 1) {
@@ -37,14 +48,15 @@ int main(int argc, char *argv[]){
 	sprintf(diretorio, "%s", argv[1]);
     jogo = InicializaJogo(CriaMapa(diretorio));
 
-    GeraInicializacao(jogo, diretorio);
+    GeraInicializacao(jogo);
 
     while(1){
-        comando = LeComandoTeclado();
+        scanf("%c", &direcao);
+        comando = ConverteComando(direcao);
 
         ExecutaJogada(jogo, comando);
         
-        ImprimeEstadoAtualJogo(jogo, comando);
+        ImprimeEstadoAtualJogo(jogo, direcao);
 
         if(EhGameOver(jogo) || GanhouJogo(jogo)){
             ImprimeMsg(jogo);
@@ -57,9 +69,9 @@ int main(int argc, char *argv[]){
     }
     
     GeraTrilha(jogo);
-    GeraEstatistica(jogo, diretorio);
-    GeraRanking(jogo, diretorio);
-    GeraResumo(jogo, diretorio);
+    GeraEstatistica(jogo);
+    GeraRanking(jogo);
+    GeraResumo(jogo);
     DesalocaJogo(jogo);
 
     return 0;

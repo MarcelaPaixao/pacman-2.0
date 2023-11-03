@@ -32,7 +32,7 @@ bool GanhouJogo(tJogo* jogo);
 
 void ImprimeMapaJogo(tJogo* jogo);
 
-void ImprimeEstadoAtualJogo(tJogo* jogo, COMANDO comando);
+void ImprimeEstadoAtualJogo(tJogo* jogo, char direcao);
 
 void DesalocaJogo(tJogo* jogo);
 

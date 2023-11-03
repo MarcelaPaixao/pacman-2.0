@@ -6,14 +6,14 @@
 #include <stdbool.h>
 #include "tJogo.h"
 
-void GeraInicializacao(tJogo* jogo, char *diretorio);
+void GeraInicializacao(tJogo* jogo);
 
 void GeraTrilha(tJogo* jogo);
 
-void GeraEstatistica(tJogo* jogo, char *diretorio);
+void GeraEstatistica(tJogo* jogo);
 
-void GeraRanking(tJogo* jogo, char *diretorio);
+void GeraRanking(tJogo* jogo);
 
-void GeraResumo(tJogo* jogo, char *diretorio);
+void GeraResumo(tJogo* jogo);
 
 #endif

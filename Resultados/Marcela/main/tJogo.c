@@ -66,8 +66,8 @@ void ImprimeMapaJogo(tJogo* jogo){
 	}
 }
 
-void ImprimeEstadoAtualJogo(tJogo* jogo, COMANDO comando){
-    printf("Estado do jogo apos o movimento '%c':\n", comando);
+void ImprimeEstadoAtualJogo(tJogo* jogo, char direcao){
+    printf("Estado do jogo apos o movimento '%c':\n", direcao);
     ImprimeMapaJogo(jogo);
     printf("Pontuacao: %d\n\n", ObtemPontuacaoAtualPacman(jogo->pacman));
 }

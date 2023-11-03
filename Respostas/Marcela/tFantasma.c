@@ -118,19 +118,16 @@ void MoveFantasma(tFantasma* fantasma, tMapa* mapa){
 
 
 void VerificaSeMatouPacmanFantasma(tFantasma* fantasma, tPacman* pacman, tPosicao* posAntigaPacman){ 
-    if(SaoIguaisPosicao(ObtemPosicaoPacman(pacman), fantasma->posicaoAtualFant)){
-        MataPacman(pacman);
-    }
-    if(SaoIguaisPosicao(posAntigaPacman, fantasma->posicaoAtualFant) && 
-        SaoIguaisPosicao(ObtemPosicaoPacman(pacman), fantasma->posicaoAntigaFant)){
-        MataPacman(pacman);
+    if(fantasma->existe){
+        if(SaoIguaisPosicao(ObtemPosicaoPacman(pacman), fantasma->posicaoAtualFant)){
+            MataPacman(pacman);
+        }
+        if(SaoIguaisPosicao(posAntigaPacman, fantasma->posicaoAtualFant) && 
+            SaoIguaisPosicao(ObtemPosicaoPacman(pacman), fantasma->posicaoAntigaFant)){
+            MataPacman(pacman);
+        }
     }
 }
-
-/*Função inutil
-void AtualizaPosicaoFantasma(tFantasma* fantasma, tPosicao* posicaoNova){
-    AtualizaPosicao(fantasma->posicaoAtualFant, posicaoNova);
-}*/
 
 /**
  * Caso o fantasma seja diferente de NULL, libera o espaço 

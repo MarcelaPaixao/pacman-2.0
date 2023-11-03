@@ -1,0 +1,74 @@
+#########
+#   * I #
+# ### * #
+#     * #
+# #   #*#
+# ## ## #
+#  #  # #
+#>    C #
+#########
+Estado do jogo apos o movimento 'd':
+#########
+#   *   #
+# ### I #
+#     * #
+# #   #*#
+# ## ## #
+#  #  # #
+# >    C#
+#########
+Pontuacao: 0
+
+Estado do jogo apos o movimento '
+':
+#########
+#   *   #
+# ### * #
+#     I #
+# #   #*#
+# ## ## #
+#  #  # #
+# >   C #
+#########
+Pontuacao: 0
+
+Estado do jogo apos o movimento 'd':
+#########
+#   *   #
+# ### I #
+#     * #
+# #   #*#
+# ## ## #
+#  #  # #
+#  > C  #
+#########
+Pontuacao: 0
+
+Estado do jogo apos o movimento '
+':
+#########
+#   * I #
+# ### * #
+#     * #
+# #   #*#
+# ## ## #
+#  #  # #
+#  >C   #
+#########
+Pontuacao: 0
+
+Estado do jogo apos o movimento 'd':
+#########
+#   *   #
+# ### I #
+#     * #
+# #   #*#
+# ## ## #
+#  #  # #
+#  C    #
+#########
+Pontuacao: 0
+
+Game over!
+Pontuacao final: 0
+Movimento 3 (d) fim de jogo por encostar em um fantasma
