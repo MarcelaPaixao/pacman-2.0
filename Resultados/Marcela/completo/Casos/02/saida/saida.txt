@@ -42,7 +42,7 @@ Estado do jogo apos o movimento 'w':
 # #   #*#
 # ## ## #
 #  #> # #
-#   C   #
+#       #
 #########
 Pontuacao: 0
 
@@ -158,7 +158,7 @@ Estado do jogo apos o movimento 'd':
 #########
 #   *   #
 # ### * #
-#     I>#
+#      >#
 # #   # #
 # ## ## #
 #  #  # #
@@ -193,14 +193,14 @@ Pontuacao: 2
 Estado do jogo apos o movimento 'a':
 #########
 #   *   #
-# ### I #
+# ### > #
 #       #
 # #   # #
 # ## ## #
 #  #  # #
 #  C    #
 #########
-Pontuacao: 3
+Pontuacao: 2
 
 Game over!
-Pontuacao final: 3
+Pontuacao final: 2

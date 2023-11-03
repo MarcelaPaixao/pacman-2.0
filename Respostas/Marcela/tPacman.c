@@ -131,7 +131,6 @@ void MovePacman(tPacman* pacman, tMapa* mapa, COMANDO comando){
             AtualizaPosicao(pacman->posicaoAtual, novaPosicao);
             AtualizaTrilhaPacman(pacman); 
             EntraTunelMapa(mapa, pacman->posicaoAtual);
-            //AtualizaItemMapa(mapa, pacman->posicaoAtual, PAC);
         }
         else {
             if(EncontrouComidaMapa(mapa,novaPosicao)){
@@ -139,7 +138,6 @@ void MovePacman(tPacman* pacman, tMapa* mapa, COMANDO comando){
                 fruta = 1;
             }
             AtualizaItemMapa(mapa, pacman->posicaoAtual, VAZIO);
-            //AtualizaItemMapa(mapa, novaPosicao, PAC);
             AtualizaPosicao(pacman->posicaoAtual, novaPosicao);
         }
     }
@@ -155,7 +153,6 @@ void MovePacman(tPacman* pacman, tMapa* mapa, COMANDO comando){
             AtualizaPosicao(pacman->posicaoAtual, novaPosicao);
             AtualizaTrilhaPacman(pacman); 
             EntraTunelMapa(mapa, pacman->posicaoAtual);
-            //AtualizaItemMapa(mapa, pacman->posicaoAtual, PAC);
         }
         else {
             if(EncontrouComidaMapa(mapa,novaPosicao)){
@@ -163,7 +160,6 @@ void MovePacman(tPacman* pacman, tMapa* mapa, COMANDO comando){
                 fruta = 1;
             }
             AtualizaItemMapa(mapa, pacman->posicaoAtual, VAZIO);
-            //AtualizaItemMapa(mapa, novaPosicao, PAC);
             AtualizaPosicao(pacman->posicaoAtual, novaPosicao);
         }
     }
@@ -179,7 +175,6 @@ void MovePacman(tPacman* pacman, tMapa* mapa, COMANDO comando){
             AtualizaPosicao(pacman->posicaoAtual, novaPosicao);
             AtualizaTrilhaPacman(pacman); 
             EntraTunelMapa(mapa, pacman->posicaoAtual);
-            //AtualizaItemMapa(mapa, pacman->posicaoAtual, PAC);
         }
         else {
             if(EncontrouComidaMapa(mapa,novaPosicao)){
@@ -187,7 +182,6 @@ void MovePacman(tPacman* pacman, tMapa* mapa, COMANDO comando){
                 fruta = 1;
             }
             AtualizaItemMapa(mapa, pacman->posicaoAtual, VAZIO);
-            //AtualizaItemMapa(mapa, novaPosicao, PAC);
             AtualizaPosicao(pacman->posicaoAtual, novaPosicao);            
         }
     }
@@ -203,7 +197,6 @@ void MovePacman(tPacman* pacman, tMapa* mapa, COMANDO comando){
             AtualizaPosicao(pacman->posicaoAtual, novaPosicao);
             AtualizaTrilhaPacman(pacman); 
             EntraTunelMapa(mapa, pacman->posicaoAtual);
-            //AtualizaItemMapa(mapa, pacman->posicaoAtual, PAC);
         }
         else {
             if(EncontrouComidaMapa(mapa,novaPosicao)){
@@ -211,7 +204,6 @@ void MovePacman(tPacman* pacman, tMapa* mapa, COMANDO comando){
                 fruta = 1;
             }
             AtualizaItemMapa(mapa, pacman->posicaoAtual, VAZIO);
-            //AtualizaItemMapa(mapa, novaPosicao, PAC);
             AtualizaPosicao(pacman->posicaoAtual, novaPosicao);
         }
     }
@@ -379,7 +371,6 @@ int ObtemNumeroMovimentosSemPontuarPacman(tPacman* pacman){
     int movSemPontos=0, movPontos=0;
     movPontos = pacman->nFrutasComidasBaixo + pacman->nFrutasComidasCima;
     movPontos += pacman->nFrutasComidasDireita + pacman->nFrutasComidasEsquerda; 
-    // funcao só deve ser usada no final, ent a qtd de mov já vai ser a total
     movSemPontos = ObtemNumeroAtualMovimentosPacman(pacman) - movPontos;
     return movSemPontos;
 }

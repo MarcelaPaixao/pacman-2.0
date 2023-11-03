@@ -18,16 +18,41 @@ tJogo* InicializaJogo(tMapa* mapa){
     jogo->fantP = CriaFantasma(ObtemPosicaoItemMapa(mapa, 'P'), 'P');
     jogo->pacman = CriaPacman(ObtemPosicaoItemMapa(mapa, PACMAN));
     CriaTrilhaPacman(jogo->pacman, ObtemNumeroLinhasMapa(jogo->mapa), ObtemNumeroColunasMapa(jogo->mapa));
+    AtualizaTrilhaPacman(jogo->pacman);
 
     return jogo;
 }
 
+bool VerificaSeAtualiza(tJogo *jogo, tPosicao *posAntigaPac){
+    if(ExisteFantasma(jogo->fantB) && SaoIguaisPosicao(ObtemPosicaoAtualFantasma(jogo->fantB), posAntigaPac)){
+        return false;
+    }
+    if(ExisteFantasma(jogo->fantC) && SaoIguaisPosicao(ObtemPosicaoAtualFantasma(jogo->fantC), posAntigaPac)){
+        return false;
+    }
+    if(ExisteFantasma(jogo->fantI) && SaoIguaisPosicao(ObtemPosicaoAtualFantasma(jogo->fantI), posAntigaPac)){
+        return false;
+    }
+    if(ExisteFantasma(jogo->fantP) && SaoIguaisPosicao(ObtemPosicaoAtualFantasma(jogo->fantP), posAntigaPac)){
+        return false;
+    }
+    return true; 
+}
+
 void ExecutaJogada(tJogo* jogo, COMANDO comando){
     tPosicao * posAntigaPac = ClonaPosicao(ObtemPosicaoPacman(jogo->pacman));
-    
+
+    MoveFantasma(jogo->fantB, jogo->mapa, jogo->pacman, comando);
+    MoveFantasma(jogo->fantC, jogo->mapa, jogo->pacman, comando);
+    MoveFantasma(jogo->fantI, jogo->mapa, jogo->pacman, comando);
+    MoveFantasma(jogo->fantP, jogo->mapa, jogo->pacman, comando);
+
     MovePacman(jogo->pacman, jogo->mapa, comando);
     
-    AtualizaItemMapa(jogo->mapa, posAntigaPac, VAZIO);
+    if(VerificaSeAtualiza(jogo, posAntigaPac)){
+        AtualizaItemMapa(jogo->mapa, posAntigaPac, VAZIO);
+    }
+    
     AtualizaItemMapa(jogo->mapa, ObtemPosicaoPacman(jogo->pacman), PACMAN);
 
     if (PossuiTunelMapa(jogo->mapa)){
@@ -35,11 +60,6 @@ void ExecutaJogada(tJogo* jogo, COMANDO comando){
             AtualizaItemMapa(jogo->mapa, posAntigaPac, TUNEL);
         }
     }
-
-    MoveFantasma(jogo->fantB, jogo->mapa, jogo->pacman, posAntigaPac, comando);
-    MoveFantasma(jogo->fantC, jogo->mapa, jogo->pacman, posAntigaPac, comando);
-    MoveFantasma(jogo->fantI, jogo->mapa, jogo->pacman, posAntigaPac, comando);
-    MoveFantasma(jogo->fantP, jogo->mapa, jogo->pacman, posAntigaPac, comando);
 
     VerificaSeMatouPacmanFantasma(jogo->mapa, jogo->fantB, jogo->pacman, posAntigaPac); 
     VerificaSeMatouPacmanFantasma(jogo->mapa, jogo->fantC, jogo->pacman, posAntigaPac); 

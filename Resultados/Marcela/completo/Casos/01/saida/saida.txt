@@ -554,7 +554,7 @@ Estado do jogo apos o movimento 'w':
 ###############
 #*  * *       #
 #*  ### >   # #
-# #     P   # #
+# #         # #
 #*## ###  # # #
 #  #I*#  ##B  #
 #  *     #  # #
@@ -576,7 +576,7 @@ Pontuacao: 7
 Estado do jogo apos o movimento 'w':
 ###############
 #*  * * >     #
-#*  ### P   # #
+#*  ###     # #
 # #         # #
 #*## ###  # # #
 #  # *#  ## B #
@@ -598,7 +598,7 @@ Pontuacao: 7
 
 Estado do jogo apos o movimento 'a':
 ###############
-#*  * *>P     #
+#*  * *>      #
 #*  ###     # #
 # #         # #
 #*## ###  # # #
@@ -1016,7 +1016,7 @@ Estado do jogo apos o movimento 'd':
 #   ###     # #
 # #         # #
 # ## ###  # # #
-#  #I>#  ##B  #
+#  # >#  ##B  #
 #        #  # #
 #  *#   P   # #
 #   #   # ### #

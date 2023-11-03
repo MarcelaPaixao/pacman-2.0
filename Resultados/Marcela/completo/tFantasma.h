@@ -38,7 +38,7 @@ void InverteDirecaoFant(tFantasma* fantasma);
  * \param fantasma fantasma
  * \param mapa o mapa que contem os fantasmas
  */
-void MoveFantasma(tFantasma* fantasma, tMapa* mapa, tPacman* pacman, tPosicao* posAntigaPacman, COMANDO comando);
+void MoveFantasma(tFantasma* fantasma, tMapa* mapa, tPacman* pacman, COMANDO comando);
 
 
 void VerificaSeMatouPacmanFantasma(tMapa* mapa, tFantasma* fantasma, tPacman* pacman, tPosicao* posAntigaPacman);
@@ -74,6 +74,7 @@ int ObtemDirecaoFantasma(tFantasma* fantasma);
  */
 bool TocouFrutaFantasma(tFantasma* fantasma);
 
+bool ExisteFantasma(tFantasma* fantasma);
 
 /**
  * Retorna a posição atual do fantasma.

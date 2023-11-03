@@ -55,7 +55,7 @@ void InverteDirecaoFant(tFantasma* fantasma){
  * \param fantasma fantasma
  * \param mapa o mapa que contem os fantasmas
  */
-void MoveFantasma(tFantasma* fantasma, tMapa* mapa, tPacman* pacman, tPosicao* posAntigaPacman, COMANDO comando){
+void MoveFantasma(tFantasma* fantasma, tMapa* mapa, tPacman* pacman, COMANDO comando){
     if(fantasma->existe){
         int lin = ObtemLinhaPosicao(fantasma->posicaoAtualFant);
         int col = ObtemColunaPosicao(fantasma->posicaoAtualFant);
@@ -67,25 +67,7 @@ void MoveFantasma(tFantasma* fantasma, tMapa* mapa, tPacman* pacman, tPosicao* p
         AtualizaPosicao(fantasma->posicaoAntigaFant, fantasma->posicaoAtualFant);
 
         if(fantasma->tocaFruta){
-            if(SaoIguaisPosicao(ObtemPosicaoPacman(pacman), fantasma->posicaoAntigaFant)){
-             //   AtualizaItemMapa(mapa, fantasma->posicaoAntigaFant, PAC);
-                InsereNovoMovimentoSignificativoPacman(pacman, comando, "pegou comida");
-               if(comando == MOV_ESQUERDA){
-                   pacman->nFrutasComidasEsquerda++;
-               }
-               if(comando == MOV_DIREITA){
-                   pacman->nFrutasComidasDireita++;
-               }
-               if(comando == MOV_BAIXO){
-                   pacman->nFrutasComidasBaixo++;
-              }
-              if(comando == MOV_CIMA){
-                  pacman->nFrutasComidasCima++;
-             }
-            }
-            else {
-                AtualizaItemMapa(mapa, fantasma->posicaoAntigaFant, COMIDA);
-            }
+            AtualizaItemMapa(mapa, fantasma->posicaoAntigaFant, COMIDA);
             fantasma->tocaFruta = 0;
             jaAtualizouMapa = 1;
         }
@@ -196,6 +178,13 @@ int ObtemDirecaoFantasma(tFantasma* fantasma){
  */
 bool TocouFrutaFantasma(tFantasma* fantasma){
     if(fantasma->tocaFruta){
+        return true;
+    }
+    return false;
+}
+
+bool ExisteFantasma(tFantasma* fantasma){
+    if(fantasma->existe){
         return true;
     }
     return false;

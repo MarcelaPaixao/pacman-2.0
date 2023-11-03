@@ -24,6 +24,8 @@ typedef struct{
 
 tJogo* InicializaJogo(tMapa* mapa);
 
+bool VerificaSeAtualiza(tJogo *jogo, tPosicao *posAntigaPac);
+
 void ExecutaJogada(tJogo* jogo, COMANDO comando);
 
 bool EhGameOver(tJogo* jogo);

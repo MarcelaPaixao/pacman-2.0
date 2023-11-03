@@ -1,15 +1,15 @@
-==206370== Memcheck, a memory error detector
-==206370== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
-==206370== Using Valgrind-3.18.1 and LibVEX; rerun with -h for copyright info
-==206370== Command: Resultados/Marcela/tMapa/prog Resultados/Marcela/tMapa/Casos/03
-==206370== Parent PID: 206369
-==206370== 
-==206370== 
-==206370== HEAP SUMMARY:
-==206370==     in use at exit: 0 bytes in 0 blocks
-==206370==   total heap usage: 1,317,535 allocs, 1,317,535 frees, 10,886,110 bytes allocated
-==206370== 
-==206370== All heap blocks were freed -- no leaks are possible
-==206370== 
-==206370== For lists of detected and suppressed errors, rerun with: -s
-==206370== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+==365375== Memcheck, a memory error detector
+==365375== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==365375== Using Valgrind-3.18.1 and LibVEX; rerun with -h for copyright info
+==365375== Command: Resultados/Marcela/tMapa/prog Resultados/Marcela/tMapa/Casos/03
+==365375== Parent PID: 365374
+==365375== 
+==365375== 
+==365375== HEAP SUMMARY:
+==365375==     in use at exit: 0 bytes in 0 blocks
+==365375==   total heap usage: 1,317,535 allocs, 1,317,535 frees, 10,886,110 bytes allocated
+==365375== 
+==365375== All heap blocks were freed -- no leaks are possible
+==365375== 
+==365375== For lists of detected and suppressed errors, rerun with: -s
+==365375== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
