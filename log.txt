@@ -1640,7 +1640,7 @@ EXECUTANDO O VALGRIND EM CADA CASO:
  - Resultado para o inicializacao.txt: Ok! Peso: 1.0
  - Resultado para o ranking.txt: Ok! Peso: 1.5
  - Resultado para o resumo.txt: Ok! Peso: 1.5
- - Resultado para o saida.txt: Incorreto!
+ - Resultado para o saida.txt: Ok! Peso: 3.0
  - Resultado para o trilha.txt: Incorreto!
  - Pasta completo / Caso 19:
  - Arquivo de output gerado: Resultados/Marcela/completo/Casos/19/result_valgrind.txt.
@@ -1649,7 +1649,7 @@ EXECUTANDO O VALGRIND EM CADA CASO:
  - Resultado para o inicializacao.txt: Ok! Peso: 1.0
  - Resultado para o ranking.txt: Ok! Peso: 1.5
  - Resultado para o resumo.txt: Ok! Peso: 1.5
- - Resultado para o saida.txt: Incorreto!
+ - Resultado para o saida.txt: Ok! Peso: 3.0
  - Resultado para o trilha.txt: Incorreto!
  - Pasta completo / Caso 20:
  - Arquivo de output gerado: Resultados/Marcela/completo/Casos/20/result_valgrind.txt.
@@ -1658,7 +1658,7 @@ EXECUTANDO O VALGRIND EM CADA CASO:
  - Resultado para o inicializacao.txt: Ok! Peso: 1.0
  - Resultado para o ranking.txt: Ok! Peso: 1.5
  - Resultado para o resumo.txt: Ok! Peso: 1.5
- - Resultado para o saida.txt: Incorreto!
+ - Resultado para o saida.txt: Ok! Peso: 3.0
  - Resultado para o trilha.txt: Incorreto!
  - Pasta completo / Caso 21:
  - Arquivo de output gerado: Resultados/Marcela/completo/Casos/21/result_valgrind.txt.
@@ -1667,7 +1667,7 @@ EXECUTANDO O VALGRIND EM CADA CASO:
  - Resultado para o inicializacao.txt: Ok! Peso: 1.0
  - Resultado para o ranking.txt: Ok! Peso: 1.5
  - Resultado para o resumo.txt: Ok! Peso: 1.5
- - Resultado para o saida.txt: Incorreto!
+ - Resultado para o saida.txt: Ok! Peso: 3.0
  - Resultado para o trilha.txt: Ok! Peso: 1.5
  - Pasta completo / Caso 22:
  - Arquivo de output gerado: Resultados/Marcela/completo/Casos/22/result_valgrind.txt.
@@ -1757,7 +1757,7 @@ EXECUTANDO O VALGRIND EM CADA CASO:
  - Resultado para o inicializacao.txt: Ok! Peso: 1.0
  - Resultado para o ranking.txt: Ok! Peso: 1.5
  - Resultado para o resumo.txt: Ok! Peso: 1.5
- - Resultado para o saida.txt: Incorreto!
+ - Resultado para o saida.txt: Ok! Peso: 3.0
  - Resultado para o trilha.txt: Incorreto!
  - Pasta main / Caso 02:
  - Arquivo de output gerado: Resultados/Marcela/main/Casos/02/result_valgrind.txt.
@@ -1766,7 +1766,7 @@ EXECUTANDO O VALGRIND EM CADA CASO:
  - Resultado para o inicializacao.txt: Ok! Peso: 1.0
  - Resultado para o ranking.txt: Ok! Peso: 1.5
  - Resultado para o resumo.txt: Ok! Peso: 1.5
- - Resultado para o saida.txt: Incorreto!
+ - Resultado para o saida.txt: Ok! Peso: 3.0
  - Resultado para o trilha.txt: Incorreto!
  - Pasta main / Caso 03:
  - Arquivo de output gerado: Resultados/Marcela/main/Casos/03/result_valgrind.txt.
@@ -1775,7 +1775,7 @@ EXECUTANDO O VALGRIND EM CADA CASO:
  - Resultado para o inicializacao.txt: Ok! Peso: 1.0
  - Resultado para o ranking.txt: Ok! Peso: 1.5
  - Resultado para o resumo.txt: Ok! Peso: 1.5
- - Resultado para o saida.txt: Incorreto!
+ - Resultado para o saida.txt: Ok! Peso: 3.0
  - Resultado para o trilha.txt: Incorreto!
  - Pasta main / Caso 04:
  - Arquivo de output gerado: Resultados/Marcela/main/Casos/04/result_valgrind.txt.
@@ -1784,7 +1784,7 @@ EXECUTANDO O VALGRIND EM CADA CASO:
  - Resultado para o inicializacao.txt: Ok! Peso: 1.0
  - Resultado para o ranking.txt: Ok! Peso: 1.5
  - Resultado para o resumo.txt: Ok! Peso: 1.5
- - Resultado para o saida.txt: Incorreto!
+ - Resultado para o saida.txt: Ok! Peso: 3.0
  - Resultado para o trilha.txt: Ok! Peso: 1.5
  - Pasta main / Caso 05:
  - Arquivo de output gerado: Resultados/Marcela/main/Casos/05/result_valgrind.txt.
@@ -1793,7 +1793,7 @@ EXECUTANDO O VALGRIND EM CADA CASO:
  - Resultado para o inicializacao.txt: Ok! Peso: 1.0
  - Resultado para o ranking.txt: Ok! Peso: 1.5
  - Resultado para o resumo.txt: Ok! Peso: 1.5
- - Resultado para o saida.txt: Incorreto!
+ - Resultado para o saida.txt: Ok! Peso: 3.0
  - Resultado para o trilha.txt: Ok! Peso: 1.5
  - Pasta main / Caso 06:
  - Arquivo de output gerado: Resultados/Marcela/main/Casos/06/result_valgrind.txt.
@@ -1802,7 +1802,7 @@ EXECUTANDO O VALGRIND EM CADA CASO:
  - Resultado para o inicializacao.txt: Ok! Peso: 1.0
  - Resultado para o ranking.txt: Ok! Peso: 1.5
  - Resultado para o resumo.txt: Ok! Peso: 1.5
- - Resultado para o saida.txt: Incorreto!
+ - Resultado para o saida.txt: Ok! Peso: 3.0
  - Resultado para o trilha.txt: Ok! Peso: 1.5
  - Pasta main / Caso 07:
  - Arquivo de output gerado: Resultados/Marcela/main/Casos/07/result_valgrind.txt.
@@ -1811,7 +1811,7 @@ EXECUTANDO O VALGRIND EM CADA CASO:
  - Resultado para o inicializacao.txt: Ok! Peso: 1.0
  - Resultado para o ranking.txt: Ok! Peso: 1.5
  - Resultado para o resumo.txt: Ok! Peso: 1.5
- - Resultado para o saida.txt: Incorreto!
+ - Resultado para o saida.txt: Ok! Peso: 3.0
  - Resultado para o trilha.txt: Ok! Peso: 1.5
  - Pasta main / Caso 08:
  - Arquivo de output gerado: Resultados/Marcela/main/Casos/08/result_valgrind.txt.
@@ -1820,7 +1820,7 @@ EXECUTANDO O VALGRIND EM CADA CASO:
  - Resultado para o inicializacao.txt: Ok! Peso: 1.0
  - Resultado para o ranking.txt: Ok! Peso: 1.5
  - Resultado para o resumo.txt: Ok! Peso: 1.5
- - Resultado para o saida.txt: Incorreto!
+ - Resultado para o saida.txt: Ok! Peso: 3.0
  - Resultado para o trilha.txt: Ok! Peso: 1.5
  - Pasta main / Caso 09:
  - Arquivo de output gerado: Resultados/Marcela/main/Casos/09/result_valgrind.txt.
@@ -1829,7 +1829,7 @@ EXECUTANDO O VALGRIND EM CADA CASO:
  - Resultado para o inicializacao.txt: Ok! Peso: 1.0
  - Resultado para o ranking.txt: Ok! Peso: 1.5
  - Resultado para o resumo.txt: Ok! Peso: 1.5
- - Resultado para o saida.txt: Incorreto!
+ - Resultado para o saida.txt: Ok! Peso: 3.0
  - Resultado para o trilha.txt: Ok! Peso: 1.5
  - Pasta main / Caso 10:
  - Arquivo de output gerado: Resultados/Marcela/main/Casos/10/result_valgrind.txt.
@@ -1838,7 +1838,7 @@ EXECUTANDO O VALGRIND EM CADA CASO:
  - Resultado para o inicializacao.txt: Ok! Peso: 1.0
  - Resultado para o ranking.txt: Ok! Peso: 1.5
  - Resultado para o resumo.txt: Ok! Peso: 1.5
- - Resultado para o saida.txt: Incorreto!
+ - Resultado para o saida.txt: Ok! Peso: 3.0
  - Resultado para o trilha.txt: Ok! Peso: 1.5
  - Pasta main / Caso 11:
  - Arquivo de output gerado: Resultados/Marcela/main/Casos/11/result_valgrind.txt.
@@ -1847,7 +1847,7 @@ EXECUTANDO O VALGRIND EM CADA CASO:
  - Resultado para o inicializacao.txt: Ok! Peso: 1.0
  - Resultado para o ranking.txt: Ok! Peso: 1.5
  - Resultado para o resumo.txt: Ok! Peso: 1.5
- - Resultado para o saida.txt: Incorreto!
+ - Resultado para o saida.txt: Ok! Peso: 3.0
  - Resultado para o trilha.txt: Ok! Peso: 1.5
  - Pasta main / Caso 12:
  - Arquivo de output gerado: Resultados/Marcela/main/Casos/12/result_valgrind.txt.
@@ -1856,7 +1856,7 @@ EXECUTANDO O VALGRIND EM CADA CASO:
  - Resultado para o inicializacao.txt: Ok! Peso: 1.0
  - Resultado para o ranking.txt: Ok! Peso: 1.5
  - Resultado para o resumo.txt: Ok! Peso: 1.5
- - Resultado para o saida.txt: Incorreto!
+ - Resultado para o saida.txt: Ok! Peso: 3.0
  - Resultado para o trilha.txt: Incorreto!
  - Pasta main / Caso 13:
  - Arquivo de output gerado: Resultados/Marcela/main/Casos/13/result_valgrind.txt.
@@ -1865,7 +1865,7 @@ EXECUTANDO O VALGRIND EM CADA CASO:
  - Resultado para o inicializacao.txt: Ok! Peso: 1.0
  - Resultado para o ranking.txt: Ok! Peso: 1.5
  - Resultado para o resumo.txt: Ok! Peso: 1.5
- - Resultado para o saida.txt: Incorreto!
+ - Resultado para o saida.txt: Ok! Peso: 3.0
  - Resultado para o trilha.txt: Incorreto!
  - Pasta main / Caso 14:
  - Arquivo de output gerado: Resultados/Marcela/main/Casos/14/result_valgrind.txt.
@@ -1874,7 +1874,7 @@ EXECUTANDO O VALGRIND EM CADA CASO:
  - Resultado para o inicializacao.txt: Ok! Peso: 1.0
  - Resultado para o ranking.txt: Ok! Peso: 1.5
  - Resultado para o resumo.txt: Ok! Peso: 1.5
- - Resultado para o saida.txt: Incorreto!
+ - Resultado para o saida.txt: Ok! Peso: 3.0
  - Resultado para o trilha.txt: Ok! Peso: 1.5
  - Pasta main / Caso 15:
  - Arquivo de output gerado: Resultados/Marcela/main/Casos/15/result_valgrind.txt.
@@ -1883,7 +1883,7 @@ EXECUTANDO O VALGRIND EM CADA CASO:
  - Resultado para o inicializacao.txt: Ok! Peso: 1.0
  - Resultado para o ranking.txt: Ok! Peso: 1.5
  - Resultado para o resumo.txt: Ok! Peso: 1.5
- - Resultado para o saida.txt: Incorreto!
+ - Resultado para o saida.txt: Ok! Peso: 3.0
  - Resultado para o trilha.txt: Incorreto!
  - Pasta main / Caso 16:
  - Arquivo de output gerado: Resultados/Marcela/main/Casos/16/result_valgrind.txt.
@@ -1892,7 +1892,7 @@ EXECUTANDO O VALGRIND EM CADA CASO:
  - Resultado para o inicializacao.txt: Ok! Peso: 1.0
  - Resultado para o ranking.txt: Ok! Peso: 1.5
  - Resultado para o resumo.txt: Ok! Peso: 1.5
- - Resultado para o saida.txt: Incorreto!
+ - Resultado para o saida.txt: Ok! Peso: 3.0
  - Resultado para o trilha.txt: Incorreto!
  - Pasta main / Caso 17:
  - Arquivo de output gerado: Resultados/Marcela/main/Casos/17/result_valgrind.txt.
@@ -1910,7 +1910,7 @@ EXECUTANDO O VALGRIND EM CADA CASO:
  - Resultado para o inicializacao.txt: Ok! Peso: 1.0
  - Resultado para o ranking.txt: Ok! Peso: 1.5
  - Resultado para o resumo.txt: Ok! Peso: 1.5
- - Resultado para o saida.txt: Incorreto!
+ - Resultado para o saida.txt: Ok! Peso: 3.0
  - Resultado para o trilha.txt: Incorreto!
  - Pasta main / Caso 19:
  - Arquivo de output gerado: Resultados/Marcela/main/Casos/19/result_valgrind.txt.
@@ -1919,7 +1919,7 @@ EXECUTANDO O VALGRIND EM CADA CASO:
  - Resultado para o inicializacao.txt: Ok! Peso: 1.0
  - Resultado para o ranking.txt: Ok! Peso: 1.5
  - Resultado para o resumo.txt: Ok! Peso: 1.5
- - Resultado para o saida.txt: Incorreto!
+ - Resultado para o saida.txt: Ok! Peso: 3.0
  - Resultado para o trilha.txt: Incorreto!
  - Pasta main / Caso 20:
  - Arquivo de output gerado: Resultados/Marcela/main/Casos/20/result_valgrind.txt.
@@ -1928,7 +1928,7 @@ EXECUTANDO O VALGRIND EM CADA CASO:
  - Resultado para o inicializacao.txt: Ok! Peso: 1.0
  - Resultado para o ranking.txt: Ok! Peso: 1.5
  - Resultado para o resumo.txt: Ok! Peso: 1.5
- - Resultado para o saida.txt: Incorreto!
+ - Resultado para o saida.txt: Ok! Peso: 3.0
  - Resultado para o trilha.txt: Incorreto!
  - Pasta main / Caso 21:
  - Arquivo de output gerado: Resultados/Marcela/main/Casos/21/result_valgrind.txt.
@@ -1937,7 +1937,7 @@ EXECUTANDO O VALGRIND EM CADA CASO:
  - Resultado para o inicializacao.txt: Ok! Peso: 1.0
  - Resultado para o ranking.txt: Ok! Peso: 1.5
  - Resultado para o resumo.txt: Ok! Peso: 1.5
- - Resultado para o saida.txt: Incorreto!
+ - Resultado para o saida.txt: Ok! Peso: 3.0
  - Resultado para o trilha.txt: Ok! Peso: 1.5
  - Pasta main / Caso 22:
  - Arquivo de output gerado: Resultados/Marcela/main/Casos/22/result_valgrind.txt.
@@ -1946,7 +1946,7 @@ EXECUTANDO O VALGRIND EM CADA CASO:
  - Resultado para o inicializacao.txt: Ok! Peso: 1.0
  - Resultado para o ranking.txt: Ok! Peso: 1.5
  - Resultado para o resumo.txt: Ok! Peso: 1.5
- - Resultado para o saida.txt: Incorreto!
+ - Resultado para o saida.txt: Ok! Peso: 3.0
  - Resultado para o trilha.txt: Incorreto!
  - Pasta main / Caso 23:
  - Arquivo de output gerado: Resultados/Marcela/main/Casos/23/result_valgrind.txt.
@@ -1955,7 +1955,7 @@ EXECUTANDO O VALGRIND EM CADA CASO:
  - Resultado para o inicializacao.txt: Ok! Peso: 1.0
  - Resultado para o ranking.txt: Ok! Peso: 1.5
  - Resultado para o resumo.txt: Ok! Peso: 1.5
- - Resultado para o saida.txt: Incorreto!
+ - Resultado para o saida.txt: Ok! Peso: 3.0
  - Resultado para o trilha.txt: Incorreto!
  - Pasta main / Caso 24:
  - Arquivo de output gerado: Resultados/Marcela/main/Casos/24/result_valgrind.txt.
@@ -1964,7 +1964,7 @@ EXECUTANDO O VALGRIND EM CADA CASO:
  - Resultado para o inicializacao.txt: Ok! Peso: 1.0
  - Resultado para o ranking.txt: Ok! Peso: 1.5
  - Resultado para o resumo.txt: Ok! Peso: 1.5
- - Resultado para o saida.txt: Incorreto!
+ - Resultado para o saida.txt: Ok! Peso: 3.0
  - Resultado para o trilha.txt: Incorreto!
  - Pasta main / Caso 25:
  - Arquivo de output gerado: Resultados/Marcela/main/Casos/25/result_valgrind.txt.
@@ -1973,7 +1973,7 @@ EXECUTANDO O VALGRIND EM CADA CASO:
  - Resultado para o inicializacao.txt: Ok! Peso: 1.0
  - Resultado para o ranking.txt: Ok! Peso: 1.5
  - Resultado para o resumo.txt: Ok! Peso: 1.5
- - Resultado para o saida.txt: Incorreto!
+ - Resultado para o saida.txt: Ok! Peso: 3.0
  - Resultado para o trilha.txt: Incorreto!
  - Pasta main / Caso 26:
  - Arquivo de output gerado: Resultados/Marcela/main/Casos/26/result_valgrind.txt.
@@ -1982,7 +1982,7 @@ EXECUTANDO O VALGRIND EM CADA CASO:
  - Resultado para o inicializacao.txt: Ok! Peso: 1.0
  - Resultado para o ranking.txt: Ok! Peso: 1.5
  - Resultado para o resumo.txt: Ok! Peso: 1.5
- - Resultado para o saida.txt: Incorreto!
+ - Resultado para o saida.txt: Ok! Peso: 3.0
  - Resultado para o trilha.txt: Ok! Peso: 1.5
  - Pasta main / Caso 27:
  - Arquivo de output gerado: Resultados/Marcela/main/Casos/27/result_valgrind.txt.
@@ -1991,7 +1991,7 @@ EXECUTANDO O VALGRIND EM CADA CASO:
  - Resultado para o inicializacao.txt: Ok! Peso: 1.0
  - Resultado para o ranking.txt: Ok! Peso: 1.5
  - Resultado para o resumo.txt: Ok! Peso: 1.5
- - Resultado para o saida.txt: Incorreto!
+ - Resultado para o saida.txt: Ok! Peso: 3.0
  - Resultado para o trilha.txt: Incorreto!
  - Pasta main / Caso 28:
  - Arquivo de output gerado: Resultados/Marcela/main/Casos/28/result_valgrind.txt.
@@ -2000,7 +2000,7 @@ EXECUTANDO O VALGRIND EM CADA CASO:
  - Resultado para o inicializacao.txt: Ok! Peso: 1.0
  - Resultado para o ranking.txt: Ok! Peso: 1.5
  - Resultado para o resumo.txt: Ok! Peso: 1.5
- - Resultado para o saida.txt: Incorreto!
+ - Resultado para o saida.txt: Ok! Peso: 3.0
  - Resultado para o trilha.txt: Incorreto!
  - Pasta main / Caso 29:
  - Arquivo de output gerado: Resultados/Marcela/main/Casos/29/result_valgrind.txt.
@@ -2009,7 +2009,7 @@ EXECUTANDO O VALGRIND EM CADA CASO:
  - Resultado para o inicializacao.txt: Ok! Peso: 1.0
  - Resultado para o ranking.txt: Ok! Peso: 1.5
  - Resultado para o resumo.txt: Ok! Peso: 1.5
- - Resultado para o saida.txt: Incorreto!
+ - Resultado para o saida.txt: Ok! Peso: 3.0
  - Resultado para o trilha.txt: Ok! Peso: 1.5
  - Pasta main / Caso 30:
  - Arquivo de output gerado: Resultados/Marcela/main/Casos/30/result_valgrind.txt.
@@ -2018,7 +2018,7 @@ EXECUTANDO O VALGRIND EM CADA CASO:
  - Resultado para o inicializacao.txt: Ok! Peso: 1.0
  - Resultado para o ranking.txt: Ok! Peso: 1.5
  - Resultado para o resumo.txt: Ok! Peso: 1.5
- - Resultado para o saida.txt: Incorreto!
+ - Resultado para o saida.txt: Ok! Peso: 3.0
  - Resultado para o trilha.txt: Ok! Peso: 1.5
 
 #######################################
@@ -2043,9 +2043,9 @@ Nome 0: Marcela
  - Pasta tMovimento (peso 0.5): 180 resultados corretos de 180 / Nota .50
  - Pasta tTunel (peso 0.5): 180 resultados corretos de 180 / Nota .50
  - Pasta tPosicao (peso 0.5): 180 resultados corretos de 180 / Nota .50
- - Pasta completo (peso 0.0): 158 resultados corretos de 180 / Nota 0
- - Pasta main (peso 3.5): 133 resultados corretos de 180 / Nota 2.15
- - Nota Final Marcela: 8.65
+ - Pasta completo (peso 0.0): 162 resultados corretos de 180 / Nota 0
+ - Pasta main (peso 3.5): 162 resultados corretos de 180 / Nota 3.16
+ - Nota Final Marcela: 9.66
 
 ----------------------------------------------------------------------------
 

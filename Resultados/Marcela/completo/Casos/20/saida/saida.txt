@@ -1218,7 +1218,7 @@ Estado do jogo apos o movimento 'w':
 # #   # # #        #
 # ## ## # ##       #
 #  #  # # @#       #
-#         >   B    #
+#             B    #
 ####################
 Pontuacao: 11
 
@@ -1236,7 +1236,7 @@ Estado do jogo apos o movimento 'w':
 # #   # # #        #
 # ## ## # ##       #
 #  #  # # @#       #
-#         >  B     #
+#            B     #
 ####################
 Pontuacao: 11
 
@@ -1254,7 +1254,7 @@ Estado do jogo apos o movimento 'w':
 # #   # # #        #
 # ## ## # ##       #
 #  #  # # @#       #
-#         > B      #
+#           B      #
 ####################
 Pontuacao: 11
 
@@ -1272,7 +1272,7 @@ Estado do jogo apos o movimento 'w':
 # #   # # #        #
 # ## ## # ##       #
 #  #  # # @#       #
-#         >B       #
+#          B       #
 ####################
 Pontuacao: 11
 

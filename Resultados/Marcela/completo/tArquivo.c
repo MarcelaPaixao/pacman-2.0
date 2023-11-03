@@ -75,9 +75,9 @@ void GeraRanking(tJogo* jogo){
 		max = i;
 		// Procura pelo maior no restante do vetor
 		for (int j = i + 1; j < n; j++) {
-			// Compara os elementos mov[j] e mov[max] de acordo com os critehrios:
-			// maior qtd de comida, menor qtd de colisoes, 
-			// maior qtd de usos e ordem alfabehtica
+			// Compara os elementos mov[j] e mov[max] de acordo com os criterios:
+			// maior qtd de frutas obtidas com o movimento, menor qtd de colisoes, 
+			// maior qtd de usos e ordem alfabetica;
 			if (mov[j].frutas > mov[max].frutas ||
 				mov[j].frutas == mov[max].frutas && mov[j].colisoes < mov[max].colisoes ||
 				mov[j].frutas == mov[max].frutas && mov[j].colisoes == mov[max].colisoes 

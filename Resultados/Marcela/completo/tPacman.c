@@ -131,7 +131,7 @@ void MovePacman(tPacman* pacman, tMapa* mapa, COMANDO comando){
             AtualizaPosicao(pacman->posicaoAtual, novaPosicao);
             AtualizaTrilhaPacman(pacman); 
             EntraTunelMapa(mapa, pacman->posicaoAtual);
-            AtualizaItemMapa(mapa, pacman->posicaoAtual, PAC);
+            //AtualizaItemMapa(mapa, pacman->posicaoAtual, PAC);
         }
         else {
             if(EncontrouComidaMapa(mapa,novaPosicao)){
@@ -139,7 +139,7 @@ void MovePacman(tPacman* pacman, tMapa* mapa, COMANDO comando){
                 fruta = 1;
             }
             AtualizaItemMapa(mapa, pacman->posicaoAtual, VAZIO);
-            AtualizaItemMapa(mapa, novaPosicao, PAC);
+            //AtualizaItemMapa(mapa, novaPosicao, PAC);
             AtualizaPosicao(pacman->posicaoAtual, novaPosicao);
         }
     }
@@ -155,7 +155,7 @@ void MovePacman(tPacman* pacman, tMapa* mapa, COMANDO comando){
             AtualizaPosicao(pacman->posicaoAtual, novaPosicao);
             AtualizaTrilhaPacman(pacman); 
             EntraTunelMapa(mapa, pacman->posicaoAtual);
-            AtualizaItemMapa(mapa, pacman->posicaoAtual, PAC);
+            //AtualizaItemMapa(mapa, pacman->posicaoAtual, PAC);
         }
         else {
             if(EncontrouComidaMapa(mapa,novaPosicao)){
@@ -163,7 +163,7 @@ void MovePacman(tPacman* pacman, tMapa* mapa, COMANDO comando){
                 fruta = 1;
             }
             AtualizaItemMapa(mapa, pacman->posicaoAtual, VAZIO);
-            AtualizaItemMapa(mapa, novaPosicao, PAC);
+            //AtualizaItemMapa(mapa, novaPosicao, PAC);
             AtualizaPosicao(pacman->posicaoAtual, novaPosicao);
         }
     }
@@ -179,7 +179,7 @@ void MovePacman(tPacman* pacman, tMapa* mapa, COMANDO comando){
             AtualizaPosicao(pacman->posicaoAtual, novaPosicao);
             AtualizaTrilhaPacman(pacman); 
             EntraTunelMapa(mapa, pacman->posicaoAtual);
-            AtualizaItemMapa(mapa, pacman->posicaoAtual, PAC);
+            //AtualizaItemMapa(mapa, pacman->posicaoAtual, PAC);
         }
         else {
             if(EncontrouComidaMapa(mapa,novaPosicao)){
@@ -187,7 +187,7 @@ void MovePacman(tPacman* pacman, tMapa* mapa, COMANDO comando){
                 fruta = 1;
             }
             AtualizaItemMapa(mapa, pacman->posicaoAtual, VAZIO);
-            AtualizaItemMapa(mapa, novaPosicao, PAC);
+            //AtualizaItemMapa(mapa, novaPosicao, PAC);
             AtualizaPosicao(pacman->posicaoAtual, novaPosicao);            
         }
     }
@@ -203,7 +203,7 @@ void MovePacman(tPacman* pacman, tMapa* mapa, COMANDO comando){
             AtualizaPosicao(pacman->posicaoAtual, novaPosicao);
             AtualizaTrilhaPacman(pacman); 
             EntraTunelMapa(mapa, pacman->posicaoAtual);
-            AtualizaItemMapa(mapa, pacman->posicaoAtual, PAC);
+            //AtualizaItemMapa(mapa, pacman->posicaoAtual, PAC);
         }
         else {
             if(EncontrouComidaMapa(mapa,novaPosicao)){
@@ -211,7 +211,7 @@ void MovePacman(tPacman* pacman, tMapa* mapa, COMANDO comando){
                 fruta = 1;
             }
             AtualizaItemMapa(mapa, pacman->posicaoAtual, VAZIO);
-            AtualizaItemMapa(mapa, novaPosicao, PAC);
+            //AtualizaItemMapa(mapa, novaPosicao, PAC);
             AtualizaPosicao(pacman->posicaoAtual, novaPosicao);
         }
     }

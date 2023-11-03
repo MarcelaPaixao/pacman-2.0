@@ -1,6 +1,8 @@
 #include "tJogo.h"
 
 #define PACMAN '>'
+#define VAZIO ' '
+#define TUNEL '@'
 
 tJogo* InicializaJogo(tMapa* mapa){
     tJogo* jogo = (tJogo*) malloc (sizeof(tJogo));
@@ -22,7 +24,18 @@ tJogo* InicializaJogo(tMapa* mapa){
 
 void ExecutaJogada(tJogo* jogo, COMANDO comando){
     tPosicao * posAntigaPac = ClonaPosicao(ObtemPosicaoPacman(jogo->pacman));
+    
     MovePacman(jogo->pacman, jogo->mapa, comando);
+    
+    AtualizaItemMapa(jogo->mapa, posAntigaPac, VAZIO);
+    AtualizaItemMapa(jogo->mapa, ObtemPosicaoPacman(jogo->pacman), PACMAN);
+
+    if (PossuiTunelMapa(jogo->mapa)){
+        if (AcessouTunelMapa(jogo->mapa, posAntigaPac)){
+            AtualizaItemMapa(jogo->mapa, posAntigaPac, TUNEL);
+        }
+    }
+
     MoveFantasma(jogo->fantB, jogo->mapa, jogo->pacman, posAntigaPac, comando);
     MoveFantasma(jogo->fantC, jogo->mapa, jogo->pacman, posAntigaPac, comando);
     MoveFantasma(jogo->fantI, jogo->mapa, jogo->pacman, posAntigaPac, comando);
