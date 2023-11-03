@@ -1,3 +1,5 @@
+pior!
+oi
 Estado do jogo apos o movimento 'a':
 ####################
 # *   **        *  #
@@ -16,6 +18,8 @@ Estado do jogo apos o movimento 'a':
 ####################
 Pontuacao: 0
 
+pior!
+oi
 Estado do jogo apos o movimento 's':
 ####################
 # *   **        *  #
@@ -34,6 +38,8 @@ Estado do jogo apos o movimento 's':
 ####################
 Pontuacao: 1
 
+pior!
+oi
 Estado do jogo apos o movimento 's':
 ####################
 # *   **        *  #
@@ -52,6 +58,8 @@ Estado do jogo apos o movimento 's':
 ####################
 Pontuacao: 1
 
+pior!
+oi
 Estado do jogo apos o movimento 's':
 ####################
 # *   **        *  #
@@ -70,6 +78,8 @@ Estado do jogo apos o movimento 's':
 ####################
 Pontuacao: 1
 
+pior!
+oi
 Estado do jogo apos o movimento 's':
 ####################
 # *   **        *  #
@@ -88,6 +98,8 @@ Estado do jogo apos o movimento 's':
 ####################
 Pontuacao: 1
 
+pior!
+oi
 Estado do jogo apos o movimento 'd':
 ####################
 # *   **        *  #
@@ -106,6 +118,8 @@ Estado do jogo apos o movimento 'd':
 ####################
 Pontuacao: 1
 
+pior!
+oi
 Estado do jogo apos o movimento 'd':
 ####################
 # *   **        *  #
@@ -124,6 +138,8 @@ Estado do jogo apos o movimento 'd':
 ####################
 Pontuacao: 2
 
+pior!
+oi
 Estado do jogo apos o movimento 'd':
 ####################
 # *   **        *  #
@@ -142,6 +158,8 @@ Estado do jogo apos o movimento 'd':
 ####################
 Pontuacao: 2
 
+pior!
+oi
 Estado do jogo apos o movimento 'w':
 ####################
 # *   **        *  #
@@ -160,6 +178,8 @@ Estado do jogo apos o movimento 'w':
 ####################
 Pontuacao: 2
 
+pior!
+oi
 Estado do jogo apos o movimento 'w':
 ####################
 # *   **        *  #
@@ -178,6 +198,8 @@ Estado do jogo apos o movimento 'w':
 ####################
 Pontuacao: 2
 
+pior!
+oi
 Estado do jogo apos o movimento 'w':
 ####################
 # *   **       I*  #
@@ -196,6 +218,8 @@ Estado do jogo apos o movimento 'w':
 ####################
 Pontuacao: 2
 
+pior!
+oi
 Estado do jogo apos o movimento 'w':
 ####################
 # *   **        *  #
@@ -214,6 +238,8 @@ Estado do jogo apos o movimento 'w':
 ####################
 Pontuacao: 2
 
+pior!
+oi
 Estado do jogo apos o movimento 'a':
 ####################
 # *   **        *  #
@@ -232,6 +258,8 @@ Estado do jogo apos o movimento 'a':
 ####################
 Pontuacao: 3
 
+pior!
+oi
 Estado do jogo apos o movimento 'd':
 ####################
 # *   **        *  #
@@ -250,6 +278,8 @@ Estado do jogo apos o movimento 'd':
 ####################
 Pontuacao: 3
 
+pior!
+oi
 Estado do jogo apos o movimento 'd':
 ####################
 # *   **        *  #
@@ -268,6 +298,8 @@ Estado do jogo apos o movimento 'd':
 ####################
 Pontuacao: 3
 
+pior!
+oi
 Estado do jogo apos o movimento 'd':
 ####################
 # *   **        *  #
@@ -286,6 +318,8 @@ Estado do jogo apos o movimento 'd':
 ####################
 Pontuacao: 4
 
+pior!
+oi
 Estado do jogo apos o movimento 'w':
 ####################
 # *   **        *  #
@@ -304,6 +338,8 @@ Estado do jogo apos o movimento 'w':
 ####################
 Pontuacao: 5
 
+pior!
+oi
 Estado do jogo apos o movimento 'w':
 ####################
 # *   **        *  #
@@ -322,6 +358,8 @@ Estado do jogo apos o movimento 'w':
 ####################
 Pontuacao: 5
 
+pior!
+oi
 Estado do jogo apos o movimento 'd':
 ####################
 # *   **        *  #
@@ -340,6 +378,8 @@ Estado do jogo apos o movimento 'd':
 ####################
 Pontuacao: 6
 
+pior!
+oi
 Estado do jogo apos o movimento 'a':
 ####################
 # *   **        *  #
@@ -358,6 +398,8 @@ Estado do jogo apos o movimento 'a':
 ####################
 Pontuacao: 6
 
+pior!
+oi
 Estado do jogo apos o movimento 'a':
 ####################
 # *   **        *  #
@@ -376,6 +418,8 @@ Estado do jogo apos o movimento 'a':
 ####################
 Pontuacao: 7
 
+pior!
+oi
 Estado do jogo apos o movimento 'w':
 ####################
 # *   **        *  #
@@ -394,6 +438,8 @@ Estado do jogo apos o movimento 'w':
 ####################
 Pontuacao: 7
 
+pior!
+oi
 Estado do jogo apos o movimento 'a':
 ####################
 # *   **        *  #
@@ -412,6 +458,8 @@ Estado do jogo apos o movimento 'a':
 ####################
 Pontuacao: 8
 
+pior!
+oi
 Estado do jogo apos o movimento 'a':
 ####################
 # *   **        *  #
@@ -430,6 +478,8 @@ Estado do jogo apos o movimento 'a':
 ####################
 Pontuacao: 8
 
+pior!
+oi
 Estado do jogo apos o movimento 'w':
 ####################
 # *   **        *  #
@@ -448,6 +498,8 @@ Estado do jogo apos o movimento 'w':
 ####################
 Pontuacao: 8
 
+pior!
+oi
 Estado do jogo apos o movimento 'w':
 ####################
 # *   **        *  #
@@ -466,6 +518,8 @@ Estado do jogo apos o movimento 'w':
 ####################
 Pontuacao: 9
 
+pior!
+oi
 Estado do jogo apos o movimento 'w':
 ####################
 # *   **       I*  #
@@ -484,6 +538,8 @@ Estado do jogo apos o movimento 'w':
 ####################
 Pontuacao: 9
 
+pior!
+oi
 Estado do jogo apos o movimento 'a':
 ####################
 # *   **        *  #
@@ -502,6 +558,8 @@ Estado do jogo apos o movimento 'a':
 ####################
 Pontuacao: 9
 
+pior!
+oi
 Estado do jogo apos o movimento 'a':
 ####################
 # *   **        *  #
@@ -520,6 +578,8 @@ Estado do jogo apos o movimento 'a':
 ####################
 Pontuacao: 9
 
+pior!
+oi
 Estado do jogo apos o movimento 'w':
 ####################
 # *   **        *  #
@@ -538,6 +598,8 @@ Estado do jogo apos o movimento 'w':
 ####################
 Pontuacao: 10
 
+pior!
+oi
 Estado do jogo apos o movimento 'w':
 ####################
 #>*   **        *  #
@@ -556,6 +618,8 @@ Estado do jogo apos o movimento 'w':
 ####################
 Pontuacao: 10
 
+pior!
+oi
 Estado do jogo apos o movimento 'd':
 ####################
 # >   **        *  #
@@ -574,6 +638,8 @@ Estado do jogo apos o movimento 'd':
 ####################
 Pontuacao: 11
 
+pior!
+oi
 Estado do jogo apos o movimento 'd':
 ####################
 #  >  **        *  #
@@ -592,6 +658,8 @@ Estado do jogo apos o movimento 'd':
 ####################
 Pontuacao: 11
 
+pior!
+oi
 Estado do jogo apos o movimento 'd':
 ####################
 #   > **        *  #
@@ -610,6 +678,8 @@ Estado do jogo apos o movimento 'd':
 ####################
 Pontuacao: 11
 
+pior!
+oi
 Estado do jogo apos o movimento 'd':
 ####################
 #    >**        *  #
@@ -628,6 +698,8 @@ Estado do jogo apos o movimento 'd':
 ####################
 Pontuacao: 11
 
+pior!
+oi
 Estado do jogo apos o movimento 'd':
 ####################
 #     >*        *  #
@@ -646,6 +718,8 @@ Estado do jogo apos o movimento 'd':
 ####################
 Pontuacao: 12
 
+pior!
+oi
 Estado do jogo apos o movimento 'd':
 ####################
 #      >        *  #
@@ -664,6 +738,8 @@ Estado do jogo apos o movimento 'd':
 ####################
 Pontuacao: 13
 
+pior!
+oi
 Estado do jogo apos o movimento 'd':
 ####################
 #       >       *  #
@@ -682,6 +758,8 @@ Estado do jogo apos o movimento 'd':
 ####################
 Pontuacao: 13
 
+pior!
+oi
 Estado do jogo apos o movimento 's':
 ####################
 #               *  #
@@ -700,6 +778,8 @@ Estado do jogo apos o movimento 's':
 ####################
 Pontuacao: 13
 
+pior!
+oi
 Estado do jogo apos o movimento 's':
 ####################
 #               *  #
@@ -718,6 +798,8 @@ Estado do jogo apos o movimento 's':
 ####################
 Pontuacao: 14
 
+pior!
+oi
 Estado do jogo apos o movimento 'd':
 ####################
 #               *  #
@@ -736,6 +818,8 @@ Estado do jogo apos o movimento 'd':
 ####################
 Pontuacao: 14
 
+pior!
+oi
 Estado do jogo apos o movimento 'd':
 ####################
 #               *  #
@@ -754,6 +838,8 @@ Estado do jogo apos o movimento 'd':
 ####################
 Pontuacao: 15
 
+pior!
+oi
 Estado do jogo apos o movimento 'w':
 ####################
 #              I*  #
@@ -772,6 +858,8 @@ Estado do jogo apos o movimento 'w':
 ####################
 Pontuacao: 16
 
+pior!
+oi
 Estado do jogo apos o movimento 'd':
 ####################
 #               *  #
@@ -790,6 +878,8 @@ Estado do jogo apos o movimento 'd':
 ####################
 Pontuacao: 16
 
+pior!
+oi
 Estado do jogo apos o movimento 'd':
 ####################
 #               *  #
@@ -808,6 +898,8 @@ Estado do jogo apos o movimento 'd':
 ####################
 Pontuacao: 16
 
+pior!
+oi
 Estado do jogo apos o movimento 'd':
 ####################
 #               *  #
@@ -826,6 +918,8 @@ Estado do jogo apos o movimento 'd':
 ####################
 Pontuacao: 16
 
+pior!
+oi
 Estado do jogo apos o movimento 'd':
 ####################
 #               *  #
@@ -844,6 +938,8 @@ Estado do jogo apos o movimento 'd':
 ####################
 Pontuacao: 16
 
+pior!
+oi
 Estado do jogo apos o movimento 'd':
 ####################
 #               *  #
@@ -862,6 +958,8 @@ Estado do jogo apos o movimento 'd':
 ####################
 Pontuacao: 16
 
+pior!
+oi
 Estado do jogo apos o movimento 'd':
 ####################
 #               *  #
@@ -880,6 +978,8 @@ Estado do jogo apos o movimento 'd':
 ####################
 Pontuacao: 17
 
+pior!
+oi
 Estado do jogo apos o movimento 'w':
 ####################
 #               >  #
@@ -898,6 +998,8 @@ Estado do jogo apos o movimento 'w':
 ####################
 Pontuacao: 18
 
+pior!
+oi
 Estado do jogo apos o movimento 's':
 ####################
 #                  #
@@ -916,6 +1018,8 @@ Estado do jogo apos o movimento 's':
 ####################
 Pontuacao: 18
 
+pior!
+oi
 Estado do jogo apos o movimento 'd':
 ####################
 #                  #
@@ -934,6 +1038,8 @@ Estado do jogo apos o movimento 'd':
 ####################
 Pontuacao: 18
 
+pior!
+oi
 Estado do jogo apos o movimento 'd':
 ####################
 #                  #
@@ -952,6 +1058,8 @@ Estado do jogo apos o movimento 'd':
 ####################
 Pontuacao: 18
 
+pior!
+oi
 Estado do jogo apos o movimento 'd':
 ####################
 #                  #
@@ -970,6 +1078,8 @@ Estado do jogo apos o movimento 'd':
 ####################
 Pontuacao: 18
 
+pior!
+oi
 Estado do jogo apos o movimento 's':
 ####################
 #                  #
@@ -988,6 +1098,8 @@ Estado do jogo apos o movimento 's':
 ####################
 Pontuacao: 18
 
+pior!
+oi
 Estado do jogo apos o movimento 's':
 ####################
 #                  #
@@ -1006,6 +1118,8 @@ Estado do jogo apos o movimento 's':
 ####################
 Pontuacao: 18
 
+pior!
+oi
 Estado do jogo apos o movimento 's':
 ####################
 #                  #
@@ -1024,6 +1138,8 @@ Estado do jogo apos o movimento 's':
 ####################
 Pontuacao: 18
 
+pior!
+oi
 Estado do jogo apos o movimento 's':
 ####################
 #                  #
@@ -1042,6 +1158,8 @@ Estado do jogo apos o movimento 's':
 ####################
 Pontuacao: 18
 
+pior!
+oi
 Estado do jogo apos o movimento 's':
 ####################
 #              I   #
@@ -1060,6 +1178,8 @@ Estado do jogo apos o movimento 's':
 ####################
 Pontuacao: 19
 
+pior!
+oi
 Estado do jogo apos o movimento 's':
 ####################
 #                  #
@@ -1078,6 +1198,8 @@ Estado do jogo apos o movimento 's':
 ####################
 Pontuacao: 19
 
+pior!
+oi
 Estado do jogo apos o movimento 's':
 ####################
 #                  #
@@ -1096,6 +1218,8 @@ Estado do jogo apos o movimento 's':
 ####################
 Pontuacao: 19
 
+pior!
+oi
 Estado do jogo apos o movimento 'a':
 ####################
 #                  #
@@ -1114,6 +1238,8 @@ Estado do jogo apos o movimento 'a':
 ####################
 Pontuacao: 19
 
+pior!
+oi
 Estado do jogo apos o movimento 's':
 ####################
 #                  #
@@ -1132,6 +1258,8 @@ Estado do jogo apos o movimento 's':
 ####################
 Pontuacao: 20
 
+pior!
+oi
 Estado do jogo apos o movimento 's':
 ####################
 #                  #
@@ -1150,6 +1278,8 @@ Estado do jogo apos o movimento 's':
 ####################
 Pontuacao: 20
 
+pior!
+oi
 Estado do jogo apos o movimento 's':
 ####################
 #                  #
@@ -1168,6 +1298,8 @@ Estado do jogo apos o movimento 's':
 ####################
 Pontuacao: 21
 
+pior!
+oi
 Estado do jogo apos o movimento 's':
 ####################
 #                  #
@@ -1186,6 +1318,8 @@ Estado do jogo apos o movimento 's':
 ####################
 Pontuacao: 21
 
+pior!
+oi
 Estado do jogo apos o movimento 'a':
 ####################
 #                  #
@@ -1204,6 +1338,8 @@ Estado do jogo apos o movimento 'a':
 ####################
 Pontuacao: 22
 
+pior!
+oi
 Estado do jogo apos o movimento 'a':
 ####################
 #                  #
@@ -1222,6 +1358,8 @@ Estado do jogo apos o movimento 'a':
 ####################
 Pontuacao: 22
 
+pior!
+oi
 Estado do jogo apos o movimento 'a':
 ####################
 #                  #
@@ -1240,6 +1378,8 @@ Estado do jogo apos o movimento 'a':
 ####################
 Pontuacao: 23
 
+pior!
+oi
 Estado do jogo apos o movimento 'a':
 ####################
 #                  #
@@ -1258,6 +1398,8 @@ Estado do jogo apos o movimento 'a':
 ####################
 Pontuacao: 23
 
+pior!
+oi
 Estado do jogo apos o movimento 'w':
 ####################
 #                  #
@@ -1276,6 +1418,8 @@ Estado do jogo apos o movimento 'w':
 ####################
 Pontuacao: 23
 
+pior!
+oi
 Estado do jogo apos o movimento 'w':
 ####################
 #                  #
@@ -1294,6 +1438,8 @@ Estado do jogo apos o movimento 'w':
 ####################
 Pontuacao: 23
 
+pior!
+oi
 Estado do jogo apos o movimento 'w':
 ####################
 #                  #
@@ -1312,6 +1458,8 @@ Estado do jogo apos o movimento 'w':
 ####################
 Pontuacao: 23
 
+pior!
+oi
 Estado do jogo apos o movimento 'a':
 ####################
 #                  #
@@ -1330,6 +1478,8 @@ Estado do jogo apos o movimento 'a':
 ####################
 Pontuacao: 23
 
+pior!
+oi
 Estado do jogo apos o movimento 'w':
 ####################
 #              I   #
@@ -1348,6 +1498,8 @@ Estado do jogo apos o movimento 'w':
 ####################
 Pontuacao: 23
 
+pior!
+oi
 Estado do jogo apos o movimento 'w':
 ####################
 #                  #
@@ -1366,6 +1518,8 @@ Estado do jogo apos o movimento 'w':
 ####################
 Pontuacao: 23
 
+pior!
+oi
 Estado do jogo apos o movimento 'w':
 ####################
 #                  #
@@ -1384,6 +1538,8 @@ Estado do jogo apos o movimento 'w':
 ####################
 Pontuacao: 23
 
+pior!
+oi
 Estado do jogo apos o movimento 'w':
 ####################
 #                  #
@@ -1402,6 +1558,8 @@ Estado do jogo apos o movimento 'w':
 ####################
 Pontuacao: 23
 
+pior!
+oi
 Estado do jogo apos o movimento 'a':
 ####################
 #                  #
@@ -1420,6 +1578,8 @@ Estado do jogo apos o movimento 'a':
 ####################
 Pontuacao: 23
 
+pior!
+oi
 Estado do jogo apos o movimento 'w':
 ####################
 #                  #
@@ -1438,6 +1598,8 @@ Estado do jogo apos o movimento 'w':
 ####################
 Pontuacao: 24
 
+pior!
+oi
 Estado do jogo apos o movimento 'w':
 ####################
 #                  #
@@ -1456,6 +1618,8 @@ Estado do jogo apos o movimento 'w':
 ####################
 Pontuacao: 24
 
+pior!
+oi
 Estado do jogo apos o movimento 'd':
 ####################
 #                  #
@@ -1474,6 +1638,8 @@ Estado do jogo apos o movimento 'd':
 ####################
 Pontuacao: 24
 
+pior!
+oi
 Estado do jogo apos o movimento 'd':
 ####################
 #                  #
@@ -1492,6 +1658,8 @@ Estado do jogo apos o movimento 'd':
 ####################
 Pontuacao: 24
 
+pior!
+oi
 Estado do jogo apos o movimento 'd':
 ####################
 #                  #
@@ -1510,6 +1678,8 @@ Estado do jogo apos o movimento 'd':
 ####################
 Pontuacao: 24
 
+pior!
+oi
 Estado do jogo apos o movimento 's':
 ####################
 #                  #
@@ -1528,6 +1698,8 @@ Estado do jogo apos o movimento 's':
 ####################
 Pontuacao: 25
 
+pior!
+oi
 Estado do jogo apos o movimento 'd':
 ####################
 #                  #
@@ -1546,6 +1718,8 @@ Estado do jogo apos o movimento 'd':
 ####################
 Pontuacao: 26
 
+pior!
+oi
 Estado do jogo apos o movimento 's':
 ####################
 #                  #
@@ -1564,6 +1738,8 @@ Estado do jogo apos o movimento 's':
 ####################
 Pontuacao: 27
 
+pior!
+oi
 Estado do jogo apos o movimento 's':
 ####################
 #                  #
@@ -1582,6 +1758,8 @@ Estado do jogo apos o movimento 's':
 ####################
 Pontuacao: 27
 
+pior!
+oi
 Estado do jogo apos o movimento 'a':
 ####################
 #                  #
@@ -1600,6 +1778,8 @@ Estado do jogo apos o movimento 'a':
 ####################
 Pontuacao: 27
 
+pior!
+oi
 Estado do jogo apos o movimento 'a':
 ####################
 #                  #
@@ -1618,6 +1798,8 @@ Estado do jogo apos o movimento 'a':
 ####################
 Pontuacao: 27
 
+pior!
+oi
 Estado do jogo apos o movimento 'a':
 ####################
 #              I   #
@@ -1636,6 +1818,8 @@ Estado do jogo apos o movimento 'a':
 ####################
 Pontuacao: 27
 
+pior!
+oi
 Estado do jogo apos o movimento 'a':
 ####################
 #                  #
@@ -1654,6 +1838,8 @@ Estado do jogo apos o movimento 'a':
 ####################
 Pontuacao: 27
 
+pior!
+oi
 Estado do jogo apos o movimento 'a':
 ####################
 #                  #
@@ -1672,6 +1858,8 @@ Estado do jogo apos o movimento 'a':
 ####################
 Pontuacao: 27
 
+pior!
+oi
 Estado do jogo apos o movimento 'a':
 ####################
 #                  #
@@ -1690,6 +1878,8 @@ Estado do jogo apos o movimento 'a':
 ####################
 Pontuacao: 27
 
+pior!
+oi
 Estado do jogo apos o movimento 'a':
 ####################
 #                  #
@@ -1708,6 +1898,8 @@ Estado do jogo apos o movimento 'a':
 ####################
 Pontuacao: 27
 
+pior!
+oi
 Estado do jogo apos o movimento 'a':
 ####################
 #                  #
@@ -1726,6 +1918,8 @@ Estado do jogo apos o movimento 'a':
 ####################
 Pontuacao: 28
 
+pior!
+oi
 Estado do jogo apos o movimento 's':
 ####################
 #                  #
@@ -1744,6 +1938,8 @@ Estado do jogo apos o movimento 's':
 ####################
 Pontuacao: 29
 
+pior!
+oi
 Estado do jogo apos o movimento 'a':
 ####################
 #                  #
@@ -1762,6 +1958,8 @@ Estado do jogo apos o movimento 'a':
 ####################
 Pontuacao: 29
 
+pior!
+oi
 Estado do jogo apos o movimento 's':
 ####################
 #                  #
@@ -1780,6 +1978,8 @@ Estado do jogo apos o movimento 's':
 ####################
 Pontuacao: 29
 
+pior!
+oi
 Estado do jogo apos o movimento 's':
 ####################
 #                  #
@@ -1798,6 +1998,8 @@ Estado do jogo apos o movimento 's':
 ####################
 Pontuacao: 29
 
+pior!
+oi
 Estado do jogo apos o movimento 's':
 ####################
 #                  #
@@ -1816,6 +2018,8 @@ Estado do jogo apos o movimento 's':
 ####################
 Pontuacao: 29
 
+pior!
+oi
 Estado do jogo apos o movimento 'd':
 ####################
 #                  #

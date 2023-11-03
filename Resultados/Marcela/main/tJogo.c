@@ -34,22 +34,25 @@ bool VerificaSeAtualiza(tJogo *jogo, tPosicao *posAntigaPac){
         return false;
     }
     if(ExisteFantasma(jogo->fantP) && SaoIguaisPosicao(ObtemPosicaoAtualFantasma(jogo->fantP), posAntigaPac)){
+        printf("ruim!\n");
         return false;
     }
+    printf("pior!\n");
     return true; 
 }
 
 void ExecutaJogada(tJogo* jogo, COMANDO comando){
-    tPosicao * posAntigaPac = ClonaPosicao(ObtemPosicaoPacman(jogo->pacman));
 
     MoveFantasma(jogo->fantB, jogo->mapa, jogo->pacman, comando);
     MoveFantasma(jogo->fantC, jogo->mapa, jogo->pacman, comando);
     MoveFantasma(jogo->fantI, jogo->mapa, jogo->pacman, comando);
     MoveFantasma(jogo->fantP, jogo->mapa, jogo->pacman, comando);
 
+    tPosicao * posAntigaPac = ClonaPosicao(ObtemPosicaoPacman(jogo->pacman));
     MovePacman(jogo->pacman, jogo->mapa, comando);
     
-    if(VerificaSeAtualiza(jogo, posAntigaPac)){
+    if(VerificaSeAtualiza(jogo, posAntigaPac) == true){
+        printf("oi\n");
         AtualizaItemMapa(jogo->mapa, posAntigaPac, VAZIO);
     }
     

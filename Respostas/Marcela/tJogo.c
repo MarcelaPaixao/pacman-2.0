@@ -36,22 +36,23 @@ bool VerificaSeAtualiza(tJogo *jogo, tPosicao *posAntigaPac){
     if(ExisteFantasma(jogo->fantP) && SaoIguaisPosicao(ObtemPosicaoAtualFantasma(jogo->fantP), posAntigaPac)){
         return false;
     }
+
     return true; 
 }
 
 void ExecutaJogada(tJogo* jogo, COMANDO comando){
-    tPosicao * posAntigaPac = ClonaPosicao(ObtemPosicaoPacman(jogo->pacman));
 
     MoveFantasma(jogo->fantB, jogo->mapa, jogo->pacman, comando);
     MoveFantasma(jogo->fantC, jogo->mapa, jogo->pacman, comando);
     MoveFantasma(jogo->fantI, jogo->mapa, jogo->pacman, comando);
     MoveFantasma(jogo->fantP, jogo->mapa, jogo->pacman, comando);
 
+    tPosicao * posAntigaPac = ClonaPosicao(ObtemPosicaoPacman(jogo->pacman));
     MovePacman(jogo->pacman, jogo->mapa, comando);
     
     if(VerificaSeAtualiza(jogo, posAntigaPac)){
         AtualizaItemMapa(jogo->mapa, posAntigaPac, VAZIO);
-    }
+    }//o problema ta em ouytro lugar q atualiza essa parte
     
     AtualizaItemMapa(jogo->mapa, ObtemPosicaoPacman(jogo->pacman), PACMAN);
 

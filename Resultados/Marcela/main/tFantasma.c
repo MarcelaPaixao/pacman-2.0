@@ -132,7 +132,7 @@ void VerificaSeMatouPacmanFantasma(tMapa* mapa, tFantasma* fantasma, tPacman* pa
         }
         if(!SaoIguaisPosicao(posAntigaPacman, fantasma->posicaoAtualFant) && 
             SaoIguaisPosicao(ObtemPosicaoPacman(pacman), fantasma->posicaoAntigaFant)){
-            AtualizaItemMapa(mapa, ObtemPosicaoPacman(pacman), '>');
+            AtualizaItemMapa(mapa, ObtemPosicaoPacman(pacman), PAC);
         }
     }
 }
