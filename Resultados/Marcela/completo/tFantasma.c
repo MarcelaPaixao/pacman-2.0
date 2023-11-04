@@ -101,9 +101,9 @@ void MoveFantasma(tFantasma* fantasma, tMapa* mapa, COMANDO comando){
         }
         else{
             fantasma->tocaFruta = 0;
+            AtualizaItemMapa(mapa, PosicaoFinal, fantasma->tipo);
         }
 
-        AtualizaItemMapa(mapa, PosicaoFinal, fantasma->tipo);
         AtualizaPosicao(fantasma->posicaoAtualFant, PosicaoFinal);
     
         if(!jaAtualizouMapa){
@@ -123,10 +123,13 @@ void MoveFantasma(tFantasma* fantasma, tMapa* mapa, COMANDO comando){
 void VerificaSeMatouPacmanFantasma(tMapa* mapa, tFantasma* fantasma, tPacman* pacman, tPosicao* posAntigaPacman){ 
     if(fantasma->existe){
         if(SaoIguaisPosicao(ObtemPosicaoPacman(pacman), fantasma->posicaoAtualFant)){
+            AtualizaItemMapa(mapa, fantasma->posicaoAtualFant, fantasma->tipo);
             MataPacman(pacman);
         }
         if(SaoIguaisPosicao(posAntigaPacman, fantasma->posicaoAtualFant) && 
             SaoIguaisPosicao(ObtemPosicaoPacman(pacman), fantasma->posicaoAntigaFant)){
+            AtualizaItemMapa(mapa, fantasma->posicaoAtualFant, fantasma->tipo);
+            AtualizaItemMapa(mapa, ObtemPosicaoPacman(pacman), VAZIO);
             MataPacman(pacman);
         }
         if(!SaoIguaisPosicao(posAntigaPacman, fantasma->posicaoAtualFant) && 

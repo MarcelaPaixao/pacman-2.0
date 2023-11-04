@@ -24,7 +24,9 @@ typedef struct{
 
 tJogo* InicializaJogo(tMapa* mapa);
 
-bool VerificaSeAtualiza(tJogo *jogo, tPosicao *posAntigaPac);
+bool VerificaSeAtualizaVazio(tJogo *jogo, tPosicao *posAntigaPac);
+
+void AtualizaFantasma(tJogo *jogo);
 
 void ExecutaJogada(tJogo* jogo, COMANDO comando);
 

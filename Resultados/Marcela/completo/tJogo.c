@@ -23,7 +23,7 @@ tJogo* InicializaJogo(tMapa* mapa){
     return jogo;
 }
 
-bool VerificaSeAtualiza(tJogo *jogo, tPosicao *posAntigaPac){
+bool VerificaSeAtualizaVazio(tJogo *jogo, tPosicao *posAntigaPac){
     if(ExisteFantasma(jogo->fantB) && SaoIguaisPosicao(ObtemPosicaoAtualFantasma(jogo->fantB), posAntigaPac)){
         return false;
     }
@@ -40,6 +40,21 @@ bool VerificaSeAtualiza(tJogo *jogo, tPosicao *posAntigaPac){
     return true; 
 }
 
+void AtualizaFantasma(tJogo *jogo){
+    if(ExisteFantasma(jogo->fantB) && TocouFrutaFantasma(jogo->fantB)){
+        AtualizaItemMapa(jogo->mapa, ObtemPosicaoAtualFantasma(jogo->fantB), ObtemTipoFantasma(jogo->fantB));
+    }
+    if(ExisteFantasma(jogo->fantC) && TocouFrutaFantasma(jogo->fantC)){
+        AtualizaItemMapa(jogo->mapa, ObtemPosicaoAtualFantasma(jogo->fantC), ObtemTipoFantasma(jogo->fantC));
+    }
+    if(ExisteFantasma(jogo->fantI) && TocouFrutaFantasma(jogo->fantI)){
+        AtualizaItemMapa(jogo->mapa, ObtemPosicaoAtualFantasma(jogo->fantI), ObtemTipoFantasma(jogo->fantI));
+    }
+    if(ExisteFantasma(jogo->fantP) && TocouFrutaFantasma(jogo->fantP)){
+        AtualizaItemMapa(jogo->mapa, ObtemPosicaoAtualFantasma(jogo->fantP), ObtemTipoFantasma(jogo->fantP));
+    }
+}
+
 void ExecutaJogada(tJogo* jogo, COMANDO comando){
 
     MoveFantasma(jogo->fantB, jogo->mapa, comando);
@@ -50,7 +65,9 @@ void ExecutaJogada(tJogo* jogo, COMANDO comando){
     tPosicao * posAntigaPac = ClonaPosicao(ObtemPosicaoPacman(jogo->pacman));
     MovePacman(jogo->pacman, jogo->mapa, comando);
     
-    if(VerificaSeAtualiza(jogo, posAntigaPac)){
+    AtualizaFantasma(jogo);
+
+    if(VerificaSeAtualizaVazio(jogo, posAntigaPac)){
         AtualizaItemMapa(jogo->mapa, posAntigaPac, VAZIO);
     }
     

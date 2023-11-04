@@ -50,7 +50,7 @@ void VerificaSeMatouPacmanFantasma(tMapa* mapa, tFantasma* fantasma, tPacman* pa
  * 
  * \param fantasma fantasma
  */
-void DesalocaFantasma(tFantasma* fantasma);
+void DesalocaFantasmas(tFantasma* fantasma);
 
 /**
  * Retorna o tipo do fantasma.

@@ -950,10 +950,10 @@ Estado do jogo apos o movimento 'a':
 #  #      @#   #  #
 #  #########   #  #
 #  #*******#  I#P #
-#   ***>   #####  #
+#   ***B   #####  #
 #          #@     #
 ###################
-Pontuacao: 45
+Pontuacao: 46
 
 Game over!
-Pontuacao final: 45
+Pontuacao final: 46
