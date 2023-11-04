@@ -204,13 +204,10 @@ void MovePacman(tPacman* pacman, tMapa* mapa, COMANDO comando){
         }
     }
 
-    if(PossuiTunelMapa(mapa) && AcessouTunelMapa(mapa, antigaPosicao)){
-        AtualizaItemMapa(mapa, antigaPosicao, TUNEL);
-    }
-    if(parede > 0){
+    if(parede){
         InsereNovoMovimentoSignificativoPacman(pacman, comando, "colidiu com a parede");
     }
-    if(fruta > 0){
+    if(fruta){
         AtualizaItemMapa(mapa, novaPosicao, VAZIO);
         InsereNovoMovimentoSignificativoPacman(pacman, comando, "pegou comida");
     }

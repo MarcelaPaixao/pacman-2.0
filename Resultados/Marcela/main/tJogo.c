@@ -63,21 +63,20 @@ void ExecutaJogada(tJogo* jogo, COMANDO comando){
     MoveFantasma(jogo->fantP, jogo->mapa, comando);
 
     tPosicao * posAntigaPac = ClonaPosicao(ObtemPosicaoPacman(jogo->pacman));
+    if(VerificaSeAtualizaVazio(jogo, posAntigaPac)){
+        AtualizaItemMapa(jogo->mapa, posAntigaPac, VAZIO);
+    }
     MovePacman(jogo->pacman, jogo->mapa, comando);
     
     AtualizaFantasma(jogo);
 
-    if(VerificaSeAtualizaVazio(jogo, posAntigaPac)){
-        AtualizaItemMapa(jogo->mapa, posAntigaPac, VAZIO);
-    }
-    
-    AtualizaItemMapa(jogo->mapa, ObtemPosicaoPacman(jogo->pacman), PACMAN);
-
     if (PossuiTunelMapa(jogo->mapa)){
         if (AcessouTunelMapa(jogo->mapa, posAntigaPac)){
-            AtualizaItemMapa(jogo->mapa, posAntigaPac, TUNEL);
+        AtualizaItemMapa(jogo->mapa, posAntigaPac, TUNEL);
         }
     }
+
+    AtualizaItemMapa(jogo->mapa, ObtemPosicaoPacman(jogo->pacman), PACMAN);
 
     VerificaSeMatouPacmanFantasma(jogo->mapa, jogo->fantB, jogo->pacman, posAntigaPac); 
     VerificaSeMatouPacmanFantasma(jogo->mapa, jogo->fantC, jogo->pacman, posAntigaPac); 
@@ -123,10 +122,10 @@ void DesalocaJogo(tJogo* jogo){
     if(jogo != NULL){
         DesalocaMapa(jogo->mapa);
         DesalocaPacman(jogo->pacman);
-        DesalocaFantasma(jogo->fantB);
-        DesalocaFantasma(jogo->fantC);
-        DesalocaFantasma(jogo->fantI);
-        DesalocaFantasma(jogo->fantP);
+        DesalocaFantasmas(jogo->fantB);
+        DesalocaFantasmas(jogo->fantC);
+        DesalocaFantasmas(jogo->fantI);
+        DesalocaFantasmas(jogo->fantP);
     }
     free(jogo);
 }

@@ -146,7 +146,7 @@ void VerificaSeMatouPacmanFantasma(tMapa* mapa, tFantasma* fantasma, tPacman* pa
  * 
  * \param fantasma fantasma
  */
-void DesalocaFantasma(tFantasma* fantasma){
+void DesalocaFantasmas(tFantasma* fantasma){
     if(fantasma != NULL){
         DesalocaPosicao(fantasma->posicaoAtualFant);
         DesalocaPosicao(fantasma->posicaoAntigaFant);

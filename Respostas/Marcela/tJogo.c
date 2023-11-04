@@ -63,21 +63,22 @@ void ExecutaJogada(tJogo* jogo, COMANDO comando){
     MoveFantasma(jogo->fantP, jogo->mapa, comando);
 
     tPosicao * posAntigaPac = ClonaPosicao(ObtemPosicaoPacman(jogo->pacman));
-    MovePacman(jogo->pacman, jogo->mapa, comando);
     
-    AtualizaFantasma(jogo);
-
     if(VerificaSeAtualizaVazio(jogo, posAntigaPac)){
         AtualizaItemMapa(jogo->mapa, posAntigaPac, VAZIO);
     }
     
-    AtualizaItemMapa(jogo->mapa, ObtemPosicaoPacman(jogo->pacman), PACMAN);
+    MovePacman(jogo->pacman, jogo->mapa, comando);
+    
+    AtualizaFantasma(jogo);
 
     if (PossuiTunelMapa(jogo->mapa)){
         if (AcessouTunelMapa(jogo->mapa, posAntigaPac)){
-            AtualizaItemMapa(jogo->mapa, posAntigaPac, TUNEL);
+        AtualizaItemMapa(jogo->mapa, posAntigaPac, TUNEL);
         }
     }
+
+    AtualizaItemMapa(jogo->mapa, ObtemPosicaoPacman(jogo->pacman), PACMAN);
 
     VerificaSeMatouPacmanFantasma(jogo->mapa, jogo->fantB, jogo->pacman, posAntigaPac); 
     VerificaSeMatouPacmanFantasma(jogo->mapa, jogo->fantC, jogo->pacman, posAntigaPac); 

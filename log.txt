@@ -1631,7 +1631,7 @@ EXECUTANDO O VALGRIND EM CADA CASO:
  - Resultado para o inicializacao.txt: Ok! Peso: 1.0
  - Resultado para o ranking.txt: Ok! Peso: 1.5
  - Resultado para o resumo.txt: Ok! Peso: 1.5
- - Resultado para o saida.txt: Incorreto!
+ - Resultado para o saida.txt: Ok! Peso: 3.0
  - Resultado para o trilha.txt: Ok! Peso: 1.5
  - Pasta completo / Caso 18:
  - Arquivo de output gerado: Resultados/Marcela/completo/Casos/18/result_valgrind.txt.
@@ -1901,7 +1901,7 @@ EXECUTANDO O VALGRIND EM CADA CASO:
  - Resultado para o inicializacao.txt: Ok! Peso: 1.0
  - Resultado para o ranking.txt: Ok! Peso: 1.5
  - Resultado para o resumo.txt: Ok! Peso: 1.5
- - Resultado para o saida.txt: Incorreto!
+ - Resultado para o saida.txt: Ok! Peso: 3.0
  - Resultado para o trilha.txt: Ok! Peso: 1.5
  - Pasta main / Caso 18:
  - Arquivo de output gerado: Resultados/Marcela/main/Casos/18/result_valgrind.txt.
@@ -2043,9 +2043,9 @@ Nome 0: Marcela
  - Pasta tMovimento (peso 0.5): 180 resultados corretos de 180 / Nota .50
  - Pasta tTunel (peso 0.5): 180 resultados corretos de 180 / Nota .50
  - Pasta tPosicao (peso 0.5): 180 resultados corretos de 180 / Nota .50
- - Pasta completo (peso 0.0): 179 resultados corretos de 180 / Nota 0
- - Pasta main (peso 3.5): 179 resultados corretos de 180 / Nota 3.46
- - Nota Final Marcela: 9.96
+ - Pasta completo (peso 0.0): 180 resultados corretos de 180 / Nota 0
+ - Pasta main (peso 3.5): 180 resultados corretos de 180 / Nota 3.50
+ - Nota Final Marcela: 10.00
 
 ----------------------------------------------------------------------------
 
