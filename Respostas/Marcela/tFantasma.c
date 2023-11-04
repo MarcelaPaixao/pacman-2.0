@@ -55,7 +55,7 @@ void InverteDirecaoFant(tFantasma* fantasma){
  * \param fantasma fantasma
  * \param mapa o mapa que contem os fantasmas
  */
-void MoveFantasma(tFantasma* fantasma, tMapa* mapa, tPacman* pacman, COMANDO comando){
+void MoveFantasma(tFantasma* fantasma, tMapa* mapa, COMANDO comando){
     if(fantasma->existe){
         int lin = ObtemLinhaPosicao(fantasma->posicaoAtualFant);
         int col = ObtemColunaPosicao(fantasma->posicaoAtualFant);
@@ -104,12 +104,11 @@ void MoveFantasma(tFantasma* fantasma, tMapa* mapa, tPacman* pacman, COMANDO com
         }
 
         AtualizaItemMapa(mapa, PosicaoFinal, fantasma->tipo);
+        AtualizaPosicao(fantasma->posicaoAtualFant, PosicaoFinal);
     
         if(!jaAtualizouMapa){
             AtualizaItemMapa(mapa, fantasma->posicaoAntigaFant, VAZIO);
         }
-    
-        AtualizaPosicao(fantasma->posicaoAtualFant, PosicaoFinal);
     
         if(novaPosicao != NULL){
             DesalocaPosicao(novaPosicao);

@@ -137,7 +137,6 @@ void MovePacman(tPacman* pacman, tMapa* mapa, COMANDO comando){
                 pacman->nFrutasComidasEsquerda++;
                 fruta = 1;
             }
-            AtualizaItemMapa(mapa, pacman->posicaoAtual, VAZIO);
             AtualizaPosicao(pacman->posicaoAtual, novaPosicao);
         }
     }
@@ -159,7 +158,6 @@ void MovePacman(tPacman* pacman, tMapa* mapa, COMANDO comando){
                 pacman->nFrutasComidasDireita++;
                 fruta = 1;
             }
-            AtualizaItemMapa(mapa, pacman->posicaoAtual, VAZIO);
             AtualizaPosicao(pacman->posicaoAtual, novaPosicao);
         }
     }
@@ -181,7 +179,6 @@ void MovePacman(tPacman* pacman, tMapa* mapa, COMANDO comando){
                 pacman->nFrutasComidasCima++;
                 fruta = 1;
             }
-            AtualizaItemMapa(mapa, pacman->posicaoAtual, VAZIO);
             AtualizaPosicao(pacman->posicaoAtual, novaPosicao);            
         }
     }
@@ -201,9 +198,8 @@ void MovePacman(tPacman* pacman, tMapa* mapa, COMANDO comando){
         else {
             if(EncontrouComidaMapa(mapa,novaPosicao)){
                 pacman->nFrutasComidasBaixo++;
-                fruta = 1;
+                fruta = 1;           
             }
-            AtualizaItemMapa(mapa, pacman->posicaoAtual, VAZIO);
             AtualizaPosicao(pacman->posicaoAtual, novaPosicao);
         }
     }
@@ -215,6 +211,7 @@ void MovePacman(tPacman* pacman, tMapa* mapa, COMANDO comando){
         InsereNovoMovimentoSignificativoPacman(pacman, comando, "colidiu com a parede");
     }
     if(fruta > 0){
+        AtualizaItemMapa(mapa, novaPosicao, VAZIO);
         InsereNovoMovimentoSignificativoPacman(pacman, comando, "pegou comida");
     }
     

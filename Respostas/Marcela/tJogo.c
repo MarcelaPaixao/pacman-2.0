@@ -42,17 +42,17 @@ bool VerificaSeAtualiza(tJogo *jogo, tPosicao *posAntigaPac){
 
 void ExecutaJogada(tJogo* jogo, COMANDO comando){
 
-    MoveFantasma(jogo->fantB, jogo->mapa, jogo->pacman, comando);
-    MoveFantasma(jogo->fantC, jogo->mapa, jogo->pacman, comando);
-    MoveFantasma(jogo->fantI, jogo->mapa, jogo->pacman, comando);
-    MoveFantasma(jogo->fantP, jogo->mapa, jogo->pacman, comando);
+    MoveFantasma(jogo->fantB, jogo->mapa, comando);
+    MoveFantasma(jogo->fantC, jogo->mapa, comando);
+    MoveFantasma(jogo->fantI, jogo->mapa, comando);
+    MoveFantasma(jogo->fantP, jogo->mapa, comando);
 
     tPosicao * posAntigaPac = ClonaPosicao(ObtemPosicaoPacman(jogo->pacman));
     MovePacman(jogo->pacman, jogo->mapa, comando);
     
     if(VerificaSeAtualiza(jogo, posAntigaPac)){
         AtualizaItemMapa(jogo->mapa, posAntigaPac, VAZIO);
-    }//o problema ta em ouytro lugar q atualiza essa parte
+    }
     
     AtualizaItemMapa(jogo->mapa, ObtemPosicaoPacman(jogo->pacman), PACMAN);
 
