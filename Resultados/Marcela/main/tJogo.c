@@ -63,9 +63,11 @@ void ExecutaJogada(tJogo* jogo, COMANDO comando){
     MoveFantasma(jogo->fantP, jogo->mapa, comando);
 
     tPosicao * posAntigaPac = ClonaPosicao(ObtemPosicaoPacman(jogo->pacman));
+    
     if(VerificaSeAtualizaVazio(jogo, posAntigaPac)){
         AtualizaItemMapa(jogo->mapa, posAntigaPac, VAZIO);
     }
+    
     MovePacman(jogo->pacman, jogo->mapa, comando);
     
     AtualizaFantasma(jogo);

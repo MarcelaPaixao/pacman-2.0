@@ -67,6 +67,7 @@ int main(int argc, char *argv[]){
             break;
         }
         scanf("%*c");
+
     }
     
     GeraTrilha(jogo);
