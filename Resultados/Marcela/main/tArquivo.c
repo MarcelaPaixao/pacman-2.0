@@ -1,5 +1,10 @@
 #include "tArquivo.h"
 
+/**
+ * Gera um arquivo de inicialização contendo o mapa e a posição
+ * de início do pacman.
+ * \param jogo jogo
+ */
 void GeraInicializacao(tJogo* jogo){
     FILE *inicializacao;
     char diretInicializacao[1000];
@@ -22,10 +27,21 @@ void GeraInicializacao(tJogo* jogo){
     fclose(inicializacao);
 }
 
+/**
+ * Apenas chama a função SalvaTrilhaPacman do tPacman.
+ * \param jogo jogo
+ */
 void GeraTrilha(tJogo* jogo){
     SalvaTrilhaPacman(ObtemPacman(jogo));
 }
 
+/**
+ * Gera um arquivo de estatística, contendo o número de
+ * movimentos, número de movimentos sem pontuar, número de colisões com parede, número
+ * de movimentos para baixo, número de movimentos para cima, número de movimentos para a
+ * esquerda e número de movimentos para a direita.
+ * \param jogo jogo
+ */
 void GeraEstatistica(tJogo* jogo){
     FILE *estatistica;
     char diretEstatistica[1000];
@@ -43,12 +59,20 @@ void GeraEstatistica(tJogo* jogo){
     fclose(estatistica);
 }
 
+/**
+ * Gera um ranking de melhores movimentos junto
+ * de características desses movimentos ao fim do jogo. A ordem dos critérios é:
+ * maior número de comida obtida, menor número de colisões, maior número de usos e 
+ * ordem alfabética.
+ * \param jogo jogo
+ */
 void GeraRanking(tJogo* jogo){
     FILE *ranking;
     char diretRanking[1000];
     sprintf(diretRanking, "ranking.txt"); 
     ranking = fopen( diretRanking, "w");
 
+    //Preenche um vetor de tComandos com os 4 comandos do jogo, e suas características;
     tComandos mov[4], aux;
     mov[0].frutas = ObtemNumeroFrutasComidasEsquerdaPacman(ObtemPacman(jogo));
     mov[0].colisoes = ObtemNumeroColisoesParedeEsquerdaPacman(ObtemPacman(jogo));
@@ -71,13 +95,14 @@ void GeraRanking(tJogo* jogo){
     mov[3].tipo = 'd';
 
     int n=4, max;
+    //Usando a ordenação por bolha, organiza o vetor de acordo com os critérios de desempate;
     for (int i = 0; i < n - 1; i++) {
 		max = i;
-		// Procura pelo maior no restante do vetor
+		
+        // Procura pelo maior no restante do vetor
 		for (int j = i + 1; j < n; j++) {
-			// Compara os elementos mov[j] e mov[max] de acordo com os criterios:
-			// maior qtd de frutas obtidas com o movimento, menor qtd de colisoes, 
-			// maior qtd de usos e ordem alfabetica;
+			
+            // Compara os elementos mov[j] e mov[max] de acordo com os critérios de ordenação;
 			if (mov[j].frutas > mov[max].frutas ||
 				mov[j].frutas == mov[max].frutas && mov[j].colisoes < mov[max].colisoes ||
 				mov[j].frutas == mov[max].frutas && mov[j].colisoes == mov[max].colisoes 
@@ -95,6 +120,7 @@ void GeraRanking(tJogo* jogo){
 		mov[max] = aux;
 	}
 
+    //Imprime no arquivo o vetor ordenado;
 	for (int i = 0; i < n; i++) {
 		fprintf(ranking,"%c,%d,%d,%d\n", 
 				mov[i].tipo, mov[i].frutas,
@@ -104,6 +130,12 @@ void GeraRanking(tJogo* jogo){
     fclose(ranking);
 }
 
+/**
+ * Gera um resumo, que deverá conter uma descrição do que houve em 
+ * cada movimento em que houve alguma variação significativa: 
+ * pegou comida, colidiu com a parede ou colidiu com um fantasma.
+ * \param jogo jogo
+ */
 void GeraResumo(tJogo* jogo){
     FILE *resumo;
     char diretResumo[1000];
@@ -112,21 +144,24 @@ void GeraResumo(tJogo* jogo){
 
     tMovimento **historico = ClonaHistoricoDeMovimentosSignificativosPacman(ObtemPacman(jogo));
 
+    //Imprime o histórico de acordo com o número, comando e ação do movimento;
     for(int i=0; i < ObtemNumeroMovimentosSignificativosPacman(ObtemPacman(jogo)); i++){
-        fprintf(resumo, "Movimento %d ", historico[i]->numeroDoMovimento);
-        if(historico[i]->comando == MOV_ESQUERDA){
+        fprintf(resumo, "Movimento %d ", ObtemNumeroMovimento(historico[i]));
+        
+        if(ObtemComandoMovimento(historico[i]) == MOV_ESQUERDA){
             fprintf(resumo, "(a) ");
         }
-         if(historico[i]->comando == MOV_CIMA){
+         if(ObtemComandoMovimento(historico[i]) == MOV_CIMA){
             fprintf(resumo, "(w) ");
         }
-         if(historico[i]->comando == MOV_BAIXO){
+         if(ObtemComandoMovimento(historico[i]) == MOV_BAIXO){
             fprintf(resumo, "(s) ");
         }
-         if(historico[i]->comando == MOV_DIREITA){
+         if(ObtemComandoMovimento(historico[i]) == MOV_DIREITA){
             fprintf(resumo, "(d) ");
         }
-        fprintf(resumo, "%s\n", historico[i]->acao);
+        
+        fprintf(resumo, "%s\n", ObtemAcaoMovimento(historico[i]));
     }
 
     for(int i=0; i < ObtemNumeroMovimentosSignificativosPacman(ObtemPacman(jogo)); i++){

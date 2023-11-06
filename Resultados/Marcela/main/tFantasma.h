@@ -12,11 +12,22 @@
 #define CIMA -1
 
 typedef struct{
+    /*Posição atual do fantasma*/
     tPosicao * posicaoAtualFant;
+
+    /*Posição anterior do fantasma*/
     tPosicao * posicaoAntigaFant;
+
+    /*Tipo do fantasma*/
     char tipo;
+
+    /*Tipo do fantasma*/
     int direcao;
+
+    /*Variável para controlar se o fantasma está sobre uma fruta ou não*/
     int tocaFruta;
+
+    /*Variável para controlar se fantasma existe ou não*/
     int existe;
 } tFantasma;
 
@@ -26,21 +37,32 @@ typedef struct{
  * Caso a posição passada como parâmetro seja NULL, retorna NULL.
  * Caso não dê erros, retorna o ponteiro para o tFantasma alocado.
  * \param posicao Ponteiro para tPosicao
+ * \param tipo tipo do fantasma
  */
 tFantasma* CriaFantasma(tPosicao* posicao, char tipo);
 
+/**
+ * Inverte a direção do fantasma. Por exemplo: Caso seja direita, sua direção passa a ser esquerda;
+ * \param fantasma fantasma
+ */
 void InverteDirecaoFant(tFantasma* fantasma);
 
- /* Função que irá mover o fantasma no mapa, atualizando sua posição.
- * Dado o fantasma e o mapa,  a posição do fantasma é atualizada. 
+/**
+ *  Função que irá mover o fantasma no mapa, atualizando sua posição.
+ * Dado o fantasma e o mapa, a posição do fantasma é atualizada. 
  * Se o fantasma encontrou uma parede, ele muda a direção.
- * 
  * \param fantasma fantasma
  * \param mapa o mapa que contem os fantasmas
  */
-void MoveFantasma(tFantasma* fantasma, tMapa* mapa, COMANDO comando);
+void MoveFantasma(tFantasma* fantasma, tMapa* mapa);
 
-
+/**
+ *  Função que irá verificar se o fantasma matou o pacman e garantir que eles não se cruzaram;
+ * \param mapa o mapa que contem os fantasmas
+ * \param fantasma fantasma
+ * \param pacman pacman
+ * \param posAntigaPcman posição anterior do pacman
+ */
 void VerificaSeMatouPacmanFantasma(tMapa* mapa, tFantasma* fantasma, tPacman* pacman, tPosicao* posAntigaPacman);
 
 /**
@@ -74,6 +96,12 @@ int ObtemDirecaoFantasma(tFantasma* fantasma);
  */
 bool TocouFrutaFantasma(tFantasma* fantasma);
 
+/**
+ * Retorna verdadeiro se o fantasma existe,
+ * e falso caso contrário;
+ *
+ * \param fantasma fantasma
+ */
 bool ExisteFantasma(tFantasma* fantasma);
 
 /**

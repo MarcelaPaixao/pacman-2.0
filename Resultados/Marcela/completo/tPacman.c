@@ -27,6 +27,7 @@ tPacman* CriaPacman(tPosicao* posicao){
         return NULL;
     }
     
+    //Inicialia todas as ariáveis da estrutura tPacman;
     pacman->posicaoAtual = posicao;
     pacman->historicoDeMovimentosSignificativos = (tMovimento **)malloc(sizeof(tMovimento*));
     pacman->trilha = NULL;
@@ -75,6 +76,7 @@ tPacman* ClonaPacman(tPacman* pacman){
 tMovimento** ClonaHistoricoDeMovimentosSignificativosPacman(tPacman* pacman){
     tMovimento **clone = malloc(pacman->nMovimentosSignificativos * sizeof(tMovimento*));
 
+    //Clona uma linha por vez; 
     for(int i=0; i < pacman->nMovimentosSignificativos; i++){
         clone[i] = CriaMovimento(ObtemNumeroMovimento(pacman->historicoDeMovimentosSignificativos[i]), 
                                 ObtemComandoMovimento(pacman->historicoDeMovimentosSignificativos[i]), 
@@ -120,6 +122,8 @@ void MovePacman(tPacman* pacman, tMapa* mapa, COMANDO comando){
     tPosicao * novaPosicao = NULL;
     tPosicao * antigaPosicao = ClonaPosicao(pacman->posicaoAtual);
     
+    //Reliza o movimento e as atualizações necessárias de acordo com o comando passado,
+    //e com as condições do mapa na nova posição, seja pela presença de parede, tunel ou comida;
     if(comando == ESQUERDA){ 
         pacman->nMovimentosEsquerda++;
         novaPosicao = CriaPosicao(lin, col-1);
@@ -204,6 +208,7 @@ void MovePacman(tPacman* pacman, tMapa* mapa, COMANDO comando){
         }
     }
 
+    //Insere os movimentos significativos apenas se foi encontrado parede ou comida;
     if(parede){
         InsereNovoMovimentoSignificativoPacman(pacman, comando, "colidiu com a parede");
     }
@@ -237,10 +242,12 @@ void CriaTrilhaPacman(tPacman* pacman, int nLinhas, int nColunas){
 
         pacman->trilha = (int **)malloc(nLinhas * sizeof(int *));
         
+        //Aloca a matriz da trilha de acordo com o numero de linhas e colunas passados como parâmetro;
         for (int i = 0; i < nLinhas; i++) {
             pacman->trilha[i] = (int *) malloc(nColunas * sizeof(int));
         }
         
+        //Inicializa todas as posições da matriz com -1;
         for(int i = 0; i < nLinhas; i++){
             for(int j = 0; j < nColunas; j++){
                 pacman->trilha[i][j] = -1;
@@ -274,11 +281,15 @@ void SalvaTrilhaPacman(tPacman* pacman){
     sprintf(nome_trilha, "trilha.txt");
     arq_trilha = fopen(nome_trilha, "w");
     
+    //Imprime a trilha de acordo com o número encontrado nas posições;
     for(int i=0; i < pacman->nLinhasTrilha; i++){
         for(int j=0; j < pacman->nColunasTrilha; j++){
+            
+            //Caso seja menor que 0, imprime parede;
             if(pacman->trilha[i][j] < 0){
                 fprintf(arq_trilha, "#");
             }
+            //Caso seja maior ou igual a 0, imprime o próprio número;
             else {
                 fprintf(arq_trilha, "%d", pacman->trilha[i][j]);
             }
@@ -302,6 +313,8 @@ void SalvaTrilhaPacman(tPacman* pacman){
  * \param acao a ação do movimento
  */
 void InsereNovoMovimentoSignificativoPacman(tPacman* pacman, COMANDO comando, const char* acao){
+    //Toda vez que a função é chamada, incrementa o numero de mov significativos,
+    //e realoca o tamanho da lista para adicionar o novo movimento;
     pacman->nMovimentosSignificativos++;
     pacman->historicoDeMovimentosSignificativos = realloc(pacman->historicoDeMovimentosSignificativos, 
                                                           pacman->nMovimentosSignificativos * sizeof(tMovimento*));
@@ -350,6 +363,7 @@ void DesalocaPacman(tPacman* pacman){
  * \param pacman pacman
  */
 int ObtemNumeroAtualMovimentosPacman(tPacman* pacman){
+    //Retorna a soma de todos os movimentos do pacman;
     int totalMov=0;
     totalMov = pacman->nMovimentosBaixo + pacman->nMovimentosCima;
     totalMov += pacman->nMovimentosDireita + pacman->nMovimentosEsquerda;
@@ -362,6 +376,8 @@ int ObtemNumeroAtualMovimentosPacman(tPacman* pacman){
  * \param pacman pacman
  */
 int ObtemNumeroMovimentosSemPontuarPacman(tPacman* pacman){
+    //Retorna o numero total de movimentos do pacman subtraido do numero de movimentos que 
+    //resultaram em pontos para o pacman;
     int movSemPontos=0, movPontos=0;
     movPontos = pacman->nFrutasComidasBaixo + pacman->nFrutasComidasCima;
     movPontos += pacman->nFrutasComidasDireita + pacman->nFrutasComidasEsquerda; 
@@ -375,6 +391,7 @@ int ObtemNumeroMovimentosSemPontuarPacman(tPacman* pacman){
  * \param pacman pacman
  */
 int ObtemNumeroColisoesParedePacman(tPacman* pacman){
+    //Retorna a soma de todos os movimentos do pacman que geraram colisões;
     int totalMov=0;
     totalMov = pacman->nColisoesParedeBaixo + pacman->nColisoesParedeCima;
     totalMov += pacman->nColisoesParedeDireita + pacman->nColisoesParedeEsquerda;
@@ -504,6 +521,7 @@ int ObtemNumeroMovimentosSignificativosPacman(tPacman* pacman){
  * \param pacman pacman
  */
 int ObtemPontuacaoAtualPacman(tPacman* pacman){
+    //Retorna a soma das comidas obtidas pelo pacman com cada movimento;
     int pontos=0;
     pontos = pacman->nFrutasComidasBaixo + pacman->nFrutasComidasCima;
     pontos += pacman->nFrutasComidasEsquerda + pacman->nFrutasComidasDireita;

@@ -34,6 +34,9 @@ tMapa* CriaMapa(const char* caminhoConfig) {
     mapa->grid = malloc(sizeof(char *)); 
     mapa->grid[0] = NULL;
     char simb;
+    
+    //Percorre o mapa realocando o tamanho da primeira linha de acordo com 
+    //o número de colunas encontradas até a primeira quebra de linha;
     while(1){
         fscanf(arq_mapa, "%c", &simb);
         if(simb == '\n'){
@@ -47,6 +50,9 @@ tMapa* CriaMapa(const char* caminhoConfig) {
         }
     }
     
+    //Percorre o resto do mapa, realocando o tamanho da matriz, de acordo 
+    //com o número de linhas encontradas e preenche cada linha de acordo com o 
+    //numero de colunas já obtido;
     while(fscanf(arq_mapa, "%c", &simb) == 1){
         linha++;
         mapa->grid = realloc(mapa->grid, (linha+1) * sizeof(char*)); 
@@ -78,6 +84,8 @@ tMapa* CriaMapa(const char* caminhoConfig) {
         fscanf(arq_mapa, "%*c");
     }
     fscanf(arq_mapa, "%*c");
+
+    //Inicializa as outras variáveis do tMapa;
     mapa->tunel = NULL;
     mapa->tunel = CriaTunel(l_tunel1 , c_tunel1, l_tunel2, c_tunel2);
     mapa->nLinhas = linha+1;
@@ -116,6 +124,12 @@ tTunel* ObtemTunelMapa(tMapa* mapa){
     return mapa->tunel;
 }
 
+/** 
+ * Dado o mapa e uma posição, verifica se ela está dentro dos limites do mapa e 
+ * retorna 1 caso seja válida, e 0 caso contrário;
+ * \param mapa mapa
+ * \param posicao posicao em questão
+ */
 int EhValidaPosicao(tMapa* mapa, tPosicao* posicao){
     if(ObtemLinhaPosicao(posicao) > mapa->nLinhas || 
        ObtemLinhaPosicao(posicao) < 0 || 
